@@ -1,0 +1,550 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="Content-Language" content="en-us" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+<meta name="robots" content="noindex">
+<link rel="icon" href="https://d3rxaij56vjege.cloudfront.net/media/favicon.ico" />
+<link rel="apple-touch-icon-precomposed" href="https://d226aj4ao1t61q.cloudfront.net/haao08fw5_ac_symbol_blue.png"/><title>MLOps Community Marketing - Unsubscribe</title>
+<script src='../ac_global/scriptaculous/prototype.js%3Fv=v102361226560372'></script>
+<script src='../ac_global/scriptaculous/scriptaculous.js%3Fv=v102361226560372'></script>
+<script src="../ac_global/js/ac.js.php%3Finc=ajax,dom,b64,str,array,liveedit,utf,ui,paginator,star,loader,tooltip,date,cfield,editor,form,class.Table,ihook&amp;v=v102361226560372"></script>
+<script src="../admin/js/functions.js%3Fv=v102361226560372"></script>
+<script src="../admin/js/jq/csrf_protection.js"></script>
+<link rel="stylesheet"
+	href="../../platform-cdn.app-us1.com/core-platform-core-resources/jquery-ui/1.13.2/css/smoothness/jquery-ui.min.css" />
+<script>
+	
+	var $J = jQuery.noConflict();
+
+</script>
+
+
+<script src="../mainjs.php%3Fv=v102361226560372"></script>
+
+
+</head>
+
+<body>
+
+
+<div id="container">
+
+	
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script>
+
+	var $J = $;
+
+</script>
+<script src="../admin/jsc/ac.js%3Fv=v102361226560372"></script>
+<script>
+	var form_act = "unsub";
+var form_obj = { "id" : 1054, "name" : "MLOps - Newsletter Unsubscribe", "target" : 2, "messageid" : 18, "conflistid" : 0, "redirecturl" : null, "facebookurl" : null, "managetext" : 0, "theme" : "simple-blue", "sendoptin" : 1, "waitpreview" : 0, "widthpx" : 0, "disabled" : 0, "analytics" : null, "branding" : 1, "baseformid" : 0, "parts" : { 0 : { "id" : 163, "formid" : 1054, "fieldid" : 0, "builtin" : "header", "content" : null, "ordernum" : 0, "header" : "Unsubscribe", "headerlast" : null, "defval" : null, "imagetype" : "", "imagesize" : 0, "imagealt" : "", "imagewidth" : 0, "imageheight" : 0, "imagealign" : null, "html" : "<div id=\'_field163\'>\n<div id=\'compile163\' class=\'_field _type_header\'>\n<div class=\'_label \'>\nUnsubscribe\n<\/div>\n<\/div>\n<\/div>\n\n" }, 1 : { "id" : 164, "formid" : 1054, "fieldid" : 0, "builtin" : "email", "content" : null, "ordernum" : 1, "header" : "Email", "headerlast" : null, "defval" : null, "imagetype" : "", "imagesize" : 0, "imagealt" : "", "imagewidth" : 0, "imageheight" : 0, "imagealign" : null, "html" : "<div id=\'_field164\'>\n<div id=\'compile164\' class=\'_field _type_input\'>\n<div class=\'_label \'>\nEmail *\n<\/div>\n<div class=\'_option\'>\n<input type=\'email\' name=\'email\' >\n<\/div>\n<\/div>\n<\/div>\n\n" }, 2 : { "id" : 165, "formid" : 1054, "fieldid" : 0, "builtin" : "subscribe", "content" : "Unsubscribe", "ordernum" : 2, "header" : null, "headerlast" : null, "defval" : null, "imagetype" : "", "imagesize" : 0, "imagealt" : "", "imagewidth" : 0, "imageheight" : 0, "imagealign" : null, "html" : "<div id=\'_field165\'>\n<div id=\'compile165\' class=\'_field _type_input\'>\n<div class=\'_option\'>\n<input type=\'submit\' value=\"Unsubscribe\">\n<\/div>\n\n<\/div>\n<\/div>\n\n" } }, "offerlists" : false, "offerunsub" : false, "lists" : { 0 : 5 }, "offerchset" : false, "incga" : 0 };
+
+
+if (form_obj.target == 12) {
+	// forward to a friend
+	$J(document).ready(function() {
+		$J("#_form_" + form_obj.id).submit(function() {
+			var name = ac.str.trim($J("input[name=yrname]").val());
+
+			if (name == "") {
+				alert('You must enter a name here');
+				return false;
+			}
+
+			var email = ac.str.trim($J("input[name=yremail]").val());
+
+			if (email == "" || !ac.str.valid_email(email)) {
+				// Unlikely to get here, as the input is read-only.
+				alert('Your email address must be valid.');
+				return false;
+			}
+
+			var hasrecip = false;
+			var allvalid = true;
+
+			$J("input[name='rcpt_email[]']").each(function(k, v) {
+				var addr = ac.str.trim(v.value);
+
+				if (addr != "") {
+					hasrecip = true;
+					if (!ac.str.valid_email(addr)) {
+						allvalid = false;
+						return;
+					}
+				}
+			});
+
+			if (!allvalid) {
+				alert('Each of your recipient email addresses must be valid.');
+				return false;
+			}
+
+			if (!hasrecip) {
+				alert('You must have entered at least one email address to forward.');
+				return false;
+			}
+
+			return true;
+		});
+	});
+}
+
+function form_unsub_reason() {
+	var post = {
+		hash: $J("input[name=s][value!='']").val(),
+		campaignid: $J("input[name=c]").val(),
+		messageid: $J("input[name=m]").val(),
+		lists: [],
+		reason: $J("input[name=reason]:checked").val(),
+		explanation: $J("textarea[name=explanation]").val(),
+		_csrf: getCSRFToken(),
+	};
+
+	$J("input[name='nlbox[]']").each(function() {
+		post.lists.push($J(this).val());
+	});
+
+	ac.post("contact.subscriber_unsub_reason", post, function(data) {
+		// Hide the radio buttons, and the "submit" button
+		$J("#unsubreasons label").hide();
+		$J("#unsubreasons textarea").hide();
+		$J("input:button").hide();
+
+		// Add something into the unsubreasons div to say thanks.
+		if ( post.reason == "accident" ) {
+			if ( data.succeeded ) {
+				$J("#unsubreasons").append(sprintf("<div class='_field _option'><b>%s</b></div>", 'You have been resubscribed to this list.'));
+			} else {
+				$J("#unsubreasons").append(sprintf("<div class='_field _option alert'><b>%s</b></div>", "Error: " + data.msg));
+			}
+		} else {
+			$J("#unsubreasons").append(sprintf("<div class='_field _option'><b>%s</b></div>", 'Thanks for providing your feedback on why you unsubscribed.'));
+			$J("#unsubreasons").append("<div>&nbsp;</div>");
+			$J("#unsubreasons").append(sprintf("<div class='_field _option'>%s</div>", 'You have been unsubscribed from these emails.'));
+		}
+	});
+}
+
+if (form_act == "unsub_result") {
+	$J(document).ready(function() {
+		$J("input:button").click(function() {
+			form_unsub_reason();
+		});
+	});
+}
+
+$J(document).ready(function() {
+	if (form_obj.widthpx > 0)
+		$J("._form").css("width", form_obj.widthpx);
+});
+
+</script>
+
+
+<script>
+
+	function form_add_recipient() {
+		// No more!
+		if ($J("#_forward_rcpt > tr").length > 9)
+			return;
+
+		$J(".image_addrcpt").hide();
+		$J("#_forward_rcpt").append("<tr><td><input type='email' name='rcpt_email[]' autocomplete='email' /></td><td><input type='text' name='rcpt_name[]' autocomplete='name' /></td><td><div onclick='form_add_recipient()'><img class='image_addrcpt' src='admin/images/user_add-32.png.html' border='0' alt='+' /></div></td></tr>");
+
+		if ($J("#_forward_rcpt > tr").length > 9)
+			$J(".image_addrcpt").hide();
+	}
+
+</script>
+
+
+<div align="center">
+		<style>
+  ._form {
+  position:relative;
+  background:#fff;
+  width:400px;/*F*/
+  padding:0!important;
+  text-align:left;
+  }
+  ._form em {
+  color:#9a9a9a;
+  }
+  ._form a {
+  margin-left:3px;
+  }
+  ._form ._field,
+  ._form ._field ._label,
+  ._form ._type_radio,
+  ._form ._type_checkbox,
+  ._form ._type_captcha,
+  ._form ._field table {
+  background:none;
+  }
+  ._form ._field  {
+  position:relative;
+  width:100%;
+  cursor:move;
+  font-style:normal;
+  margin:1.2em 0;
+  padding:0;
+  overflow:hidden;
+  }
+  ._form ._field input[type="text"] {
+  width:100%;
+  padding:8px;
+  font-size:16px;
+  border:1px solid #b6b6b6;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  }
+  ._form ._field ._label {
+  display:block;
+  margin:0 0 0.5em;
+  padding:0!important;
+  font-size:15px;
+  }
+  ._form ._field ._option input[type="checkbox"],
+  ._form ._field ._option input[type="radio"] {
+  position:relative;
+  width:13px;
+  height:13px;
+  margin:-4px 0 0 1px;
+  cursor:pointer;
+  vertical-align:middle;
+  }
+  ._form ._field ._option input[type="submit"],
+  ._form ._field ._option input[type="button"] {
+  margin:0;
+  cursor:pointer;
+  height:35px;
+  width:auto;
+  font-size:15px;
+  }
+  ._form ._field ._option select {
+  display:block;
+  margin:0;
+  padding:0;
+  width:auto;
+  font-size:15px;
+  border:1px solid #b6b6b6;
+  }
+  ._form ._type_radio ._option,
+  ._form ._type_checkbox ._option {
+  font-size:14px;
+  font-weight:normal;
+  line-height:1.8;
+  }
+  ._form ._type_date ._option input[type="text"] {
+  float:left;
+  width:100px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  }
+  ._form ._type_date ._option input[type="button"] {
+  width:37px;
+  height:36px;
+  margin-left:5px;
+  padding:20px;
+  background:url(../admin/images/icon_calendar.gif) no-repeat 0 0;
+  border:none;
+  outline:none;
+  text-indent:-9999px;
+  }
+  ._form ._type_captcha img {
+  float:left;
+  margin:0 6px 0 0;
+  width:70px;
+  height:33px;
+  border:1px solid #b6b6b6;
+  }
+  ._form ._type_captcha input[type="text"] {
+  margin:-14px 0 0 0!important;
+  width:25%;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  }
+  ._form ._field table  {
+  width:100%!important;
+  }
+  ._form ._field table tbody tr td  {
+  width:50%!important;
+  font-size:15px;
+  }
+  @media only screen and (device-width: 667px), only screen and (max-width: 667px) {
+  [id*="_form_"], ._form { margin: 0!important; width:100% !important; min-width:100% !important; max-width:100% !important; box-sizing: border-box!important; }
+  [id*="_form_"] * { box-sizing: border-box!important; outline: 0 none !important; }
+  [id*="_form_"] ._form ._field:not(._type_header) ._label { margin-bottom: 10px!important; }
+  [id*="_form_"] ._form ._field ._option input[type="text"],
+  [id*="_form_"] ._form ._field ._option input[type="email"] { padding: 10px!important; font-size: 1.4em !important; line-height: 1.4em !important; -webkit-appearance: none !important; -moz-appearance: none !important; }
+  [id*="_form_"] ._form ._field ._option input[type="radio"],
+  [id*="_form_"] ._form ._field ._option input[type="checkbox"] { width: 1.3em !important; height: 1.3em !important; font-size: 1em !important; margin: 0 0.3em 0 0 !important }
+  [id*="_form_"] ._form ._field ._option input[type="submit"],
+  [id*="_form_"] ._field ._option input[type="button"] { margin: 0!important; width: 100%!important; height: 100%!important; font-size: 1.5em !important; line-height: 2.1em !important; text-shadow: none !important; -webkit-appearance: none !important; -moz-appearance: none !important; }
+  [id*="_form_"] ._field._type_date ._option input[id^="form_calendar"] { width: auto !important; height: auto!important; margin: 0 0 0 6px !important; border: 0 none !important; border: 0 none !important; color: #fff !important; font-size: 20px !important; text-indent: initial !important; text-shadow: none !important; }
+  [id*="_form_"] ._field._type_date ._option input[type="text"] { width: 45% !important; }
+  [id*="_form_"] ._form .formwrapper #unsubreasons { margin: 20px 0 20px 1px!important; }
+  [id*="_form_"] ._form .formwrapper #unsubreasons ._option { margin-bottom: 10px !important; }
+  [id*="_form_"] ._form .formwrapper #unsubreasons textarea[name="explanation"] { margin: 0 !important; margin-top: 10px !important; -webkit-appearance: none !important; -moz-appearance: none !important; }
+  }
+  ._form {
+  width:400px;/*F*/
+  padding:16px!important;
+  background:#eff9fd;
+  color:#2c2c2c;
+  font-weight:normal;
+  border:1px solid #c4d5da;
+  -webkit-border-radius:4px;
+  -moz-border-radius:4px;
+  border-radius:4px;
+  }
+  ._form #notice {
+  margin:10px 0 0 -3px!important;
+  padding:0;
+  color:#959c9f;
+  font-size:11px;
+  font-family:helvetica,arial,sans-serif;
+  }
+  ._form #notice a, ._form #notice a:visited {
+  color:#959c9f;
+  text-decoration:underline;
+  }
+  ._form ._field,
+  ._form ._field ._label,
+  ._form ._type_radio,
+  ._form ._type_checkbox,
+  ._form ._type_captcha,
+  ._form ._field table {
+  background:none;
+  }
+  ._form ._field  {
+  position:relative;
+  width:100%;
+  cursor:default;
+  font-style:normal;
+  margin:0 0 16px!important;
+  padding:0!important;
+  overflow:hidden;
+  }
+  ._form ._field input[type="text"],
+  ._form ._field input[type="email"] {
+  width:100%;
+  margin:0!important;
+  padding:4px!important;
+  font-size:16px;
+  border:1px solid #b4c5cb;
+  border-top:1px solid #a5b4b9;
+  -webkit-border-radius:3px;
+  -moz-border-radius:3px;
+  border-radius:3px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  }
+  ._form ._field ._label {
+  margin:0 0 0.3em!important;
+  color:#546f79;
+  font-size:14px;
+  font-family:helvetica,arial,sans-serif;
+  font-weight:700;
+  }
+  ._form ._field ._option {
+  margin:0;
+  padding:0;
+  color:#546f79;
+  font-size:14px;
+  font-family:helvetica,arial,sans-serif;
+  font-weight:normal;
+  line-height:20px;
+  }
+  ._form ._type_header ._label {
+  width:100%;
+  font-style:normal;
+  font-size:20px!important;
+  line-height:24px;
+  color:#546f79;
+  margin:0 0 5px!important;
+  padding:0 0 10px!important;
+  overflow:hidden;
+  border-bottom:1px solid #e0e0e0;
+  }
+  ._form ._type_input ._option textarea{
+  width:97%!important;
+  background:#fafafa;
+  border:1px solid #b4c5cb;
+  border-top:1px solid #a5b4b9;
+  -webkit-border-radius:3px;
+  -moz-border-radius:3px;
+  border-radius:3px;
+  }
+  ._form ._field ._option input[type="submit"],
+  ._form ._field ._option input[type="button"] {
+  width:auto;
+  margin:10px 0 0!important;
+  padding:8px 15px!important;
+  cursor:pointer;
+  font-family:helvetica,arial,sans-serif;
+  font-weight:700;
+  font-size:16px;
+  color:#ffffff;
+  background:#82aebe;
+  border:1px solid #6a9eb0;
+  border-bottom:1px solid #5f8e9f;
+  -webkit-border-radius:4px;
+  -moz-border-radius:4px;
+  border-radius:4px;
+  text-shadow:0px 1px 1px #5f8e9f!important;
+  }
+  ._form ._type_input ._option input[type="submit"]:hover,
+  ._form ._type_input ._option input[type="button"]:hover {
+  background:#6494a6;
+  }
+  ._form ._type_radio ._option label {
+  display:inline;
+  font-size:16px;
+  font-weight:normal;
+  line-height:18px;
+  }
+  ._form ._type_radio ._option label input[type="radio"] {
+  position:relative;
+  width:13px;
+  height:13px;
+  margin:-4px 0 0 1px!important;
+  cursor:pointer;
+  vertical-align:middle;
+  border:none;
+  line-height:18px;
+  }
+  ._form ._type_date ._option input[type="text"] {
+  float:left;
+  width:100px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  }
+  ._form ._type_date ._option input[type="button"] {
+  float:left;
+  width:24px;
+  height:24px;
+  margin:2px 0 0 5px!important;
+  padding:0;
+  background:url(../admin/templates/form-themes/simple-blue/images/icon_calendar.gif) no-repeat;
+  border:none;
+  outline:none;
+  text-indent:-9999px;
+  }
+  ._form ._field ._option select {
+  display:block;
+  margin:0;
+  padding:0;
+  width:auto;
+  font-size:16px;
+  border:1px solid #cce0e7;
+  }
+  ._form ._type_captcha img {
+  float:left;
+  width:88px;
+  height:44px;
+  margin:0 6px 0 0;
+  border:1px solid #cce0e7;
+  }
+  ._form ._type_captcha input[type="text"] {
+  margin:0!important;
+  width:40%;
+  font-size:16px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  }
+  ._form ._field table {
+  margin:0;
+  padding:0;
+  border-collapse:collapse;
+  width:100%!important;
+  table-layout:fixed;
+  margin-bottom:18px;
+  font-size:14px!important;
+  border-collapse:collapse;
+  border-spacing:0;
+  }
+  ._form ._field table td {
+  padding:0 10px 0 0!important;
+  line-height:18px;
+  text-align:left;
+  font-size:14px!important;
+  color:#606060;
+  }
+  ._form ._type_input ._option  table tbody#_forward_rcpt input {margin:0 0 5px 0!important; width:96%!important;}
+  ._form ._type_input ._option  table tbody#_forward_rcpt img.image_addrcpt {cursor:pointer;}
+  .form_errors{
+  text-align:center;
+  font-size:15px;
+  margin:10px;
+  color:#900;
+  font-family:Arial, Helvetica, sans-serif;
+  font-weight:bold;
+  margin-bottom:20px;
+  }
+</style>
+<form action='https://autodb.activehosted.com/proc.php' method='post' id='_form_1054' accept-charset='utf-8' enctype='multipart/form-data'>
+  <input type='hidden' name='f' value='1054'>
+  <input type='hidden' name='s' value=''>
+  <input type='hidden' name='c' value='0'>
+  <input type='hidden' name='m' value='0'>
+  <input type='hidden' name='act' value='unsub'>
+  <input type='hidden' name='nlbox[]' value='5'>
+  <div class='_form'>
+    <div class='formwrapper'>
+      <div id='_field163'>
+        <div id='compile163' class='_field _type_header'>
+          <div class='_label '>
+            Unsubscribe
+          </div>
+        </div>
+      </div>
+      <div id='_field164'>
+        <div id='compile164' class='_field _type_input'>
+          <div class='_label '>
+            Email *
+          </div>
+          <div class='_option'>
+            <input type='email' name='email' >
+          </div>
+        </div>
+      </div>
+      <div id='_field165'>
+        <div id='compile165' class='_field _type_input'>
+          <div class='_option'>
+            <input type='submit' value="Unsubscribe">
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="preview_part">
+      <div id="notice">
+        <a href="https://www.activecampaign.com/" title="email marketing" target="_blank">email marketing</a> by activecampaign
+      </div>
+    </div>
+  </div>
+</form>
+</div>
+
+
+
+
+	
+
+
+</div>
+
+
+</body>
+</html>
