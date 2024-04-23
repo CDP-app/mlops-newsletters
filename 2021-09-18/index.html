@@ -1,0 +1,687 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="Content-Language" content="en-us" />
+<meta name="robots" content="noindex, nofollow" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-migrate/3.4.1/jquery-migrate.min.js" integrity="sha512-KgffulL3mxrOsDicgQWA11O6q6oKeWcV00VxgfJw4TcM8XRQT8Df9EsrYxDf7tpVpfl3qcYD96BpyPvA4d1FDQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script><script src="admin/js/jq/csrf_protection.js"></script>
+
+
+<meta property="og:url" content="https://autodb.activehosted.com/index.php?action=social&chash=7ef605fc8dba5425d6965fbd4c8fbe1f.173" />
+<meta property="og:type" content="website" />
+<meta property="og:title" content="System Design Deep Dive" />
+<meta property="og:description" content="Software Engineering best..." />
+<meta property="og:image" content="https://autodb.img-us3.com/_screenshot_/a8fa3410ce913d828a03bda0b0114e3b9f7dd703.png" />
+
+<script src='ac_global/scriptaculous/prototype.js_v=v1023621689941576'></script>
+<script src='ac_global/scriptaculous/scriptaculous.js_v=v1023621689941576'></script>
+<script src="ac_global/js/ac.js.php%3Finc=ajax,dom,b64,str,array,liveedit,utf,ui,paginator,star,loader,tooltip,date,editor,form,class.Table,ihook&amp;v=v1023621689941576"></script>
+<script src="admin/js/functions.js_v=v1023621689941576"></script>
+<script src="mainjs.php_v=v1023621689941576"></script>
+
+<link rel="stylesheet" href="dist/ac_global/fontello/css/ac-icons.min.css_v=v1023621689941576.css" />
+<script src="admin/js/jq/bootstrap.js_v=v1023621689941576"></script>
+
+
+<script>
+
+var $J = jQuery.noConflict();
+
+</script>
+<script>
+var campaign_url = "https://autodb.activehosted.com/index.php?action=social&chash=7ef605fc8dba5425d6965fbd4c8fbe1f.173";
+var message_screenshot = "https://autodb.img-us3.com/_screenshot_/a8fa3410ce913d828a03bda0b0114e3b9f7dd703.png";
+var message_subject = "System Design Deep Dive";
+var message_id = 173;
+var campaign_id = 150;
+var facebook_app_id = "118506481555093";
+var facebook_api_version = 2.9;
+var subscriber_hash = "";
+</script>
+
+
+<style media="screen">
+/* Bar */
+.archive_title{position:absolute;top:0!important;left:0!important;background:#f8f8f8;padding:10px 20px;font-family:HelveticaNeue-Medium,sans-serif;margin:0!important;width:100%;-webkit-box-shadow:0 2px 3px 1px rgba(98,98,98,0.5);-moz-box-shadow:0 2px 3px 1px rgba(98,98,98,0.5);box-shadow:0 2px 3px 1px rgba(98,98,98,0.5);-moz-transition: opacity 0.2s;-o-transition: opacity 0.2s;-webkit-transition: opacity 0.2s;transition: opacity 0.2s;-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing:border-box;}
+
+/* Layout */
+html,body { position: relative;}
+.fixed {position:fixed; z-index:1;}
+.socialwrap {position:relative; float:right; max-width:500px; height:100%; }
+.social_share {position:relative; display:block;height:30px; overflow:visible; }
+.social_share ul {float:right; margin:0; padding:0; zoom:1; }
+.social_share ul li {position:relative;display: inline-block;height:100%; margin:0 0 0 5px; padding:0; list-style:none;}
+.social_share ul li img {position:relative; border:0!important; z-index:100;}
+
+/* Bar buttons */
+.subs_btn,.social_share_btn{padding:12px 18px;border:#b7b7b7 2px solid;color:#818181;-webkit-border-radius:4px;-moz-border-radius:4px;border-radius:4px;display:inline-block;font-size:15px;cursor:pointer;text-align:center;min-width:80px;}
+.subs_btn:hover { border-color: #999999;}
+.socialbtns{padding:14px 20px;color:#fff !important;-webkit-border-radius:4px;-moz-border-radius:4px;border-radius:4px;-webkit-border-radius:4px;-moz-border-radius:4px;border-radius:4px;display:inline-block;text-decoration:none !important;font-size:15px;font-weight:normal;}
+.socialbtns.twitter, .modalbtn.twitter{background:#57cae6;}
+.socialbtns.twitter:hover, .modalbtn.twitter:hover{background:#4cbad5;}
+.socialbtns.facebook, .modalbtn.facebook{background:#4b709b;}
+.socialbtns.facebook:hover, .modalbtn.facebook:hover{background:#3c608a;}
+.socialbtns.linkedin, .modalbtn.linkedin{background:#0077b5;}
+.socialbtns.linkedin:hover, .modalbtn.linkedin:hover{background:#056597;}
+.socialbtns.gplus, .modalbtn.gplus{background:#4e4e4e;}
+.socialbtns.gplus:hover, .modalbtn.gplus:hover{background:#3d3d3d;}
+.social_share_btn{display:none;float:right;}
+
+/* Social share modal */
+.mobile-backdrop{background:#000;opacity:0;top:0;left:0;position:fixed;width:100%;height:100vh;z-index:100;}
+.mobile-modal_share{max-width:280px;display:none;background:#fff;position:fixed; top: 0; bottom: initial!important; right: 0; left: 0; margin: 40px auto auto;-webkit-border-radius:4px;-moz-border-radius:4px;border-radius:4px;z-index:101;min-height:200px;box-sizing:border-box;padding:10px;/*box-shadow*/-webkit-box-shadow:0 2px 10px 8px rgba(0,0,0,0.3);-moz-box-shadow:0 2px 10px 8px rgba(0,0,0,0.3);box-shadow:0 2px 10px 8px rgba(0,0,0,0.3);}
+.mobile-modal_share ul{margin:0;padding:0;}
+.mobile-modal_share li{display:block;margin-bottom:10px;}
+.mobile-modal_share li:last-child{margin:0;}
+.mobile-modal_share li .modalbtn{position:relative;text-align:center;display:block;padding:20px;color:#fff !important;-webkit-border-radius:4px;-moz-border-radius:4px;border-radius:4px;text-decoration:none !important;font-size:20px;font-weight:normal;}
+.mobile-modal_close{position: fixed; top: initial; right: 0; bottom: 40px!important; left: 0!important; margin: auto; opacity:0;display:none; width: 48px; height: 48px; font-size:48px;color:#fff;z-index:101;}
+
+.modal-open {overflow: hidden;}
+.modal-backdrop {position: fixed;top: 0; right: 0; bottom: 0; left: 0; z-index: 1030; background-color: #000000;}
+.modal-backdrop.fade {opacity: 0; filter: alpha(opacity=0);}
+.modal-backdrop.in {opacity: 0.5; filter: alpha(opacity=50);}
+.modal {position: fixed; top: 0; right: 0; bottom: 0; left: 0; z-index: 1040; overflow: auto; overflow-y: scroll;}
+.modal-dialog {right: auto; left: 50%; width: 600px; padding-top: 30px; padding-bottom: 30px; z-index: 1050; padding: 10px; margin-right: auto; margin-left: auto; margin-top: 50px;}
+.modal-header {margin: 0!important; background: #272727; background-color: #272727; overflow: visible!important; -webkit-border-radius: 5px 6px 0 0; -moz-border-radius: 5px 6px 0 0; border-radius: 5px 6px 0 0; min-height: 16px; padding: 14px 15px; border-bottom: 1px solid #e5e5e5;}
+.modal-header h3 {font-family: "IBM Plex Sans", Helvetica, sans-serif; font-size: 19px; font-weight: normal; line-height: 22px; color: #fff;}
+.modal-header .close {position: absolute; display: block; top: -13px; right: -15px; width: 30px; height: 30px; background: url('admin/images/modal_header_close.png') no-repeat; text-indent: 100%; white-space: nowrap; overflow: hidden; margin-top: -2px; cursor: pointer;}
+.modal-header .close:hover {background-position: 0 -30px; cursor: pointer;}
+.modal-content {position: relative; background-color: #ffffff; border: 1px solid #999999; border: 1px solid rgba(0, 0, 0, 0.2); border-radius: 6px; outline: none; -webkit-box-shadow: 0 3px 9px rgba(0, 0, 0, 0.5); box-shadow: 0 3px 9px rgba(0, 0, 0, 0.5); background-clip: padding-box;}
+.modal-body {position: relative; padding: 20px;}
+.modal-footer {position: relative; padding: 14px 15px; margin-bottom: 0; background-color: #f5f5f5; border-top: 1px solid #ddd; text-align: right; -webkit-border-radius: 0 0 6px 6px; -moz-border-radius: 0 0 6px 6px; border-radius: 0 0 6px 6px; -webkit-box-shadow: inset 0 1px 0 #ffffff; -moz-box-shadow: inset 0 1px 0 #ffffff; box-shadow: inset 0 1px 0 #ffffff;}
+.button:active, .button:visited, .button {font-family: "IBM Plex Sans", Helvetica, sans-serif; font-weight: 400; padding: 7px 11px; font-size: 14px; text-decoration: none !important; background-color: #f5f5f5; -moz-border-radius: 4px; -webkit-border-radius: 4px; border-radius: 4px; display: inline-block; color: #555; cursor: pointer!important; zoom: 1; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box;}
+.greybtn:active, .greybtn:visited, .greybtn {color: #5d5d5d!important; background: #fff!important; border: 1px solid #c0c0c0!important;}
+
+/* Icons */
+.ac-icon-share-left{position:absolute;top:17px;left:17px;}
+
+
+</style>
+<style>
+@media screen and (max-width:450px) {
+  .socialwrap { display: none}
+  .social_share_btn { display: inline-block}
+}
+</style>
+
+
+<link rel="icon" href="https://d3rxaij56vjege.cloudfront.net/media/favicon.ico" />
+<title>System Design Deep Dive</title>
+</head>
+<body marginheight="0" marginwidth="0" topmargin="0" leftmargin="0" style="margin:0; padding:0;">
+
+	  <div class="mobile-modal_share">
+    <ul>
+      <li><a href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fautodb.activehosted.com%2Findex.php%3Faction%3Dsocial%26chash%3D7ef605fc8dba5425d6965fbd4c8fbe1f.173%26ref%3Dfacebook&t=System%20Design%20Deep%20Dive" onclick="facebook_post();return false;" class="modalbtn facebook"><span class="ac-icon-share-left ac-icon-facebook"></span>Share</a></li>
+      <li><a href="https://twitter.com/intent/tweet?url=https%3A%2F%2Fautodb.activehosted.com%2Findex.php%3Faction%3Dsocial%26chash%3D7ef605fc8dba5425d6965fbd4c8fbe1f.173%26ref%3Dtwitter&text=Check%20out%20this%20email%20campaign%21&lang=en&counturl=https%3A%2F%2Fautodb.activehosted.com%2Findex.php%3Faction%3Dsocial%26chash%3D7ef605fc8dba5425d6965fbd4c8fbe1f.173%26ref%3Dtwitter" target="_blank" class="modalbtn twitter"><span class="ac-icon-share-left ac-icon-twitter"></span>Tweet</a></li>
+			<li><a href="http://www.linkedin.com/cws/share?url=https%3A%2F%2Fautodb.activehosted.com%2Findex.php%3Faction%3Dsocial%26chash%3D7ef605fc8dba5425d6965fbd4c8fbe1f.173%26ref%3Dlinkedin" target="_blank" class="modalbtn linkedin"><span
+						class="ac-icon-share-left ac-icon-linkedin"></span>Share</a></li>
+    </ul>
+  </div>
+  <div class="mobile-modal_close"><span class="ac-icon-cancel-circled-outline"></span></div>
+  <div id="fb-root"></div>
+	
+	<div class="archive_title fixed">
+  	<div class="social_share_btn">
+    <span class="ac-icon-export ac-icon-left">Share</span>
+  </div>
+	<div class="socialwrap">
+		<div class="social_share">
+			<ul>
+        <li><a href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fautodb.activehosted.com%2Findex.php%3Faction%3Dsocial%26chash%3D7ef605fc8dba5425d6965fbd4c8fbe1f.173%26ref%3Dfacebook&t=System%20Design%20Deep%20Dive" target="_blank" onclick="facebook_post();return false;" class="socialbtns facebook"><span class="ac-icon-facebook"></span></a></li>
+        <li><a href="https://twitter.com/intent/tweet?url=https%3A%2F%2Fautodb.activehosted.com%2Findex.php%3Faction%3Dsocial%26chash%3D7ef605fc8dba5425d6965fbd4c8fbe1f.173%26ref%3Dtwitter&text=Check%20out%20this%20email%20campaign%21&lang=en&counturl=https%3A%2F%2Fautodb.activehosted.com%2Findex.php%3Faction%3Dsocial%26chash%3D7ef605fc8dba5425d6965fbd4c8fbe1f.173%26ref%3Dtwitter" target="_blank" class="socialbtns twitter"><span class="ac-icon-twitter"></span></a></li>
+				<li><a href="http://www.linkedin.com/cws/share?url=https%3A%2F%2Fautodb.activehosted.com%2Findex.php%3Faction%3Dsocial%26chash%3D7ef605fc8dba5425d6965fbd4c8fbe1f.173%26ref%3Dlinkedin" target="_blank" class="socialbtns linkedin"><span
+							class="ac-icon-linkedin"></span></a></li>
+			</ul>
+		</div>
+	</div>
+</div>
+	
+<div class="message-body-container" style="margin-top:60px; padding:30px; padding-top:20px; padding-bottom:20px; zoom:1; z-index:2; background-color:#e0e0e0;">
+  
+<title>Preview</title><style data-ac-keep="true"> .ExternalClass { width: 100%; background: inherit; background-color: inherit; } .ExternalClass, .ExternalClass p, .ExternalClass span, .ExternalClass font, .ExternalClass td, .ExternalClass div { line-height: 100%; } .ExternalClass p, .ExternalClass ul, .ExternalClass ol { Margin: 0; } .undoreset div p, .undoreset p { margin-bottom: 20px; } div[class^="aolmail_divbody"] { overflow: auto; } [owa] #ac-footer { padding: 20px 0px
+!important; background: inherit; background-color: inherit; } a[x-apple-data-detectors] { color: inherit !important; text-decoration: none !important; font-size: inherit !important; font-family: inherit !important; font-weight: inherit !important; line-height: inherit !important; } @-ms-viewport { width: device-width; } </style><style data-ac-keep="true">
+@media only screen and (max-width: 600px) { /*-------------------------------------------------------------------------*\ Abandoned Cart widget \*------------------------------------------------------------------------*/ .td_abandoned-cart img {display: block;padding-right: 0 !important;padding-bottom: 0 !important;width: 100% !important;max-width: 100% !important;height: auto !important;} body { padding: 0!important; font-size:1em!important; } * { -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; } *[class].divbody {-webkit-text-size-adjust:none !important; width:auto !important;} *[class].td_picture img {width:auto !important;} *[class].td_text { line-height: 110%; } *[class].td_button { width: auto; } /* Collapse all block elements */ :not(.body) table { display: block!important; float:none!important; border-collapse:collapse !important; width:100% !important; min-width:100% !important; clear:both!important; } :not(.body) thead,
+:not(.body) tbody, :not(.body) tr { display:block!important; float:none!important; width:100% !important; } :not(.body) th, :not(.body) td, :not(.body) p { display:block!important; float:none!important; width:100% !important; clear:both!important; } /* Remove browser default styling for elements */ ul, ol { margin-left: 20px; margin-bottom: 10px; margin-top: 10px; -webkit-margin-before: 0; -webkit-margin-after: 0; -webkit-padding-start: 0; } /* Set default height for spacer once collapse */ *[class].spacer { height: auto!important; } a[href^=date]{ color:inherit !important; text-decoration:none !important;} a[href^=telephone]{ color:inherit !important; text-decoration:none !important;} a[href^=address]{ color:inherit !important; text-decoration:none !important;} a[href^=email]{ color:inherit !important; text-decoration:none !important;} /* Default table cell height */ td[height="14"]{height:14px!important;font-size:14px!important;line-height:14px!important;}
+td[height="12"]{height:12px!important;font-size:12px!important;line-height:12px!important;} /*-------------------------------------------------------------------------*\ Product Widget \*-------------------------------------------------------------------------*/ .td_product > div { float: none !important; width: 100% !important; margin-bottom: 20px !important; } .td_product > div img { width: 75% !important; } /* Default social icons */ *[class].ac-social-icon-16 {width:16px !important; height:16px !important;} *[class].ac-social-icon-24 {width:24px !important; height:24px !important;} *[class].ac-social-icon-28 {width:28px !important; height:28px !important;} *[class].__ac_social_icons { margin-right: 0px !important; } }
+</style><style data-ac-keep="true"> @media only screen and (max-width: 320px) { #layout-row6970 img { width: 100% !important; height: auto !important; max-width: 320px !important; } #layout-row6972 img { width: 100% !important; height: auto !important; max-width: 320px !important; } #layout-row6973 .break-line { width: 25% !important; float: left !important; } #layout-row6975 .break-line { width: 25% !important; float: left !important; } #layout-row6978 img { width: 100% !important; height: auto !important; max-width: 320px !important; } #layout-row6979 img { width: 100% !important; height: auto !important; max-width: 320px !important; } #layout-row6987 .break-line { width: 25% !important; float: left !important; } #layout-row6991 img { width: 100% !important; height: auto !important; max-width: 320px !important; } #layout-row6995 .break-line { width: 25% !important; float: left !important; } #layout-row6996 img { width: 100% !important; height: auto !important;
+max-width: 320px !important; } table, tbody, td, .divbody { display: table !important; width: 100% !important; max-width: 100% !important; } .td_rss .rss-item img.iphone_large_image { width: auto !important; } u + .body { display: table !important; width: 100vw !important; min-width: 100vw !important; } u + .body table { display: table !important; width: 100% !important; min-width: 100% !important; } u + .body td { display: block !important; width: 100% !important; min-width: 100% !important; } u + .body img { display: inline-block !important; margin: auto !important; width: auto !important; vertical-align: bottom !important; } u + .body center { display: block !important; margin: auto !important; width: 100% !important; min-width: 100% !important; text-align: center !important; } u + .body table._ac_social_table, u + .body table._ac_social_table td, u + .body table._ac_social_table div, u + .body table._ac_social_table a { display: inline-block !important; margin:
+auto !important; width: auto !important; min-width: auto !important; text-align: center !important; } u + .body table._ac_social_table img { display: inline-block !important; margin: auto !important; width: 32px !important; min-width: 32px !important; max-width: 32px !important; }
+}
+@media only screen and (max-width: 375px) { #layout-row6970 img { width: 100% !important; height: auto !important; max-width: 375px !important; } #layout-row6972 img { width: 100% !important; height: auto !important; max-width: 375px !important; } #layout-row6973 .break-line { width: 25% !important; float: left !important; } #layout-row6975 .break-line { width: 25% !important; float: left !important; } #layout-row6978 img { width: 100% !important; height: auto !important; max-width: 375px !important; } #layout-row6979 img { width: 100% !important; height: auto !important; max-width: 375px !important; } #layout-row6987 .break-line { width: 25% !important; float: left !important; } #layout-row6991 img { width: 100% !important; height: auto !important; max-width: 375px !important; } #layout-row6995 .break-line { width: 25% !important; float: left !important; } #layout-row6996 img { width: 100% !important; height: auto !important; max-width: 375px !important; } table,
+tbody, td, .divbody { display: table !important; width: 100% !important; max-width: 100% !important; } .td_rss .rss-item img.iphone_large_image { width: auto !important; } u + .body { display: table !important; width: 100vw !important; min-width: 100vw !important; } u + .body table { display: table !important; width: 100% !important; min-width: 100% !important; } u + .body td { display: block !important; width: 100% !important; min-width: 100% !important; } u + .body img { display: inline-block !important; margin: auto !important; width: auto !important; vertical-align: bottom !important; } u + .body center { display: block !important; margin: auto !important; width: 100% !important; min-width: 100% !important; text-align: center !important; } u + .body table._ac_social_table, u + .body table._ac_social_table td, u + .body table._ac_social_table div, u + .body table._ac_social_table a { display: inline-block !important; margin: auto !important; width: auto
+!important; min-width: auto !important; text-align: center !important; } u + .body table._ac_social_table img { display: inline-block !important; margin: auto !important; width: 32px !important; min-width: 32px !important; max-width: 32px !important; }
+}
+@media only screen and (max-width: 414px) { #layout-row6970 img { width: 100% !important; height: auto !important; max-width: 414px !important; } #layout-row6972 img { width: 100% !important; height: auto !important; max-width: 414px !important; } #layout-row6973 .break-line { width: 25% !important; float: left !important; } #layout-row6975 .break-line { width: 25% !important; float: left !important; } #layout-row6978 img { width: 100% !important; height: auto !important; max-width: 414px !important; } #layout-row6979 img { width: 100% !important; height: auto !important; max-width: 414px !important; } #layout-row6987 .break-line { width: 25% !important; float: left !important; } #layout-row6991 img { width: 100% !important; height: auto !important; max-width: 414px !important; } #layout-row6995 .break-line { width: 25% !important; float: left !important; } #layout-row6996 img { width: 100% !important; height: auto !important; max-width: 414px !important; } table,
+tbody, td, .divbody { display: table !important; width: 100% !important; max-width: 100% !important; } .td_rss .rss-item img.iphone_large_image { width: auto !important; } u + .body { display: table !important; width: 100vw !important; min-width: 100vw !important; } u + .body table { display: table !important; width: 100% !important; min-width: 100% !important; } u + .body td { display: block !important; width: 100% !important; min-width: 100% !important; } u + .body img { display: inline-block !important; margin: auto !important; width: auto !important; vertical-align: bottom !important; } u + .body center { display: block !important; margin: auto !important; width: 100% !important; min-width: 100% !important; text-align: center !important; } u + .body table._ac_social_table, u + .body table._ac_social_table td, u + .body table._ac_social_table div, u + .body table._ac_social_table a { display: inline-block !important; margin: auto !important; width: auto
+!important; min-width: auto !important; text-align: center !important; } u + .body table._ac_social_table img { display: inline-block !important; margin: auto !important; width: 32px !important; min-width: 32px !important; max-width: 32px !important; }
+}
+@media only screen and (max-width: 667px) { #layout-row6970 img { width: 100% !important; height: auto !important; max-width: 650px !important; } #layout-row6972 img { width: 100% !important; height: auto !important; max-width: 667px !important; } #layout-row6973 .break-line { width: 25% !important; float: left !important; } #layout-row6975 .break-line { width: 25% !important; float: left !important; } #layout-row6978 img { width: 100% !important; height: auto !important; max-width: 650px !important; } #layout-row6979 img { width: 100% !important; height: auto !important; max-width: 667px !important; } #layout-row6987 .break-line { width: 25% !important; float: left !important; } #layout-row6991 img { width: 100% !important; height: auto !important; max-width: 650px !important; } #layout-row6995 .break-line { width: 25% !important; float: left !important; } #layout-row6996 img { width: 100% !important; height: auto !important; max-width: 650px !important; } table,
+tbody, td, .divbody { display: table !important; width: 100% !important; max-width: 100% !important; } .td_rss .rss-item img.iphone_large_image { width: auto !important; } u + .body { display: table !important; width: 100vw !important; min-width: 100vw !important; } u + .body table { display: table !important; width: 100% !important; min-width: 100% !important; } u + .body td { display: block !important; width: 100% !important; min-width: 100% !important; } u + .body img { display: inline-block !important; margin: auto !important; width: auto !important; vertical-align: bottom !important; } u + .body center { display: block !important; margin: auto !important; width: 100% !important; min-width: 100% !important; text-align: center !important; } u + .body table._ac_social_table, u + .body table._ac_social_table td, u + .body table._ac_social_table div, u + .body table._ac_social_table a { display: inline-block !important; margin: auto !important; width: auto
+!important; min-width: auto !important; text-align: center !important; } u + .body table._ac_social_table img { display: inline-block !important; margin: auto !important; width: 32px !important; min-width: 32px !important; max-width: 32px !important; }
+} </style><!--[if !mso]><!-- webfonts --><link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap" rel="stylesheet"><!--<![endif]--><!--[if lt mso 12]> <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap" rel="stylesheet"><![endif]--><!--[if gte mso 9]>
+<xml> <o:OfficeDocumentSettings> <o:AllowPNG/> <o:PixelsPerInch>96</o:PixelsPerInch> </o:OfficeDocumentSettings>
+</xml>
+<![endif]--><div id="ac-designer" class="body" style="font-family: Arial; line-height: 1.1; margin: 0px; background-color: #e0e0e0; width: 100%; text-align: center;">		<div style="display: none !important; padding: 0; height: 1px; font-size: 1px; background-color: inherit !important; opacity: 0; color: transparent; mso-line-height-rule: exactly; line-height:1px; mso-hide:all;">
+			Software Engineering best practices for ML and Search system designs
+			<div style="display: none; max-height: 0px; overflow: hidden;">
+				&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌
+			</div>
+
+		</div>
+<img src="https://autodb.lt.acemlna.com/Prod/link-tracker?notrack=1&nl=5&c=150&m=173&s=bad97c655476f96a390a72c05a742011&l=open&account=autodb.activehosted.com&a=650082935" border="0" width="1" height="1" style="display:block;width:1px!important;min-width:1px!important;max-width:1px!important;height:1px!important;border:0;overflow:hidden;" /><div class="divbody" style="margin: 0px; outline: none; padding: 0px; color: #000000; font-family: arial; line-height: 1.1; width: 100%; background-color: #e0e0e0; background: #e0e0e0; text-align: center;"><table class="template-table" border="0" cellpadding="0" cellspacing="0" width="100%" align="left" style="-ms-text-size-adjust: auto; -webkit-text-size-adjust: 100%; border-collapse: collapse; font-size: 14px; min-width: auto; mso-table-lspace: 0pt; mso-table-rspace: 0pt; background-color: #e0e0e0; background: #e0e0e0;"><tr style="mso-line-height-rule: exactly;"><td align="center" valign="top" width="100%"
+style="mso-line-height-rule: exactly;"><table class="template-table" border="0" cellpadding="0" cellspacing="0" width="650" bgcolor="#e0e0e0" style="-ms-text-size-adjust: auto; -webkit-text-size-adjust: 100%; border-collapse: collapse; font-size: 14px; min-width: auto; mso-table-lspace: 0pt; mso-table-rspace: 0pt; max-width: 650px;"><tr style="mso-line-height-rule: exactly;"><td id="layout_table_c1c7a01fbcd4c0fd7087354e78555228cd6697bc" valign="top" align="center" width="650" style="mso-line-height-rule: exactly; background-color: #ffffff;"><table cellpadding="0" cellspacing="0" border="0" class="layout layout-table root-table" width="650" style="-ms-text-size-adjust: auto; -webkit-text-size-adjust: 100%; border-collapse: collapse; font-size: 14px; min-width: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; background-color: #ffffff;"><tr style="mso-line-height-rule: exactly; background-color: #ffffff;"><td id="layout-row-margin6967" valign="top"
+style="mso-line-height-rule: exactly; padding: 0; background-color: #ffffff;"><table width="100%" border="0" cellpadding="0" cellspacing="0" style="-ms-text-size-adjust: auto; -webkit-text-size-adjust: 100%; border-collapse: initial !important; font-size: 14px; min-width: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt;"><tr id="layout-row6967" class="layout layout-row widget _widget_text style6967" style="mso-line-height-rule: exactly; margin: 0; padding: 0;"><td id="layout-row-padding6967" valign="top" style="mso-line-height-rule: exactly; padding: 30px;"><table width="100%" border="0" cellpadding="0" cellspacing="0" style="-ms-text-size-adjust: auto; -webkit-text-size-adjust: 100%; border-collapse: collapse; font-size: 14px; min-width: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt;"><tr style="mso-line-height-rule: exactly;"><td id="text_div6684" class="td_text td_block" valign="top" align="left" width="590" style="line-height: 130%; mso-line-height-rule:
+exactly; margin: 0; outline: none; padding: 0; color: inherit; font-size: 12px; font-weight: inherit; line-height: 1.3; text-decoration: inherit; font-family: arial;"> <div style="line-height: 130%; margin: 0; outline: none; padding: 0; color: inherit; font-size: inherit; font-weight: inherit; line-height: 1.3; text-decoration: inherit; text-align: center; mso-line-height-rule: exactly;" data-line-height="1.3"><a href="https://autodb.activehosted.com/p_v.php?l=5&c=150&m=173&s=bad97c655476f96a390a72c05a742011&utm_source=ActiveCampaign&utm_medium=email&utm_content=System%20Design%20Deep%20Dive&utm_campaign=MLOps%20-%20Newsletter%20-%202021%20-%2009%20-%2018" style="margin: 0; outline: none; padding: 0; color: #999999; text-decoration: underline;" class="" target="_blank"><span style="color: #999999; font-size: inherit; font-weight: inherit; line-height: inherit; text-decoration: inherit;">View a web copy of this email</span></a><br></div>
+<!--[if (gte mso 12)&(lte mso 15) ]>
+<style data-ac-keep="true" data-ac-inline="false"> #text_div6684, #text_div6684 div { line-height: 130% !important; };
+</style>
+<![endif]--></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr style="mso-line-height-rule: exactly; background-color: #ffffff;"><td id="layout-row-margin6972" valign="top" style="mso-line-height-rule: exactly; padding: 50px 0 50px 0; background-color: #ffffff;"><table width="100%" border="0" cellpadding="0" cellspacing="0" style="-ms-text-size-adjust: auto; -webkit-text-size-adjust: 100%; border-collapse: initial !important; font-size: 14px; min-width: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt;"><tr id="layout-row6972" class="layout layout-row widget _widget_picture style6972" align="center" style="mso-line-height-rule: exactly;"><td id="layout-row-padding6972" valign="top" style="mso-line-height-rule: exactly; padding: 0;"><table width="100%" border="0" cellpadding="0" cellspacing="0" style="-ms-text-size-adjust: auto; -webkit-text-size-adjust: 100%; border-collapse: collapse; font-size: 14px; min-width: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt;"><tr style="mso-line-height-rule: exactly;"><td
+class="image-td" align="center" valign="top" width="650" style="mso-line-height-rule: exactly;"><img src="../autodb.imgus11.com/public/cc08e16b980bf4dc41e89ccbbc533927.png_r=1623746685" alt="" width="155" style="display: block; border: none; outline: none; width: 155px; opacity: 1; max-width: 100%;"></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr style="mso-line-height-rule: exactly; background-color: #ffffff;"><td id="layout-row-margin6966" valign="top" style="mso-line-height-rule: exactly; padding: 0; background-color: #ffffff;"><table width="100%" border="0" cellpadding="0" cellspacing="0" style="-ms-text-size-adjust: auto; -webkit-text-size-adjust: 100%; border-collapse: initial !important; font-size: 14px; min-width: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt;"><tr id="layout-row6966" class="layout layout-row widget _widget_text style6966" style="mso-line-height-rule: exactly; margin: 0; padding: 0;"><td id="layout-row-padding6966" valign="top" style="mso-line-height-rule: exactly; padding: 0px 50px 0px 50px;"><table width="100%" border="0" cellpadding="0" cellspacing="0" style="-ms-text-size-adjust: auto; -webkit-text-size-adjust: 100%; border-collapse: collapse; font-size: 14px; min-width: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt;"><tr style="mso-line-height-rule: exactly;"><td
+id="text_div6683" class="td_text td_block" valign="top" align="left" width="550" style="line-height: 150%; mso-line-height-rule: exactly; margin: 0; outline: none; padding: 0; color: inherit; font-size: 12px; font-weight: inherit; line-height: 1.5; text-decoration: inherit; font-family: arial;"> <div style="line-height: 150%; margin: 0; outline: none; padding: 0; color: #22224a; font-size: inherit; font-weight: inherit; line-height: 1.5; text-decoration: inherit; mso-line-height-rule: exactly;" data-line-height="1.5"> <div style="margin: 0; outline: none; padding: 0; color: #22224a; font-size: inherit; font-weight: inherit; line-height: inherit; text-decoration: inherit;"> <div style="margin: 0; outline: none; padding: 0; color: #22224a; font-size: inherit; font-weight: inherit; line-height: inherit; text-decoration: inherit;"> <div style="margin: 0; outline: none; padding: 0; color: #22224a; font-size: inherit; font-weight: inherit; line-height: inherit;
+text-decoration: inherit;"> <p style="margin: 0; outline: none; padding: 0; color: #22224a; font-size: inherit; font-weight: inherit; line-height: inherit; text-decoration: inherit; text-align: left;"><span style="color: inherit; font-size: 18px; font-weight: inherit; line-height: inherit; text-decoration: inherit;" class="">Almost one year later and it's still the <a href="https://twitter.com/mlopscommunity/status/1435879403590807552?utm_source=ActiveCampaign&utm_medium=email&utm_content=System%20Design%20Deep%20Dive&utm_campaign=MLOps%20-%20Newsletter%20-%202021%20-%2009%20-%2018" data-ac-default-color="1" target="_blank" style="margin: 0; outline: none; padding: 0; color: #3e86cb; text-decoration: underline;"><span style="color: ; font-size: inherit;
+font-weight: inherit; line-height: inherit; text-decoration: inherit;">best intro ever</span></a>. <br></span></p>
+<p style="margin: 0; outline: none; padding: 0; color: inherit; font-size: 18px; font-weight: inherit; line-height: inherit; text-decoration: inherit;"></p>
+ </div>
+ </div>
+ </div>
+ </div>
+<!--[if (gte mso 12)&(lte mso 15) ]>
+<style data-ac-keep="true" data-ac-inline="false"> #text_div6683, #text_div6683 div { line-height: 150% !important; };
+</style>
+<![endif]--></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr style="mso-line-height-rule: exactly; background-color: #ffffff;"><td id="layout-row-margin6980" valign="top" style="mso-line-height-rule: exactly; padding: 0; background-color: #ffffff;"><table width="100%" border="0" cellpadding="0" cellspacing="0" style="-ms-text-size-adjust: auto; -webkit-text-size-adjust: 100%; border-collapse: initial !important; font-size: 14px; min-width: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt;"><tr id="layout-row6980" class="layout layout-row widget _widget_text style6980" style="mso-line-height-rule: exactly; margin: 0; padding: 0;"><td id="layout-row-padding6980" valign="top" style="mso-line-height-rule: exactly; padding: 29px 50px 0px 50px;"><table width="100%" border="0" cellpadding="0" cellspacing="0" style="-ms-text-size-adjust: auto; -webkit-text-size-adjust: 100%; border-collapse: collapse; font-size: 14px; min-width: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt;"><tr style="mso-line-height-rule: exactly;"><td
+id="text_div6696" class="td_text td_block" valign="top" align="left" width="550" style="line-height: 150%; mso-line-height-rule: exactly; margin: 0; outline: none; padding: 0; color: inherit; font-size: 12px; font-weight: inherit; line-height: 1.5; text-decoration: inherit; font-family: arial;"> <div style="line-height: 150%; margin: 0; outline: none; padding: 0; color: #555555; font-size: 15px; font-weight: inherit; line-height: 1.5; text-decoration: inherit; mso-line-height-rule: exactly;" data-line-height="1.5"> <div style="margin: 0; outline: none; padding: 0; color: #555555; font-size: inherit; font-weight: inherit; line-height: inherit; text-decoration: inherit;"><span style='color: inherit; font-size: inherit; font-weight: 700; line-height: inherit; text-decoration: inherit; font-family: Roboto, "San Francisco", Helvetica, Arial, sans-serif;' class="">Past Meetup</span></div>
+ </div>
+<!--[if (gte mso 12)&(lte mso 15) ]>
+<style data-ac-keep="true" data-ac-inline="false"> #text_div6696, #text_div6696 div { line-height: 150% !important; };
+</style>
+<![endif]--></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr style="mso-line-height-rule: exactly; background-color: #ffffff;"><td id="layout-row-margin6971" valign="top" style="mso-line-height-rule: exactly; padding: 0; background-color: #ffffff;"><table width="100%" border="0" cellpadding="0" cellspacing="0" style="-ms-text-size-adjust: auto; -webkit-text-size-adjust: 100%; border-collapse: initial !important; font-size: 14px; min-width: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt;"><tr id="layout-row6971" class="layout layout-row widget _widget_text style6971" style="mso-line-height-rule: exactly; margin: 0; padding: 0;"><td id="layout-row-padding6971" valign="top" style="mso-line-height-rule: exactly; padding: 10px 50px 10px 50px;"><table width="100%" border="0" cellpadding="0" cellspacing="0" style="-ms-text-size-adjust: auto; -webkit-text-size-adjust: 100%; border-collapse: collapse; font-size: 14px; min-width: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt;"><tr style="mso-line-height-rule: exactly;"><td
+id="text_div6687" class="td_text td_block" valign="top" align="left" width="550" style="line-height: 130%; mso-line-height-rule: exactly; margin: 0; outline: none; padding: 0; color: inherit; font-size: 12px; font-weight: inherit; line-height: 1.3; text-decoration: inherit; font-family: arial;"> <div style="line-height: 130%; margin: 0; outline: none; padding: 0; color: inherit; font-size: inherit; font-weight: inherit; line-height: 1.3; text-decoration: inherit; mso-line-height-rule: exactly;" class="" data-line-height="1.3"> <div style="margin: 0; outline: none; padding: 0; color: inherit; font-size: inherit; font-weight: inherit; line-height: inherit; text-decoration: inherit; text-align: left;" class=""><sub class="" style='margin: 0; outline: none; padding: 0; color: #c92c7f; font-family: Roboto, "San Francisco", Helvetica, Arial, sans-serif; font-size: 27px; font-weight: 700;'>Recomendations & Search</sub></div>
+ </div>
+<!--[if (gte mso 12)&(lte mso 15) ]>
+<style data-ac-keep="true" data-ac-inline="false"> #text_div6687, #text_div6687 div { line-height: 130% !important; };
+</style>
+<![endif]--></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr style="mso-line-height-rule: exactly; background-color: #ffffff;"><td id="layout-row-margin6973" valign="top" style="mso-line-height-rule: exactly; padding: 0; background-color: #ffffff;"><table width="100%" border="0" cellpadding="0" cellspacing="0" style="-ms-text-size-adjust: auto; -webkit-text-size-adjust: 100%; border-collapse: initial !important; font-size: 14px; min-width: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt;"><tr id="layout-row6973" class="layout layout-row widget _widget_break style6973" style="mso-line-height-rule: exactly;"><td id="layout-row-padding6973" valign="top" style="mso-line-height-rule: exactly; line-height: 0; padding: 0 50px 10px 50px;"><table width="100%" border="0" cellpadding="0" cellspacing="0" style="-ms-text-size-adjust: auto; -webkit-text-size-adjust: 100%; border-collapse: collapse; font-size: 14px; min-width: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; line-height: 0; mso-line-height-rule: exactly;"><tr
+style="mso-line-height-rule: exactly;"><td height="5" style="mso-line-height-rule: exactly; line-height: 0;"></td>
+</tr>
+<tr style="mso-line-height-rule: exactly;"><td align="left" height="1" width="550" style="mso-line-height-rule: exactly; line-height: 0;"> <table align="left" border="0" cellpadding="0" cellspacing="0" height="1" width="138" style="-ms-text-size-adjust: auto; -webkit-text-size-adjust: 100%; border-collapse: collapse; font-size: 14px; min-width: auto!important; mso-table-lspace: 0pt; mso-table-rspace: 0pt; line-height: 0; mso-line-height-rule: exactly; width: 25%; max-width: 25%;"><tr style="mso-line-height-rule: exactly;"><td class="break-line" bgcolor="#c92c7f" height="1" width="138" style="mso-line-height-rule: exactly; line-height: 1px; height: 1px; width: 138px; background-color: #c92c7f;"> </td>
+ </tr>
+</table>
+</td>
+ </tr>
+<tr style="mso-line-height-rule: exactly;"><td height="5" style="mso-line-height-rule: exactly; line-height: 0;"></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr style="mso-line-height-rule: exactly; background-color: #ffffff;"><td id="layout-row-margin6979" valign="top" style="mso-line-height-rule: exactly; padding: 0; background-color: #ffffff;"><table width="100%" border="0" cellpadding="0" cellspacing="0" style="-ms-text-size-adjust: auto; -webkit-text-size-adjust: 100%; border-collapse: initial !important; font-size: 14px; min-width: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt;"><tr id="layout-row6979" class="layout layout-row widget _widget_picture style6979" align="left" style="mso-line-height-rule: exactly;"><td id="layout-row-padding6979" valign="top" style="mso-line-height-rule: exactly; padding: 0 0 0 0px;"><table width="100%" border="0" cellpadding="0" cellspacing="0" style="-ms-text-size-adjust: auto; -webkit-text-size-adjust: 100%; border-collapse: collapse; font-size: 14px; min-width: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt;"><tr style="mso-line-height-rule: exactly;"><td class="image-td"
+align="left" valign="top" width="650" style="mso-line-height-rule: exactly;"><a href="https://youtu.be/l6xfFYZAyns?utm_source=ActiveCampaign&utm_medium=email&utm_content=System%20Design%20Deep%20Dive&utm_campaign=MLOps%20-%20Newsletter%20-%202021%20-%2009%20-%2018" style="margin: 0; outline: none; padding: 0; color: #3e86cb; display: block; min-width: 100%;" target="_blank"><img src="../content.app-us1.com/8j3Jq/2021/09/18/d49ba10d-429e-4294-8b25-506109a07b83.png_id=6565859_r=1359578949" alt="" width="650" style="border: none; display: block; outline: none; width: 650px; opacity: 1; max-width: 100%;" target="_blank"></a></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr style="mso-line-height-rule: exactly; background-color: #ffffff;"><td id="layout-row-margin6974" valign="top" style="mso-line-height-rule: exactly; padding: 0px; background-color: #ffffff;"><table width="100%" border="0" cellpadding="0" cellspacing="0" style="-ms-text-size-adjust: auto; -webkit-text-size-adjust: 100%; border-collapse: initial !important; font-size: 14px; min-width: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt;"><tr id="layout-row6974" class="layout layout-row widget _widget_text style6974" style="mso-line-height-rule: exactly; margin: 0; padding: 0;"><td id="layout-row-padding6974" valign="top" style="mso-line-height-rule: exactly; padding: 15px 50px 0px 50px;"><table width="100%" border="0" cellpadding="0" cellspacing="0" style="-ms-text-size-adjust: auto; -webkit-text-size-adjust: 100%; border-collapse: collapse; font-size: 14px; min-width: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt;"><tr style="mso-line-height-rule:
+exactly;"><td id="text_div6690" class="td_text td_block" valign="top" align="left" width="550" style="line-height: 150%; mso-line-height-rule: exactly; margin: 0; outline: none; padding: 0; color: inherit; font-size: 12px; font-weight: inherit; line-height: 1.5; text-decoration: inherit; font-family: arial;"> <div style="line-height: 150%; margin: 0; outline: none; padding: 0; color: inherit; font-size: inherit; font-weight: inherit; line-height: 1.5; text-decoration: inherit; mso-line-height-rule: exactly;" class="" data-line-height="1.5"> <div class="" style="margin: 0; outline: none; padding: 0; color: inherit; font-size: inherit; font-weight: inherit; line-height: inherit; text-decoration: inherit;"> <div style="margin: 0; outline: none; padding: 0; color: inherit; font-size: inherit; font-weight: inherit; line-height: inherit; text-decoration: inherit;" class=""> <div class="" style="margin: 0; outline: none; padding: 0; color: inherit; font-size: inherit;
+font-weight: inherit; line-height: inherit; text-decoration: inherit;"><span style='color: #22224a; font-size: 16px; font-weight: inherit; line-height: inherit; text-decoration: inherit; font-family: Roboto, "San Francisco", Helvetica, Arial, sans-serif;' class="">Absolute pleasure and honor to learn from Mr. Eugene Yan last week about the system designs of many different companies. <br><br>In the madly efficient way that only Eugene can do, he abstracted away common principles from all the papers. What he presented to us was an x-y plot as seen in the picture above. He then placed a few core pieces on the graph to help us "land".<br><br>After breaking down his understanding Eugene then walked through various system designs from some of the top companies. He then brought the diagrams back to his original description, back to home base.<br><br>I am so thankful to have people like Eugene around who can see these patterns and articulate them to the rest of us in a
+digestible way. If you have not checked out the video jump on it.<br><br>Side note - I am currently in Portugal and brought my nice sound equipment with me only to realize after the meetup I had my zoom audio input set to my earpods... luckily for you I did minimal talking this session. Still, sorry in advance.</span></div>
+</div>
+</div>
+ </div>
+<!--[if (gte mso 12)&(lte mso 15) ]>
+<style data-ac-keep="true" data-ac-inline="false"> #text_div6690, #text_div6690 div { line-height: 150% !important; };
+</style>
+<![endif]--></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr style="mso-line-height-rule: exactly; background-color: #ffffff;"><td id="layout-row-margin6989" valign="top" style="mso-line-height-rule: exactly; padding: 0; background-color: #ffffff;"><table width="100%" border="0" cellpadding="0" cellspacing="0" style="-ms-text-size-adjust: auto; -webkit-text-size-adjust: 100%; border-collapse: initial !important; font-size: 14px; min-width: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt;"><tr id="layout-row6989" class="layout layout-row widget _widget_button style6989" style="mso-line-height-rule: exactly;"><td id="layout-row-padding6989" valign="top" style="mso-line-height-rule: exactly; padding: 20px 50px 20px 50px;"><table width="100%" border="0" cellpadding="0" cellspacing="0" style="-ms-text-size-adjust: auto; -webkit-text-size-adjust: 100%; border-collapse: collapse; font-size: 14px; min-width: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt;"><tr style="mso-line-height-rule: exactly;"><td class="td_button
+td_block customizable" valign="top" align="left" width="550" style="mso-line-height-rule: exactly;"> <div class="button-wrapper" style="margin: 0; outline: none; padding: 0; text-align: left;">
+<!--[if mso]> <v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" href="https://autodb.lt.acemlna.com/Prod/link-tracker?notrack=1&redirectUrl=aHR0cHMlM0ElMkYlMkZ3d3cueW91dHViZS5jb20lMkZ3YXRjaCUzRnYlM0RsaDlDTlJEcUtCayUyNnV0bV9zb3VyY2UlM0RBY3RpdmVDYW1wYWlnbiUyNnV0bV9tZWRpdW0lM0RlbWFpbCUyNnV0bV9jb250ZW50JTNEU3lzdGVtJTI1MjBEZXNpZ24lMjUyMERlZXAlMjUyMERpdmUlMjZ1dG1fY2FtcGFpZ24lM0RNTE9wcyUyNTIwLSUyNTIwTmV3c2xldHRlciUyNTIwLSUyNTIwMjAyMSUyNTIwLSUyNTIwMDklMjUyMC0lMjUyMDE4&sig=HtuKCBH4P4FNNmFBE8bkiAQbNhHok5m3fk24vUdhW8PZ&iat=1713904314&a=%7C%7C650082935%7C%7C&account=autodb%2Eactivehosted%2Ecom&email=G38ybDoRGPvuA%2Bgb1kt2WMhU6wpzhkpXnBAyoWpZ%2BpvUyZYquw%3D%3D%3AULgpdb3lScwQysNb6RnoNkMbzs6zWwMU&s=bad97c655476f96a390a72c05a742011&i=150A173A5A5666" style="v-text-anchor:middle; width:121px; height:64px; " arcsize="6%" strokecolor="#3e86cb" strokeweight="1pt" fillcolor="#3e86cb" o:button="true" o:allowincell="true" o:allowoverlap="false" > <v:textbox inset="2px,2px,2px,2px"> <center style="color:#fff7f7;font-family:Roboto, San Francisco, Helvetica, Arial, sans-serif; font-size:14px; line-height: 1.1;">Watch Now</center> </v:textbox> </v:roundrect>
+<![endif]--> <a href="https://www.youtube.com/watch?v=lh9CNRDqKBk&utm_source=ActiveCampaign&utm_medium=email&utm_content=System%20Design%20Deep%20Dive&utm_campaign=MLOps%20-%20Newsletter%20-%202021%20-%2009%20-%2018" style="margin: 0; outline: none; padding: 15px; color: #fff7f7; background: #3e86cb; background-color: #3e86cb; border-radius: 3px; font-family: Roboto, San Francisco, Helvetica, Arial, sans-serif; font-size: 14px; display: inline-block; line-height: 1.1; text-align: center; text-decoration: none; mso-hide: all;" target="_blank"> <span style="color:#fff7f7;font-family:Roboto, San Francisco, Helvetica, Arial, sans-serif;font-size:14px;" target="_blank"> Watch Now </span> </a> </div>
+
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr style="mso-line-height-rule: exactly; background-color: #ffffff;"><td id="layout-row-margin6981" valign="top" style="mso-line-height-rule: exactly; padding: 0; background-color: #ffffff;"><table width="100%" border="0" cellpadding="0" cellspacing="0" style="-ms-text-size-adjust: auto; -webkit-text-size-adjust: 100%; border-collapse: initial !important; font-size: 14px; min-width: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt;"><tr id="layout-row6981" class="layout layout-row widget _widget_text style6981" style="mso-line-height-rule: exactly; margin: 0; padding: 0;"><td id="layout-row-padding6981" valign="top" style="mso-line-height-rule: exactly; padding: 29px 50px 0px 50px;"><table width="100%" border="0" cellpadding="0" cellspacing="0" style="-ms-text-size-adjust: auto; -webkit-text-size-adjust: 100%; border-collapse: collapse; font-size: 14px; min-width: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt;"><tr style="mso-line-height-rule: exactly;"><td
+id="text_div6697" class="td_text td_block" valign="top" align="left" width="550" style="line-height: 150%; mso-line-height-rule: exactly; margin: 0; outline: none; padding: 0; color: inherit; font-size: 12px; font-weight: inherit; line-height: 1.5; text-decoration: inherit; font-family: arial;"> <div style="line-height: 150%; margin: 0; outline: none; padding: 0; color: #555555; font-size: 15px; font-weight: inherit; line-height: 1.5; text-decoration: inherit; mso-line-height-rule: exactly;" data-line-height="1.5"> <div style="margin: 0; outline: none; padding: 0; color: #555555; font-size: inherit; font-weight: inherit; line-height: inherit; text-decoration: inherit;"><span style='color: inherit; font-size: inherit; font-weight: 700; line-height: inherit; text-decoration: inherit; font-family: Roboto, "San Francisco", Helvetica, Arial, sans-serif;' class="">Coffee Session</span></div>
+ </div>
+<!--[if (gte mso 12)&(lte mso 15) ]>
+<style data-ac-keep="true" data-ac-inline="false"> #text_div6697, #text_div6697 div { line-height: 150% !important; };
+</style>
+<![endif]--></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr style="mso-line-height-rule: exactly; background-color: #ffffff;"><td id="layout-row-margin6977" valign="top" style="mso-line-height-rule: exactly; padding: 0; background-color: #ffffff;"><table width="100%" border="0" cellpadding="0" cellspacing="0" style="-ms-text-size-adjust: auto; -webkit-text-size-adjust: 100%; border-collapse: initial !important; font-size: 14px; min-width: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt;"><tr id="layout-row6977" class="layout layout-row widget _widget_text style6977" style="mso-line-height-rule: exactly; margin: 0; padding: 0;"><td id="layout-row-padding6977" valign="top" style="mso-line-height-rule: exactly; padding: 10px 50px 10px 50px;"><table width="100%" border="0" cellpadding="0" cellspacing="0" style="-ms-text-size-adjust: auto; -webkit-text-size-adjust: 100%; border-collapse: collapse; font-size: 14px; min-width: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt;"><tr style="mso-line-height-rule: exactly;"><td
+id="text_div6693" class="td_text td_block" valign="top" align="left" width="550" style="mso-line-height-rule: exactly; margin: 0; outline: none; padding: 0; color: inherit; font-size: 12px; font-weight: inherit; line-height: 1; text-decoration: inherit; font-family: arial;"> <div style="margin: 0; outline: none; padding: 0; color: #c92c7f; font-size: 27px; font-weight: inherit; line-height: inherit; text-decoration: inherit;" class=""><span style="color: inherit; font-size: inherit; font-weight: 700; line-height: inherit; text-decoration: inherit;">Learning Journey</span></div>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr style="mso-line-height-rule: exactly; background-color: #ffffff;"><td id="layout-row-margin6975" valign="top" style="mso-line-height-rule: exactly; padding: 0; background-color: #ffffff;"><table width="100%" border="0" cellpadding="0" cellspacing="0" style="-ms-text-size-adjust: auto; -webkit-text-size-adjust: 100%; border-collapse: initial !important; font-size: 14px; min-width: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt;"><tr id="layout-row6975" class="layout layout-row widget _widget_break style6975" style="mso-line-height-rule: exactly;"><td id="layout-row-padding6975" valign="top" style="mso-line-height-rule: exactly; line-height: 0; padding: 0 50px 10px 50px;"><table width="100%" border="0" cellpadding="0" cellspacing="0" style="-ms-text-size-adjust: auto; -webkit-text-size-adjust: 100%; border-collapse: collapse; font-size: 14px; min-width: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; line-height: 0; mso-line-height-rule: exactly;"><tr
+style="mso-line-height-rule: exactly;"><td height="5" style="mso-line-height-rule: exactly; line-height: 0;"></td>
+</tr>
+<tr style="mso-line-height-rule: exactly;"><td align="left" height="1" width="550" style="mso-line-height-rule: exactly; line-height: 0;"> <table align="left" border="0" cellpadding="0" cellspacing="0" height="1" width="138" style="-ms-text-size-adjust: auto; -webkit-text-size-adjust: 100%; border-collapse: collapse; font-size: 14px; min-width: auto!important; mso-table-lspace: 0pt; mso-table-rspace: 0pt; line-height: 0; mso-line-height-rule: exactly; width: 25%; max-width: 25%;"><tr style="mso-line-height-rule: exactly;"><td class="break-line" bgcolor="#c92c7f" height="1" width="138" style="mso-line-height-rule: exactly; line-height: 1px; height: 1px; width: 138px; background-color: #c92c7f;"> </td>
+ </tr>
+</table>
+</td>
+ </tr>
+<tr style="mso-line-height-rule: exactly;"><td height="5" style="mso-line-height-rule: exactly; line-height: 0;"></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr style="mso-line-height-rule: exactly; background-color: #ffffff;"><td id="layout-row-margin6996" valign="top" style="mso-line-height-rule: exactly; padding: 0; background-color: #ffffff;"><table width="100%" border="0" cellpadding="0" cellspacing="0" style="-ms-text-size-adjust: auto; -webkit-text-size-adjust: 100%; border-collapse: initial !important; font-size: 14px; min-width: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt;"><tr id="layout-row6996" class="layout layout-row widget _widget_picture style6996" align="left" style="mso-line-height-rule: exactly;"><td id="layout-row-padding6996" valign="top" style="mso-line-height-rule: exactly; padding: 0 0 0 0px;"><table width="100%" border="0" cellpadding="0" cellspacing="0" style="-ms-text-size-adjust: auto; -webkit-text-size-adjust: 100%; border-collapse: collapse; font-size: 14px; min-width: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt;"><tr style="mso-line-height-rule: exactly;"><td class="image-td"
+align="left" valign="top" width="650" style="mso-line-height-rule: exactly;"><a href="https://www.youtube.com/watch?v=mesTMiFQcTU&utm_source=ActiveCampaign&utm_medium=email&utm_content=System%20Design%20Deep%20Dive&utm_campaign=MLOps%20-%20Newsletter%20-%202021%20-%2009%20-%2018" style="margin: 0; outline: none; padding: 0; color: #3e86cb; display: block; min-width: 100%;" target="_blank"><img src="../content.app-us1.com/8j3Jq/2021/09/21/18c4a393-e8d3-48b6-8ca5-95690d070ad2.jpeg_id=6625467_r=683119625" alt="" width="650" style="border: none; display: block; outline: none; width: 650px; opacity: 1; max-width: 100%;" target="_blank"></a></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr style="mso-line-height-rule: exactly; background-color: #ffffff;"><td id="layout-row-margin6988" valign="top" style="mso-line-height-rule: exactly; padding: 0px; background-color: #ffffff;"><table width="100%" border="0" cellpadding="0" cellspacing="0" style="-ms-text-size-adjust: auto; -webkit-text-size-adjust: 100%; border-collapse: initial !important; font-size: 14px; min-width: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt;"><tr id="layout-row6988" class="layout layout-row widget _widget_text style6988" style="mso-line-height-rule: exactly; margin: 0; padding: 0;"><td id="layout-row-padding6988" valign="top" style="mso-line-height-rule: exactly; padding: 15px 50px 0px 50px;"><table width="100%" border="0" cellpadding="0" cellspacing="0" style="-ms-text-size-adjust: auto; -webkit-text-size-adjust: 100%; border-collapse: collapse; font-size: 14px; min-width: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt;"><tr style="mso-line-height-rule:
+exactly;"><td id="text_div6704" class="td_text td_block" valign="top" align="left" width="550" style="line-height: 150%; mso-line-height-rule: exactly; margin: 0; outline: none; padding: 0; color: inherit; font-size: 12px; font-weight: inherit; line-height: 1.5; text-decoration: inherit; font-family: arial;"> <div style="line-height: 150%; margin: 0; outline: none; padding: 0; color: inherit; font-size: inherit; font-weight: inherit; line-height: 1.5; text-decoration: inherit; mso-line-height-rule: exactly;" class="" data-line-height="1.5"> <div class="" style="margin: 0; outline: none; padding: 0; color: inherit; font-size: inherit; font-weight: inherit; line-height: inherit; text-decoration: inherit;"><span style='color: #22224a; font-size: inherit; font-weight: inherit; line-height: inherit; text-decoration: inherit; font-family: Roboto, "San Francisco", Helvetica, Arial, sans-serif;' class=""><span style="color: inherit; font-size: 20px; font-weight: 700;
+line-height: inherit; text-decoration: inherit;" class="">How to become an MLOps Engineer<br></span><br class="" style='font-weight: 400; color: #000000; font-family: Roboto, "San Francisco", Helvetica, Arial, sans-serif; font-size: 16px; font-style: normal;'><span style="color: inherit; font-size: 16px; font-weight: inherit; line-height: inherit; text-decoration: inherit;" class="">This week, we had the pleasure of talking to Salwa Nur Mohammed, the CEO of FourthBrain, which is a dev-focused bootcamp that helps professionals learn about MLOps. We get a lot of requests about how to learn MLOps and this conversation focused exactly on that!<br><br>You can check out the FourthBrain <a
+href="https://www.fourthbrain.ai/mlops-and-systems?utm_source=ActiveCampaign&utm_medium=email&utm_content=System%20Design%20Deep%20Dive&utm_campaign=MLOps%20-%20Newsletter%20-%202021%20-%2009%20-%2018" data-ac-default-color="1" target="_blank" style="margin: 0; outline: none; padding: 0; color: #3e86cb; text-decoration: underline;"><span style="color: ; font-size: inherit; font-weight: inherit; line-height: inherit; text-decoration: inherit;">curriculum</span></a> here. In the conversation, we talked about how fast MLOps moves, which poses challenges both to learners and teachers. <br><br>Salwa shared her perspective on how FourthBrain and all learners can keep their education strategy fresh enough for the current zeitgeist. Furthermore, Salwa, Demetrios, and I
+talked about principles of effective learning that are important to keep in mind while embarking on any educational journey. <br><br>This was a great conversation with a lot of practical tips that I hope you all listen to!<br><br>Till next time,<br>Vishnu<br style="" class=""></span></span></div>
+ </div>
+<!--[if (gte mso 12)&(lte mso 15) ]>
+<style data-ac-keep="true" data-ac-inline="false"> #text_div6704, #text_div6704 div { line-height: 150% !important; };
+</style>
+<![endif]--></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr style="mso-line-height-rule: exactly; background-color: #ffffff;"><td id="layout-row-margin6976" valign="top" style="mso-line-height-rule: exactly; padding: 0; background-color: #ffffff;"><table width="100%" border="0" cellpadding="0" cellspacing="0" style="-ms-text-size-adjust: auto; -webkit-text-size-adjust: 100%; border-collapse: initial !important; font-size: 14px; min-width: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt;"><tr id="layout-row6976" class="layout layout-row widget _widget_button style6976" style="mso-line-height-rule: exactly;"><td id="layout-row-padding6976" valign="top" style="mso-line-height-rule: exactly; padding: 31px 50px 20px 50px;"><table width="100%" border="0" cellpadding="0" cellspacing="0" style="-ms-text-size-adjust: auto; -webkit-text-size-adjust: 100%; border-collapse: collapse; font-size: 14px; min-width: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt;"><tr style="mso-line-height-rule: exactly;"><td class="td_button
+td_block customizable" valign="top" align="left" width="550" style="mso-line-height-rule: exactly;"> <div class="button-wrapper" style="margin: 0; outline: none; padding: 0; text-align: left;">
+<!--[if mso]> <v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" href="https://autodb.lt.acemlna.com/Prod/link-tracker?notrack=1&redirectUrl=aHR0cHMlM0ElMkYlMkZ5b3V0dS5iZSUyRjBMbS0tQmV0Sm9JJTNGdXRtX3NvdXJjZSUzREFjdGl2ZUNhbXBhaWduJTI2dXRtX21lZGl1bSUzRGVtYWlsJTI2dXRtX2NvbnRlbnQlM0RTeXN0ZW0lMjUyMERlc2lnbiUyNTIwRGVlcCUyNTIwRGl2ZSUyNnV0bV9jYW1wYWlnbiUzRE1MT3BzJTI1MjAtJTI1MjBOZXdzbGV0dGVyJTI1MjAtJTI1MjAyMDIxJTI1MjAtJTI1MjAwOSUyNTIwLSUyNTIwMTg=&sig=28nPgWuBELZBHykUjqkSKdpQ4syv9DKb24KpLtmeckQQ&iat=1713904314&a=%7C%7C650082935%7C%7C&account=autodb%2Eactivehosted%2Ecom&email=G38ybDoRGPvuA%2Bgb1kt2WMhU6wpzhkpXnBAyoWpZ%2BpvUyZYquw%3D%3D%3AULgpdb3lScwQysNb6RnoNkMbzs6zWwMU&s=bad97c655476f96a390a72c05a742011&i=150A173A5A5681" style="v-text-anchor:middle; width:133px; height:64px; " arcsize="6%" strokecolor="#3e86cb" strokeweight="1pt" fillcolor="#3e86cb" o:button="true" o:allowincell="true" o:allowoverlap="false" > <v:textbox inset="2px,2px,2px,2px"> <center style="color:#fff7f7;font-family:Roboto, San Francisco, Helvetica, Arial, sans-serif; font-size:14px; line-height: 1.1;">MLOps Learn</center> </v:textbox> </v:roundrect>
+<![endif]--> <a href="https://youtu.be/0Lm--BetJoI?utm_source=ActiveCampaign&utm_medium=email&utm_content=System%20Design%20Deep%20Dive&utm_campaign=MLOps%20-%20Newsletter%20-%202021%20-%2009%20-%2018" style="margin: 0; outline: none; padding: 15px; color: #fff7f7; background: #3e86cb; background-color: #3e86cb; border-radius: 3px; font-family: Roboto, San Francisco, Helvetica, Arial, sans-serif; font-size: 14px; display: inline-block; line-height: 1.1; text-align: center; text-decoration: none; mso-hide: all;" target="_blank"> <span style="color:#fff7f7;font-family:Roboto, San Francisco, Helvetica, Arial, sans-serif;font-size:14px;" target="_blank"> MLOps Learn </span> </a> </div>
+
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr style="mso-line-height-rule: exactly; background-color: #ffffff;"><td id="layout-row-margin6993" valign="top" style="mso-line-height-rule: exactly; padding: 0; background-color: #ffffff;"><table width="100%" border="0" cellpadding="0" cellspacing="0" style="-ms-text-size-adjust: auto; -webkit-text-size-adjust: 100%; border-collapse: initial !important; font-size: 14px; min-width: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt;"><tr id="layout-row6993" class="layout layout-row widget _widget_text style6993" style="mso-line-height-rule: exactly; margin: 0; padding: 0;"><td id="layout-row-padding6993" valign="top" style="mso-line-height-rule: exactly; padding: 29px 50px 0px 50px;"><table width="100%" border="0" cellpadding="0" cellspacing="0" style="-ms-text-size-adjust: auto; -webkit-text-size-adjust: 100%; border-collapse: collapse; font-size: 14px; min-width: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt;"><tr style="mso-line-height-rule: exactly;"><td
+id="text_div6709" class="td_text td_block" valign="top" align="left" width="550" style="line-height: 150%; mso-line-height-rule: exactly; margin: 0; outline: none; padding: 0; color: inherit; font-size: 12px; font-weight: inherit; line-height: 1.5; text-decoration: inherit; font-family: arial;"> <div style="line-height: 150%; margin: 0; outline: none; padding: 0; color: #555555; font-size: 15px; font-weight: inherit; line-height: 1.5; text-decoration: inherit; mso-line-height-rule: exactly;" data-line-height="1.5"> <div style="margin: 0; outline: none; padding: 0; color: #555555; font-size: inherit; font-weight: inherit; line-height: inherit; text-decoration: inherit;"><span style='color: inherit; font-size: inherit; font-weight: 700; line-height: inherit; text-decoration: inherit; font-family: Roboto, "San Francisco", Helvetica, Arial, sans-serif;' class="">New Tool Tuesday</span></div>
+ </div>
+<!--[if (gte mso 12)&(lte mso 15) ]>
+<style data-ac-keep="true" data-ac-inline="false"> #text_div6709, #text_div6709 div { line-height: 150% !important; };
+</style>
+<![endif]--></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr style="mso-line-height-rule: exactly; background-color: #ffffff;"><td id="layout-row-margin6994" valign="top" style="mso-line-height-rule: exactly; padding: 0; background-color: #ffffff;"><table width="100%" border="0" cellpadding="0" cellspacing="0" style="-ms-text-size-adjust: auto; -webkit-text-size-adjust: 100%; border-collapse: initial !important; font-size: 14px; min-width: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt;"><tr id="layout-row6994" class="layout layout-row widget _widget_text style6994" style="mso-line-height-rule: exactly; margin: 0; padding: 0;"><td id="layout-row-padding6994" valign="top" style="mso-line-height-rule: exactly; padding: 10px 50px 10px 50px;"><table width="100%" border="0" cellpadding="0" cellspacing="0" style="-ms-text-size-adjust: auto; -webkit-text-size-adjust: 100%; border-collapse: collapse; font-size: 14px; min-width: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt;"><tr style="mso-line-height-rule: exactly;"><td
+id="text_div6710" class="td_text td_block" valign="top" align="left" width="550" style="mso-line-height-rule: exactly; margin: 0; outline: none; padding: 0; color: inherit; font-size: 12px; font-weight: inherit; line-height: 1; text-decoration: inherit; font-family: arial;"> <div style="margin: 0; outline: none; padding: 0; color: #c92c7f; font-size: 27px; font-weight: inherit; line-height: inherit; text-decoration: inherit;"><span style="color: inherit; font-size: inherit; font-weight: 700; line-height: inherit; text-decoration: inherit;" class="">Everybody Loves Ramon</span></div>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr style="mso-line-height-rule: exactly; background-color: #ffffff;"><td id="layout-row-margin6995" valign="top" style="mso-line-height-rule: exactly; padding: 0; background-color: #ffffff;"><table width="100%" border="0" cellpadding="0" cellspacing="0" style="-ms-text-size-adjust: auto; -webkit-text-size-adjust: 100%; border-collapse: initial !important; font-size: 14px; min-width: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt;"><tr id="layout-row6995" class="layout layout-row widget _widget_break style6995" style="mso-line-height-rule: exactly;"><td id="layout-row-padding6995" valign="top" style="mso-line-height-rule: exactly; line-height: 0; padding: 0 50px 10px 50px;"><table width="100%" border="0" cellpadding="0" cellspacing="0" style="-ms-text-size-adjust: auto; -webkit-text-size-adjust: 100%; border-collapse: collapse; font-size: 14px; min-width: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; line-height: 0; mso-line-height-rule: exactly;"><tr
+style="mso-line-height-rule: exactly;"><td height="5" style="mso-line-height-rule: exactly; line-height: 0;"></td>
+</tr>
+<tr style="mso-line-height-rule: exactly;"><td align="left" height="1" width="550" style="mso-line-height-rule: exactly; line-height: 0;"> <table align="left" border="0" cellpadding="0" cellspacing="0" height="1" width="138" style="-ms-text-size-adjust: auto; -webkit-text-size-adjust: 100%; border-collapse: collapse; font-size: 14px; min-width: auto!important; mso-table-lspace: 0pt; mso-table-rspace: 0pt; line-height: 0; mso-line-height-rule: exactly; width: 25%; max-width: 25%;"><tr style="mso-line-height-rule: exactly;"><td class="break-line" bgcolor="#c92c7f" height="1" width="138" style="mso-line-height-rule: exactly; line-height: 1px; height: 1px; width: 138px; background-color: #c92c7f;"> </td>
+ </tr>
+</table>
+</td>
+ </tr>
+<tr style="mso-line-height-rule: exactly;"><td height="5" style="mso-line-height-rule: exactly; line-height: 0;"></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr style="mso-line-height-rule: exactly; background-color: #ffffff;"><td id="layout-row-margin6978" valign="top" style="mso-line-height-rule: exactly; padding: 0; background-color: #ffffff;"><table width="100%" border="0" cellpadding="0" cellspacing="0" style="-ms-text-size-adjust: auto; -webkit-text-size-adjust: 100%; border-collapse: initial !important; font-size: 14px; min-width: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt;"><tr id="layout-row6978" class="layout layout-row widget _widget_picture style6978" align="left" style="mso-line-height-rule: exactly;"><td id="layout-row-padding6978" valign="top" style="mso-line-height-rule: exactly; padding: 0 0 0 0px;"><table width="100%" border="0" cellpadding="0" cellspacing="0" style="-ms-text-size-adjust: auto; -webkit-text-size-adjust: 100%; border-collapse: collapse; font-size: 14px; min-width: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt;"><tr style="mso-line-height-rule: exactly;"><td class="image-td"
+align="left" valign="top" width="650" style="mso-line-height-rule: exactly;"><a href="https://www.youtube.com/watch?v=mesTMiFQcTU&utm_source=ActiveCampaign&utm_medium=email&utm_content=System%20Design%20Deep%20Dive&utm_campaign=MLOps%20-%20Newsletter%20-%202021%20-%2009%20-%2018" style="margin: 0; outline: none; padding: 0; color: #3e86cb; display: block; min-width: 100%;" target="_blank"><img src="../content.app-us1.com/8j3Jq/2021/09/21/2c5f63e4-6124-4bc2-bf52-450afcd8370f.jpeg_id=6617332_r=1175253314" alt="" width="650" style="border: none; display: block; outline: none; width: 650px; opacity: 1; max-width: 100%;" target="_blank"></a></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr style="mso-line-height-rule: exactly; background-color: #ffffff;"><td id="layout-row-margin6997" valign="top" style="mso-line-height-rule: exactly; padding: 0px; background-color: #ffffff;"><table width="100%" border="0" cellpadding="0" cellspacing="0" style="-ms-text-size-adjust: auto; -webkit-text-size-adjust: 100%; border-collapse: initial !important; font-size: 14px; min-width: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt;"><tr id="layout-row6997" class="layout layout-row widget _widget_text style6997" style="mso-line-height-rule: exactly; margin: 0; padding: 0;"><td id="layout-row-padding6997" valign="top" style="mso-line-height-rule: exactly; padding: 15px 50px 0px 50px;"><table width="100%" border="0" cellpadding="0" cellspacing="0" style="-ms-text-size-adjust: auto; -webkit-text-size-adjust: 100%; border-collapse: collapse; font-size: 14px; min-width: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt;"><tr style="mso-line-height-rule:
+exactly;"><td id="text_div6713" class="td_text td_block" valign="top" align="left" width="550" style="line-height: 150%; mso-line-height-rule: exactly; margin: 0; outline: none; padding: 0; color: inherit; font-size: 12px; font-weight: inherit; line-height: 1.5; text-decoration: inherit; font-family: arial;"> <div style="line-height: 150%; margin: 0; outline: none; padding: 0; color: inherit; font-size: inherit; font-weight: inherit; line-height: 1.5; text-decoration: inherit; mso-line-height-rule: exactly;" class="" data-line-height="1.5"> <div class="" style="margin: 0; outline: none; padding: 0; color: inherit; font-size: inherit; font-weight: inherit; line-height: inherit; text-decoration: inherit;"><span style='color: #22224a; font-size: 16px; font-weight: inherit; line-height: inherit; text-decoration: inherit; font-family: Roboto, "San Francisco", Helvetica, Arial, sans-serif;' class=""><span style="color: inherit; font-size: 20px; font-weight: bold;
+line-height: inherit; text-decoration: inherit;" class="">Another Monitoring Tool?</span><br class=""><br class="">I caught up with Karel Vanhoorebeeck about the Monitoring tool their team just released. this space is getting really crowded which is an obvious signal to me that, its a hard problem to solve and there is much demand for it. <br class=""><br class="">So what was the inspiration for this open source project? Karel told me a lot can go wrong post-deployment with ML systems. This is mainly due to things going wrong or changing in the data generation process. For example,<br class="">the ML team may have overlooked something during model training or may have introduced a bug during integration and deployment. Someone or something may have changed the data generation process. <br class=""><br class="">Some examples of how he has seen this happen in the past:<br class=""><ul class="" style="margin: 0 0 0 40px; padding: 0;"><li class="" style="display:
+list-item; line-height: inherit; list-style-type: disc; margin: 0 0 0 3px;"><span style='color: #22224a; font-size: 16px; font-weight: inherit; line-height: inherit; text-decoration: inherit; font-family: Roboto, "San Francisco", Helvetica, Arial, sans-serif;' class="">Camera shift due to vibrations. Dust collecting on the lens.<br class=""></span></li><li class="" style="display: list-item; line-height: inherit; list-style-type: disc; margin: 0 0 0 3px;"><span style='color: #22224a; font-size: 16px; font-weight: inherit; line-height: inherit; text-decoration: inherit; font-family: Roboto, "San Francisco", Helvetica, Arial, sans-serif;' class="">Data drift due to onboarding new customers on the other side of the world. </span></li><li class="" style="display: list-item; line-height: inherit; list-style-type: disc; margin: 0 0 0 3px;"><span style='color: #22224a; font-size: 16px; font-weight: inherit; line-height: inherit; text-decoration: inherit; font-family:
+Roboto, "San Francisco", Helvetica, Arial, sans-serif;' class="">New android version with more privacy features leading to different data distributions.</span></li><li class="" style="display: list-item; line-height: inherit; list-style-type: disc; margin: 0 0 0 3px;"><span style='color: #22224a; font-size: 16px; font-weight: inherit; line-height: inherit; text-decoration: inherit; font-family: Roboto, "San Francisco", Helvetica, Arial, sans-serif;' class="">Some other dependency may have changed, leading to faulty data e.g. API change, outages, ...</span></li></ul><br class=""><span style="color: inherit; font-size: inherit; font-weight: bold; line-height: inherit; text-decoration: inherit;" class="">The Why</span><br class=""><br>"The reason we founded Raymon was because we were frustrated by the lack of tooling to handle ML systems post deployment. <br><br>"Most teams set up different DevOps tools like Elastic stack to collect logs and grafana to log metrics.
+Combined that with some custom in-house developed tooling for data inspection, visualization, and troubleshooting.<br><br>"What we consider really important is easy to understand distance metrics between distributions and tunability, on which you can build flexible alerting schemes.<br><br>"These tools are often set up as an afterthought or something to tick off the to-do list. Not much thought goes into how useful they actually are, how easy they are to work with and how exactly they will help an engineer with troubleshooting. <br><br>"Only when production issues start occurring people notice they lack this or that functionality and either ignore the tooling and write custom code to debug, or they gradually improve and patch up the tooling.<br><br>"We have a broader focus where teams can log all relevant data and metadata related to a model prediction, like pre and post processing information and visualisations. This is especially useful for explainability
+information and richer data types like computer vision or sensor data where an image tells more than a thousand words.<br class=""><br class="">"Stitching together and building your own troubleshooting and monitoring tooling takes a lot of time, requires a lot of conceptual scoping work, and unless you really get the time and budget to work on it, the usefulness and user friendliness will be... bad.<br class=""><br class="">"We’re building an observability hub that is basically a place to log all kinds of information that could be relevant for the ML team. This can be the raw data received for a prediction request for example, or it can be the data after a few preprocessing steps, it can be the model output, model confidence, processing times, data after post processing, and so on. All this information is relevant for a DS, so all this information should end up in one integrated platform."<br class=""><br class=""><span style="color: inherit; font-size: inherit;
+font-weight: bold; line-height: inherit; text-decoration: inherit;" class="">Where Does The Open Source Library Come In?<br class=""></span><br class="">"It's a toolbox to collect metrics about your data and model predictions into profiles (ModelProfiles we call them). These profiles can then be used to validate data in production, which generates all kinds of data health metrics that can be logged to the Raymon hub. Using these profiles, Raymon knows what all these metrics mean and can auto-configure monitoring. Next to that, the library also allows you to log all kinds of data to our hub.<br class=""><br class="">"The metrics that are collected in a profile can be anything really. The simplest case is probably if you would use them to track input feature distributions and health. We currently offer support for a (limited) set of metrics that we’ve found useful so far in structured data and computer vision. We are now working to support more metrics for more data
+domains. All suggestions and ideas are most welcome!"<br class=""></span></div>
+ </div>
+<!--[if (gte mso 12)&(lte mso 15) ]>
+<style data-ac-keep="true" data-ac-inline="false"> #text_div6713, #text_div6713 div { line-height: 150% !important; };
+</style>
+<![endif]--></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr style="mso-line-height-rule: exactly; background-color: #ffffff;"><td id="layout-row-margin6998" valign="top" style="mso-line-height-rule: exactly; padding: 0; background-color: #ffffff;"><table width="100%" border="0" cellpadding="0" cellspacing="0" style="-ms-text-size-adjust: auto; -webkit-text-size-adjust: 100%; border-collapse: initial !important; font-size: 14px; min-width: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt;"><tr id="layout-row6998" class="layout layout-row widget _widget_button style6998" style="mso-line-height-rule: exactly;"><td id="layout-row-padding6998" valign="top" style="mso-line-height-rule: exactly; padding: 31px 50px 20px 50px;"><table width="100%" border="0" cellpadding="0" cellspacing="0" style="-ms-text-size-adjust: auto; -webkit-text-size-adjust: 100%; border-collapse: collapse; font-size: 14px; min-width: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt;"><tr style="mso-line-height-rule: exactly;"><td class="td_button
+td_block customizable" valign="top" align="left" width="550" style="mso-line-height-rule: exactly;"> <div class="button-wrapper" style="margin: 0; outline: none; padding: 0; text-align: left;">
+<!--[if mso]> <v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" href="https://autodb.lt.acemlna.com/Prod/link-tracker?notrack=1&redirectUrl=aHR0cHMlM0ElMkYlMkZnaXRodWIuY29tJTJGcmF5bW9uLWFpJTNGdXRtX3NvdXJjZSUzREFjdGl2ZUNhbXBhaWduJTI2dXRtX21lZGl1bSUzRGVtYWlsJTI2dXRtX2NvbnRlbnQlM0RTeXN0ZW0lMjUyMERlc2lnbiUyNTIwRGVlcCUyNTIwRGl2ZSUyNnV0bV9jYW1wYWlnbiUzRE1MT3BzJTI1MjAtJTI1MjBOZXdzbGV0dGVyJTI1MjAtJTI1MjAyMDIxJTI1MjAtJTI1MjAwOSUyNTIwLSUyNTIwMTg=&sig=CAyLVRYm7JnFTgRuGN8rKvYrL1vMtWWVQfuysxCcwFpk&iat=1713904314&a=%7C%7C650082935%7C%7C&account=autodb%2Eactivehosted%2Ecom&email=G38ybDoRGPvuA%2Bgb1kt2WMhU6wpzhkpXnBAyoWpZ%2BpvUyZYquw%3D%3D%3AULgpdb3lScwQysNb6RnoNkMbzs6zWwMU&s=bad97c655476f96a390a72c05a742011&i=150A173A5A5682" style="v-text-anchor:middle; width:145px; height:64px; " arcsize="6%" strokecolor="#3e86cb" strokeweight="1pt" fillcolor="#3e86cb" o:button="true" o:allowincell="true" o:allowoverlap="false" > <v:textbox inset="2px,2px,2px,2px"> <center style="color:#fff7f7;font-family:Roboto, San Francisco, Helvetica, Arial, sans-serif; font-size:14px; line-height: 1.1;">Raymon Github</center> </v:textbox> </v:roundrect>
+<![endif]--> <a href="https://github.com/raymon-ai?utm_source=ActiveCampaign&utm_medium=email&utm_content=System%20Design%20Deep%20Dive&utm_campaign=MLOps%20-%20Newsletter%20-%202021%20-%2009%20-%2018" style="margin: 0; outline: none; padding: 15px; color: #fff7f7; background: #3e86cb; background-color: #3e86cb; border-radius: 3px; font-family: Roboto, San Francisco, Helvetica, Arial, sans-serif; font-size: 14px; display: inline-block; line-height: 1.1; text-align: center; text-decoration: none; mso-hide: all;" target="_blank"> <span style="color:#fff7f7;font-family:Roboto, San Francisco, Helvetica, Arial, sans-serif;font-size:14px;" target="_blank"> Raymon Github </span> </a> </div>
+
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr style="mso-line-height-rule: exactly; background-color: #ffffff;"><td id="layout-row-margin6986" valign="top" style="mso-line-height-rule: exactly; padding: 0; background-color: #ffffff;"><table width="100%" border="0" cellpadding="0" cellspacing="0" style="-ms-text-size-adjust: auto; -webkit-text-size-adjust: 100%; border-collapse: initial !important; font-size: 14px; min-width: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt;"><tr id="layout-row6986" class="layout layout-row widget _widget_text style6986" style="mso-line-height-rule: exactly; margin: 0; padding: 0;"><td id="layout-row-padding6986" valign="top" style="mso-line-height-rule: exactly; padding: 29px 50px 0px 50px;"><table width="100%" border="0" cellpadding="0" cellspacing="0" style="-ms-text-size-adjust: auto; -webkit-text-size-adjust: 100%; border-collapse: collapse; font-size: 14px; min-width: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt;"><tr style="mso-line-height-rule: exactly;"><td
+id="text_div6702" class="td_text td_block" valign="top" align="left" width="550" style="line-height: 150%; mso-line-height-rule: exactly; margin: 0; outline: none; padding: 0; color: inherit; font-size: 12px; font-weight: inherit; line-height: 1.5; text-decoration: inherit; font-family: arial;"> <div style="line-height: 150%; margin: 0; outline: none; padding: 0; color: #555555; font-size: 15px; font-weight: inherit; line-height: 1.5; text-decoration: inherit; mso-line-height-rule: exactly;" data-line-height="1.5"> <div style="margin: 0; outline: none; padding: 0; color: #555555; font-size: inherit; font-weight: inherit; line-height: inherit; text-decoration: inherit;"><span style='color: inherit; font-size: inherit; font-weight: 700; line-height: inherit; text-decoration: inherit; font-family: Roboto, "San Francisco", Helvetica, Arial, sans-serif;' class="">Current Meetup</span></div>
+ </div>
+<!--[if (gte mso 12)&(lte mso 15) ]>
+<style data-ac-keep="true" data-ac-inline="false"> #text_div6702, #text_div6702 div { line-height: 150% !important; };
+</style>
+<![endif]--></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr style="mso-line-height-rule: exactly; background-color: #ffffff;"><td id="layout-row-margin6985" valign="top" style="mso-line-height-rule: exactly; padding: 0; background-color: #ffffff;"><table width="100%" border="0" cellpadding="0" cellspacing="0" style="-ms-text-size-adjust: auto; -webkit-text-size-adjust: 100%; border-collapse: initial !important; font-size: 14px; min-width: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt;"><tr id="layout-row6985" class="layout layout-row widget _widget_text style6985" style="mso-line-height-rule: exactly; margin: 0; padding: 0;"><td id="layout-row-padding6985" valign="top" style="mso-line-height-rule: exactly; padding: 10px 50px 10px 50px;"><table width="100%" border="0" cellpadding="0" cellspacing="0" style="-ms-text-size-adjust: auto; -webkit-text-size-adjust: 100%; border-collapse: collapse; font-size: 14px; min-width: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt;"><tr style="mso-line-height-rule: exactly;"><td
+id="text_div6701" class="td_text td_block" valign="top" align="left" width="550" style="line-height: 130%; mso-line-height-rule: exactly; margin: 0; outline: none; padding: 0; color: inherit; font-size: 12px; font-weight: inherit; line-height: 1.3; text-decoration: inherit; font-family: arial;"> <div style="line-height: 130%; margin: 0; outline: none; padding: 0; color: inherit; font-size: inherit; font-weight: inherit; line-height: 1.3; text-decoration: inherit; mso-line-height-rule: exactly;" data-line-height="1.3"> <div style="margin: 0; outline: none; padding: 0; color: inherit; font-size: inherit; font-weight: inherit; line-height: inherit; text-decoration: inherit; text-align: left;"><span style='color: #c92c7f; font-size: 27px; font-weight: 700; line-height: inherit; text-decoration: inherit; font-family: Roboto, "San Francisco", Helvetica, Arial, sans-serif;'>Engineering Best Practices</span></div>
+ </div>
+<!--[if (gte mso 12)&(lte mso 15) ]>
+<style data-ac-keep="true" data-ac-inline="false"> #text_div6701, #text_div6701 div { line-height: 130% !important; };
+</style>
+<![endif]--></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr style="mso-line-height-rule: exactly; background-color: #ffffff;"><td id="layout-row-margin6987" valign="top" style="mso-line-height-rule: exactly; padding: 0; background-color: #ffffff;"><table width="100%" border="0" cellpadding="0" cellspacing="0" style="-ms-text-size-adjust: auto; -webkit-text-size-adjust: 100%; border-collapse: initial !important; font-size: 14px; min-width: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt;"><tr id="layout-row6987" class="layout layout-row widget _widget_break style6987" style="mso-line-height-rule: exactly;"><td id="layout-row-padding6987" valign="top" style="mso-line-height-rule: exactly; line-height: 0; padding: 0 50px 10px 50px;"><table width="100%" border="0" cellpadding="0" cellspacing="0" style="-ms-text-size-adjust: auto; -webkit-text-size-adjust: 100%; border-collapse: collapse; font-size: 14px; min-width: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; line-height: 0; mso-line-height-rule: exactly;"><tr
+style="mso-line-height-rule: exactly;"><td height="5" style="mso-line-height-rule: exactly; line-height: 0;"></td>
+</tr>
+<tr style="mso-line-height-rule: exactly;"><td align="left" height="1" width="550" style="mso-line-height-rule: exactly; line-height: 0;"> <table align="left" border="0" cellpadding="0" cellspacing="0" height="1" width="138" style="-ms-text-size-adjust: auto; -webkit-text-size-adjust: 100%; border-collapse: collapse; font-size: 14px; min-width: auto!important; mso-table-lspace: 0pt; mso-table-rspace: 0pt; line-height: 0; mso-line-height-rule: exactly; width: 25%; max-width: 25%;"><tr style="mso-line-height-rule: exactly;"><td class="break-line" bgcolor="#c92c7f" height="1" width="138" style="mso-line-height-rule: exactly; line-height: 1px; height: 1px; width: 138px; background-color: #c92c7f;"> </td>
+ </tr>
+</table>
+</td>
+ </tr>
+<tr style="mso-line-height-rule: exactly;"><td height="5" style="mso-line-height-rule: exactly; line-height: 0;"></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr style="mso-line-height-rule: exactly; background-color: #ffffff;"><td id="layout-row-margin6991" valign="top" style="mso-line-height-rule: exactly; padding: 0; background-color: #ffffff;"><table width="100%" border="0" cellpadding="0" cellspacing="0" style="-ms-text-size-adjust: auto; -webkit-text-size-adjust: 100%; border-collapse: initial !important; font-size: 14px; min-width: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt;"><tr id="layout-row6991" class="layout layout-row widget _widget_picture style6991" align="center" style="mso-line-height-rule: exactly;"><td id="layout-row-padding6991" valign="top" style="mso-line-height-rule: exactly; padding: 0px 0px 8px 0px;"><table width="100%" border="0" cellpadding="0" cellspacing="0" style="-ms-text-size-adjust: auto; -webkit-text-size-adjust: 100%; border-collapse: collapse; font-size: 14px; min-width: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt;"><tr style="mso-line-height-rule: exactly;"><td
+class="image-td" align="center" valign="top" width="650" style="mso-line-height-rule: exactly;"><img src="../content.app-us1.com/8j3Jq/2021/09/18/c84d172a-49b7-4b22-b4f6-e2330dd39225.jpeg_id=6565995_r=71716323" alt="" width="650" style="display: block; border: none; outline: none; width: 650px; opacity: 1; max-width: 100%;"></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr style="mso-line-height-rule: exactly; background-color: #ffffff;"><td id="layout-row-margin6990" valign="top" style="mso-line-height-rule: exactly; padding: 0px; background-color: #ffffff;"><table width="100%" border="0" cellpadding="0" cellspacing="0" style="-ms-text-size-adjust: auto; -webkit-text-size-adjust: 100%; border-collapse: initial !important; font-size: 14px; min-width: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt;"><tr id="layout-row6990" class="layout layout-row widget _widget_text style6990" style="mso-line-height-rule: exactly; margin: 0; padding: 0;"><td id="layout-row-padding6990" valign="top" style="mso-line-height-rule: exactly; padding: 15px 50px 15px 50px;"><table width="100%" border="0" cellpadding="0" cellspacing="0" style="-ms-text-size-adjust: auto; -webkit-text-size-adjust: 100%; border-collapse: collapse; font-size: 14px; min-width: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt;"><tr style="mso-line-height-rule:
+exactly;"><td id="text_div6706" class="td_text td_block" valign="top" align="left" width="550" style="line-height: 150%; mso-line-height-rule: exactly; margin: 0; outline: none; padding: 0; color: inherit; font-size: 12px; font-weight: inherit; line-height: 1.5; text-decoration: inherit; font-family: arial;"> <div style="line-height: 150%; margin: 0; outline: none; padding: 0; color: inherit; font-size: inherit; font-weight: inherit; line-height: 1.5; text-decoration: inherit; mso-line-height-rule: exactly;" class="" data-line-height="1.5"><span style='color: #22224a; font-size: inherit; font-weight: inherit; line-height: inherit; text-decoration: inherit; font-family: Roboto, "San Francisco", Helvetica, Arial, sans-serif; font-style: normal;' class=""><span style="color: inherit; font-size: 20px; font-weight: 700; line-height: inherit; text-decoration: inherit;">For Machine Learning<br></span><br class=""><span style="color: inherit; font-size: 16px; font-weight:
+inherit; line-height: inherit; text-decoration: inherit;" class="">The increasing reliance on applications with ML components calls for mature engineering techniques. This must ensure these are built in a robust and future-proof manner. Moreover, the negative impact that improper use of ML can have on users and society is now widely recognized and policymakers are working on guidelines aiming to promote trustworthy development of ML. (See the new EU proposed regulation)<br><br>To address these issues, we mined both academic and non-academic literature and compiled a catalog of engineering best practices for the development of ML applications. The catalog was validated with over 500 teams of practitioners, which allowed us to extract valuable information about the practice difficulty or the effects of adopting the practices.<br><br><span style='color: #22224a; font-size: 16px; font-weight: inherit; line-height: inherit; text-decoration: inherit; font-family: Roboto,
+"San Francisco", Helvetica, Arial, sans-serif; margin: 0;'>Alex Serban </span>will give an overview of his findings, which indicate, for example, that teams tend to neglect traditional software engineering practices, or that effects such as traceability or reproducibility can be accurately predicted from assessing the practice adoption. <br><br>Moreover, Alex will present a quantitative method to assess a team’s engineering ability to develop software with ML components and suggest improvements for your team’s processes.<br><br><span style='color: #22224a; font-size: 16px; font-weight: inherit; line-height: inherit; text-decoration: inherit; font-family: Roboto, "San Francisco", Helvetica, Arial, sans-serif; margin: 0;' class=""><span style="color: inherit; font-size: inherit; font-weight: bold; line-height: inherit; text-decoration: inherit;">Alex Serban </span>works at the intersection of machine learning and software engineering, looking for ways to design,
+develop and maintain robust machine learning solutions. <br><br>Since robustness has broad implications along each stage of the development life cycle, Alex studies robustness both from a system (engineering) and from an algorithmic prescriptive.</span></span><br class=""><br class=""><span style="color: inherit; font-size: 16px; font-weight: inherit; line-height: inherit; text-decoration: inherit;">If you haven't heard already, we have a public cal you can </span><a href="https://go.mlops.community/calendar/subscribe?utm_source=ActiveCampaign&utm_medium=email&utm_content=System%20Design%20Deep%20Dive&utm_campaign=MLOps%20-%20Newsletter%20-%202021%20-%2009%20-%2018" data-ac-default-color="1" target="_blank" class="" style="margin: 0; outline: none; padding: 0;
+color: #3e86cb; text-decoration: underline; font-size: 16px;"><span style="color: ; font-size: inherit; font-weight: inherit; line-height: inherit; text-decoration: inherit;" class="">subscribe to</span></a><span style="color: inherit; font-size: 16px; font-weight: inherit; line-height: inherit; text-decoration: inherit;">. Otherwise, see you tomorrow at 9am PST/5pm BST by clicking on the link below</span><br class=""></span></div>
+<!--[if (gte mso 12)&(lte mso 15) ]>
+<style data-ac-keep="true" data-ac-inline="false"> #text_div6706, #text_div6706 div { line-height: 150% !important; };
+</style>
+<![endif]--></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr style="mso-line-height-rule: exactly; background-color: #ffffff;"><td id="layout-row-margin6992" valign="top" style="mso-line-height-rule: exactly; padding: 0; background-color: #ffffff;"><table width="100%" border="0" cellpadding="0" cellspacing="0" style="-ms-text-size-adjust: auto; -webkit-text-size-adjust: 100%; border-collapse: initial !important; font-size: 14px; min-width: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt;"><tr id="layout-row6992" class="layout layout-row widget _widget_button style6992" style="mso-line-height-rule: exactly;"><td id="layout-row-padding6992" valign="top" style="mso-line-height-rule: exactly; padding: 20px 50px 40px 50px;"><table width="100%" border="0" cellpadding="0" cellspacing="0" style="-ms-text-size-adjust: auto; -webkit-text-size-adjust: 100%; border-collapse: collapse; font-size: 14px; min-width: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt;"><tr style="mso-line-height-rule: exactly;"><td class="td_button
+td_block customizable" valign="top" align="left" width="550" style="mso-line-height-rule: exactly;"> <div class="button-wrapper" style="margin: 0; outline: none; padding: 0; text-align: left;">
+<!--[if mso]> <v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" href="https://autodb.lt.acemlna.com/Prod/link-tracker?notrack=1&redirectUrl=aHR0cHMlM0ElMkYlMkZnby5tbG9wcy5jb21tdW5pdHklMkZtZWV0dXAlM0Z1dG1fc291cmNlJTNEQWN0aXZlQ2FtcGFpZ24lMjZ1dG1fbWVkaXVtJTNEZW1haWwlMjZ1dG1fY29udGVudCUzRFN5c3RlbSUyNTIwRGVzaWduJTI1MjBEZWVwJTI1MjBEaXZlJTI2dXRtX2NhbXBhaWduJTNETUxPcHMlMjUyMC0lMjUyME5ld3NsZXR0ZXIlMjUyMC0lMjUyMDIwMjElMjUyMC0lMjUyMDA5JTI1MjAtJTI1MjAxOA==&sig=EfUQC9iLHwJ6DMuzMxxqTdTugenSXA6d7WAm24eVFYmp&iat=1713904314&a=%7C%7C650082935%7C%7C&account=autodb%2Eactivehosted%2Ecom&email=G38ybDoRGPvuA%2Bgb1kt2WMhU6wpzhkpXnBAyoWpZ%2BpvUyZYquw%3D%3D%3AULgpdb3lScwQysNb6RnoNkMbzs6zWwMU&s=bad97c655476f96a390a72c05a742011&i=150A173A5A5647" style="v-text-anchor:middle; width:100px; height:64px; " arcsize="6%" strokecolor="#3e86cb" strokeweight="1pt" fillcolor="#3e86cb" o:button="true" o:allowincell="true" o:allowoverlap="false" > <v:textbox inset="2px,2px,2px,2px"> <center style="color:#fff7f7;font-family:Roboto, San Francisco, Helvetica, Arial, sans-serif; font-size:14px; line-height: 1.1;">Jump in</center> </v:textbox> </v:roundrect>
+<![endif]--> <a href="https://go.mlops.community/meetup?utm_source=ActiveCampaign&utm_medium=email&utm_content=System%20Design%20Deep%20Dive&utm_campaign=MLOps%20-%20Newsletter%20-%202021%20-%2009%20-%2018" style="margin: 0; outline: none; padding: 15px; color: #fff7f7; background: #3e86cb; background-color: #3e86cb; border-radius: 3px; font-family: Roboto, San Francisco, Helvetica, Arial, sans-serif; font-size: 14px; display: inline-block; line-height: 1.1; text-align: center; text-decoration: none; mso-hide: all;" target="_blank"> <span style="color:#fff7f7;font-family:Roboto, San Francisco, Helvetica, Arial, sans-serif;font-size:14px;" target="_blank"> Jump in </span> </a> </div>
+
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr style="mso-line-height-rule: exactly; background-color: #ffffff;"><td id="layout-row-margin6983" valign="top" style="mso-line-height-rule: exactly; padding: 0; background-color: #ffffff;"><table width="100%" border="0" cellpadding="0" cellspacing="0" style="-ms-text-size-adjust: auto; -webkit-text-size-adjust: 100%; border-collapse: initial !important; font-size: 14px; min-width: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt;"><tr id="layout-row6983" class="layout layout-row widget _widget_text style6983" style="mso-line-height-rule: exactly; margin: 0; padding: 0; background-color: #3e86cb;"><td id="layout-row-padding6983" valign="top" style="mso-line-height-rule: exactly; background-color: #3e86cb; padding: 40px 50px 10px 50px;"><table width="100%" border="0" cellpadding="0" cellspacing="0" style="-ms-text-size-adjust: auto; -webkit-text-size-adjust: 100%; border-collapse: collapse; font-size: 14px; min-width: 100%; mso-table-lspace: 0pt;
+mso-table-rspace: 0pt;"><tr style="mso-line-height-rule: exactly;"><td id="text_div6699" class="td_text td_block" valign="top" align="left" width="550" style="line-height: 130%; mso-line-height-rule: exactly; margin: 0; outline: none; padding: 0; color: inherit; font-size: 12px; font-weight: inherit; line-height: 1.3; text-decoration: inherit; font-family: arial;"> <div style="line-height: 130%; margin: 0; outline: none; padding: 0; color: #ffffff; font-size: inherit; font-weight: inherit; line-height: 1.3; text-decoration: inherit; mso-line-height-rule: exactly;" data-line-height="1.3"> <div style="margin: 0; outline: none; padding: 0; color: #ffffff; font-size: inherit; font-weight: inherit; line-height: inherit; text-decoration: inherit;"> <div style="margin: 0; outline: none; padding: 0; color: #ffffff; font-size: inherit; font-weight: inherit; line-height: inherit; text-decoration: inherit; text-align: left;"><span style='color: #ffffff; font-size: 27px;
+font-weight: bold; line-height: inherit; text-decoration: inherit; text-align: inherit; font-style: normal; font-family: Roboto, "San Francisco", Helvetica, Arial, sans-serif;' class="">Best of Slack</span></div>
+ </div>
+ </div>
+<!--[if (gte mso 12)&(lte mso 15) ]>
+<style data-ac-keep="true" data-ac-inline="false"> #text_div6699, #text_div6699 div { line-height: 130% !important; };
+</style>
+<![endif]--></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr style="mso-line-height-rule: exactly; background-color: #ffffff;"><td id="layout-row-margin6999" valign="top" style="mso-line-height-rule: exactly; padding: 0; background-color: #ffffff;"><table width="100%" border="0" cellpadding="0" cellspacing="0" style="-ms-text-size-adjust: auto; -webkit-text-size-adjust: 100%; border-collapse: initial !important; font-size: 14px; min-width: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt;"><tr id="layout-row6999" class="layout layout-row widget _widget_text style6999" style="mso-line-height-rule: exactly; margin: 0; padding: 0; background-color: #3e86cb;"><td id="layout-row-padding6999" valign="top" style="mso-line-height-rule: exactly; background-color: #3e86cb; padding: 5px 50px 30px 50px;"><table width="100%" border="0" cellpadding="0" cellspacing="0" style="-ms-text-size-adjust: auto; -webkit-text-size-adjust: 100%; border-collapse: collapse; font-size: 14px; min-width: 100%; mso-table-lspace: 0pt; mso-table-rspace:
+0pt;"><tr style="mso-line-height-rule: exactly;"><td id="text_div6715" class="td_text td_block" valign="top" align="left" width="550" style="line-height: 130%; mso-line-height-rule: exactly; margin: 0; outline: none; padding: 0; color: inherit; font-size: 12px; font-weight: inherit; line-height: 1.3; text-decoration: inherit; font-family: arial;"> <div style="line-height: 130%; margin: 0; outline: none; padding: 0; color: #ffffff; font-size: inherit; font-weight: inherit; line-height: 1.3; text-decoration: inherit; mso-line-height-rule: exactly;" class="" data-line-height="1.3"> <div style="margin: 0; outline: none; padding: 0; color: #ffffff; font-size: inherit; font-weight: inherit; line-height: inherit; text-decoration: inherit;" class=""> <div class="" style="margin: 0; outline: none; padding: 0; color: #ffffff; font-size: 16px; font-weight: inherit; line-height: inherit; text-decoration: inherit;"> <div style="margin: 0; outline: none; padding: 0; color:
+#ffffff; font-size: inherit; font-weight: inherit; line-height: inherit; text-decoration: inherit;" class=""> <div style="margin: 0; outline: none; padding: 0; color: #ffffff; font-size: inherit; font-weight: inherit; line-height: inherit; text-decoration: inherit;" class=""><div class="" style="margin: 0; outline: none; padding: 0; color: inherit; font-size: inherit; font-weight: inherit; line-height: inherit; text-decoration: inherit;"><ul style="margin: 0 0px 0 40px; padding: 0; --tw-shadow: 0 0 transparent; --tw-ring-inset: var(--tw-empty, ); --tw-ring-offset-width: 0px; --tw-ring-offset-color: #fff; --tw-ring-color: rgba(59,130,246,0.5); --tw-ring-offset-shadow: 0 0 transparent; --tw-ring-shadow: 0 0 transparent; color: #000000; font-family: arial; font-size: 12px; font-style: normal; font-weight: 400; text-align: left;"><li style="display: list-item; line-height: inherit; list-style-type: disc; margin: 0 0px 0 3px !important; --tw-shadow: 0 0 transparent;
+--tw-ring-inset: var(--tw-empty, ); --tw-ring-offset-width: 0px; --tw-ring-offset-color: #fff; --tw-ring-color: rgba(59,130,246,0.5); --tw-ring-offset-shadow: 0 0 transparent; --tw-ring-shadow: 0 0 transparent; color: #ffffff; font-size: 16px;"><a href="https://mlops-community.slack.com/archives/C0253TQTUQ0/p1631112831020400?utm_source=ActiveCampaign&utm_medium=email&utm_content=System%20Design%20Deep%20Dive&utm_campaign=MLOps%20-%20Newsletter%20-%202021%20-%2009%20-%2018" style="margin: 0; outline: none; padding: 0; color: #ffffff; text-decoration: underline;" class="" target="_blank"><span style="color: #ffffff; font-size: inherit; font-weight: inherit; line-height: inherit; text-decoration: inherit;">Model and Feature Management</span></a></li><li
+style="display: list-item; line-height: inherit; list-style-type: disc; margin: 0 0px 0 3px !important; --tw-shadow: 0 0 transparent; --tw-ring-inset: var(--tw-empty, ); --tw-ring-offset-width: 0px; --tw-ring-offset-color: #fff; --tw-ring-color: rgba(59,130,246,0.5); --tw-ring-offset-shadow: 0 0 transparent; --tw-ring-shadow: 0 0 transparent; color: #ffffff; font-size: 16px;"><a href="https://mlops-community.slack.com/archives/CVBP9CDNV/p1631609244016400?utm_source=ActiveCampaign&utm_medium=email&utm_content=System%20Design%20Deep%20Dive&utm_campaign=MLOps%20-%20Newsletter%20-%202021%20-%2009%20-%2018" style="margin: 0; outline: none; padding: 0; color: #ffffff; text-decoration: underline;" target="_blank"><span style="color: #ffffff; font-size: inherit;
+font-weight: inherit; line-height: inherit; text-decoration: inherit;"><span style="color: #ffffff; font-size: inherit; font-weight: inherit; line-height: inherit; text-decoration: inherit;" class="">We have lots to say about Chip's new art</span>icle</span></a></li><li style="display: list-item; line-height: inherit; list-style-type: disc; margin: 0 0px 0 3px !important; --tw-shadow: 0 0 transparent; --tw-ring-inset: var(--tw-empty, ); --tw-ring-offset-width: 0px; --tw-ring-offset-color: #fff; --tw-ring-color: rgba(59,130,246,0.5); --tw-ring-offset-shadow: 0 0 transparent; --tw-ring-shadow: 0 0 transparent; color: #ffffff; font-size: 16px;"><a
+href="https://mlops-community.slack.com/archives/C7DR1E5NC/p1631620802214000?utm_source=ActiveCampaign&utm_medium=email&utm_content=System%20Design%20Deep%20Dive&utm_campaign=MLOps%20-%20Newsletter%20-%202021%20-%2009%20-%2018" style="margin: 0; outline: none; padding: 0; color: #ffffff; text-decoration: underline;" class="" target="_blank"><span style="color: #ffffff; font-size: inherit; font-weight: inherit; line-height: inherit; text-decoration: inherit;">ML and Agile?</span></a></li><li style="display: list-item; line-height: inherit; list-style-type: disc; margin: 0 0px 0 3px !important; --tw-shadow: 0 0 transparent; --tw-ring-inset: var(--tw-empty, ); --tw-ring-offset-width: 0px; --tw-ring-offset-color: #fff; --tw-ring-color: rgba(59,130,246,0.5);
+--tw-ring-offset-shadow: 0 0 transparent; --tw-ring-shadow: 0 0 transparent; color: #ffffff; font-size: 16px;"><a href="https://mlops-community.slack.com/archives/C010A328X38/p1631562420177300?utm_source=ActiveCampaign&utm_medium=email&utm_content=System%20Design%20Deep%20Dive&utm_campaign=MLOps%20-%20Newsletter%20-%202021%20-%2009%20-%2018" style="margin: 0; outline: none; padding: 0; color: #ffffff; text-decoration: underline;" class="" target="_blank"><span style="color: #ffffff; font-size: inherit; font-weight: inherit; line-height: inherit; text-decoration: inherit;">Is<span style="color: #ffffff; font-size: inherit; font-weight: inherit; line-height: inherit; text-decoration: inherit;" class=""> Data Engineering and MLOps con</span>verging?</span></a></li><li
+style="display: list-item; line-height: inherit; list-style-type: disc; margin: 0 0px 0 3px !important; --tw-shadow: 0 0 transparent; --tw-ring-inset: var(--tw-empty, ); --tw-ring-offset-width: 0px; --tw-ring-offset-color: #fff; --tw-ring-color: rgba(59,130,246,0.5); --tw-ring-offset-shadow: 0 0 transparent; --tw-ring-shadow: 0 0 transparent; color: #ffffff; font-size: 16px;"><a href="https://www10.contino.io/Data-for-Good-Hackathon.html?utm_source=ActiveCampaign&utm_medium=email&utm_content=System%20Design%20Deep%20Dive&utm_campaign=MLOps%20-%20Newsletter%20-%202021%20-%2009%20-%2018" style="margin: 0; outline: none; padding: 0; color: #ffffff; text-decoration: underline;" class="" target="_blank"><span style="color: #ffffff; font-size: inherit; font-weight: inherit; line-height:
+inherit; text-decoration: inherit;" target="_blank">Data Hackathon For Good</span></a></li><li style="display: list-item; line-height: inherit; list-style-type: disc; margin: 0 0px 0 3px !important; --tw-shadow: 0 0 transparent; --tw-ring-inset: var(--tw-empty, ); --tw-ring-offset-width: 0px; --tw-ring-offset-color: #fff; --tw-ring-color: rgba(59,130,246,0.5); --tw-ring-offset-shadow: 0 0 transparent; --tw-ring-shadow: 0 0 transparent; color: #ffffff; font-size: 16px;"><a href="https://www.youtube.com/watch?v=DY-7adE4EVM&utm_source=ActiveCampaign&utm_medium=email&utm_content=System%20Design%20Deep%20Dive&utm_campaign=MLOps%20-%20Newsletter%20-%202021%20-%2009%20-%2018" style="margin: 0; outline: none; padding: 0; color: #ffffff; text-decoration: underline;" class="" target="_blank"><span style="color: #ffffff; font-size: inherit; font-weight: inherit; line-height: inherit; text-decoration: inherit;">If you like Vulfpack Jamz</span></a></li></ul></div>
+</div>
+ </div>
+ </div>
+ </div>
+ </div>
+<!--[if (gte mso 12)&(lte mso 15) ]>
+<style data-ac-keep="true" data-ac-inline="false"> #text_div6715, #text_div6715 div { line-height: 130% !important; };
+</style>
+<![endif]--></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr style="mso-line-height-rule: exactly; background-color: #ffffff;"><td id="layout-row-margin6982" valign="top" style="mso-line-height-rule: exactly; padding: 0; background-color: #ffffff;"><table width="100%" border="0" cellpadding="0" cellspacing="0" style="-ms-text-size-adjust: auto; -webkit-text-size-adjust: 100%; border-collapse: initial !important; font-size: 14px; min-width: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt;"><tr id="layout-row6982" class="layout layout-row widget _widget_text style6982" style="mso-line-height-rule: exactly; margin: 0; padding: 0; background-color: #3e86cb;"><td id="layout-row-padding6982" valign="top" style="mso-line-height-rule: exactly; background-color: #3e86cb; padding: 15px 50px 2px 50px;"><table width="100%" border="0" cellpadding="0" cellspacing="0" style="-ms-text-size-adjust: auto; -webkit-text-size-adjust: 100%; border-collapse: collapse; font-size: 14px; min-width: 100%; mso-table-lspace: 0pt; mso-table-rspace:
+0pt;"><tr style="mso-line-height-rule: exactly;"><td id="text_div6698" class="td_text td_block" valign="top" align="left" width="550" style="line-height: 130%; mso-line-height-rule: exactly; margin: 0; outline: none; padding: 0; color: inherit; font-size: 12px; font-weight: inherit; line-height: 1.3; text-decoration: inherit; font-family: arial;"> <div style="line-height: 130%; margin: 0; outline: none; padding: 0; color: #ffffff; font-size: inherit; font-weight: inherit; line-height: 1.3; text-decoration: inherit; mso-line-height-rule: exactly;" data-line-height="1.3"> <div style="margin: 0; outline: none; padding: 0; color: #ffffff; font-size: inherit; font-weight: inherit; line-height: inherit; text-decoration: inherit;"> <div style="margin: 0; outline: none; padding: 0; color: #ffffff; font-size: inherit; font-weight: inherit; line-height: inherit; text-decoration: inherit; text-align: left;"><span style='color: #ffffff; font-size: 27px; font-weight: bold;
+line-height: inherit; text-decoration: inherit; text-align: inherit; font-style: normal; font-family: Roboto, "San Francisco", Helvetica, Arial, sans-serif;' class="">Jobs</span></div>
+ </div>
+ </div>
+<!--[if (gte mso 12)&(lte mso 15) ]>
+<style data-ac-keep="true" data-ac-inline="false"> #text_div6698, #text_div6698 div { line-height: 130% !important; };
+</style>
+<![endif]--></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr style="mso-line-height-rule: exactly; background-color: #ffffff;"><td id="layout-row-margin6984" valign="top" style="mso-line-height-rule: exactly; padding: 0; background-color: #ffffff;"><table width="100%" border="0" cellpadding="0" cellspacing="0" style="-ms-text-size-adjust: auto; -webkit-text-size-adjust: 100%; border-collapse: initial !important; font-size: 14px; min-width: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt;"><tr id="layout-row6984" class="layout layout-row widget _widget_text style6984" style="mso-line-height-rule: exactly; margin: 0; padding: 0; background-color: #3e86cb;"><td id="layout-row-padding6984" valign="top" style="mso-line-height-rule: exactly; background-color: #3e86cb; padding: 5px 50px 30px 50px;"><table width="100%" border="0" cellpadding="0" cellspacing="0" style="-ms-text-size-adjust: auto; -webkit-text-size-adjust: 100%; border-collapse: collapse; font-size: 14px; min-width: 100%; mso-table-lspace: 0pt; mso-table-rspace:
+0pt;"><tr style="mso-line-height-rule: exactly;"><td id="text_div6700" class="td_text td_block" valign="top" align="left" width="550" style="line-height: 130%; mso-line-height-rule: exactly; margin: 0; outline: none; padding: 0; color: inherit; font-size: 12px; font-weight: inherit; line-height: 1.3; text-decoration: inherit; font-family: arial;"> <div style="line-height: 130%; margin: 0; outline: none; padding: 0; color: #ffffff; font-size: inherit; font-weight: inherit; line-height: 1.3; text-decoration: inherit; mso-line-height-rule: exactly;" class="" data-line-height="1.3"> <div style="margin: 0; outline: none; padding: 0; color: #ffffff; font-size: inherit; font-weight: inherit; line-height: inherit; text-decoration: inherit;" class=""> <div class="" style="margin: 0; outline: none; padding: 0; color: #ffffff; font-size: 16px; font-weight: inherit; line-height: inherit; text-decoration: inherit;"> <div style="margin: 0; outline: none; padding: 0; color:
+#ffffff; font-size: inherit; font-weight: inherit; line-height: inherit; text-decoration: inherit;" class=""> <div style="margin: 0; outline: none; padding: 0; color: #ffffff; font-size: inherit; font-weight: inherit; line-height: inherit; text-decoration: inherit;" class=""><div class="" style="margin: 0; outline: none; padding: 0; color: inherit; font-size: inherit; font-weight: inherit; line-height: inherit; text-decoration: inherit;"><ul style="margin: 0 0px 0 40px; padding: 0; --tw-shadow: 0 0 transparent; --tw-ring-inset: var(--tw-empty, ); --tw-ring-offset-width: 0px; --tw-ring-offset-color: #fff; --tw-ring-color: rgba(59,130,246,0.5); --tw-ring-offset-shadow: 0 0 transparent; --tw-ring-shadow: 0 0 transparent; color: #000000; font-family: arial; font-size: 12px; font-style: normal; font-weight: 400; text-align: left;"><li style="display: list-item; line-height: inherit; list-style-type: disc; margin: 0 0px 0 3px !important; --tw-shadow: 0 0 transparent;
+--tw-ring-inset: var(--tw-empty, ); --tw-ring-offset-width: 0px; --tw-ring-offset-color: #fff; --tw-ring-color: rgba(59,130,246,0.5); --tw-ring-offset-shadow: 0 0 transparent; --tw-ring-shadow: 0 0 transparent; color: #ffffff; font-size: 16px;">Twitter is Hiring an <a href="https://jobs.smartrecruiters.com/Twitter2/743999771755169-engineering-manager-compute-for-data-and-ml?utm_source=ActiveCampaign&utm_medium=email&utm_content=System%20Design%20Deep%20Dive&utm_campaign=MLOps%20-%20Newsletter%20-%202021%20-%2009%20-%2018" style="margin: 0; outline: none; padding: 0; color: #ffffff; text-decoration: underline;" target="_blank"><span style="color: #ffffff; font-size: inherit; font-weight: inherit; line-height: inherit; text-decoration: inherit;" target="_blank"><span style="color: #ffffff;
+font-size: inherit; font-weight: inherit; line-height: inherit; text-decoration: inherit;" class="" target="_blank">ML Engineering Manage</span>r</span></a></li><li style="display: list-item; line-height: inherit; list-style-type: disc; margin: 0 0px 0 3px !important; --tw-shadow: 0 0 transparent; --tw-ring-inset: var(--tw-empty, ); --tw-ring-offset-width: 0px; --tw-ring-offset-color: #fff; --tw-ring-color: rgba(59,130,246,0.5); --tw-ring-offset-shadow: 0 0 transparent; --tw-ring-shadow: 0 0 transparent; color: #ffffff; font-size: 16px;">Pinecone is looking for a <a href="https://www.pinecone.io/careers/?gh_jid=4655005003&utm_source=ActiveCampaign&utm_medium=email&utm_content=System%20Design%20Deep%20Dive&utm_campaign=MLOps%20-%20Newsletter%20-%202021%20-%2009%20-%2018"
+style="margin: 0; outline: none; padding: 0; color: #ffffff; text-decoration: underline;" class="" target="_blank"><span style="color: #ffffff; font-size: inherit; font-weight: inherit; line-height: inherit; text-decoration: inherit;" target="_blank">Developer Advocate</span></a></li><li style="display: list-item; line-height: inherit; list-style-type: disc; margin: 0 0px 0 3px !important; --tw-shadow: 0 0 transparent; --tw-ring-inset: var(--tw-empty, ); --tw-ring-offset-width: 0px; --tw-ring-offset-color: #fff; --tw-ring-color: rgba(59,130,246,0.5); --tw-ring-offset-shadow: 0 0 transparent; --tw-ring-shadow: 0 0 transparent; color: #ffffff; font-size: 16px;">Fiddler AI is looking for a <a
+href="https://jobs.lever.co/fiddlerlabs/c8b08a6d-f050-41e4-ba71-e64edde3a229?utm_source=ActiveCampaign&utm_medium=email&utm_content=System%20Design%20Deep%20Dive&utm_campaign=MLOps%20-%20Newsletter%20-%202021%20-%2009%20-%2018" style="margin: 0; outline: none; padding: 0; color: #ffffff; text-decoration: underline;" class="" target="_blank"><span style="color: #ffffff; font-size: inherit; font-weight: inherit; line-height: inherit; text-decoration: inherit;" target="_blank">Technical Product Manager</span></a></li><li style="display: list-item; line-height: inherit; list-style-type: disc; margin: 0 0px 0 3px !important; --tw-shadow: 0 0 transparent; --tw-ring-inset: var(--tw-empty, ); --tw-ring-offset-width: 0px; --tw-ring-offset-color: #fff; --tw-ring-color: rgba(59,130,246,0.5);
+--tw-ring-offset-shadow: 0 0 transparent; --tw-ring-shadow: 0 0 transparent; color: #ffffff; font-size: 16px;">Bayesian Health is Hiring a <a href="https://share.hsforms.com/1XoDTGNk8TxmghSIHUCeeKw4lxkj?__hstc=7178541.94e55c55bb09c2e878d1ae072d41463a.1627649117686.1631290111129.1631738989494.10&__hssc=7178541.2.1631738989494&__hsfp=2535798290&utm_source=ActiveCampaign&utm_medium=email&utm_content=System%20Design%20Deep%20Dive&utm_campaign=MLOps%20-%20Newsletter%20-%202021%20-%2009%20-%2018" style="margin: 0; outline: none; padding: 0; color: #ffffff; text-decoration: underline;" class="" target="_blank"><span style="color: #ffffff; font-size: inherit; font-weight: inherit; line-height: inherit; text-decoration: inherit;" target="_blank">Senior ML Engineer</span></a></li><li style="display:
+list-item; line-height: inherit; list-style-type: disc; margin: 0 0px 0 3px !important; --tw-shadow: 0 0 transparent; --tw-ring-inset: var(--tw-empty, ); --tw-ring-offset-width: 0px; --tw-ring-offset-color: #fff; --tw-ring-color: rgba(59,130,246,0.5); --tw-ring-offset-shadow: 0 0 transparent; --tw-ring-shadow: 0 0 transparent; color: #ffffff; font-size: 16px;">Ocado Technology is looking for an <a href="https://boards.greenhouse.io/ocadotechnology/jobs/5525307002?utm_source=ActiveCampaign&utm_medium=email&utm_content=System%20Design%20Deep%20Dive&utm_campaign=MLOps%20-%20Newsletter%20-%202021%20-%2009%20-%2018" style="margin: 0; outline: none; padding: 0; color: #ffffff; text-decoration: underline;" class="" target="_blank"><span style="color: #ffffff; font-size: inherit;
+font-weight: inherit; line-height: inherit; text-decoration: inherit;" target="_blank">MLOps Lead</span></a></li></ul></div>
+</div>
+ </div>
+ </div>
+ </div>
+ </div>
+<!--[if (gte mso 12)&(lte mso 15) ]>
+<style data-ac-keep="true" data-ac-inline="false"> #text_div6700, #text_div6700 div { line-height: 130% !important; };
+</style>
+<![endif]--></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr style="mso-line-height-rule: exactly; background-color: #ffffff;"><td id="layout-row-margin6969" valign="top" style="mso-line-height-rule: exactly; padding: 5px; background-color: #ffffff;"><table width="100%" border="0" cellpadding="0" cellspacing="0" style="-ms-text-size-adjust: auto; -webkit-text-size-adjust: 100%; border-collapse: initial !important; font-size: 14px; min-width: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt;"><tr id="layout-row6969" class="layout layout-row widget _widget_text style6969" style="mso-line-height-rule: exactly; margin: 0; padding: 0;"><td id="layout-row-padding6969" valign="top" style="mso-line-height-rule: exactly; padding: 20px 50px 0px 50px;"><table width="100%" border="0" cellpadding="0" cellspacing="0" style="-ms-text-size-adjust: auto; -webkit-text-size-adjust: 100%; border-collapse: collapse; font-size: 14px; min-width: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt;"><tr style="mso-line-height-rule:
+exactly;"><td id="text_div6685" class="td_text td_block" valign="top" align="left" width="540" style="line-height: 150%; mso-line-height-rule: exactly; margin: 0; outline: none; padding: 0; color: inherit; font-size: 12px; font-weight: inherit; line-height: 1.5; text-decoration: inherit; font-family: arial;"> <div style="line-height: 150%; margin: 0; outline: none; padding: 0; color: inherit; font-size: 16px; font-weight: inherit; line-height: 1.5; text-decoration: inherit; mso-line-height-rule: exactly;" data-line-height="1.5"> <div style="margin: 0; outline: none; padding: 0; color: inherit; font-size: inherit; font-weight: inherit; line-height: inherit; text-decoration: inherit;"><b style="margin: 0; outline: none; padding: 0;"><b style="margin: 0; outline: none; padding: 0; font-style: normal; font-weight: normal;"><b style='margin: 0; outline: none; padding: 0; font-family: Roboto, "San Francisco", Helvetica, Arial, sans-serif; font-weight: normal;'><b
+style='margin: 0; outline: none; padding: 0; color: #22224a; font-size: 16px; font-weight: normal; font-style: normal; font-family: Roboto, "San Francisco", Helvetica, Arial, sans-serif;'><b style='margin: 0; outline: none; padding: 0; font-family: Roboto, "San Francisco", Helvetica, Arial, sans-serif; font-weight: normal; color: #22224a; font-style: italic;'><span style='color: #22224a; font-size: inherit; font-weight: 400; line-height: inherit; text-decoration: inherit; font-family: Roboto, "San Francisco", Helvetica, Arial, sans-serif; font-style: normal;'>See you in <a href="https://go.mlops.community/slack?utm_source=ActiveCampaign&utm_medium=email&utm_content=System%20Design%20Deep%20Dive&utm_campaign=MLOps%20-%20Newsletter%20-%202021%20-%2009%20-%2018"
+data-ac-default-color="1" target="_blank" style="margin: 0; outline: none; padding: 0; color: #3e86cb; text-decoration: underline;"><span style="color: ; font-size: inherit; font-weight: inherit; line-height: inherit; text-decoration: inherit;">slack</span></a>, <a href="https://www.youtube.com/channel/UCG6qpjVnBTTT8wLGBygANOQ?view_as=subscriber&utm_source=ActiveCampaign&utm_medium=email&utm_content=System%20Design%20Deep%20Dive&utm_campaign=MLOps%20-%20Newsletter%20-%202021%20-%2009%20-%2018" data-ac-default-color="1" target="_blank" style="margin: 0; outline: none; padding: 0; color: #3e86cb; text-decoration: underline;"><span style="color: ; font-size: inherit; font-weight: inherit; line-height: inherit; text-decoration: inherit;">youtube</span></a>, and <a
+href="https://anchor.fm/mlops?utm_source=ActiveCampaign&utm_medium=email&utm_content=System%20Design%20Deep%20Dive&utm_campaign=MLOps%20-%20Newsletter%20-%202021%20-%2009%20-%2018" data-ac-default-color="1" target="_blank" style="margin: 0; outline: none; padding: 0; color: #3e86cb; text-decoration: underline;"><span style="color: ; font-size: inherit; font-weight: inherit; line-height: inherit; text-decoration: inherit;">podcast</span></a> land. Oh yeah, and we are also on <a
+href="https://twitter.com/mlopscommunity?utm_source=ActiveCampaign&utm_medium=email&utm_content=System%20Design%20Deep%20Dive&utm_campaign=MLOps%20-%20Newsletter%20-%202021%20-%2009%20-%2018" data-ac-default-color="1" target="_blank" style="margin: 0; outline: none; padding: 0; color: #3e86cb; text-decoration: underline;"><span style="color: ; font-size: inherit; font-weight: inherit; line-height: inherit; text-decoration: inherit;">Twitter</span></a> if you like chirping birds.<br></span></b></b></b><br style="font-size: 16px; font-family: arial; color: #000000; font-weight: 400; font-style: normal;"></b></b></div>
+ </div>
+<!--[if (gte mso 12)&(lte mso 15) ]>
+<style data-ac-keep="true" data-ac-inline="false"> #text_div6685, #text_div6685 div { line-height: 150% !important; };
+</style>
+<![endif]--></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr style="mso-line-height-rule: exactly; background-color: #ffffff;"><td id="layout-row-margin6970" valign="top" style="mso-line-height-rule: exactly; padding: 0 50px 50px 50px; background-color: #ffffff;"><table width="100%" border="0" cellpadding="0" cellspacing="0" style="-ms-text-size-adjust: auto; -webkit-text-size-adjust: 100%; border-collapse: initial !important; font-size: 14px; min-width: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt;"><tr id="layout-row6970" class="layout layout-row widget _widget_picture style6970" align="left" style="mso-line-height-rule: exactly;"><td id="layout-row-padding6970" valign="top" style="mso-line-height-rule: exactly; padding: 0;"><table width="100%" border="0" cellpadding="0" cellspacing="0" style="-ms-text-size-adjust: auto; -webkit-text-size-adjust: 100%; border-collapse: collapse; font-size: 14px; min-width: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt;"><tr style="mso-line-height-rule: exactly;"><td
+class="image-td" align="left" valign="top" width="550" style="mso-line-height-rule: exactly;"><img src="../autodb.imgus11.com/public/a0390221ff5c66b8ce25ae8e7f772a6b.png_r=472984825" alt="" width="225" style="display: block; border: none; outline: none; width: 225px; opacity: 1; max-width: 100%;"></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</div>
+<br /><div id="ac-footer" style="clear:both;background-color:inherit;background:inherit;min-width:100%;mso-table-lspace:0pt;mso-table-rspace:0pt;padding:20px;color:#000000;font-size:11px;font-family:arial,helvetica,sans-serif;line-height:140%;line-height:1.4;text-align:center;box-sizing:border-box;"><center>Sent to: <span style="font-size:11px;font-family:arial,helvetica,sans-serif;font-weight:normal;text-decoration:none;outline:none;">_t.e.s.t_@example.com</span><br><br><a href="unsubscribe/5.html" target="_blank"><span style="font-weight:bold;text-decoration:underline;" target="_blank">Unsubscribe</span></a><br><br>MLOps Community, Am sonnenberg 49 watzelhain , 65321 Heidenrod, Germany, Germany</center></div>
+<br clear="all" /></div>
+
+
+</div>
+
+
+
+
+
+  <div style="color:#acacac; padding:14px; background:#F0F0F0; font-size:11px; font-family:Arial,Helvetica,sans-serif;" align="center">
+	<a href="https://www.activecampaign.com/" style="text-decoration:none; color:#acacac;" title="email marketing">Email Marketing</a> by ActiveCampaign
+  </div>
+
+
+
+<script src="https://connect.facebook.net/locale_fbconnect/sdk.js#version=v2.9&xfbml=1&appId=118506481555093" id="facebook-jssdk"></script>
+<script src="admin/jsc/ac.js_v=v1023621689941576"></script>
+<script src="js/social.js_v=v1023621689941576"></script>
+
+</body>
+</html>

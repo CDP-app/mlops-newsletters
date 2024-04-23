@@ -1,0 +1,689 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="Content-Language" content="en-us" />
+<meta name="robots" content="noindex, nofollow" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-migrate/3.4.1/jquery-migrate.min.js" integrity="sha512-KgffulL3mxrOsDicgQWA11O6q6oKeWcV00VxgfJw4TcM8XRQT8Df9EsrYxDf7tpVpfl3qcYD96BpyPvA4d1FDQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script><script src="admin/js/jq/csrf_protection.js"></script>
+
+
+<meta property="og:url" content="https://autodb.activehosted.com/index.php?action=social&chash=149e9677a5989fd342ae44213df68868.198" />
+<meta property="og:type" content="website" />
+<meta property="og:title" content="Scaling Biotech" />
+<meta property="og:description" content="and descaling everything..." />
+<meta property="og:image" content="https://autodb.img-us3.com/_screenshot_/3771bfe37a0c2300e57d20176c8e2f7f3502b631.png" />
+
+<script src='ac_global/scriptaculous/prototype.js_v=v102362923139253'></script>
+<script src='ac_global/scriptaculous/scriptaculous.js_v=v102362923139253'></script>
+<script src="ac_global/js/ac.js.php%3Finc=ajax,dom,b64,str,array,liveedit,utf,ui,paginator,star,loader,tooltip,date,editor,form,class.Table,ihook&amp;v=v102362923139253"></script>
+<script src="admin/js/functions.js_v=v102362923139253"></script>
+<script src="mainjs.php_v=v102362923139253"></script>
+
+<link rel="stylesheet" href="dist/ac_global/fontello/css/ac-icons.min.css_v=v102362923139253.css" />
+<script src="admin/js/jq/bootstrap.js_v=v102362923139253"></script>
+
+
+<script>
+
+var $J = jQuery.noConflict();
+
+</script>
+<script>
+var campaign_url = "https://autodb.activehosted.com/index.php?action=social&chash=149e9677a5989fd342ae44213df68868.198";
+var message_screenshot = "https://autodb.img-us3.com/_screenshot_/3771bfe37a0c2300e57d20176c8e2f7f3502b631.png";
+var message_subject = "Scaling Biotech";
+var message_id = 198;
+var campaign_id = 170;
+var facebook_app_id = "118506481555093";
+var facebook_api_version = 2.9;
+var subscriber_hash = "";
+</script>
+
+
+<style media="screen">
+/* Bar */
+.archive_title{position:absolute;top:0!important;left:0!important;background:#f8f8f8;padding:10px 20px;font-family:HelveticaNeue-Medium,sans-serif;margin:0!important;width:100%;-webkit-box-shadow:0 2px 3px 1px rgba(98,98,98,0.5);-moz-box-shadow:0 2px 3px 1px rgba(98,98,98,0.5);box-shadow:0 2px 3px 1px rgba(98,98,98,0.5);-moz-transition: opacity 0.2s;-o-transition: opacity 0.2s;-webkit-transition: opacity 0.2s;transition: opacity 0.2s;-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing:border-box;}
+
+/* Layout */
+html,body { position: relative;}
+.fixed {position:fixed; z-index:1;}
+.socialwrap {position:relative; float:right; max-width:500px; height:100%; }
+.social_share {position:relative; display:block;height:30px; overflow:visible; }
+.social_share ul {float:right; margin:0; padding:0; zoom:1; }
+.social_share ul li {position:relative;display: inline-block;height:100%; margin:0 0 0 5px; padding:0; list-style:none;}
+.social_share ul li img {position:relative; border:0!important; z-index:100;}
+
+/* Bar buttons */
+.subs_btn,.social_share_btn{padding:12px 18px;border:#b7b7b7 2px solid;color:#818181;-webkit-border-radius:4px;-moz-border-radius:4px;border-radius:4px;display:inline-block;font-size:15px;cursor:pointer;text-align:center;min-width:80px;}
+.subs_btn:hover { border-color: #999999;}
+.socialbtns{padding:14px 20px;color:#fff !important;-webkit-border-radius:4px;-moz-border-radius:4px;border-radius:4px;-webkit-border-radius:4px;-moz-border-radius:4px;border-radius:4px;display:inline-block;text-decoration:none !important;font-size:15px;font-weight:normal;}
+.socialbtns.twitter, .modalbtn.twitter{background:#57cae6;}
+.socialbtns.twitter:hover, .modalbtn.twitter:hover{background:#4cbad5;}
+.socialbtns.facebook, .modalbtn.facebook{background:#4b709b;}
+.socialbtns.facebook:hover, .modalbtn.facebook:hover{background:#3c608a;}
+.socialbtns.linkedin, .modalbtn.linkedin{background:#0077b5;}
+.socialbtns.linkedin:hover, .modalbtn.linkedin:hover{background:#056597;}
+.socialbtns.gplus, .modalbtn.gplus{background:#4e4e4e;}
+.socialbtns.gplus:hover, .modalbtn.gplus:hover{background:#3d3d3d;}
+.social_share_btn{display:none;float:right;}
+
+/* Social share modal */
+.mobile-backdrop{background:#000;opacity:0;top:0;left:0;position:fixed;width:100%;height:100vh;z-index:100;}
+.mobile-modal_share{max-width:280px;display:none;background:#fff;position:fixed; top: 0; bottom: initial!important; right: 0; left: 0; margin: 40px auto auto;-webkit-border-radius:4px;-moz-border-radius:4px;border-radius:4px;z-index:101;min-height:200px;box-sizing:border-box;padding:10px;/*box-shadow*/-webkit-box-shadow:0 2px 10px 8px rgba(0,0,0,0.3);-moz-box-shadow:0 2px 10px 8px rgba(0,0,0,0.3);box-shadow:0 2px 10px 8px rgba(0,0,0,0.3);}
+.mobile-modal_share ul{margin:0;padding:0;}
+.mobile-modal_share li{display:block;margin-bottom:10px;}
+.mobile-modal_share li:last-child{margin:0;}
+.mobile-modal_share li .modalbtn{position:relative;text-align:center;display:block;padding:20px;color:#fff !important;-webkit-border-radius:4px;-moz-border-radius:4px;border-radius:4px;text-decoration:none !important;font-size:20px;font-weight:normal;}
+.mobile-modal_close{position: fixed; top: initial; right: 0; bottom: 40px!important; left: 0!important; margin: auto; opacity:0;display:none; width: 48px; height: 48px; font-size:48px;color:#fff;z-index:101;}
+
+.modal-open {overflow: hidden;}
+.modal-backdrop {position: fixed;top: 0; right: 0; bottom: 0; left: 0; z-index: 1030; background-color: #000000;}
+.modal-backdrop.fade {opacity: 0; filter: alpha(opacity=0);}
+.modal-backdrop.in {opacity: 0.5; filter: alpha(opacity=50);}
+.modal {position: fixed; top: 0; right: 0; bottom: 0; left: 0; z-index: 1040; overflow: auto; overflow-y: scroll;}
+.modal-dialog {right: auto; left: 50%; width: 600px; padding-top: 30px; padding-bottom: 30px; z-index: 1050; padding: 10px; margin-right: auto; margin-left: auto; margin-top: 50px;}
+.modal-header {margin: 0!important; background: #272727; background-color: #272727; overflow: visible!important; -webkit-border-radius: 5px 6px 0 0; -moz-border-radius: 5px 6px 0 0; border-radius: 5px 6px 0 0; min-height: 16px; padding: 14px 15px; border-bottom: 1px solid #e5e5e5;}
+.modal-header h3 {font-family: "IBM Plex Sans", Helvetica, sans-serif; font-size: 19px; font-weight: normal; line-height: 22px; color: #fff;}
+.modal-header .close {position: absolute; display: block; top: -13px; right: -15px; width: 30px; height: 30px; background: url('admin/images/modal_header_close.png') no-repeat; text-indent: 100%; white-space: nowrap; overflow: hidden; margin-top: -2px; cursor: pointer;}
+.modal-header .close:hover {background-position: 0 -30px; cursor: pointer;}
+.modal-content {position: relative; background-color: #ffffff; border: 1px solid #999999; border: 1px solid rgba(0, 0, 0, 0.2); border-radius: 6px; outline: none; -webkit-box-shadow: 0 3px 9px rgba(0, 0, 0, 0.5); box-shadow: 0 3px 9px rgba(0, 0, 0, 0.5); background-clip: padding-box;}
+.modal-body {position: relative; padding: 20px;}
+.modal-footer {position: relative; padding: 14px 15px; margin-bottom: 0; background-color: #f5f5f5; border-top: 1px solid #ddd; text-align: right; -webkit-border-radius: 0 0 6px 6px; -moz-border-radius: 0 0 6px 6px; border-radius: 0 0 6px 6px; -webkit-box-shadow: inset 0 1px 0 #ffffff; -moz-box-shadow: inset 0 1px 0 #ffffff; box-shadow: inset 0 1px 0 #ffffff;}
+.button:active, .button:visited, .button {font-family: "IBM Plex Sans", Helvetica, sans-serif; font-weight: 400; padding: 7px 11px; font-size: 14px; text-decoration: none !important; background-color: #f5f5f5; -moz-border-radius: 4px; -webkit-border-radius: 4px; border-radius: 4px; display: inline-block; color: #555; cursor: pointer!important; zoom: 1; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box;}
+.greybtn:active, .greybtn:visited, .greybtn {color: #5d5d5d!important; background: #fff!important; border: 1px solid #c0c0c0!important;}
+
+/* Icons */
+.ac-icon-share-left{position:absolute;top:17px;left:17px;}
+
+
+</style>
+<style>
+@media screen and (max-width:450px) {
+  .socialwrap { display: none}
+  .social_share_btn { display: inline-block}
+}
+</style>
+
+
+<link rel="icon" href="https://d3rxaij56vjege.cloudfront.net/media/favicon.ico" />
+<title>Scaling Biotech</title>
+</head>
+<body marginheight="0" marginwidth="0" topmargin="0" leftmargin="0" style="margin:0; padding:0;">
+
+	  <div class="mobile-modal_share">
+    <ul>
+      <li><a href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fautodb.activehosted.com%2Findex.php%3Faction%3Dsocial%26chash%3D149e9677a5989fd342ae44213df68868.198%26ref%3Dfacebook&t=Scaling%20Biotech" onclick="facebook_post();return false;" class="modalbtn facebook"><span class="ac-icon-share-left ac-icon-facebook"></span>Share</a></li>
+      <li><a href="https://twitter.com/intent/tweet?url=https%3A%2F%2Fautodb.activehosted.com%2Findex.php%3Faction%3Dsocial%26chash%3D149e9677a5989fd342ae44213df68868.198%26ref%3Dtwitter&text=Check%20out%20this%20email%20campaign%21&lang=en&counturl=https%3A%2F%2Fautodb.activehosted.com%2Findex.php%3Faction%3Dsocial%26chash%3D149e9677a5989fd342ae44213df68868.198%26ref%3Dtwitter" target="_blank" class="modalbtn twitter"><span class="ac-icon-share-left ac-icon-twitter"></span>Tweet</a></li>
+			<li><a href="http://www.linkedin.com/cws/share?url=https%3A%2F%2Fautodb.activehosted.com%2Findex.php%3Faction%3Dsocial%26chash%3D149e9677a5989fd342ae44213df68868.198%26ref%3Dlinkedin" target="_blank" class="modalbtn linkedin"><span
+						class="ac-icon-share-left ac-icon-linkedin"></span>Share</a></li>
+    </ul>
+  </div>
+  <div class="mobile-modal_close"><span class="ac-icon-cancel-circled-outline"></span></div>
+  <div id="fb-root"></div>
+	
+	<div class="archive_title fixed">
+  	<div class="social_share_btn">
+    <span class="ac-icon-export ac-icon-left">Share</span>
+  </div>
+	<div class="socialwrap">
+		<div class="social_share">
+			<ul>
+        <li><a href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fautodb.activehosted.com%2Findex.php%3Faction%3Dsocial%26chash%3D149e9677a5989fd342ae44213df68868.198%26ref%3Dfacebook&t=Scaling%20Biotech" target="_blank" onclick="facebook_post();return false;" class="socialbtns facebook"><span class="ac-icon-facebook"></span></a></li>
+        <li><a href="https://twitter.com/intent/tweet?url=https%3A%2F%2Fautodb.activehosted.com%2Findex.php%3Faction%3Dsocial%26chash%3D149e9677a5989fd342ae44213df68868.198%26ref%3Dtwitter&text=Check%20out%20this%20email%20campaign%21&lang=en&counturl=https%3A%2F%2Fautodb.activehosted.com%2Findex.php%3Faction%3Dsocial%26chash%3D149e9677a5989fd342ae44213df68868.198%26ref%3Dtwitter" target="_blank" class="socialbtns twitter"><span class="ac-icon-twitter"></span></a></li>
+				<li><a href="http://www.linkedin.com/cws/share?url=https%3A%2F%2Fautodb.activehosted.com%2Findex.php%3Faction%3Dsocial%26chash%3D149e9677a5989fd342ae44213df68868.198%26ref%3Dlinkedin" target="_blank" class="socialbtns linkedin"><span
+							class="ac-icon-linkedin"></span></a></li>
+			</ul>
+		</div>
+	</div>
+</div>
+	
+<div class="message-body-container" style="margin-top:60px; padding:30px; padding-top:20px; padding-bottom:20px; zoom:1; z-index:2; background-color:#e0e0e0;">
+  
+<style data-ac-keep="true"> .ExternalClass { width: 100%; background: inherit; background-color: inherit; } .ExternalClass, .ExternalClass p, .ExternalClass span, .ExternalClass font, .ExternalClass td, .ExternalClass div { line-height: 100%; } .ExternalClass p, .ExternalClass ul, .ExternalClass ol { Margin: 0; } .undoreset div p, .undoreset p { margin-bottom: 20px; } div[class^="aolmail_divbody"] { overflow: auto; } [owa] #ac-footer { padding: 20px 0px !important; background:
+inherit; background-color: inherit; } a[x-apple-data-detectors] { color: inherit !important; text-decoration: none !important; font-size: inherit !important; font-family: inherit !important; font-weight: inherit !important; line-height: inherit !important; } @-ms-viewport { width: device-width; } </style><style data-ac-keep="true">
+@media only screen and (max-width: 600px) { /*-------------------------------------------------------------------------*\ Abandoned Cart widget \*------------------------------------------------------------------------*/ .td_abandoned-cart img {display: block;padding-right: 0 !important;padding-bottom: 0 !important;width: 100% !important;max-width: 100% !important;height: auto !important;} body { padding: 0!important; font-size:1em!important; } * { -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; } *[class].divbody {-webkit-text-size-adjust:none !important; width:auto !important;} *[class].td_picture img {width:auto !important;} *[class].td_text { line-height: 110%; } *[class].td_button { width: auto; } /* Collapse all block elements */ :not(.body) table { display: block!important; float:none!important; border-collapse:collapse !important; width:100% !important; min-width:100% !important; clear:both!important; } :not(.body) thead,
+:not(.body) tbody, :not(.body) tr { display:block!important; float:none!important; width:100% !important; } :not(.body) th, :not(.body) td, :not(.body) p { display:block!important; float:none!important; width:100% !important; clear:both!important; } /* Remove browser default styling for elements */ ul, ol { margin-left: 20px; margin-bottom: 10px; margin-top: 10px; -webkit-margin-before: 0; -webkit-margin-after: 0; -webkit-padding-start: 0; } /* Set default height for spacer once collapse */ *[class].spacer { height: auto!important; } a[href^=date]{ color:inherit !important; text-decoration:none !important;} a[href^=telephone]{ color:inherit !important; text-decoration:none !important;} a[href^=address]{ color:inherit !important; text-decoration:none !important;} a[href^=email]{ color:inherit !important; text-decoration:none !important;} /* Default table cell height */ td[height="14"]{height:14px!important;font-size:14px!important;line-height:14px!important;}
+td[height="12"]{height:12px!important;font-size:12px!important;line-height:12px!important;} /*-------------------------------------------------------------------------*\ Product Widget \*-------------------------------------------------------------------------*/ .td_product > div { float: none !important; width: 100% !important; margin-bottom: 20px !important; } .td_product > div img { width: 75% !important; } /* Default social icons */ *[class].ac-social-icon-16 {width:16px !important; height:16px !important;} *[class].ac-social-icon-24 {width:24px !important; height:24px !important;} *[class].ac-social-icon-28 {width:28px !important; height:28px !important;} *[class].__ac_social_icons { margin-right: 0px !important; } }
+</style><style data-ac-keep="true"> @media only screen and (max-width: 320px) { #layout-row7984 img { width: 100% !important; height: auto !important; max-width: 320px !important; } #layout-row7986 img { width: 100% !important; height: auto !important; max-width: 320px !important; } #layout-row7987 .break-line { width: 25% !important; float: left !important; } #layout-row7989 img { width: 100% !important; height: auto !important; max-width: 320px !important; } #layout-row7996 .break-line { width: 25% !important; float: left !important; } #layout-row7999 img { width: 100% !important; height: auto !important; max-width: 320px !important; } #layout-row8003 .break-line { width: 25% !important; float: left !important; } #layout-row8010 img { width: 100% !important; height: auto !important; max-width: 320px !important; } #layout-row8016 .break-line { width: 25% !important; float: left !important; } #layout-row8018 img { width: 100% !important; height: auto !important;
+max-width: 320px !important; } table, tbody, td, .divbody { display: table !important; width: 100% !important; max-width: 100% !important; } .td_rss .rss-item img.iphone_large_image { width: auto !important; } u + .body { display: table !important; width: 100vw !important; min-width: 100vw !important; } u + .body table { display: table !important; width: 100% !important; min-width: 100% !important; } u + .body td { display: block !important; width: 100% !important; min-width: 100% !important; } u + .body img { display: inline-block !important; margin: auto !important; width: auto !important; vertical-align: bottom !important; } u + .body center { display: block !important; margin: auto !important; width: 100% !important; min-width: 100% !important; text-align: center !important; } u + .body table._ac_social_table, u + .body table._ac_social_table td, u + .body table._ac_social_table div, u + .body table._ac_social_table a { display: inline-block !important; margin:
+auto !important; width: auto !important; min-width: auto !important; text-align: center !important; } u + .body table._ac_social_table img { display: inline-block !important; margin: auto !important; width: 32px !important; min-width: 32px !important; max-width: 32px !important; }
+}
+@media only screen and (max-width: 375px) { #layout-row7984 img { width: 100% !important; height: auto !important; max-width: 375px !important; } #layout-row7986 img { width: 100% !important; height: auto !important; max-width: 375px !important; } #layout-row7987 .break-line { width: 25% !important; float: left !important; } #layout-row7989 img { width: 100% !important; height: auto !important; max-width: 375px !important; } #layout-row7996 .break-line { width: 25% !important; float: left !important; } #layout-row7999 img { width: 100% !important; height: auto !important; max-width: 375px !important; } #layout-row8003 .break-line { width: 25% !important; float: left !important; } #layout-row8010 img { width: 100% !important; height: auto !important; max-width: 375px !important; } #layout-row8016 .break-line { width: 25% !important; float: left !important; } #layout-row8018 img { width: 100% !important; height: auto !important; max-width: 375px !important; } table,
+tbody, td, .divbody { display: table !important; width: 100% !important; max-width: 100% !important; } .td_rss .rss-item img.iphone_large_image { width: auto !important; } u + .body { display: table !important; width: 100vw !important; min-width: 100vw !important; } u + .body table { display: table !important; width: 100% !important; min-width: 100% !important; } u + .body td { display: block !important; width: 100% !important; min-width: 100% !important; } u + .body img { display: inline-block !important; margin: auto !important; width: auto !important; vertical-align: bottom !important; } u + .body center { display: block !important; margin: auto !important; width: 100% !important; min-width: 100% !important; text-align: center !important; } u + .body table._ac_social_table, u + .body table._ac_social_table td, u + .body table._ac_social_table div, u + .body table._ac_social_table a { display: inline-block !important; margin: auto !important; width: auto
+!important; min-width: auto !important; text-align: center !important; } u + .body table._ac_social_table img { display: inline-block !important; margin: auto !important; width: 32px !important; min-width: 32px !important; max-width: 32px !important; }
+}
+@media only screen and (max-width: 414px) { #layout-row7984 img { width: 100% !important; height: auto !important; max-width: 414px !important; } #layout-row7986 img { width: 100% !important; height: auto !important; max-width: 414px !important; } #layout-row7987 .break-line { width: 25% !important; float: left !important; } #layout-row7989 img { width: 100% !important; height: auto !important; max-width: 414px !important; } #layout-row7996 .break-line { width: 25% !important; float: left !important; } #layout-row7999 img { width: 100% !important; height: auto !important; max-width: 414px !important; } #layout-row8003 .break-line { width: 25% !important; float: left !important; } #layout-row8010 img { width: 100% !important; height: auto !important; max-width: 414px !important; } #layout-row8016 .break-line { width: 25% !important; float: left !important; } #layout-row8018 img { width: 100% !important; height: auto !important; max-width: 414px !important; } table,
+tbody, td, .divbody { display: table !important; width: 100% !important; max-width: 100% !important; } .td_rss .rss-item img.iphone_large_image { width: auto !important; } u + .body { display: table !important; width: 100vw !important; min-width: 100vw !important; } u + .body table { display: table !important; width: 100% !important; min-width: 100% !important; } u + .body td { display: block !important; width: 100% !important; min-width: 100% !important; } u + .body img { display: inline-block !important; margin: auto !important; width: auto !important; vertical-align: bottom !important; } u + .body center { display: block !important; margin: auto !important; width: 100% !important; min-width: 100% !important; text-align: center !important; } u + .body table._ac_social_table, u + .body table._ac_social_table td, u + .body table._ac_social_table div, u + .body table._ac_social_table a { display: inline-block !important; margin: auto !important; width: auto
+!important; min-width: auto !important; text-align: center !important; } u + .body table._ac_social_table img { display: inline-block !important; margin: auto !important; width: 32px !important; min-width: 32px !important; max-width: 32px !important; }
+}
+@media only screen and (max-width: 667px) { #layout-row7984 img { width: 100% !important; height: auto !important; max-width: 650px !important; } #layout-row7986 img { width: 100% !important; height: auto !important; max-width: 667px !important; } #layout-row7987 .break-line { width: 25% !important; float: left !important; } #layout-row7989 img { width: 100% !important; height: auto !important; max-width: 650px !important; } #layout-row7996 .break-line { width: 25% !important; float: left !important; } #layout-row7999 img { width: 100% !important; height: auto !important; max-width: 650px !important; } #layout-row8003 .break-line { width: 25% !important; float: left !important; } #layout-row8010 img { width: 100% !important; height: auto !important; max-width: 650px !important; } #layout-row8016 .break-line { width: 25% !important; float: left !important; } #layout-row8018 img { width: 100% !important; height: auto !important; max-width: 650px !important; } table,
+tbody, td, .divbody { display: table !important; width: 100% !important; max-width: 100% !important; } .td_rss .rss-item img.iphone_large_image { width: auto !important; } u + .body { display: table !important; width: 100vw !important; min-width: 100vw !important; } u + .body table { display: table !important; width: 100% !important; min-width: 100% !important; } u + .body td { display: block !important; width: 100% !important; min-width: 100% !important; } u + .body img { display: inline-block !important; margin: auto !important; width: auto !important; vertical-align: bottom !important; } u + .body center { display: block !important; margin: auto !important; width: 100% !important; min-width: 100% !important; text-align: center !important; } u + .body table._ac_social_table, u + .body table._ac_social_table td, u + .body table._ac_social_table div, u + .body table._ac_social_table a { display: inline-block !important; margin: auto !important; width: auto
+!important; min-width: auto !important; text-align: center !important; } u + .body table._ac_social_table img { display: inline-block !important; margin: auto !important; width: 32px !important; min-width: 32px !important; max-width: 32px !important; }
+} </style><!--[if !mso]><!-- webfonts --><link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap" rel="stylesheet"><!--<![endif]--><!--[if lt mso 12]> <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap" rel="stylesheet"><![endif]--><!--[if gte mso 9]>
+<xml> <o:OfficeDocumentSettings> <o:AllowPNG/> <o:PixelsPerInch>96</o:PixelsPerInch> </o:OfficeDocumentSettings>
+</xml>
+<![endif]--><div id="ac-designer" class="body" style="font-family: Arial; line-height: 1.1; margin: 0px; background-color: #e0e0e0; width: 100%; text-align: center;">		<div style="display: none !important; padding: 0; height: 1px; font-size: 1px; background-color: inherit !important; opacity: 0; color: transparent; mso-line-height-rule: exactly; line-height:1px; mso-hide:all;">
+			and descaling everything else
+			<div style="display: none; max-height: 0px; overflow: hidden;">
+				&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌
+			</div>
+
+		</div>
+<img src="https://autodb.lt.acemlna.com/Prod/link-tracker?notrack=1&nl=5&c=170&m=198&s=bad97c655476f96a390a72c05a742011&l=open&account=autodb.activehosted.com&a=650082935" border="0" width="1" height="1" style="display:block;width:1px!important;min-width:1px!important;max-width:1px!important;height:1px!important;border:0;overflow:hidden;" /><div class="divbody" style="margin: 0px; outline: none; padding: 0px; color: #000000; font-family: arial; line-height: 1.1; width: 100%; background-color: #e0e0e0; background: #e0e0e0; text-align: center;"><table class="template-table" border="0" cellpadding="0" cellspacing="0" width="100%" align="left" style="-ms-text-size-adjust: auto; -webkit-text-size-adjust: 100%; border-collapse: collapse; font-size: 14px; min-width: auto; mso-table-lspace: 0pt; mso-table-rspace: 0pt; background-color: #e0e0e0; background: #e0e0e0;"><tr style="mso-line-height-rule: exactly;"><td align="center" valign="top" width="100%"
+style="mso-line-height-rule: exactly;"><table class="template-table" border="0" cellpadding="0" cellspacing="0" width="650" bgcolor="#e0e0e0" style="-ms-text-size-adjust: auto; -webkit-text-size-adjust: 100%; border-collapse: collapse; font-size: 14px; min-width: auto; mso-table-lspace: 0pt; mso-table-rspace: 0pt; max-width: 650px;"><tr style="mso-line-height-rule: exactly;"><td id="layout_table_db7b3a30ba80a304538a15d371c952e1f79f65e3" valign="top" align="center" width="650" style="mso-line-height-rule: exactly; background-color: #ffffff;"><table cellpadding="0" cellspacing="0" border="0" class="layout layout-table root-table" width="650" style="-ms-text-size-adjust: auto; -webkit-text-size-adjust: 100%; border-collapse: collapse; font-size: 14px; min-width: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; background-color: #ffffff;"><tr style="mso-line-height-rule: exactly; background-color: #ffffff;"><td id="layout-row-margin7986" valign="top"
+style="mso-line-height-rule: exactly; padding: 50px 0 50px 0; background-color: #ffffff;"><table width="100%" border="0" cellpadding="0" cellspacing="0" style="-ms-text-size-adjust: auto; -webkit-text-size-adjust: 100%; border-collapse: initial !important; font-size: 14px; min-width: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt;"><tr id="layout-row7986" class="layout layout-row widget _widget_picture style7986" align="center" style="mso-line-height-rule: exactly;"><td id="layout-row-padding7986" valign="top" style="mso-line-height-rule: exactly; padding: 0;"><table width="100%" border="0" cellpadding="0" cellspacing="0" style="-ms-text-size-adjust: auto; -webkit-text-size-adjust: 100%; border-collapse: collapse; font-size: 14px; min-width: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt;"><tr style="mso-line-height-rule: exactly;"><td class="image-td" align="center" valign="top" width="650" style="mso-line-height-rule: exactly;"><img
+src="../content.app-us1.com/8j3Jq/2021/06/01/17199af48f89161f59de9d18110eb19ec2eed2a3.png_r=1473835965" alt="" width="208" style="display: block; border: none; outline: none; width: 208px; opacity: 1; max-width: 100%;"></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr style="mso-line-height-rule: exactly; background-color: #ffffff;"><td id="layout-row-margin7981" valign="top" style="mso-line-height-rule: exactly; padding: 0; background-color: #ffffff;"><table width="100%" border="0" cellpadding="0" cellspacing="0" style="-ms-text-size-adjust: auto; -webkit-text-size-adjust: 100%; border-collapse: initial !important; font-size: 14px; min-width: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt;"><tr id="layout-row7981" class="layout layout-row widget _widget_text style7981" style="mso-line-height-rule: exactly; margin: 0; padding: 0;"><td id="layout-row-padding7981" valign="top" style="mso-line-height-rule: exactly; padding: 30px;"><table width="100%" border="0" cellpadding="0" cellspacing="0" style="-ms-text-size-adjust: auto; -webkit-text-size-adjust: 100%; border-collapse: collapse; font-size: 14px; min-width: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt;"><tr style="mso-line-height-rule: exactly;"><td
+id="text_div7667" class="td_text td_block" valign="top" align="left" width="590" style="line-height: 130%; mso-line-height-rule: exactly; margin: 0; outline: none; padding: 0; color: inherit; font-size: 12px; font-weight: inherit; line-height: 1.3; text-decoration: inherit; font-family: arial;"> <div style="line-height: 130%; margin: 0; outline: none; padding: 0; color: inherit; font-size: inherit; font-weight: inherit; line-height: 1.3; text-decoration: inherit; text-align: center; mso-line-height-rule: exactly;" data-line-height="1.3"><a
+href="https://autodb.activehosted.com/p_v.php?l=5&c=170&m=198&s=bad97c655476f96a390a72c05a742011&utm_source=ActiveCampaign&utm_medium=email&utm_content=Scaling%20Biotech&utm_campaign=MLOps%20-%20Newsletter%20-%202021%20-%2001%20-%2016" style="margin: 0; outline: none; padding: 0; color: #999999; text-decoration: underline;" class="" target="_blank"><span style="color: #999999; font-size: inherit; font-weight: inherit; line-height: inherit; text-decoration: inherit;">View a web copy of this email</span></a><br></div>
+<!--[if (gte mso 12)&(lte mso 15) ]>
+<style data-ac-keep="true" data-ac-inline="false"> #text_div7667, #text_div7667 div { line-height: 130% !important; };
+</style>
+<![endif]--></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr style="mso-line-height-rule: exactly; background-color: #ffffff;"><td id="layout-row-margin7980" valign="top" style="mso-line-height-rule: exactly; padding: 0; background-color: #ffffff;"><table width="100%" border="0" cellpadding="0" cellspacing="0" style="-ms-text-size-adjust: auto; -webkit-text-size-adjust: 100%; border-collapse: initial !important; font-size: 14px; min-width: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt;"><tr id="layout-row7980" class="layout layout-row widget _widget_text style7980" style="mso-line-height-rule: exactly; margin: 0; padding: 0;"><td id="layout-row-padding7980" valign="top" style="mso-line-height-rule: exactly; padding: 0px 50px 0px 50px;"><table width="100%" border="0" cellpadding="0" cellspacing="0" style="-ms-text-size-adjust: auto; -webkit-text-size-adjust: 100%; border-collapse: collapse; font-size: 14px; min-width: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt;"><tr style="mso-line-height-rule: exactly;"><td
+id="text_div7666" class="td_text td_block" valign="top" align="left" width="550" style="line-height: 150%; mso-line-height-rule: exactly; margin: 0; outline: none; padding: 0; color: inherit; font-size: 12px; font-weight: inherit; line-height: 1.5; text-decoration: inherit; font-family: arial;"> <div style="line-height: 150%; margin: 0; outline: none; padding: 0; color: #22224a; font-size: inherit; font-weight: inherit; line-height: 1.5; text-decoration: inherit; mso-line-height-rule: exactly;" data-line-height="1.5"> <div style="margin: 0; outline: none; padding: 0; color: #22224a; font-size: inherit; font-weight: inherit; line-height: inherit; text-decoration: inherit;"> <div style="margin: 0; outline: none; padding: 0; color: #22224a; font-size: inherit; font-weight: inherit; line-height: inherit; text-decoration: inherit;"> <div style="margin: 0; outline: none; padding: 0; color: #22224a; font-size: inherit; font-weight: inherit; line-height: inherit;
+text-decoration: inherit;"> <p style="margin: 0; outline: none; padding: 0; color: #22224a; font-size: inherit; font-weight: inherit; line-height: inherit; text-decoration: inherit; text-align: left;"><span style="color: inherit; font-size: 18px; font-weight: inherit; line-height: inherit; text-decoration: inherit;">It's come to my attention that I had a bad link on two of the last sections of the newsletter. Here are the updated links for you in case you got rick rolled.<br><br>Hiring story: <a href="https://github.com/zenml-io/zenml?utm_source=ActiveCampaign&utm_medium=email&utm_content=Scaling%20Biotech&utm_campaign=MLOps%20-%20Newsletter%20-%202021%20-%2001%20-%2016" data-ac-default-color="1" target="_blank" style="margin: 0; outline: none; padding: 0; color:
+#3e86cb; text-decoration: underline;"><span style="color: ; font-size: inherit; font-weight: inherit; line-height: inherit; text-decoration: inherit;">ZenML GitHub</span></a><br>New Tool Tuesday: <a href="https://www.teachablehub.com/?utm_source=ActiveCampaign&utm_medium=email&utm_content=Scaling%20Biotech&utm_campaign=MLOps%20-%20Newsletter%20-%202021%20-%2001%20-%2016" data-ac-default-color="1" target="_blank" style="margin: 0; outline: none; padding: 0; color: #3e86cb; text-decoration: underline;"><span style="color: ; font-size: inherit; font-weight: inherit; line-height: inherit; text-decoration: inherit;">TeachableHub Website</span></a></span></p>
+<p style="margin: 0; outline: none; padding: 0; color: inherit; font-size: inherit; font-weight: inherit; line-height: inherit; text-decoration: inherit;"></p>
+<p style="margin: 0; outline: none; padding: 0; color: inherit; font-size: 18px; font-weight: inherit; line-height: inherit; text-decoration: inherit;"></p>
+ </div>
+ </div>
+ </div>
+ </div>
+<!--[if (gte mso 12)&(lte mso 15) ]>
+<style data-ac-keep="true" data-ac-inline="false"> #text_div7666, #text_div7666 div { line-height: 150% !important; };
+</style>
+<![endif]--></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr style="mso-line-height-rule: exactly; background-color: #ffffff;"><td id="layout-row-margin8004" valign="top" style="mso-line-height-rule: exactly; padding: 0; background-color: #ffffff;"><table width="100%" border="0" cellpadding="0" cellspacing="0" style="-ms-text-size-adjust: auto; -webkit-text-size-adjust: 100%; border-collapse: initial !important; font-size: 14px; min-width: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt;"><tr id="layout-row8004" class="layout layout-row widget _widget_text style8004" style="mso-line-height-rule: exactly; margin: 0; padding: 0;"><td id="layout-row-padding8004" valign="top" style="mso-line-height-rule: exactly; padding: 29px 50px 0px 50px;"><table width="100%" border="0" cellpadding="0" cellspacing="0" style="-ms-text-size-adjust: auto; -webkit-text-size-adjust: 100%; border-collapse: collapse; font-size: 14px; min-width: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt;"><tr style="mso-line-height-rule: exactly;"><td
+id="text_div7689" class="td_text td_block" valign="top" align="left" width="550" style="line-height: 150%; mso-line-height-rule: exactly; margin: 0; outline: none; padding: 0; color: inherit; font-size: 12px; font-weight: inherit; line-height: 1.5; text-decoration: inherit; font-family: arial;"> <div style="line-height: 150%; margin: 0; outline: none; padding: 0; color: #555555; font-size: 15px; font-weight: inherit; line-height: 1.5; text-decoration: inherit; mso-line-height-rule: exactly;" data-line-height="1.5"> <div style="margin: 0; outline: none; padding: 0; color: #555555; font-size: inherit; font-weight: inherit; line-height: inherit; text-decoration: inherit;"><span style='color: inherit; font-size: inherit; font-weight: 700; line-height: inherit; text-decoration: inherit; font-family: Roboto, "San Francisco", Helvetica, Arial, sans-serif;'>Past Meetup</span></div>
+ </div>
+<!--[if (gte mso 12)&(lte mso 15) ]>
+<style data-ac-keep="true" data-ac-inline="false"> #text_div7689, #text_div7689 div { line-height: 150% !important; };
+</style>
+<![endif]--></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr style="mso-line-height-rule: exactly; background-color: #ffffff;"><td id="layout-row-margin7985" valign="top" style="mso-line-height-rule: exactly; padding: 0; background-color: #ffffff;"><table width="100%" border="0" cellpadding="0" cellspacing="0" style="-ms-text-size-adjust: auto; -webkit-text-size-adjust: 100%; border-collapse: initial !important; font-size: 14px; min-width: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt;"><tr id="layout-row7985" class="layout layout-row widget _widget_text style7985" style="mso-line-height-rule: exactly; margin: 0; padding: 0;"><td id="layout-row-padding7985" valign="top" style="mso-line-height-rule: exactly; padding: 10px 50px 10px 50px;"><table width="100%" border="0" cellpadding="0" cellspacing="0" style="-ms-text-size-adjust: auto; -webkit-text-size-adjust: 100%; border-collapse: collapse; font-size: 14px; min-width: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt;"><tr style="mso-line-height-rule: exactly;"><td
+id="text_div7670" class="td_text td_block" valign="top" align="left" width="550" style="line-height: 130%; mso-line-height-rule: exactly; margin: 0; outline: none; padding: 0; color: inherit; font-size: 12px; font-weight: inherit; line-height: 1.3; text-decoration: inherit; font-family: arial;"> <div style="line-height: 130%; margin: 0; outline: none; padding: 0; color: inherit; font-size: inherit; font-weight: inherit; line-height: 1.3; text-decoration: inherit; mso-line-height-rule: exactly;" class="" data-line-height="1.3"> <div style="margin: 0; outline: none; padding: 0; color: inherit; font-size: inherit; font-weight: inherit; line-height: inherit; text-decoration: inherit; text-align: left;" class=""><span class="" style='color: #c92c7f; font-size: 27px; font-weight: inherit; line-height: inherit; text-decoration: inherit; font-family: Roboto, "San Francisco", Helvetica, Arial, sans-serif;'><span style="color: inherit; font-size: inherit; font-weight: 700;
+line-height: inherit; text-decoration: inherit;" class=""> </span><div style='margin: 0; outline: none; padding: 0; color: var(--ytd-video-primary-info-renderer-title-color,var(--yt-spec-text-primary)); font-size: 27px; font-weight: inherit; line-height: inherit; text-decoration: inherit; font-family: Roboto, "San Francisco", Helvetica, Arial, sans-serif; font-style: normal; text-align: start;'><span style="color: inherit; font-size: inherit; font-weight: bold; line-height: inherit; text-decoration: inherit;" class="">MLOps Do/Did/Done!</span></div>
+ </span></div>
+ </div>
+<!--[if (gte mso 12)&(lte mso 15) ]>
+<style data-ac-keep="true" data-ac-inline="false"> #text_div7670, #text_div7670 div { line-height: 130% !important; };
+</style>
+<![endif]--></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr style="mso-line-height-rule: exactly; background-color: #ffffff;"><td id="layout-row-margin7987" valign="top" style="mso-line-height-rule: exactly; padding: 0; background-color: #ffffff;"><table width="100%" border="0" cellpadding="0" cellspacing="0" style="-ms-text-size-adjust: auto; -webkit-text-size-adjust: 100%; border-collapse: initial !important; font-size: 14px; min-width: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt;"><tr id="layout-row7987" class="layout layout-row widget _widget_break style7987" style="mso-line-height-rule: exactly;"><td id="layout-row-padding7987" valign="top" style="mso-line-height-rule: exactly; line-height: 0; padding: 0 50px 10px 50px;"><table width="100%" border="0" cellpadding="0" cellspacing="0" style="-ms-text-size-adjust: auto; -webkit-text-size-adjust: 100%; border-collapse: collapse; font-size: 14px; min-width: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; line-height: 0; mso-line-height-rule: exactly;"><tr
+style="mso-line-height-rule: exactly;"><td height="5" style="mso-line-height-rule: exactly; line-height: 0;"></td>
+</tr>
+<tr style="mso-line-height-rule: exactly;"><td align="left" height="1" width="550" style="mso-line-height-rule: exactly; line-height: 0;"> <table align="left" border="0" cellpadding="0" cellspacing="0" height="1" width="138" style="-ms-text-size-adjust: auto; -webkit-text-size-adjust: 100%; border-collapse: collapse; font-size: 14px; min-width: auto!important; mso-table-lspace: 0pt; mso-table-rspace: 0pt; line-height: 0; mso-line-height-rule: exactly; width: 25%; max-width: 25%;"><tr style="mso-line-height-rule: exactly;"><td class="break-line" bgcolor="#c92c7f" height="1" width="138" style="mso-line-height-rule: exactly; line-height: 1px; height: 1px; width: 138px; background-color: #c92c7f;"> </td>
+ </tr>
+</table>
+</td>
+ </tr>
+<tr style="mso-line-height-rule: exactly;"><td height="5" style="mso-line-height-rule: exactly; line-height: 0;"></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr style="mso-line-height-rule: exactly; background-color: #ffffff;"><td id="layout-row-margin7989" valign="top" style="mso-line-height-rule: exactly; padding: 0; background-color: #ffffff;"><table width="100%" border="0" cellpadding="0" cellspacing="0" style="-ms-text-size-adjust: auto; -webkit-text-size-adjust: 100%; border-collapse: initial !important; font-size: 14px; min-width: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt;"><tr id="layout-row7989" class="layout layout-row widget _widget_picture style7989" align="center" style="mso-line-height-rule: exactly;"><td id="layout-row-padding7989" valign="top" style="mso-line-height-rule: exactly; padding: 0 0 0 0px;"><table width="100%" border="0" cellpadding="0" cellspacing="0" style="-ms-text-size-adjust: auto; -webkit-text-size-adjust: 100%; border-collapse: collapse; font-size: 14px; min-width: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt;"><tr style="mso-line-height-rule: exactly;"><td
+class="image-td" align="center" valign="top" width="650" style="mso-line-height-rule: exactly;"><img src="../content.app-us1.com/8j3Jq/2022/01/16/d79e654a-4190-4aee-805d-98eab4423f65.jpeg_r=1146490392" alt="" width="650" style="display: block; border: none; outline: none; width: 650px; opacity: 1; max-width: 100%;"></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr style="mso-line-height-rule: exactly; background-color: #ffffff;"><td id="layout-row-margin7988" valign="top" style="mso-line-height-rule: exactly; padding: 0px; background-color: #ffffff;"><table width="100%" border="0" cellpadding="0" cellspacing="0" style="-ms-text-size-adjust: auto; -webkit-text-size-adjust: 100%; border-collapse: initial !important; font-size: 14px; min-width: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt;"><tr id="layout-row7988" class="layout layout-row widget _widget_text style7988" style="mso-line-height-rule: exactly; margin: 0; padding: 0;"><td id="layout-row-padding7988" valign="top" style="mso-line-height-rule: exactly; padding: 15px 50px 0px 50px;"><table width="100%" border="0" cellpadding="0" cellspacing="0" style="-ms-text-size-adjust: auto; -webkit-text-size-adjust: 100%; border-collapse: collapse; font-size: 14px; min-width: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt;"><tr style="mso-line-height-rule:
+exactly;"><td id="text_div7673" class="td_text td_block" valign="top" align="left" width="550" style="line-height: 150%; mso-line-height-rule: exactly; margin: 0; outline: none; padding: 0; color: inherit; font-size: 12px; font-weight: inherit; line-height: 1.5; text-decoration: inherit; font-family: arial;"> <div style="line-height: 150%; margin: 0; outline: none; padding: 0; color: inherit; font-size: 16px; font-weight: inherit; line-height: 1.5; text-decoration: inherit; mso-line-height-rule: exactly;" data-line-height="1.5"><span style='color: inherit; font-size: inherit; font-weight: inherit; line-height: inherit; text-decoration: inherit; font-family: Roboto, "San Francisco", Helvetica, Arial, sans-serif;' class="">"It's okay to do a little bit and then scale it up". Andy came on the meetup last week to give us a practical view of doing MLOps. His main message? Don't bite off more than you can chew, make steady progress, there is no need to go from 0 to 100
+all at once. Its a process.<br><br>I appreciate how he talked about different baby steps you can take. Make sure you are evolving with each project. Andy showed us just what that can look like, starting with version control and maturing all the way to CI/CD, unit testing, infrastructure as code, experiment tracking and performance monitoring.<br><br>My favorite quote was when Andy eloquently describe ML Engineering as when you put one model into production and MLOps being when you put n+1 model into production. </span></div>
+<!--[if (gte mso 12)&(lte mso 15) ]>
+<style data-ac-keep="true" data-ac-inline="false"> #text_div7673, #text_div7673 div { line-height: 150% !important; };
+</style>
+<![endif]--></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr style="mso-line-height-rule: exactly; background-color: #ffffff;"><td id="layout-row-margin7997" valign="top" style="mso-line-height-rule: exactly; padding: 0; background-color: #ffffff;"><table width="100%" border="0" cellpadding="0" cellspacing="0" style="-ms-text-size-adjust: auto; -webkit-text-size-adjust: 100%; border-collapse: initial !important; font-size: 14px; min-width: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt;"><tr id="layout-row7997" class="layout layout-row widget _widget_button style7997" style="mso-line-height-rule: exactly;"><td id="layout-row-padding7997" valign="top" style="mso-line-height-rule: exactly; padding: 20px 50px 20px 50px;"><table width="100%" border="0" cellpadding="0" cellspacing="0" style="-ms-text-size-adjust: auto; -webkit-text-size-adjust: 100%; border-collapse: collapse; font-size: 14px; min-width: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt;"><tr style="mso-line-height-rule: exactly;"><td class="td_button
+td_block customizable" valign="top" align="left" width="550" style="mso-line-height-rule: exactly;"> <div class="button-wrapper" style="margin: 0; outline: none; padding: 0; text-align: left;">
+<!--[if mso]> <v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" href="https://autodb.lt.acemlna.com/Prod/link-tracker?notrack=1&redirectUrl=aHR0cHMlM0ElMkYlMkZ5b3V0dS5iZSUyRmwxdWhFOWZFZm84JTNGdXRtX3NvdXJjZSUzREFjdGl2ZUNhbXBhaWduJTI2dXRtX21lZGl1bSUzRGVtYWlsJTI2dXRtX2NvbnRlbnQlM0RTY2FsaW5nJTI1MjBCaW90ZWNoJTI2dXRtX2NhbXBhaWduJTNETUxPcHMlMjUyMC0lMjUyME5ld3NsZXR0ZXIlMjUyMC0lMjUyMDIwMjElMjUyMC0lMjUyMDAxJTI1MjAtJTI1MjAxNg==&sig=BcRDXizZE7FZhGxowrrbxAW4wvHxJrgQYATKQ9n6QAQa&iat=1713905088&a=%7C%7C650082935%7C%7C&account=autodb%2Eactivehosted%2Ecom&email=8cc6HsuSNhNsWlE4rAfm8NwcEjOCdrhfE9RTrSwyUGwIrRyUwA%3D%3D%3AlBjuBgtbvqAoh6jFlIPlcxUbmhp0u%2B1G&s=bad97c655476f96a390a72c05a742011&i=170A198A5A6826" style="v-text-anchor:middle; width:149px; height:64px; " arcsize="6%" strokecolor="#3e86cb" strokeweight="1pt" fillcolor="#3e86cb" o:button="true" o:allowincell="true" o:allowoverlap="false" > <v:textbox inset="2px,2px,2px,2px"> <center style="color:#fff7f7;font-family:Roboto, San Francisco, Helvetica, Arial, sans-serif; font-size:14px; line-height: 1.1;">MLOps Maturity</center> </v:textbox> </v:roundrect>
+<![endif]--> <a href="https://youtu.be/l1uhE9fEfo8?utm_source=ActiveCampaign&utm_medium=email&utm_content=Scaling%20Biotech&utm_campaign=MLOps%20-%20Newsletter%20-%202021%20-%2001%20-%2016" style="margin: 0; outline: none; padding: 15px; color: #fff7f7; background: #3e86cb; background-color: #3e86cb; border-radius: 3px; font-family: Roboto, San Francisco, Helvetica, Arial, sans-serif; font-size: 14px; display: inline-block; line-height: 1.1; text-align: center; text-decoration: none; mso-hide: all;" target="_blank"> <span style="color:#fff7f7;font-family:Roboto, San Francisco, Helvetica, Arial, sans-serif;font-size:14px;" target="_blank"> MLOps Maturity </span> </a> </div>
+
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr style="mso-line-height-rule: exactly; background-color: #ffffff;"><td id="layout-row-margin8014" valign="top" style="mso-line-height-rule: exactly; padding: 0; background-color: #ffffff;"><table width="100%" border="0" cellpadding="0" cellspacing="0" style="-ms-text-size-adjust: auto; -webkit-text-size-adjust: 100%; border-collapse: initial !important; font-size: 14px; min-width: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt;"><tr id="layout-row8014" class="layout layout-row widget _widget_text style8014" style="mso-line-height-rule: exactly; margin: 0; padding: 0;"><td id="layout-row-padding8014" valign="top" style="mso-line-height-rule: exactly; padding: 29px 50px 0px 50px;"><table width="100%" border="0" cellpadding="0" cellspacing="0" style="-ms-text-size-adjust: auto; -webkit-text-size-adjust: 100%; border-collapse: collapse; font-size: 14px; min-width: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt;"><tr style="mso-line-height-rule: exactly;"><td
+id="text_div7699" class="td_text td_block" valign="top" align="left" width="550" style="line-height: 150%; mso-line-height-rule: exactly; margin: 0; outline: none; padding: 0; color: inherit; font-size: 12px; font-weight: inherit; line-height: 1.5; text-decoration: inherit; font-family: arial;"> <div style="line-height: 150%; margin: 0; outline: none; padding: 0; color: #555555; font-size: 15px; font-weight: inherit; line-height: 1.5; text-decoration: inherit; mso-line-height-rule: exactly;" data-line-height="1.5"> <div style="margin: 0; outline: none; padding: 0; color: #555555; font-size: inherit; font-weight: inherit; line-height: inherit; text-decoration: inherit;"><span style='color: inherit; font-size: inherit; font-weight: 700; line-height: inherit; text-decoration: inherit; font-family: Roboto, "San Francisco", Helvetica, Arial, sans-serif;' class="">Coffee Sessions</span></div>
+ </div>
+<!--[if (gte mso 12)&(lte mso 15) ]>
+<style data-ac-keep="true" data-ac-inline="false"> #text_div7699, #text_div7699 div { line-height: 150% !important; };
+</style>
+<![endif]--></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr style="mso-line-height-rule: exactly; background-color: #ffffff;"><td id="layout-row-margin8015" valign="top" style="mso-line-height-rule: exactly; padding: 0; background-color: #ffffff;"><table width="100%" border="0" cellpadding="0" cellspacing="0" style="-ms-text-size-adjust: auto; -webkit-text-size-adjust: 100%; border-collapse: initial !important; font-size: 14px; min-width: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt;"><tr id="layout-row8015" class="layout layout-row widget _widget_text style8015" style="mso-line-height-rule: exactly; margin: 0; padding: 0;"><td id="layout-row-padding8015" valign="top" style="mso-line-height-rule: exactly; padding: 10px 50px 10px 50px;"><table width="100%" border="0" cellpadding="0" cellspacing="0" style="-ms-text-size-adjust: auto; -webkit-text-size-adjust: 100%; border-collapse: collapse; font-size: 14px; min-width: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt;"><tr style="mso-line-height-rule: exactly;"><td
+id="text_div7700" class="td_text td_block" valign="top" align="left" width="550" style="line-height: 130%; mso-line-height-rule: exactly; margin: 0; outline: none; padding: 0; color: inherit; font-size: 12px; font-weight: inherit; line-height: 1.3; text-decoration: inherit; font-family: arial;"> <div style="line-height: 130%; margin: 0; outline: none; padding: 0; color: inherit; font-size: inherit; font-weight: inherit; line-height: 1.3; text-decoration: inherit; mso-line-height-rule: exactly;" class="" data-line-height="1.3"> <div style="margin: 0; outline: none; padding: 0; color: inherit; font-size: inherit; font-weight: inherit; line-height: inherit; text-decoration: inherit; text-align: left;" class=""><span style='color: #c92c7f; font-size: 27px; font-weight: 700; line-height: inherit; text-decoration: inherit; font-family: Roboto, "San Francisco", Helvetica, Arial, sans-serif;'>Scaling Biotech</span></div>
+ </div>
+<!--[if (gte mso 12)&(lte mso 15) ]>
+<style data-ac-keep="true" data-ac-inline="false"> #text_div7700, #text_div7700 div { line-height: 130% !important; };
+</style>
+<![endif]--></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr style="mso-line-height-rule: exactly; background-color: #ffffff;"><td id="layout-row-margin8016" valign="top" style="mso-line-height-rule: exactly; padding: 0; background-color: #ffffff;"><table width="100%" border="0" cellpadding="0" cellspacing="0" style="-ms-text-size-adjust: auto; -webkit-text-size-adjust: 100%; border-collapse: initial !important; font-size: 14px; min-width: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt;"><tr id="layout-row8016" class="layout layout-row widget _widget_break style8016" style="mso-line-height-rule: exactly;"><td id="layout-row-padding8016" valign="top" style="mso-line-height-rule: exactly; line-height: 0; padding: 0 50px 10px 50px;"><table width="100%" border="0" cellpadding="0" cellspacing="0" style="-ms-text-size-adjust: auto; -webkit-text-size-adjust: 100%; border-collapse: collapse; font-size: 14px; min-width: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; line-height: 0; mso-line-height-rule: exactly;"><tr
+style="mso-line-height-rule: exactly;"><td height="5" style="mso-line-height-rule: exactly; line-height: 0;"></td>
+</tr>
+<tr style="mso-line-height-rule: exactly;"><td align="left" height="1" width="550" style="mso-line-height-rule: exactly; line-height: 0;"> <table align="left" border="0" cellpadding="0" cellspacing="0" height="1" width="138" style="-ms-text-size-adjust: auto; -webkit-text-size-adjust: 100%; border-collapse: collapse; font-size: 14px; min-width: auto!important; mso-table-lspace: 0pt; mso-table-rspace: 0pt; line-height: 0; mso-line-height-rule: exactly; width: 25%; max-width: 25%;"><tr style="mso-line-height-rule: exactly;"><td class="break-line" bgcolor="#c92c7f" height="1" width="138" style="mso-line-height-rule: exactly; line-height: 1px; height: 1px; width: 138px; background-color: #c92c7f;"> </td>
+ </tr>
+</table>
+</td>
+ </tr>
+<tr style="mso-line-height-rule: exactly;"><td height="5" style="mso-line-height-rule: exactly; line-height: 0;"></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr style="mso-line-height-rule: exactly; background-color: #ffffff;"><td id="layout-row-margin8018" valign="top" style="mso-line-height-rule: exactly; padding: 0; background-color: #ffffff;"><table width="100%" border="0" cellpadding="0" cellspacing="0" style="-ms-text-size-adjust: auto; -webkit-text-size-adjust: 100%; border-collapse: initial !important; font-size: 14px; min-width: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt;"><tr id="layout-row8018" class="layout layout-row widget _widget_picture style8018" align="left" style="mso-line-height-rule: exactly;"><td id="layout-row-padding8018" valign="top" style="mso-line-height-rule: exactly; padding: 0 0 0 0px;"><table width="100%" border="0" cellpadding="0" cellspacing="0" style="-ms-text-size-adjust: auto; -webkit-text-size-adjust: 100%; border-collapse: collapse; font-size: 14px; min-width: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt;"><tr style="mso-line-height-rule: exactly;"><td class="image-td"
+align="left" valign="top" width="650" style="mso-line-height-rule: exactly;"><img src="../content.app-us1.com/8j3Jq/2022/01/16/3cfc8e80-66ba-4c5f-9e71-15f82a5c4aa4.jpeg_r=544277241" alt="" width="650" style="display: block; border: none; outline: none; width: 650px; opacity: 1; max-width: 100%;"></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr style="mso-line-height-rule: exactly; background-color: #ffffff;"><td id="layout-row-margin8006" valign="top" style="mso-line-height-rule: exactly; padding: 0px; background-color: #ffffff;"><table width="100%" border="0" cellpadding="0" cellspacing="0" style="-ms-text-size-adjust: auto; -webkit-text-size-adjust: 100%; border-collapse: initial !important; font-size: 14px; min-width: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt;"><tr id="layout-row8006" class="layout layout-row widget _widget_text style8006" style="mso-line-height-rule: exactly; margin: 0; padding: 0;"><td id="layout-row-padding8006" valign="top" style="mso-line-height-rule: exactly; padding: 15px 50px 0px 50px;"><table width="100%" border="0" cellpadding="0" cellspacing="0" style="-ms-text-size-adjust: auto; -webkit-text-size-adjust: 100%; border-collapse: collapse; font-size: 14px; min-width: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt;"><tr style="mso-line-height-rule:
+exactly;"><td id="text_div7691" class="td_text td_block" valign="top" align="left" width="550" style="line-height: 150%; mso-line-height-rule: exactly; margin: 0; outline: none; padding: 0; color: inherit; font-size: 12px; font-weight: inherit; line-height: 1.5; text-decoration: inherit; font-family: arial;"> <div style="line-height: 150%; margin: 0; outline: none; padding: 0; color: inherit; font-size: 16px; font-weight: inherit; line-height: 1.5; text-decoration: inherit; mso-line-height-rule: exactly;" class="" data-line-height="1.5"><span style="color: #000000; font-size: 16px; font-weight: 400; line-height: inherit; text-decoration: inherit; font-family: arial; font-style: normal;">With the advent of COVID vaccines, we’ve all been exposed to the amazing advances created by modern biotech. Data science and machine learning played a role in developing these technologies and many other biotech advances. This week, we were joined by Jesse Johnson, a guest steeped
+in the role of tech, machine learning, and data science in advancing the pace of innovation in biotech!<br><br> Jesse is the VP of Data Science and Data Engineering at Dewpoint Therapeutics, a company targeting a class of molecules called condensates. For a company like Dewpoint (and any other biotech), there is a huge amount of complexity to translate across fields; scientists need to work closely with data scientists and software engineers to translate biotech context into ML experiments and systems. This is no small feat, and Jesse shared with us the heavy work he puts into creating systems of communication and "shared mental models" to merge domain expertise and machine learning. We also touched on Jesse’s unique career background, in which he shifted from being a tenure-track math professor to a software engineer at Google and now a data systems leader at a cutting-edge company.<br><br> This is a great podcast for anyone interested in hearing real details
+about how to implement production machine learning systems into a complex, non-software industry context. It’s the story of many industries trying to take advantage of ML nowadays, and I highly recommend listening to Jesse’s nuanced and thoughtful perspective on how to do it right! - Vishnu </span></div>
+<!--[if (gte mso 12)&(lte mso 15) ]>
+<style data-ac-keep="true" data-ac-inline="false"> #text_div7691, #text_div7691 div { line-height: 150% !important; };
+</style>
+<![endif]--></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr style="mso-line-height-rule: exactly; background-color: #ffffff;"><td id="layout-row-margin8020" valign="top" style="mso-line-height-rule: exactly; padding: 0; background-color: #ffffff;"><table width="100%" border="0" cellpadding="0" cellspacing="0" style="-ms-text-size-adjust: auto; -webkit-text-size-adjust: 100%; border-collapse: initial !important; font-size: 14px; min-width: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt;"><tr id="layout-row8020" class="layout layout-row widget _widget_button style8020" style="mso-line-height-rule: exactly;"><td id="layout-row-padding8020" valign="top" style="mso-line-height-rule: exactly; padding: 20px 50px 20px 50px;"><table width="100%" border="0" cellpadding="0" cellspacing="0" style="-ms-text-size-adjust: auto; -webkit-text-size-adjust: 100%; border-collapse: collapse; font-size: 14px; min-width: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt;"><tr style="mso-line-height-rule: exactly;"><td class="td_button
+td_block customizable" valign="top" align="left" width="550" style="mso-line-height-rule: exactly;"> <div class="button-wrapper" style="margin: 0; outline: none; padding: 0; text-align: left;">
+<!--[if mso]> <v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" href="https://autodb.lt.acemlna.com/Prod/link-tracker?notrack=1&redirectUrl=aHR0cHMlM0ElMkYlMkZ5b3V0dS5iZSUyRldMWXlLekx4eXRjJTNGdXRtX3NvdXJjZSUzREFjdGl2ZUNhbXBhaWduJTI2dXRtX21lZGl1bSUzRGVtYWlsJTI2dXRtX2NvbnRlbnQlM0RTY2FsaW5nJTI1MjBCaW90ZWNoJTI2dXRtX2NhbXBhaWduJTNETUxPcHMlMjUyMC0lMjUyME5ld3NsZXR0ZXIlMjUyMC0lMjUyMDIwMjElMjUyMC0lMjUyMDAxJTI1MjAtJTI1MjAxNg==&sig=4nRxcuwUnMpTLuru31uDNiZPohdWyD6vhjn4g1P4fGpM&iat=1713905088&a=%7C%7C650082935%7C%7C&account=autodb%2Eactivehosted%2Ecom&email=8cc6HsuSNhNsWlE4rAfm8NwcEjOCdrhfE9RTrSwyUGwIrRyUwA%3D%3D%3AlBjuBgtbvqAoh6jFlIPlcxUbmhp0u%2B1G&s=bad97c655476f96a390a72c05a742011&i=170A198A5A6822" style="v-text-anchor:middle; width:148px; height:64px; " arcsize="6%" strokecolor="#3e86cb" strokeweight="1pt" fillcolor="#3e86cb" o:button="true" o:allowincell="true" o:allowoverlap="false" > <v:textbox inset="2px,2px,2px,2px"> <center style="color:#fff7f7;font-family:Roboto, San Francisco, Helvetica, Arial, sans-serif; font-size:14px; line-height: 1.1;">BioTech MLOps</center> </v:textbox> </v:roundrect>
+<![endif]--> <a href="https://youtu.be/WLYyKzLxytc?utm_source=ActiveCampaign&utm_medium=email&utm_content=Scaling%20Biotech&utm_campaign=MLOps%20-%20Newsletter%20-%202021%20-%2001%20-%2016" style="margin: 0; outline: none; padding: 15px; color: #fff7f7; background: #3e86cb; background-color: #3e86cb; border-radius: 3px; font-family: Roboto, San Francisco, Helvetica, Arial, sans-serif; font-size: 14px; display: inline-block; line-height: 1.1; text-align: center; text-decoration: none; mso-hide: all;" target="_blank"> <span style="color:#fff7f7;font-family:Roboto, San Francisco, Helvetica, Arial, sans-serif;font-size:14px;" target="_blank"> BioTech MLOps </span> </a> </div>
+
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr style="mso-line-height-rule: exactly; background-color: #ffffff;"><td id="layout-row-margin7990" valign="top" style="mso-line-height-rule: exactly; padding: 0; background-color: #ffffff;"><table width="100%" border="0" cellpadding="0" cellspacing="0" style="-ms-text-size-adjust: auto; -webkit-text-size-adjust: 100%; border-collapse: initial !important; font-size: 14px; min-width: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt;"><tr id="layout-row7990" class="layout layout-row widget _widget_text style7990" style="mso-line-height-rule: exactly; margin: 0; padding: 0;"><td id="layout-row-padding7990" valign="top" style="mso-line-height-rule: exactly; padding: 29px 50px 0px 50px;"><table width="100%" border="0" cellpadding="0" cellspacing="0" style="-ms-text-size-adjust: auto; -webkit-text-size-adjust: 100%; border-collapse: collapse; font-size: 14px; min-width: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt;"><tr style="mso-line-height-rule: exactly;"><td
+id="text_div7675" class="td_text td_block" valign="top" align="left" width="550" style="line-height: 150%; mso-line-height-rule: exactly; margin: 0; outline: none; padding: 0; color: inherit; font-size: 12px; font-weight: inherit; line-height: 1.5; text-decoration: inherit; font-family: arial;"> <div style="line-height: 150%; margin: 0; outline: none; padding: 0; color: #555555; font-size: 15px; font-weight: inherit; line-height: 1.5; text-decoration: inherit; mso-line-height-rule: exactly;" data-line-height="1.5"> <div style="margin: 0; outline: none; padding: 0; color: #555555; font-size: inherit; font-weight: inherit; line-height: inherit; text-decoration: inherit;"><span style='color: inherit; font-size: inherit; font-weight: 700; line-height: inherit; text-decoration: inherit; font-family: Roboto, "San Francisco", Helvetica, Arial, sans-serif;' class="">Events</span></div>
+ </div>
+<!--[if (gte mso 12)&(lte mso 15) ]>
+<style data-ac-keep="true" data-ac-inline="false"> #text_div7675, #text_div7675 div { line-height: 150% !important; };
+</style>
+<![endif]--></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr style="mso-line-height-rule: exactly; background-color: #ffffff;"><td id="layout-row-margin8008" valign="top" style="mso-line-height-rule: exactly; padding: 0; background-color: #ffffff;"><table width="100%" border="0" cellpadding="0" cellspacing="0" style="-ms-text-size-adjust: auto; -webkit-text-size-adjust: 100%; border-collapse: initial !important; font-size: 14px; min-width: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt;"><tr id="layout-row8008" class="layout layout-row widget _widget_text style8008" style="mso-line-height-rule: exactly; margin: 0; padding: 0;"><td id="layout-row-padding8008" valign="top" style="mso-line-height-rule: exactly; padding: 10px 50px 10px 50px;"><table width="100%" border="0" cellpadding="0" cellspacing="0" style="-ms-text-size-adjust: auto; -webkit-text-size-adjust: 100%; border-collapse: collapse; font-size: 14px; min-width: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt;"><tr style="mso-line-height-rule: exactly;"><td
+id="text_div7693" class="td_text td_block" valign="top" align="left" width="550" style="line-height: 130%; mso-line-height-rule: exactly; margin: 0; outline: none; padding: 0; color: inherit; font-size: 12px; font-weight: inherit; line-height: 1.3; text-decoration: inherit; font-family: arial;"> <div style='line-height: 130%; margin: 0; outline: none; padding: 0; color: #c92c7f; font-size: 27px; font-weight: inherit; line-height: 1.3; text-decoration: inherit; mso-line-height-rule: exactly; font-family: Roboto, "San Francisco", Helvetica, Arial, sans-serif;' data-line-height="1.3"><span style='color: #c92c7f; font-size: 27px; font-weight: 700; line-height: inherit; text-decoration: inherit; font-family: Roboto, "San Francisco", Helvetica, Arial, sans-serif;' class="">Data Engineering Course</span></div>
+<!--[if (gte mso 12)&(lte mso 15) ]>
+<style data-ac-keep="true" data-ac-inline="false"> #text_div7693, #text_div7693 div { line-height: 130% !important; };
+</style>
+<![endif]--></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr style="mso-line-height-rule: exactly; background-color: #ffffff;"><td id="layout-row-margin8003" valign="top" style="mso-line-height-rule: exactly; padding: 0; background-color: #ffffff;"><table width="100%" border="0" cellpadding="0" cellspacing="0" style="-ms-text-size-adjust: auto; -webkit-text-size-adjust: 100%; border-collapse: initial !important; font-size: 14px; min-width: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt;"><tr id="layout-row8003" class="layout layout-row widget _widget_break style8003" style="mso-line-height-rule: exactly;"><td id="layout-row-padding8003" valign="top" style="mso-line-height-rule: exactly; line-height: 0; padding: 0 50px 10px 50px;"><table width="100%" border="0" cellpadding="0" cellspacing="0" style="-ms-text-size-adjust: auto; -webkit-text-size-adjust: 100%; border-collapse: collapse; font-size: 14px; min-width: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; line-height: 0; mso-line-height-rule: exactly;"><tr
+style="mso-line-height-rule: exactly;"><td height="5" style="mso-line-height-rule: exactly; line-height: 0;"></td>
+</tr>
+<tr style="mso-line-height-rule: exactly;"><td align="left" height="1" width="550" style="mso-line-height-rule: exactly; line-height: 0;"> <table align="left" border="0" cellpadding="0" cellspacing="0" height="1" width="138" style="-ms-text-size-adjust: auto; -webkit-text-size-adjust: 100%; border-collapse: collapse; font-size: 14px; min-width: auto!important; mso-table-lspace: 0pt; mso-table-rspace: 0pt; line-height: 0; mso-line-height-rule: exactly; width: 25%; max-width: 25%;"><tr style="mso-line-height-rule: exactly;"><td class="break-line" bgcolor="#c92c7f" height="1" width="138" style="mso-line-height-rule: exactly; line-height: 1px; height: 1px; width: 138px; background-color: #c92c7f;"> </td>
+ </tr>
+</table>
+</td>
+ </tr>
+<tr style="mso-line-height-rule: exactly;"><td height="5" style="mso-line-height-rule: exactly; line-height: 0;"></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr style="mso-line-height-rule: exactly; background-color: #ffffff;"><td id="layout-row-margin8010" valign="top" style="mso-line-height-rule: exactly; padding: 0; background-color: #ffffff;"><table width="100%" border="0" cellpadding="0" cellspacing="0" style="-ms-text-size-adjust: auto; -webkit-text-size-adjust: 100%; border-collapse: initial !important; font-size: 14px; min-width: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt;"><tr id="layout-row8010" class="layout layout-row widget _widget_picture style8010" align="left" style="mso-line-height-rule: exactly;"><td id="layout-row-padding8010" valign="top" style="mso-line-height-rule: exactly; padding: 0 0 0 0px;"><table width="100%" border="0" cellpadding="0" cellspacing="0" style="-ms-text-size-adjust: auto; -webkit-text-size-adjust: 100%; border-collapse: collapse; font-size: 14px; min-width: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt;"><tr style="mso-line-height-rule: exactly;"><td class="image-td"
+align="left" valign="top" width="650" style="mso-line-height-rule: exactly;"><a href="https://hubs.ly/Q010-yJS0?utm_source=ActiveCampaign&utm_medium=email&utm_content=Scaling%20Biotech&utm_campaign=MLOps%20-%20Newsletter%20-%202021%20-%2001%20-%2016" style="margin: 0; outline: none; padding: 0; color: #3e86cb; display: block; min-width: 100%;" target="_blank"><img src="../content.app-us1.com/8j3Jq/2022/01/16/93c3ad1d-873d-4a32-8041-389995557bc2.gif_r=2142822202" alt="" width="650" style="border: none; display: block; outline: none; width: 650px; opacity: 1; max-width: 100%;" target="_blank"></a></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr style="mso-line-height-rule: exactly; background-color: #ffffff;"><td id="layout-row-margin8012" valign="top" style="mso-line-height-rule: exactly; padding: 0px; background-color: #ffffff;"><table width="100%" border="0" cellpadding="0" cellspacing="0" style="-ms-text-size-adjust: auto; -webkit-text-size-adjust: 100%; border-collapse: initial !important; font-size: 14px; min-width: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt;"><tr id="layout-row8012" class="layout layout-row widget _widget_text style8012" style="mso-line-height-rule: exactly; margin: 0; padding: 0;"><td id="layout-row-padding8012" valign="top" style="mso-line-height-rule: exactly; padding: 15px 50px 0px 50px;"><table width="100%" border="0" cellpadding="0" cellspacing="0" style="-ms-text-size-adjust: auto; -webkit-text-size-adjust: 100%; border-collapse: collapse; font-size: 14px; min-width: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt;"><tr style="mso-line-height-rule:
+exactly;"><td id="text_div7697" class="td_text td_block" valign="top" align="left" width="550" style="line-height: 150%; mso-line-height-rule: exactly; margin: 0; outline: none; padding: 0; color: inherit; font-size: 12px; font-weight: inherit; line-height: 1.5; text-decoration: inherit; font-family: arial;"> <div style="line-height: 150%; margin: 0; outline: none; padding: 0; color: inherit; font-size: 16px; font-weight: inherit; line-height: 1.5; text-decoration: inherit; mso-line-height-rule: exactly;" class="" data-line-height="1.5"><span style="color: #000000; font-size: 16px; font-weight: 400; line-height: inherit; text-decoration: inherit; font-family: arial; font-style: normal; text-align: left;" class="">DataTalks.Club is running a free data engineering course and it starts this week!<br style="" class=""><br style="" class="">The course will cover:</span><br class=""><ul data-stringify-type="unordered-list" data-indent="0" data-border="0" style="margin: 0;
+padding: 0; color: #000000; font-family: arial; font-size: 16px; font-style: normal; font-weight: 400; text-align: left;" class=""><li data-stringify-indent="0" data-stringify-border="0" style="display: list-item; line-height: inherit; list-style-type: disc; margin: 0 0 0 28px;" class="">GCP, Terraform, Docker, SQL</li><li data-stringify-indent="0" data-stringify-border="0" style="display: list-item; line-height: inherit; list-style-type: disc; margin: 0 0 0 28px;" class="">Data pipelines orchestration (Airflow)</li><li data-stringify-indent="0" data-stringify-border="0" style="display: list-item; line-height: inherit; list-style-type: disc; margin: 0 0 0 28px;" class="">Data warehousing (Big Query)</li><li data-stringify-indent="0" data-stringify-border="0" style="display: list-item; line-height: inherit; list-style-type: disc; margin: 0 0 0 28px;" class="">Analytics engineering (DBT)</li><li data-stringify-indent="0" data-stringify-border="0" style="display:
+list-item; line-height: inherit; list-style-type: disc; margin: 0 0 0 28px;" class="">Batch processing (Spark)</li><li data-stringify-indent="0" data-stringify-border="0" style="display: list-item; line-height: inherit; list-style-type: disc; margin: 0 0 0 28px;" class="">Streaming (Kafka)</li></ul><div style="margin: 0; outline: none; padding: 0; color: inherit; font-size: inherit; font-weight: inherit; line-height: inherit; text-decoration: inherit;"><br>Get involved! its free!<br><br>Side note, there is a really cool conference happening in the MLOps universe this Thursday! <a
+href="https://machinelearning.co.il/mdli-ops-2022/?utm_source=ActiveCampaign&utm_medium=email&utm_content=Scaling%20Biotech&utm_campaign=MLOps%20-%20Newsletter%20-%202021%20-%2001%20-%2016" data-ac-default-color="1" style="margin: 0; outline: none; padding: 0; color: #3e86cb; text-decoration: underline;" target="_blank"><span style="color: ; font-size: inherit; font-weight: inherit; line-height: inherit; text-decoration: inherit;" target="_blank">MLDI Ops Conference</span></a> is also free, so register and get involved! </div>
+</div>
+<!--[if (gte mso 12)&(lte mso 15) ]>
+<style data-ac-keep="true" data-ac-inline="false"> #text_div7697, #text_div7697 div { line-height: 150% !important; };
+</style>
+<![endif]--></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr style="mso-line-height-rule: exactly; background-color: #ffffff;"><td id="layout-row-margin8013" valign="top" style="mso-line-height-rule: exactly; padding: 0; background-color: #ffffff;"><table width="100%" border="0" cellpadding="0" cellspacing="0" style="-ms-text-size-adjust: auto; -webkit-text-size-adjust: 100%; border-collapse: initial !important; font-size: 14px; min-width: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt;"><tr id="layout-row8013" class="layout layout-row widget _widget_button style8013" style="mso-line-height-rule: exactly;"><td id="layout-row-padding8013" valign="top" style="mso-line-height-rule: exactly; padding: 20px 50px 20px 50px;"><table width="100%" border="0" cellpadding="0" cellspacing="0" style="-ms-text-size-adjust: auto; -webkit-text-size-adjust: 100%; border-collapse: collapse; font-size: 14px; min-width: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt;"><tr style="mso-line-height-rule: exactly;"><td class="td_button
+td_block customizable" valign="top" align="left" width="550" style="mso-line-height-rule: exactly;"> <div class="button-wrapper" style="margin: 0; outline: none; padding: 0; text-align: left;">
+<!--[if mso]> <v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" href="https://autodb.lt.acemlna.com/Prod/link-tracker?notrack=1&redirectUrl=aHR0cHMlM0ElMkYlMkZnaXRodWIuY29tJTJGRGF0YVRhbGtzQ2x1YiUyRmRhdGEtZW5naW5lZXJpbmctem9vbWNhbXAlM0Z1dG1fc291cmNlJTNEQWN0aXZlQ2FtcGFpZ24lMjZ1dG1fbWVkaXVtJTNEZW1haWwlMjZ1dG1fY29udGVudCUzRFNjYWxpbmclMjUyMEJpb3RlY2glMjZ1dG1fY2FtcGFpZ24lM0RNTE9wcyUyNTIwLSUyNTIwTmV3c2xldHRlciUyNTIwLSUyNTIwMjAyMSUyNTIwLSUyNTIwMDElMjUyMC0lMjUyMDE2&sig=6rmVi15e5xKTzDHPt9Dqn1EcYgydL1swZf875yPVXFya&iat=1713905088&a=%7C%7C650082935%7C%7C&account=autodb%2Eactivehosted%2Ecom&email=8cc6HsuSNhNsWlE4rAfm8NwcEjOCdrhfE9RTrSwyUGwIrRyUwA%3D%3D%3AlBjuBgtbvqAoh6jFlIPlcxUbmhp0u%2B1G&s=bad97c655476f96a390a72c05a742011&i=170A198A5A6821" style="v-text-anchor:middle; width:186px; height:64px; " arcsize="6%" strokecolor="#3e86cb" strokeweight="1pt" fillcolor="#3e86cb" o:button="true" o:allowincell="true" o:allowoverlap="false" > <v:textbox inset="2px,2px,2px,2px"> <center style="color:#fff7f7;font-family:Roboto, San Francisco, Helvetica, Arial, sans-serif; font-size:14px; line-height: 1.1;">DE Course Curriculum</center> </v:textbox> </v:roundrect>
+<![endif]--> <a href="https://github.com/DataTalksClub/data-engineering-zoomcamp?utm_source=ActiveCampaign&utm_medium=email&utm_content=Scaling%20Biotech&utm_campaign=MLOps%20-%20Newsletter%20-%202021%20-%2001%20-%2016" style="margin: 0; outline: none; padding: 15px; color: #fff7f7; background: #3e86cb; background-color: #3e86cb; border-radius: 3px; font-family: Roboto, San Francisco, Helvetica, Arial, sans-serif; font-size: 14px; display: inline-block; line-height: 1.1; text-align: center; text-decoration: none; mso-hide: all;" target="_blank"> <span style="color:#fff7f7;font-family:Roboto, San Francisco, Helvetica, Arial, sans-serif;font-size:14px;" target="_blank"> DE Course Curriculum </span> </a> </div>
+
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr style="mso-line-height-rule: exactly; background-color: #ffffff;"><td id="layout-row-margin7995" valign="top" style="mso-line-height-rule: exactly; padding: 0; background-color: #ffffff;"><table width="100%" border="0" cellpadding="0" cellspacing="0" style="-ms-text-size-adjust: auto; -webkit-text-size-adjust: 100%; border-collapse: initial !important; font-size: 14px; min-width: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt;"><tr id="layout-row7995" class="layout layout-row widget _widget_text style7995" style="mso-line-height-rule: exactly; margin: 0; padding: 0;"><td id="layout-row-padding7995" valign="top" style="mso-line-height-rule: exactly; padding: 29px 50px 0px 50px;"><table width="100%" border="0" cellpadding="0" cellspacing="0" style="-ms-text-size-adjust: auto; -webkit-text-size-adjust: 100%; border-collapse: collapse; font-size: 14px; min-width: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt;"><tr style="mso-line-height-rule: exactly;"><td
+id="text_div7680" class="td_text td_block" valign="top" align="left" width="550" style="line-height: 150%; mso-line-height-rule: exactly; margin: 0; outline: none; padding: 0; color: inherit; font-size: 12px; font-weight: inherit; line-height: 1.5; text-decoration: inherit; font-family: arial;"> <div style="line-height: 150%; margin: 0; outline: none; padding: 0; color: #555555; font-size: 15px; font-weight: inherit; line-height: 1.5; text-decoration: inherit; mso-line-height-rule: exactly;" data-line-height="1.5"> <div style="margin: 0; outline: none; padding: 0; color: #555555; font-size: inherit; font-weight: inherit; line-height: inherit; text-decoration: inherit;"><span style='color: inherit; font-size: inherit; font-weight: 700; line-height: inherit; text-decoration: inherit; font-family: Roboto, "San Francisco", Helvetica, Arial, sans-serif;' class="">Current Meetup</span></div>
+ </div>
+<!--[if (gte mso 12)&(lte mso 15) ]>
+<style data-ac-keep="true" data-ac-inline="false"> #text_div7680, #text_div7680 div { line-height: 150% !important; };
+</style>
+<![endif]--></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr style="mso-line-height-rule: exactly; background-color: #ffffff;"><td id="layout-row-margin7994" valign="top" style="mso-line-height-rule: exactly; padding: 0; background-color: #ffffff;"><table width="100%" border="0" cellpadding="0" cellspacing="0" style="-ms-text-size-adjust: auto; -webkit-text-size-adjust: 100%; border-collapse: initial !important; font-size: 14px; min-width: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt;"><tr id="layout-row7994" class="layout layout-row widget _widget_text style7994" style="mso-line-height-rule: exactly; margin: 0; padding: 0;"><td id="layout-row-padding7994" valign="top" style="mso-line-height-rule: exactly; padding: 10px 50px 10px 50px;"><table width="100%" border="0" cellpadding="0" cellspacing="0" style="-ms-text-size-adjust: auto; -webkit-text-size-adjust: 100%; border-collapse: collapse; font-size: 14px; min-width: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt;"><tr style="mso-line-height-rule: exactly;"><td
+id="text_div7679" class="td_text td_block" valign="top" align="left" width="550" style="line-height: 130%; mso-line-height-rule: exactly; margin: 0; outline: none; padding: 0; color: inherit; font-size: 12px; font-weight: inherit; line-height: 1.3; text-decoration: inherit; font-family: arial;"> <div style="line-height: 130%; margin: 0; outline: none; padding: 0; color: inherit; font-size: inherit; font-weight: inherit; line-height: 1.3; text-decoration: inherit; mso-line-height-rule: exactly;" data-line-height="1.3"> <div style="margin: 0; outline: none; padding: 0; color: inherit; font-size: inherit; font-weight: inherit; line-height: inherit; text-decoration: inherit; text-align: left;"><span style='color: #c92c7f; font-size: 27px; font-weight: 700; line-height: inherit; text-decoration: inherit; font-family: Roboto, "San Francisco", Helvetica, Arial, sans-serif;' class="">Reading Rainbow</span></div>
+ </div>
+<!--[if (gte mso 12)&(lte mso 15) ]>
+<style data-ac-keep="true" data-ac-inline="false"> #text_div7679, #text_div7679 div { line-height: 130% !important; };
+</style>
+<![endif]--></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr style="mso-line-height-rule: exactly; background-color: #ffffff;"><td id="layout-row-margin7996" valign="top" style="mso-line-height-rule: exactly; padding: 0; background-color: #ffffff;"><table width="100%" border="0" cellpadding="0" cellspacing="0" style="-ms-text-size-adjust: auto; -webkit-text-size-adjust: 100%; border-collapse: initial !important; font-size: 14px; min-width: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt;"><tr id="layout-row7996" class="layout layout-row widget _widget_break style7996" style="mso-line-height-rule: exactly;"><td id="layout-row-padding7996" valign="top" style="mso-line-height-rule: exactly; line-height: 0; padding: 0 50px 10px 50px;"><table width="100%" border="0" cellpadding="0" cellspacing="0" style="-ms-text-size-adjust: auto; -webkit-text-size-adjust: 100%; border-collapse: collapse; font-size: 14px; min-width: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; line-height: 0; mso-line-height-rule: exactly;"><tr
+style="mso-line-height-rule: exactly;"><td height="5" style="mso-line-height-rule: exactly; line-height: 0;"></td>
+</tr>
+<tr style="mso-line-height-rule: exactly;"><td align="left" height="1" width="550" style="mso-line-height-rule: exactly; line-height: 0;"> <table align="left" border="0" cellpadding="0" cellspacing="0" height="1" width="138" style="-ms-text-size-adjust: auto; -webkit-text-size-adjust: 100%; border-collapse: collapse; font-size: 14px; min-width: auto!important; mso-table-lspace: 0pt; mso-table-rspace: 0pt; line-height: 0; mso-line-height-rule: exactly; width: 25%; max-width: 25%;"><tr style="mso-line-height-rule: exactly;"><td class="break-line" bgcolor="#c92c7f" height="1" width="138" style="mso-line-height-rule: exactly; line-height: 1px; height: 1px; width: 138px; background-color: #c92c7f;"> </td>
+ </tr>
+</table>
+</td>
+ </tr>
+<tr style="mso-line-height-rule: exactly;"><td height="5" style="mso-line-height-rule: exactly; line-height: 0;"></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr style="mso-line-height-rule: exactly; background-color: #ffffff;"><td id="layout-row-margin7999" valign="top" style="mso-line-height-rule: exactly; padding: 0; background-color: #ffffff;"><table width="100%" border="0" cellpadding="0" cellspacing="0" style="-ms-text-size-adjust: auto; -webkit-text-size-adjust: 100%; border-collapse: initial !important; font-size: 14px; min-width: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt;"><tr id="layout-row7999" class="layout layout-row widget _widget_picture style7999" align="center" style="mso-line-height-rule: exactly;"><td id="layout-row-padding7999" valign="top" style="mso-line-height-rule: exactly; padding: 0px 0px 8px 0px;"><table width="100%" border="0" cellpadding="0" cellspacing="0" style="-ms-text-size-adjust: auto; -webkit-text-size-adjust: 100%; border-collapse: collapse; font-size: 14px; min-width: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt;"><tr style="mso-line-height-rule: exactly;"><td
+class="image-td" align="center" valign="top" width="650" style="mso-line-height-rule: exactly;"><img src="../content.app-us1.com/8j3Jq/2022/01/17/b26c194d-0ab9-4c5b-9417-eadf39467373.gif_r=1710518959" alt="" width="650" style="display: block; border: none; outline: none; width: 650px; opacity: 1; max-width: 100%;"></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr style="mso-line-height-rule: exactly; background-color: #ffffff;"><td id="layout-row-margin7998" valign="top" style="mso-line-height-rule: exactly; padding: 0px; background-color: #ffffff;"><table width="100%" border="0" cellpadding="0" cellspacing="0" style="-ms-text-size-adjust: auto; -webkit-text-size-adjust: 100%; border-collapse: initial !important; font-size: 14px; min-width: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt;"><tr id="layout-row7998" class="layout layout-row widget _widget_text style7998" style="mso-line-height-rule: exactly; margin: 0; padding: 0;"><td id="layout-row-padding7998" valign="top" style="mso-line-height-rule: exactly; padding: 15px 50px 15px 50px;"><table width="100%" border="0" cellpadding="0" cellspacing="0" style="-ms-text-size-adjust: auto; -webkit-text-size-adjust: 100%; border-collapse: collapse; font-size: 14px; min-width: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt;"><tr style="mso-line-height-rule:
+exactly;"><td id="text_div7683" class="td_text td_block" valign="top" align="left" width="550" style="line-height: 128%; mso-line-height-rule: exactly; margin: 0; outline: none; padding: 0; color: inherit; font-size: 12px; font-weight: inherit; line-height: 1.28; text-decoration: inherit; font-family: arial;"> <div style='line-height: 128%; margin: 0; outline: none; padding: 0; color: #22224a; font-size: inherit; font-weight: inherit; line-height: 1.28; text-decoration: inherit; font-family: Roboto, "San Francisco", Helvetica, Arial, sans-serif; mso-line-height-rule: exactly;' class="" data-line-height="1.28"><span style='color: #22224a; font-size: inherit; font-weight: inherit; line-height: inherit; text-decoration: inherit; font-family: Roboto, "San Francisco", Helvetica, Arial, sans-serif;' class=""><span style="color: inherit; font-size: 16px; font-weight: inherit; line-height: inherit; text-decoration: inherit;" class=""><span style='color: #22224a; font-size:
+inherit; font-weight: 400; line-height: inherit; text-decoration: inherit; font-family: Roboto, "San Francisco", Helvetica, Arial, sans-serif; font-style: normal; text-align: left;'>In the last reading group session <a target="_blank" data-stringify-link="https://www.linkedin.com/in/varun-khare-6a991a108?utm_source=ActiveCampaign&utm_medium=email&utm_content=Scaling%20Biotech&utm_campaign=MLOps%20-%20Newsletter%20-%202021%20-%2001%20-%2016" delay="150" data-sk="tooltip_parent"
+href="https://autodb.lt.acemlna.com/Prod/link-tracker?notrack=1&redirectUrl=aHR0cHMlM0ElMkYlMkZ3d3cubGlua2VkaW4uY29tJTJGaW4lMkZ2YXJ1bi1raGFyZS02YTk5MWExMDglM0Z1dG1fc291cmNlJTNEQWN0aXZlQ2FtcGFpZ24lMjZ1dG1fbWVkaXVtJTNEZW1haWwlMjZ1dG1fY29udGVudCUzRFNjYWxpbmclMjUyMEJpb3RlY2glMjZ1dG1fY2FtcGFpZ24lM0RNTE9wcyUyNTIwLSUyNTIwTmV3c2xldHRlciUyNTIwLSUyNTIwMjAyMSUyNTIwLSUyNTIwMDElMjUyMC0lMjUyMDE2&sig=BVrbLgV165cgtsq3K6EThpudtbdR1gR5yChAmh2NEjxg&iat=1713905088&a=%7C%7C650082935%7C%7C&account=autodb%2Eactivehosted%2Ecom&email=8cc6HsuSNhNsWlE4rAfm8NwcEjOCdrhfE9RTrSwyUGwIrRyUwA%3D%3D%3AlBjuBgtbvqAoh6jFlIPlcxUbmhp0u%2B1G&s=bad97c655476f96a390a72c05a742011&i=170A198A5A6823" rel="noopener noreferrer" tabindex="-1" data-remove-tab-index="true" style="margin: 0; outline: none; padding: 0; color: #3e86cb; text-decoration: underline;" data-ac-default-color="1"><span style="color: ; font-size: inherit; font-weight: inherit; line-height: inherit; text-decoration: inherit;">Varun Khare</span></a> presented a talk about Federated Learning (FL). The main takeaways of this session, which is going to be uploaded for YouTube were:<br></span><ul data-stringify-type="unordered-list" data-indent="0" data-border="0" style='margin: 0; padding: 0; color:
+#22224a; font-family: Roboto, "San Francisco", Helvetica, Arial, sans-serif; font-style: normal; font-weight: 400; text-align: left;'><li data-stringify-indent="0" data-stringify-border="0" style="display: list-item; line-height: inherit; list-style-type: disc; margin: 0 0 0 28px;">In FL, each user device has a local training dataset which is never uploaded to the server, and computes an update to the current global model maintained by the server. Only this update is communicated (the model itself, or gradient descent steps), and how many training steps are performed in each client is a training parameter</li><li data-stringify-indent="0" data-stringify-border="0" style="display: list-item; line-height: inherit; list-style-type: disc; margin: 0 0 0 28px;">FL allows hyper personalization by training one model for each user, mitigates data privacy issues since the data never leaves the user device (e.g. smartphone), and is bluntly cheap since the computation is
+performed at the client/user side, thus, leading to low cloud costs.</li><li data-stringify-indent="0" data-stringify-border="0" style="display: list-item; line-height: inherit; list-style-type: disc; margin: 0 0 0 28px;">FL has several challenges like model bias as client with better hardware (i.e. in better financial conditions) can make more server uploads and have more impact on the global model, and there aren't many open-source solutions to tune and test FL algorithms at scale before production (checkout <a target="_blank" data-stringify-link="http://github.com/NimbleEdge/Recoedge?utm_source=ActiveCampaign&utm_medium=email&utm_content=Scaling%20Biotech&utm_campaign=MLOps%20-%20Newsletter%20-%202021%20-%2001%20-%2016" delay="150" data-sk="tooltip_parent"
+href="https://autodb.lt.acemlna.com/Prod/link-tracker?notrack=1&redirectUrl=aHR0cCUzQSUyRiUyRmdpdGh1Yi5jb20lMkZOaW1ibGVFZGdlJTJGUmVjb2VkZ2UlM0Z1dG1fc291cmNlJTNEQWN0aXZlQ2FtcGFpZ24lMjZ1dG1fbWVkaXVtJTNEZW1haWwlMjZ1dG1fY29udGVudCUzRFNjYWxpbmclMjUyMEJpb3RlY2glMjZ1dG1fY2FtcGFpZ24lM0RNTE9wcyUyNTIwLSUyNTIwTmV3c2xldHRlciUyNTIwLSUyNTIwMjAyMSUyNTIwLSUyNTIwMDElMjUyMC0lMjUyMDE2&sig=ER71ctsrzjJ6vZQq3YsWuQhdA4qbYxJSd35j6CzjSJir&iat=1713905088&a=%7C%7C650082935%7C%7C&account=autodb%2Eactivehosted%2Ecom&email=8cc6HsuSNhNsWlE4rAfm8NwcEjOCdrhfE9RTrSwyUGwIrRyUwA%3D%3D%3AlBjuBgtbvqAoh6jFlIPlcxUbmhp0u%2B1G&s=bad97c655476f96a390a72c05a742011&i=170A198A5A6824" rel="noopener noreferrer" tabindex="-1" data-remove-tab-index="true" style="margin: 0; outline: none; padding: 0; color: #3e86cb; text-decoration: underline;" data-ac-default-color="1"><span style="color: ; font-size: inherit; font-weight: inherit; line-height: inherit; text-decoration: inherit;">http://github.com/NimbleEdge/Recoedge</span></a> that Varun works on)</li></ul></span><span style='color: #22224a; font-size: 16px; font-weight: 400; line-height: inherit; text-decoration: inherit; font-style: normal; font-family: Roboto, "San Francisco", Helvetica, Arial, sans-serif;'
+class="">Check out the paper we went over by clicking <a href="https://arxiv.org/abs/1602.05629?utm_source=ActiveCampaign&utm_medium=email&utm_content=Scaling%20Biotech&utm_campaign=MLOps%20-%20Newsletter%20-%202021%20-%2001%20-%2016" data-ac-default-color="1" style="margin: 0; outline: none; padding: 0; color: #3e86cb; text-decoration: underline;" target="_blank"><span style="color: ; font-size: inherit; font-weight: inherit; line-height: inherit; text-decoration: inherit;" target="_blank">here</span></a>. Watch the session and insights by clicking the button below.</span></span></div>
+<!--[if (gte mso 12)&(lte mso 15) ]>
+<style data-ac-keep="true" data-ac-inline="false"> #text_div7683, #text_div7683 div { line-height: 128% !important; };
+</style>
+<![endif]--></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr style="mso-line-height-rule: exactly; background-color: #ffffff;"><td id="layout-row-margin8000" valign="top" style="mso-line-height-rule: exactly; padding: 0; background-color: #ffffff;"><table width="100%" border="0" cellpadding="0" cellspacing="0" style="-ms-text-size-adjust: auto; -webkit-text-size-adjust: 100%; border-collapse: initial !important; font-size: 14px; min-width: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt;"><tr id="layout-row8000" class="layout layout-row widget _widget_button style8000" style="mso-line-height-rule: exactly;"><td id="layout-row-padding8000" valign="top" style="mso-line-height-rule: exactly; padding: 20px 50px 30px 50px;"><table width="100%" border="0" cellpadding="0" cellspacing="0" style="-ms-text-size-adjust: auto; -webkit-text-size-adjust: 100%; border-collapse: collapse; font-size: 14px; min-width: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt;"><tr style="mso-line-height-rule: exactly;"><td class="td_button
+td_block customizable" valign="top" align="left" width="550" style="mso-line-height-rule: exactly;"> <div class="button-wrapper" style="margin: 0; outline: none; padding: 0; text-align: left;">
+<!--[if mso]> <v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" href="https://autodb.lt.acemlna.com/Prod/link-tracker?notrack=1&redirectUrl=aHR0cHMlM0ElMkYlMkZ5b3V0dS5iZSUyRklXeEJLR1BIT0JRJTNGdXRtX3NvdXJjZSUzREFjdGl2ZUNhbXBhaWduJTI2dXRtX21lZGl1bSUzRGVtYWlsJTI2dXRtX2NvbnRlbnQlM0RTY2FsaW5nJTI1MjBCaW90ZWNoJTI2dXRtX2NhbXBhaWduJTNETUxPcHMlMjUyMC0lMjUyME5ld3NsZXR0ZXIlMjUyMC0lMjUyMDIwMjElMjUyMC0lMjUyMDAxJTI1MjAtJTI1MjAxNg==&sig=CDn2cqedKBqa87WKEgTpHv6ZFtvhAayTjyPEGdnuoyoC&iat=1713905088&a=%7C%7C650082935%7C%7C&account=autodb%2Eactivehosted%2Ecom&email=8cc6HsuSNhNsWlE4rAfm8NwcEjOCdrhfE9RTrSwyUGwIrRyUwA%3D%3D%3AlBjuBgtbvqAoh6jFlIPlcxUbmhp0u%2B1G&s=bad97c655476f96a390a72c05a742011&i=170A198A5A6827" style="v-text-anchor:middle; width:122px; height:64px; " arcsize="6%" strokecolor="#3e86cb" strokeweight="1pt" fillcolor="#3e86cb" o:button="true" o:allowincell="true" o:allowoverlap="false" > <v:textbox inset="2px,2px,2px,2px"> <center style="color:#fff7f7;font-family:Roboto, San Francisco, Helvetica, Arial, sans-serif; font-size:14px; line-height: 1.1;">Watch Now</center> </v:textbox> </v:roundrect>
+<![endif]--> <a href="https://youtu.be/IWxBKGPHOBQ?utm_source=ActiveCampaign&utm_medium=email&utm_content=Scaling%20Biotech&utm_campaign=MLOps%20-%20Newsletter%20-%202021%20-%2001%20-%2016" style="margin: 0; outline: none; padding: 15px; color: #fff7f7; background: #3e86cb; background-color: #3e86cb; border-radius: 3px; font-family: Roboto, San Francisco, Helvetica, Arial, sans-serif; font-size: 14px; display: inline-block; line-height: 1.1; text-align: center; text-decoration: none; mso-hide: all;" target="_blank"> <span style="color:#fff7f7;font-family:Roboto, San Francisco, Helvetica, Arial, sans-serif;font-size:14px;" target="_blank"> Watch Now </span> </a> </div>
+
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr style="mso-line-height-rule: exactly; background-color: #ffffff;"><td id="layout-row-margin7992" valign="top" style="mso-line-height-rule: exactly; padding: 0; background-color: #ffffff;"><table width="100%" border="0" cellpadding="0" cellspacing="0" style="-ms-text-size-adjust: auto; -webkit-text-size-adjust: 100%; border-collapse: initial !important; font-size: 14px; min-width: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt;"><tr id="layout-row7992" class="layout layout-row widget _widget_text style7992" style="mso-line-height-rule: exactly; margin: 0; padding: 0; background-color: #3e86cb;"><td id="layout-row-padding7992" valign="top" style="mso-line-height-rule: exactly; background-color: #3e86cb; padding: 40px 50px 10px 50px;"><table width="100%" border="0" cellpadding="0" cellspacing="0" style="-ms-text-size-adjust: auto; -webkit-text-size-adjust: 100%; border-collapse: collapse; font-size: 14px; min-width: 100%; mso-table-lspace: 0pt;
+mso-table-rspace: 0pt;"><tr style="mso-line-height-rule: exactly;"><td id="text_div7677" class="td_text td_block" valign="top" align="left" width="550" style="line-height: 130%; mso-line-height-rule: exactly; margin: 0; outline: none; padding: 0; color: inherit; font-size: 12px; font-weight: inherit; line-height: 1.3; text-decoration: inherit; font-family: arial;"> <div style="line-height: 130%; margin: 0; outline: none; padding: 0; color: #ffffff; font-size: inherit; font-weight: inherit; line-height: 1.3; text-decoration: inherit; mso-line-height-rule: exactly;" data-line-height="1.3"> <div style="margin: 0; outline: none; padding: 0; color: #ffffff; font-size: inherit; font-weight: inherit; line-height: inherit; text-decoration: inherit;"> <div style="margin: 0; outline: none; padding: 0; color: #ffffff; font-size: inherit; font-weight: inherit; line-height: inherit; text-decoration: inherit; text-align: left;"><span style='color: #ffffff; font-size: 27px;
+font-weight: bold; line-height: inherit; text-decoration: inherit; text-align: inherit; font-style: normal; font-family: Roboto, "San Francisco", Helvetica, Arial, sans-serif;' class="">Best of Slack</span></div>
+ </div>
+ </div>
+<!--[if (gte mso 12)&(lte mso 15) ]>
+<style data-ac-keep="true" data-ac-inline="false"> #text_div7677, #text_div7677 div { line-height: 130% !important; };
+</style>
+<![endif]--></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr style="mso-line-height-rule: exactly; background-color: #ffffff;"><td id="layout-row-margin8001" valign="top" style="mso-line-height-rule: exactly; padding: 0; background-color: #ffffff;"><table width="100%" border="0" cellpadding="0" cellspacing="0" style="-ms-text-size-adjust: auto; -webkit-text-size-adjust: 100%; border-collapse: initial !important; font-size: 14px; min-width: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt;"><tr id="layout-row8001" class="layout layout-row widget _widget_text style8001" style="mso-line-height-rule: exactly; margin: 0; padding: 0; background-color: #3e86cb;"><td id="layout-row-padding8001" valign="top" style="mso-line-height-rule: exactly; background-color: #3e86cb; padding: 5px 50px 30px 50px;"><table width="100%" border="0" cellpadding="0" cellspacing="0" style="-ms-text-size-adjust: auto; -webkit-text-size-adjust: 100%; border-collapse: collapse; font-size: 14px; min-width: 100%; mso-table-lspace: 0pt; mso-table-rspace:
+0pt;"><tr style="mso-line-height-rule: exactly;"><td id="text_div7686" class="td_text td_block" valign="top" align="left" width="550" style="line-height: 130%; mso-line-height-rule: exactly; margin: 0; outline: none; padding: 0; color: inherit; font-size: 12px; font-weight: inherit; line-height: 1.3; text-decoration: inherit; font-family: arial;"> <div style="line-height: 130%; margin: 0; outline: none; padding: 0; color: #ffffff; font-size: inherit; font-weight: inherit; line-height: 1.3; text-decoration: inherit; mso-line-height-rule: exactly;" class="" data-line-height="1.3"> <div style="margin: 0; outline: none; padding: 0; color: #ffffff; font-size: inherit; font-weight: inherit; line-height: inherit; text-decoration: inherit;" class=""> <div class="" style="margin: 0; outline: none; padding: 0; color: #ffffff; font-size: 16px; font-weight: inherit; line-height: inherit; text-decoration: inherit;"> <div style="margin: 0; outline: none; padding: 0; color:
+#ffffff; font-size: inherit; font-weight: inherit; line-height: inherit; text-decoration: inherit;" class=""> <div style="margin: 0; outline: none; padding: 0; color: #ffffff; font-size: inherit; font-weight: inherit; line-height: inherit; text-decoration: inherit;" class=""><div class="" style="margin: 0; outline: none; padding: 0; color: inherit; font-size: inherit; font-weight: inherit; line-height: inherit; text-decoration: inherit;"><ul style="margin: 0 0px 0 40px; padding: 0; --tw-shadow: 0 0 transparent; --tw-ring-inset: var(--tw-empty, ); --tw-ring-offset-width: 0px; --tw-ring-offset-color: #fff; --tw-ring-color: rgba(59,130,246,0.5); --tw-ring-offset-shadow: 0 0 transparent; --tw-ring-shadow: 0 0 transparent; color: #000000; font-family: arial; font-size: 12px; font-style: normal; font-weight: 400; text-align: left;"><li style="display: list-item; line-height: inherit; list-style-type: disc; margin: 0 0px 0 3px !important; --tw-shadow: 0 0 transparent;
+--tw-ring-inset: var(--tw-empty, ); --tw-ring-offset-width: 0px; --tw-ring-offset-color: #fff; --tw-ring-color: rgba(59,130,246,0.5); --tw-ring-offset-shadow: 0 0 transparent; --tw-ring-shadow: 0 0 transparent; color: #ffffff; font-size: 16px;"><a href="https://mlops-community.slack.com/archives/C015J2Y9RLM/p1642007602106700?utm_source=ActiveCampaign&utm_medium=email&utm_content=Scaling%20Biotech&utm_campaign=MLOps%20-%20Newsletter%20-%202021%20-%2001%20-%2016" style="margin: 0; outline: none; padding: 0; color: #ffffff; text-decoration: underline;" class="" target="_blank"><span style="color: #ffffff; font-size: inherit; font-weight: inherit; line-height: inherit; text-decoration: inherit;" target="_blank">NLP Feature Store?</span></a></li><li style="display: list-item; line-height: inherit;
+list-style-type: disc; margin: 0 0px 0 3px !important; --tw-shadow: 0 0 transparent; --tw-ring-inset: var(--tw-empty, ); --tw-ring-offset-width: 0px; --tw-ring-offset-color: #fff; --tw-ring-color: rgba(59,130,246,0.5); --tw-ring-offset-shadow: 0 0 transparent; --tw-ring-shadow: 0 0 transparent; color: #ffffff; font-size: 16px;"><a href="https://mlops-community.slack.com/archives/C015J2Y9RLM/p1641577095044500?utm_source=ActiveCampaign&utm_medium=email&utm_content=Scaling%20Biotech&utm_campaign=MLOps%20-%20Newsletter%20-%202021%20-%2001%20-%2016" style="margin: 0; outline: none; padding: 0; color: #ffffff; text-decoration: underline;" class="" target="_blank"><span style="color: #ffffff; font-size: inherit; font-weight: inherit; line-height: inherit; text-decoration:
+inherit;" target="_blank">Neural Network vs Classical?</span></a></li><li style="display: list-item; line-height: inherit; list-style-type: disc; margin: 0 0px 0 3px !important; --tw-shadow: 0 0 transparent; --tw-ring-inset: var(--tw-empty, ); --tw-ring-offset-width: 0px; --tw-ring-offset-color: #fff; --tw-ring-color: rgba(59,130,246,0.5); --tw-ring-offset-shadow: 0 0 transparent; --tw-ring-shadow: 0 0 transparent; color: #ffffff; font-size: 16px;"><a href="https://mlops-community.slack.com/archives/C9YG55KAT/p1642056911029800?utm_source=ActiveCampaign&utm_medium=email&utm_content=Scaling%20Biotech&utm_campaign=MLOps%20-%20Newsletter%20-%202021%20-%2001%20-%2016" style="margin: 0; outline: none; padding: 0; color: #ffffff; text-decoration: underline;" class="" target="_blank"><span style="color:
+#ffffff; font-size: inherit; font-weight: inherit; line-height: inherit; text-decoration: inherit;" target="_blank">Teaching your company what ML can do?</span></a></li><li style="display: list-item; line-height: inherit; list-style-type: disc; margin: 0 0px 0 3px !important; --tw-shadow: 0 0 transparent; --tw-ring-inset: var(--tw-empty, ); --tw-ring-offset-width: 0px; --tw-ring-offset-color: #fff; --tw-ring-color: rgba(59,130,246,0.5); --tw-ring-offset-shadow: 0 0 transparent; --tw-ring-shadow: 0 0 transparent; color: #ffffff; font-size: 16px;"><a href="https://mlops-community.slack.com/archives/C02KWG96T7V/p1641902200027200?utm_source=ActiveCampaign&utm_medium=email&utm_content=Scaling%20Biotech&utm_campaign=MLOps%20-%20Newsletter%20-%202021%20-%2001%20-%2016" style="margin: 0;
+outline: none; padding: 0; color: #ffffff; text-decoration: underline;" class="" target="_blank"><span style="color: #ffffff; font-size: inherit; font-weight: inherit; line-height: inherit; text-decoration: inherit;" target="_blank">Data centric AI rant</span></a></li><li style="display: list-item; line-height: inherit; list-style-type: disc; margin: 0 0px 0 3px !important; --tw-shadow: 0 0 transparent; --tw-ring-inset: var(--tw-empty, ); --tw-ring-offset-width: 0px; --tw-ring-offset-color: #fff; --tw-ring-color: rgba(59,130,246,0.5); --tw-ring-offset-shadow: 0 0 transparent; --tw-ring-shadow: 0 0 transparent; color: #ffffff; font-size: 16px;"><a
+href="https://mlops-community.slack.com/archives/C02KWG96T7V/p1641996167041900?utm_source=ActiveCampaign&utm_medium=email&utm_content=Scaling%20Biotech&utm_campaign=MLOps%20-%20Newsletter%20-%202021%20-%2001%20-%2016" style="margin: 0; outline: none; padding: 0; color: #ffffff; text-decoration: underline;" class="" target="_blank"><span style="color: #ffffff; font-size: inherit; font-weight: inherit; line-height: inherit; text-decoration: inherit;" target="_blank">MLOps as a service?</span></a></li><li style="display: list-item; line-height: inherit; list-style-type: disc; margin: 0 0px 0 3px !important; --tw-shadow: 0 0 transparent; --tw-ring-inset: var(--tw-empty, ); --tw-ring-offset-width: 0px; --tw-ring-offset-color: #fff; --tw-ring-color: rgba(59,130,246,0.5); --tw-ring-offset-shadow: 0 0
+transparent; --tw-ring-shadow: 0 0 transparent; color: #ffffff; font-size: 16px;"><a href="https://www.youtube.com/watch?v=n489zkNfjvE&list=TLPQMTYwMTIwMjJDs1i53gzu7Q&index=1&utm_source=ActiveCampaign&utm_medium=email&utm_content=Scaling%20Biotech&utm_campaign=MLOps%20-%20Newsletter%20-%202021%20-%2001%20-%2016" style="margin: 0; outline: none; padding: 0; color: #ffffff; text-decoration: underline;" class="" target="_blank"><span style="color: #ffffff; font-size: inherit; font-weight: inherit; line-height: inherit; text-decoration: inherit;" target="_blank">Thom York Jamz</span></a></li></ul></div>
+</div>
+ </div>
+ </div>
+ </div>
+ </div>
+<!--[if (gte mso 12)&(lte mso 15) ]>
+<style data-ac-keep="true" data-ac-inline="false"> #text_div7686, #text_div7686 div { line-height: 130% !important; };
+</style>
+<![endif]--></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr style="mso-line-height-rule: exactly; background-color: #ffffff;"><td id="layout-row-margin7991" valign="top" style="mso-line-height-rule: exactly; padding: 0; background-color: #ffffff;"><table width="100%" border="0" cellpadding="0" cellspacing="0" style="-ms-text-size-adjust: auto; -webkit-text-size-adjust: 100%; border-collapse: initial !important; font-size: 14px; min-width: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt;"><tr id="layout-row7991" class="layout layout-row widget _widget_text style7991" style="mso-line-height-rule: exactly; margin: 0; padding: 0; background-color: #3e86cb;"><td id="layout-row-padding7991" valign="top" style="mso-line-height-rule: exactly; background-color: #3e86cb; padding: 15px 50px 2px 50px;"><table width="100%" border="0" cellpadding="0" cellspacing="0" style="-ms-text-size-adjust: auto; -webkit-text-size-adjust: 100%; border-collapse: collapse; font-size: 14px; min-width: 100%; mso-table-lspace: 0pt; mso-table-rspace:
+0pt;"><tr style="mso-line-height-rule: exactly;"><td id="text_div7676" class="td_text td_block" valign="top" align="left" width="550" style="line-height: 130%; mso-line-height-rule: exactly; margin: 0; outline: none; padding: 0; color: inherit; font-size: 12px; font-weight: inherit; line-height: 1.3; text-decoration: inherit; font-family: arial;"> <div style="line-height: 130%; margin: 0; outline: none; padding: 0; color: #ffffff; font-size: inherit; font-weight: inherit; line-height: 1.3; text-decoration: inherit; mso-line-height-rule: exactly;" data-line-height="1.3"> <div style="margin: 0; outline: none; padding: 0; color: #ffffff; font-size: inherit; font-weight: inherit; line-height: inherit; text-decoration: inherit;"> <div style="margin: 0; outline: none; padding: 0; color: #ffffff; font-size: inherit; font-weight: inherit; line-height: inherit; text-decoration: inherit; text-align: left;"><span style='color: #ffffff; font-size: 27px; font-weight: bold;
+line-height: inherit; text-decoration: inherit; text-align: inherit; font-style: normal; font-family: Roboto, "San Francisco", Helvetica, Arial, sans-serif;' class="">Jobs</span></div>
+ </div>
+ </div>
+<!--[if (gte mso 12)&(lte mso 15) ]>
+<style data-ac-keep="true" data-ac-inline="false"> #text_div7676, #text_div7676 div { line-height: 130% !important; };
+</style>
+<![endif]--></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr style="mso-line-height-rule: exactly; background-color: #ffffff;"><td id="layout-row-margin7993" valign="top" style="mso-line-height-rule: exactly; padding: 0; background-color: #ffffff;"><table width="100%" border="0" cellpadding="0" cellspacing="0" style="-ms-text-size-adjust: auto; -webkit-text-size-adjust: 100%; border-collapse: initial !important; font-size: 14px; min-width: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt;"><tr id="layout-row7993" class="layout layout-row widget _widget_text style7993" style="mso-line-height-rule: exactly; margin: 0; padding: 0; background-color: #3e86cb;"><td id="layout-row-padding7993" valign="top" style="mso-line-height-rule: exactly; background-color: #3e86cb; padding: 5px 50px 30px 50px;"><table width="100%" border="0" cellpadding="0" cellspacing="0" style="-ms-text-size-adjust: auto; -webkit-text-size-adjust: 100%; border-collapse: collapse; font-size: 14px; min-width: 100%; mso-table-lspace: 0pt; mso-table-rspace:
+0pt;"><tr style="mso-line-height-rule: exactly;"><td id="text_div7678" class="td_text td_block" valign="top" align="left" width="550" style="line-height: 130%; mso-line-height-rule: exactly; margin: 0; outline: none; padding: 0; color: inherit; font-size: 12px; font-weight: inherit; line-height: 1.3; text-decoration: inherit; font-family: arial;"> <div style="line-height: 130%; margin: 0; outline: none; padding: 0; color: #ffffff; font-size: inherit; font-weight: inherit; line-height: 1.3; text-decoration: inherit; mso-line-height-rule: exactly;" data-line-height="1.3"> <div style="margin: 0; outline: none; padding: 0; color: #ffffff; font-size: inherit; font-weight: inherit; line-height: inherit; text-decoration: inherit;" class=""> <div style="margin: 0; outline: none; padding: 0; color: #ffffff; font-size: inherit; font-weight: inherit; line-height: inherit; text-decoration: inherit;" class=""> <div class="" style="margin: 0; outline: none; padding: 0; color:
+#ffffff; font-size: 16px; font-weight: inherit; line-height: inherit; text-decoration: inherit;"> <div style="margin: 0; outline: none; padding: 0; color: #ffffff; font-size: inherit; font-weight: inherit; line-height: inherit; text-decoration: inherit;" class=""> <div style="margin: 0; outline: none; padding: 0; color: #ffffff; font-size: inherit; font-weight: inherit; line-height: inherit; text-decoration: inherit;" class=""><div class="" style="margin: 0; outline: none; padding: 0; color: #ffffff; font-size: inherit; font-weight: inherit; line-height: inherit; text-decoration: inherit;"><ul style="margin: 0 0px 0 40px; padding: 0; --tw-shadow: 0 0 transparent; --tw-ring-inset: var(--tw-empty, ); --tw-ring-offset-width: 0px; --tw-ring-offset-color: #fff; --tw-ring-color: rgba(59,130,246,0.5); --tw-ring-offset-shadow: 0 0 transparent; --tw-ring-shadow: 0 0 transparent; color: #ffffff; font-family: arial; font-size: 12px; font-style: normal; font-weight: 400;
+text-align: left;"><li style="display: list-item; line-height: inherit; list-style-type: disc; margin: 0 0px 0 3px !important; --tw-shadow: 0 0 transparent; --tw-ring-inset: var(--tw-empty, ); --tw-ring-offset-width: 0px; --tw-ring-offset-color: #fff; --tw-ring-color: rgba(59,130,246,0.5); --tw-ring-offset-shadow: 0 0 transparent; --tw-ring-shadow: 0 0 transparent; color: #ffffff; font-size: 16px;">Hypefactors is looking for a <a href="https://mlops-community.slack.com/archives/C011QMDPEN9/p1642148003003000?utm_source=ActiveCampaign&utm_medium=email&utm_content=Scaling%20Biotech&utm_campaign=MLOps%20-%20Newsletter%20-%202021%20-%2001%20-%2016" style="margin: 0; outline: none; padding: 0; color: #ffffff; text-decoration: underline;" class="" target="_blank"><span style="color:
+#ffffff; font-size: inherit; font-weight: inherit; line-height: inherit; text-decoration: inherit;" target="_blank">Scala data engineer </span></a> in Denmark</li><li style="display: list-item; line-height: inherit; list-style-type: disc; margin: 0 0px 0 3px !important; --tw-shadow: 0 0 transparent; --tw-ring-inset: var(--tw-empty, ); --tw-ring-offset-width: 0px; --tw-ring-offset-color: #fff; --tw-ring-color: rgba(59,130,246,0.5); --tw-ring-offset-shadow: 0 0 transparent; --tw-ring-shadow: 0 0 transparent; color: #ffffff; font-size: 16px;">Wolt is looking for <a href="https://wolt.com/en/jobs/posting/cbe03263-692d-4af7-8c1a-b620651e3415?utm_source=ActiveCampaign&utm_medium=email&utm_content=Scaling%20Biotech&utm_campaign=MLOps%20-%20Newsletter%20-%202021%20-%2001%20-%2016"
+style="margin: 0; outline: none; padding: 0; color: #ffffff; text-decoration: underline;" class="" target="_blank"><span style="color: #ffffff; font-size: inherit; font-weight: inherit; line-height: inherit; text-decoration: inherit;" target="_blank">data scientist</span></a></li><li style="display: list-item; line-height: inherit; list-style-type: disc; margin: 0 0px 0 3px !important; --tw-shadow: 0 0 transparent; --tw-ring-inset: var(--tw-empty, ); --tw-ring-offset-width: 0px; --tw-ring-offset-color: #fff; --tw-ring-color: rgba(59,130,246,0.5); --tw-ring-offset-shadow: 0 0 transparent; --tw-ring-shadow: 0 0 transparent; color: #ffffff; font-size: 16px;">Abnormal Security is looking for <a
+href="https://mlops-community.slack.com/archives/C011QMDPEN9/p1642270532007500?utm_source=ActiveCampaign&utm_medium=email&utm_content=Scaling%20Biotech&utm_campaign=MLOps%20-%20Newsletter%20-%202021%20-%2001%20-%2016" style="margin: 0; outline: none; padding: 0; color: #ffffff; text-decoration: underline;" class="" target="_blank"><span style="color: #ffffff; font-size: inherit; font-weight: inherit; line-height: inherit; text-decoration: inherit;" target="_blank">ML Infra Engineers</span></a></li><li style="display: list-item; line-height: inherit; list-style-type: disc; margin: 0 0px 0 3px !important; --tw-shadow: 0 0 transparent; --tw-ring-inset: var(--tw-empty, ); --tw-ring-offset-width: 0px; --tw-ring-offset-color: #fff; --tw-ring-color: rgba(59,130,246,0.5); --tw-ring-offset-shadow: 0 0
+transparent; --tw-ring-shadow: 0 0 transparent; color: #ffffff; font-size: 16px;">Justt is looking for a <span style="color: #ffffff; font-size: inherit; font-weight: inherit; line-height: inherit; text-decoration: inherit;" class=""><a href="https://justt.ai/careers/co/engineering/4D.825/senior-data-engineer/all/?utm_source=ActiveCampaign&utm_medium=email&utm_content=Scaling%20Biotech&utm_campaign=MLOps%20-%20Newsletter%20-%202021%20-%2001%20-%2016" style="margin: 0; outline: none; padding: 0; color: #ffffff; text-decoration: underline;" class="" target="_blank"><span style="color: #ffffff; font-size: inherit; font-weight: inherit; line-height: inherit; text-decoration: inherit;" target="_blank">senior data engineer</span></a> i</span>n Israel</li></ul></div>
+</div>
+ </div>
+ </div>
+ </div>
+ </div>
+ </div>
+<!--[if (gte mso 12)&(lte mso 15) ]>
+<style data-ac-keep="true" data-ac-inline="false"> #text_div7678, #text_div7678 div { line-height: 130% !important; };
+</style>
+<![endif]--></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr style="mso-line-height-rule: exactly; background-color: #ffffff;"><td id="layout-row-margin7983" valign="top" style="mso-line-height-rule: exactly; padding: 5px; background-color: #ffffff;"><table width="100%" border="0" cellpadding="0" cellspacing="0" style="-ms-text-size-adjust: auto; -webkit-text-size-adjust: 100%; border-collapse: initial !important; font-size: 14px; min-width: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt;"><tr id="layout-row7983" class="layout layout-row widget _widget_text style7983" style="mso-line-height-rule: exactly; margin: 0; padding: 0;"><td id="layout-row-padding7983" valign="top" style="mso-line-height-rule: exactly; padding: 20px 50px 0px 50px;"><table width="100%" border="0" cellpadding="0" cellspacing="0" style="-ms-text-size-adjust: auto; -webkit-text-size-adjust: 100%; border-collapse: collapse; font-size: 14px; min-width: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt;"><tr style="mso-line-height-rule:
+exactly;"><td id="text_div7668" class="td_text td_block" valign="top" align="left" width="540" style="line-height: 150%; mso-line-height-rule: exactly; margin: 0; outline: none; padding: 0; color: inherit; font-size: 12px; font-weight: inherit; line-height: 1.5; text-decoration: inherit; font-family: arial;"> <div style="line-height: 150%; margin: 0; outline: none; padding: 0; color: inherit; font-size: 16px; font-weight: inherit; line-height: 1.5; text-decoration: inherit; mso-line-height-rule: exactly;" data-line-height="1.5"> <div style="margin: 0; outline: none; padding: 0; color: inherit; font-size: inherit; font-weight: inherit; line-height: inherit; text-decoration: inherit;"><b style="margin: 0; outline: none; padding: 0;"><b style="margin: 0; outline: none; padding: 0; font-style: normal; font-weight: normal;"><b style='margin: 0; outline: none; padding: 0; font-family: Roboto, "San Francisco", Helvetica, Arial, sans-serif; font-weight: normal;'><b
+style='margin: 0; outline: none; padding: 0; color: #22224a; font-size: 16px; font-weight: normal; font-style: normal; font-family: Roboto, "San Francisco", Helvetica, Arial, sans-serif;'><b style='margin: 0; outline: none; padding: 0; font-family: Roboto, "San Francisco", Helvetica, Arial, sans-serif; font-weight: normal; color: #22224a; font-style: italic;'><span style='color: #22224a; font-size: inherit; font-weight: 400; line-height: inherit; text-decoration: inherit; font-family: Roboto, "San Francisco", Helvetica, Arial, sans-serif; font-style: normal;'>See you in <a href="https://go.mlops.community/slack?utm_source=ActiveCampaign&utm_medium=email&utm_content=Scaling%20Biotech&utm_campaign=MLOps%20-%20Newsletter%20-%202021%20-%2001%20-%2016"
+data-ac-default-color="1" target="_blank" style="margin: 0; outline: none; padding: 0; color: #3e86cb; text-decoration: underline;"><span style="color: ; font-size: inherit; font-weight: inherit; line-height: inherit; text-decoration: inherit;">slack</span></a>, <a href="https://www.youtube.com/channel/UCG6qpjVnBTTT8wLGBygANOQ?view_as=subscriber&utm_source=ActiveCampaign&utm_medium=email&utm_content=Scaling%20Biotech&utm_campaign=MLOps%20-%20Newsletter%20-%202021%20-%2001%20-%2016" data-ac-default-color="1" target="_blank" style="margin: 0; outline: none; padding: 0; color: #3e86cb; text-decoration: underline;"><span style="color: ; font-size: inherit; font-weight: inherit; line-height: inherit; text-decoration: inherit;">youtube</span></a>, and <a
+href="https://anchor.fm/mlops?utm_source=ActiveCampaign&utm_medium=email&utm_content=Scaling%20Biotech&utm_campaign=MLOps%20-%20Newsletter%20-%202021%20-%2001%20-%2016" data-ac-default-color="1" target="_blank" style="margin: 0; outline: none; padding: 0; color: #3e86cb; text-decoration: underline;"><span style="color: ; font-size: inherit; font-weight: inherit; line-height: inherit; text-decoration: inherit;">podcast</span></a> land. Oh yeah, and we are also on <a
+href="https://twitter.com/mlopscommunity?utm_source=ActiveCampaign&utm_medium=email&utm_content=Scaling%20Biotech&utm_campaign=MLOps%20-%20Newsletter%20-%202021%20-%2001%20-%2016" data-ac-default-color="1" target="_blank" style="margin: 0; outline: none; padding: 0; color: #3e86cb; text-decoration: underline;"><span style="color: ; font-size: inherit; font-weight: inherit; line-height: inherit; text-decoration: inherit;">Twitter</span></a> if you like chirping birds.<br></span></b></b></b><br style="font-size: 16px; font-family: arial; color: #000000; font-weight: 400; font-style: normal;"></b></b></div>
+ </div>
+<!--[if (gte mso 12)&(lte mso 15) ]>
+<style data-ac-keep="true" data-ac-inline="false"> #text_div7668, #text_div7668 div { line-height: 150% !important; };
+</style>
+<![endif]--></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr style="mso-line-height-rule: exactly; background-color: #ffffff;"><td id="layout-row-margin7984" valign="top" style="mso-line-height-rule: exactly; padding: 0 50px 50px 50px; background-color: #ffffff;"><table width="100%" border="0" cellpadding="0" cellspacing="0" style="-ms-text-size-adjust: auto; -webkit-text-size-adjust: 100%; border-collapse: initial !important; font-size: 14px; min-width: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt;"><tr id="layout-row7984" class="layout layout-row widget _widget_picture style7984" align="left" style="mso-line-height-rule: exactly;"><td id="layout-row-padding7984" valign="top" style="mso-line-height-rule: exactly; padding: 0;"><table width="100%" border="0" cellpadding="0" cellspacing="0" style="-ms-text-size-adjust: auto; -webkit-text-size-adjust: 100%; border-collapse: collapse; font-size: 14px; min-width: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt;"><tr style="mso-line-height-rule: exactly;"><td
+class="image-td" align="left" valign="top" width="550" style="mso-line-height-rule: exactly;"><img src="../autodb.imgus11.com/public/a0390221ff5c66b8ce25ae8e7f772a6b.png_r=955484603" alt="" width="225" style="display: block; border: none; outline: none; width: 225px; opacity: 1; max-width: 100%;"></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</div>
+<br /><div id="ac-footer" style="clear:both;background-color:inherit;background:inherit;min-width:100%;mso-table-lspace:0pt;mso-table-rspace:0pt;padding:20px;color:#000000;font-size:11px;font-family:arial,helvetica,sans-serif;line-height:140%;line-height:1.4;text-align:center;box-sizing:border-box;"><center>Sent to: <span style="font-size:11px;font-family:arial,helvetica,sans-serif;font-weight:normal;text-decoration:none;outline:none;">_t.e.s.t_@example.com</span><br><br><a href="unsubscribe/5.html" target="_blank"><span style="font-weight:bold;text-decoration:underline;" target="_blank">Unsubscribe</span></a><br><br>MLOps Community, Am sonnenberg 49 watzelhain , 65321 Heidenrod, Germany, Germany</center></div>
+<br clear="all" /></div>
+
+
+</div>
+
+
+
+
+
+  <div style="color:#acacac; padding:14px; background:#F0F0F0; font-size:11px; font-family:Arial,Helvetica,sans-serif;" align="center">
+	<a href="https://www.activecampaign.com/" style="text-decoration:none; color:#acacac;" title="email marketing">Email Marketing</a> by ActiveCampaign
+  </div>
+
+
+
+<script src="https://connect.facebook.net/locale_fbconnect/sdk.js#version=v2.9&xfbml=1&appId=118506481555093" id="facebook-jssdk"></script>
+<script src="admin/jsc/ac.js_v=v102362923139253"></script>
+<script src="js/social.js_v=v102362923139253"></script>
+
+</body>
+</html>

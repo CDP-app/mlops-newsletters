@@ -1,0 +1,851 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="Content-Language" content="en-us" />
+<meta name="robots" content="noindex, nofollow" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-migrate/3.4.1/jquery-migrate.min.js" integrity="sha512-KgffulL3mxrOsDicgQWA11O6q6oKeWcV00VxgfJw4TcM8XRQT8Df9EsrYxDf7tpVpfl3qcYD96BpyPvA4d1FDQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script><script src="admin/js/jq/csrf_protection.js"></script>
+
+
+<meta property="og:url" content="https://autodb.activehosted.com/index.php?action=social&chash=bd4c9ab730f5513206b999ec0d90d1fb.189" />
+<meta property="og:type" content="website" />
+<meta property="og:title" content="Happy Thanksgiving!" />
+<meta property="og:description" content="one job at a time..." />
+<meta property="og:image" content="https://autodb.img-us3.com/_screenshot_/e094d14761dd608a97edfc38b362014427f29a19.png" />
+
+<script src='ac_global/scriptaculous/prototype.js_v=v102362371287095'></script>
+<script src='ac_global/scriptaculous/scriptaculous.js_v=v102362371287095'></script>
+<script src="ac_global/js/ac.js.php%3Finc=ajax,dom,b64,str,array,liveedit,utf,ui,paginator,star,loader,tooltip,date,editor,form,class.Table,ihook&amp;v=v102362371287095"></script>
+<script src="admin/js/functions.js_v=v102362371287095"></script>
+<script src="mainjs.php_v=v102362371287095"></script>
+
+<link rel="stylesheet" href="dist/ac_global/fontello/css/ac-icons.min.css_v=v102362371287095.css" />
+<script src="admin/js/jq/bootstrap.js_v=v102362371287095"></script>
+
+
+<script>
+
+var $J = jQuery.noConflict();
+
+</script>
+<script>
+var campaign_url = "https://autodb.activehosted.com/index.php?action=social&chash=bd4c9ab730f5513206b999ec0d90d1fb.189";
+var message_screenshot = "https://autodb.img-us3.com/_screenshot_/e094d14761dd608a97edfc38b362014427f29a19.png";
+var message_subject = "Happy Thanksgiving!";
+var message_id = 189;
+var campaign_id = 161;
+var facebook_app_id = "118506481555093";
+var facebook_api_version = 2.9;
+var subscriber_hash = "";
+</script>
+
+
+<style media="screen">
+/* Bar */
+.archive_title{position:absolute;top:0!important;left:0!important;background:#f8f8f8;padding:10px 20px;font-family:HelveticaNeue-Medium,sans-serif;margin:0!important;width:100%;-webkit-box-shadow:0 2px 3px 1px rgba(98,98,98,0.5);-moz-box-shadow:0 2px 3px 1px rgba(98,98,98,0.5);box-shadow:0 2px 3px 1px rgba(98,98,98,0.5);-moz-transition: opacity 0.2s;-o-transition: opacity 0.2s;-webkit-transition: opacity 0.2s;transition: opacity 0.2s;-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing:border-box;}
+
+/* Layout */
+html,body { position: relative;}
+.fixed {position:fixed; z-index:1;}
+.socialwrap {position:relative; float:right; max-width:500px; height:100%; }
+.social_share {position:relative; display:block;height:30px; overflow:visible; }
+.social_share ul {float:right; margin:0; padding:0; zoom:1; }
+.social_share ul li {position:relative;display: inline-block;height:100%; margin:0 0 0 5px; padding:0; list-style:none;}
+.social_share ul li img {position:relative; border:0!important; z-index:100;}
+
+/* Bar buttons */
+.subs_btn,.social_share_btn{padding:12px 18px;border:#b7b7b7 2px solid;color:#818181;-webkit-border-radius:4px;-moz-border-radius:4px;border-radius:4px;display:inline-block;font-size:15px;cursor:pointer;text-align:center;min-width:80px;}
+.subs_btn:hover { border-color: #999999;}
+.socialbtns{padding:14px 20px;color:#fff !important;-webkit-border-radius:4px;-moz-border-radius:4px;border-radius:4px;-webkit-border-radius:4px;-moz-border-radius:4px;border-radius:4px;display:inline-block;text-decoration:none !important;font-size:15px;font-weight:normal;}
+.socialbtns.twitter, .modalbtn.twitter{background:#57cae6;}
+.socialbtns.twitter:hover, .modalbtn.twitter:hover{background:#4cbad5;}
+.socialbtns.facebook, .modalbtn.facebook{background:#4b709b;}
+.socialbtns.facebook:hover, .modalbtn.facebook:hover{background:#3c608a;}
+.socialbtns.linkedin, .modalbtn.linkedin{background:#0077b5;}
+.socialbtns.linkedin:hover, .modalbtn.linkedin:hover{background:#056597;}
+.socialbtns.gplus, .modalbtn.gplus{background:#4e4e4e;}
+.socialbtns.gplus:hover, .modalbtn.gplus:hover{background:#3d3d3d;}
+.social_share_btn{display:none;float:right;}
+
+/* Social share modal */
+.mobile-backdrop{background:#000;opacity:0;top:0;left:0;position:fixed;width:100%;height:100vh;z-index:100;}
+.mobile-modal_share{max-width:280px;display:none;background:#fff;position:fixed; top: 0; bottom: initial!important; right: 0; left: 0; margin: 40px auto auto;-webkit-border-radius:4px;-moz-border-radius:4px;border-radius:4px;z-index:101;min-height:200px;box-sizing:border-box;padding:10px;/*box-shadow*/-webkit-box-shadow:0 2px 10px 8px rgba(0,0,0,0.3);-moz-box-shadow:0 2px 10px 8px rgba(0,0,0,0.3);box-shadow:0 2px 10px 8px rgba(0,0,0,0.3);}
+.mobile-modal_share ul{margin:0;padding:0;}
+.mobile-modal_share li{display:block;margin-bottom:10px;}
+.mobile-modal_share li:last-child{margin:0;}
+.mobile-modal_share li .modalbtn{position:relative;text-align:center;display:block;padding:20px;color:#fff !important;-webkit-border-radius:4px;-moz-border-radius:4px;border-radius:4px;text-decoration:none !important;font-size:20px;font-weight:normal;}
+.mobile-modal_close{position: fixed; top: initial; right: 0; bottom: 40px!important; left: 0!important; margin: auto; opacity:0;display:none; width: 48px; height: 48px; font-size:48px;color:#fff;z-index:101;}
+
+.modal-open {overflow: hidden;}
+.modal-backdrop {position: fixed;top: 0; right: 0; bottom: 0; left: 0; z-index: 1030; background-color: #000000;}
+.modal-backdrop.fade {opacity: 0; filter: alpha(opacity=0);}
+.modal-backdrop.in {opacity: 0.5; filter: alpha(opacity=50);}
+.modal {position: fixed; top: 0; right: 0; bottom: 0; left: 0; z-index: 1040; overflow: auto; overflow-y: scroll;}
+.modal-dialog {right: auto; left: 50%; width: 600px; padding-top: 30px; padding-bottom: 30px; z-index: 1050; padding: 10px; margin-right: auto; margin-left: auto; margin-top: 50px;}
+.modal-header {margin: 0!important; background: #272727; background-color: #272727; overflow: visible!important; -webkit-border-radius: 5px 6px 0 0; -moz-border-radius: 5px 6px 0 0; border-radius: 5px 6px 0 0; min-height: 16px; padding: 14px 15px; border-bottom: 1px solid #e5e5e5;}
+.modal-header h3 {font-family: "IBM Plex Sans", Helvetica, sans-serif; font-size: 19px; font-weight: normal; line-height: 22px; color: #fff;}
+.modal-header .close {position: absolute; display: block; top: -13px; right: -15px; width: 30px; height: 30px; background: url('admin/images/modal_header_close.png') no-repeat; text-indent: 100%; white-space: nowrap; overflow: hidden; margin-top: -2px; cursor: pointer;}
+.modal-header .close:hover {background-position: 0 -30px; cursor: pointer;}
+.modal-content {position: relative; background-color: #ffffff; border: 1px solid #999999; border: 1px solid rgba(0, 0, 0, 0.2); border-radius: 6px; outline: none; -webkit-box-shadow: 0 3px 9px rgba(0, 0, 0, 0.5); box-shadow: 0 3px 9px rgba(0, 0, 0, 0.5); background-clip: padding-box;}
+.modal-body {position: relative; padding: 20px;}
+.modal-footer {position: relative; padding: 14px 15px; margin-bottom: 0; background-color: #f5f5f5; border-top: 1px solid #ddd; text-align: right; -webkit-border-radius: 0 0 6px 6px; -moz-border-radius: 0 0 6px 6px; border-radius: 0 0 6px 6px; -webkit-box-shadow: inset 0 1px 0 #ffffff; -moz-box-shadow: inset 0 1px 0 #ffffff; box-shadow: inset 0 1px 0 #ffffff;}
+.button:active, .button:visited, .button {font-family: "IBM Plex Sans", Helvetica, sans-serif; font-weight: 400; padding: 7px 11px; font-size: 14px; text-decoration: none !important; background-color: #f5f5f5; -moz-border-radius: 4px; -webkit-border-radius: 4px; border-radius: 4px; display: inline-block; color: #555; cursor: pointer!important; zoom: 1; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box;}
+.greybtn:active, .greybtn:visited, .greybtn {color: #5d5d5d!important; background: #fff!important; border: 1px solid #c0c0c0!important;}
+
+/* Icons */
+.ac-icon-share-left{position:absolute;top:17px;left:17px;}
+
+
+</style>
+<style>
+@media screen and (max-width:450px) {
+  .socialwrap { display: none}
+  .social_share_btn { display: inline-block}
+}
+</style>
+
+
+<link rel="icon" href="https://d3rxaij56vjege.cloudfront.net/media/favicon.ico" />
+<title>Happy Thanksgiving!</title>
+</head>
+<body marginheight="0" marginwidth="0" topmargin="0" leftmargin="0" style="margin:0; padding:0;">
+
+	  <div class="mobile-modal_share">
+    <ul>
+      <li><a href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fautodb.activehosted.com%2Findex.php%3Faction%3Dsocial%26chash%3Dbd4c9ab730f5513206b999ec0d90d1fb.189%26ref%3Dfacebook&t=Happy%20Thanksgiving%21" onclick="facebook_post();return false;" class="modalbtn facebook"><span class="ac-icon-share-left ac-icon-facebook"></span>Share</a></li>
+      <li><a href="https://twitter.com/intent/tweet?url=https%3A%2F%2Fautodb.activehosted.com%2Findex.php%3Faction%3Dsocial%26chash%3Dbd4c9ab730f5513206b999ec0d90d1fb.189%26ref%3Dtwitter&text=Check%20out%20this%20email%20campaign%21&lang=en&counturl=https%3A%2F%2Fautodb.activehosted.com%2Findex.php%3Faction%3Dsocial%26chash%3Dbd4c9ab730f5513206b999ec0d90d1fb.189%26ref%3Dtwitter" target="_blank" class="modalbtn twitter"><span class="ac-icon-share-left ac-icon-twitter"></span>Tweet</a></li>
+			<li><a href="http://www.linkedin.com/cws/share?url=https%3A%2F%2Fautodb.activehosted.com%2Findex.php%3Faction%3Dsocial%26chash%3Dbd4c9ab730f5513206b999ec0d90d1fb.189%26ref%3Dlinkedin" target="_blank" class="modalbtn linkedin"><span
+						class="ac-icon-share-left ac-icon-linkedin"></span>Share</a></li>
+    </ul>
+  </div>
+  <div class="mobile-modal_close"><span class="ac-icon-cancel-circled-outline"></span></div>
+  <div id="fb-root"></div>
+	
+	<div class="archive_title fixed">
+  	<div class="social_share_btn">
+    <span class="ac-icon-export ac-icon-left">Share</span>
+  </div>
+	<div class="socialwrap">
+		<div class="social_share">
+			<ul>
+        <li><a href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fautodb.activehosted.com%2Findex.php%3Faction%3Dsocial%26chash%3Dbd4c9ab730f5513206b999ec0d90d1fb.189%26ref%3Dfacebook&t=Happy%20Thanksgiving%21" target="_blank" onclick="facebook_post();return false;" class="socialbtns facebook"><span class="ac-icon-facebook"></span></a></li>
+        <li><a href="https://twitter.com/intent/tweet?url=https%3A%2F%2Fautodb.activehosted.com%2Findex.php%3Faction%3Dsocial%26chash%3Dbd4c9ab730f5513206b999ec0d90d1fb.189%26ref%3Dtwitter&text=Check%20out%20this%20email%20campaign%21&lang=en&counturl=https%3A%2F%2Fautodb.activehosted.com%2Findex.php%3Faction%3Dsocial%26chash%3Dbd4c9ab730f5513206b999ec0d90d1fb.189%26ref%3Dtwitter" target="_blank" class="socialbtns twitter"><span class="ac-icon-twitter"></span></a></li>
+				<li><a href="http://www.linkedin.com/cws/share?url=https%3A%2F%2Fautodb.activehosted.com%2Findex.php%3Faction%3Dsocial%26chash%3Dbd4c9ab730f5513206b999ec0d90d1fb.189%26ref%3Dlinkedin" target="_blank" class="socialbtns linkedin"><span
+							class="ac-icon-linkedin"></span></a></li>
+			</ul>
+		</div>
+	</div>
+</div>
+	
+<div class="message-body-container" style="margin-top:60px; padding:30px; padding-top:20px; padding-bottom:20px; zoom:1; z-index:2; background-color:#e0e0e0;">
+  
+<title>Preview</title><style data-ac-keep="true"> .ExternalClass { width: 100%; background: inherit; background-color: inherit; } .ExternalClass, .ExternalClass p, .ExternalClass span, .ExternalClass font, .ExternalClass td, .ExternalClass div { line-height: 100%; } .ExternalClass p, .ExternalClass ul, .ExternalClass ol { Margin: 0; } .undoreset div p, .undoreset p { margin-bottom: 20px; } div[class^="aolmail_divbody"] { overflow: auto; } [owa] #ac-footer { padding: 20px 0px
+!important; background: inherit; background-color: inherit; } a[x-apple-data-detectors] { color: inherit !important; text-decoration: none !important; font-size: inherit !important; font-family: inherit !important; font-weight: inherit !important; line-height: inherit !important; } @-ms-viewport { width: device-width; } </style><style data-ac-keep="true">
+@media only screen and (max-width: 600px) { /*-------------------------------------------------------------------------*\ Abandoned Cart widget \*------------------------------------------------------------------------*/ .td_abandoned-cart img {display: block;padding-right: 0 !important;padding-bottom: 0 !important;width: 100% !important;max-width: 100% !important;height: auto !important;} body { padding: 0!important; font-size:1em!important; } * { -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; } *[class].divbody {-webkit-text-size-adjust:none !important; width:auto !important;} *[class].td_picture img {width:auto !important;} *[class].td_text { line-height: 110%; } *[class].td_button { width: auto; } /* Collapse all block elements */ :not(.body) table { display: block!important; float:none!important; border-collapse:collapse !important; width:100% !important; min-width:100% !important; clear:both!important; } :not(.body) thead,
+:not(.body) tbody, :not(.body) tr { display:block!important; float:none!important; width:100% !important; } :not(.body) th, :not(.body) td, :not(.body) p { display:block!important; float:none!important; width:100% !important; clear:both!important; } /* Remove browser default styling for elements */ ul, ol { margin-left: 20px; margin-bottom: 10px; margin-top: 10px; -webkit-margin-before: 0; -webkit-margin-after: 0; -webkit-padding-start: 0; } /* Set default height for spacer once collapse */ *[class].spacer { height: auto!important; } a[href^=date]{ color:inherit !important; text-decoration:none !important;} a[href^=telephone]{ color:inherit !important; text-decoration:none !important;} a[href^=address]{ color:inherit !important; text-decoration:none !important;} a[href^=email]{ color:inherit !important; text-decoration:none !important;} /* Default table cell height */ td[height="14"]{height:14px!important;font-size:14px!important;line-height:14px!important;}
+td[height="12"]{height:12px!important;font-size:12px!important;line-height:12px!important;} /*-------------------------------------------------------------------------*\ Product Widget \*-------------------------------------------------------------------------*/ .td_product > div { float: none !important; width: 100% !important; margin-bottom: 20px !important; } .td_product > div img { width: 75% !important; } /* Default social icons */ *[class].ac-social-icon-16 {width:16px !important; height:16px !important;} *[class].ac-social-icon-24 {width:24px !important; height:24px !important;} *[class].ac-social-icon-28 {width:28px !important; height:28px !important;} *[class].__ac_social_icons { margin-right: 0px !important; } }
+</style><style data-ac-keep="true"> @media only screen and (max-width: 320px) { #layout-row7633 img { width: 100% !important; height: auto !important; max-width: 320px !important; } #layout-row7635 img { width: 100% !important; height: auto !important; max-width: 320px !important; } #layout-row7636 .break-line { width: 25% !important; float: left !important; } #layout-row7639 img { width: 100% !important; height: auto !important; max-width: 320px !important; } #layout-row7640 img { width: 100% !important; height: auto !important; max-width: 320px !important; } #layout-row7647 .break-line { width: 25% !important; float: left !important; } #layout-row7650 img { width: 100% !important; height: auto !important; max-width: 320px !important; } #layout-row7654 .break-line { width: 25% !important; float: left !important; } #layout-row7657 .break-line { width: 25% !important; float: left !important; } #layout-row7658 img { width: 100% !important; height: auto !important;
+max-width: 320px !important; } #layout-row7662 .break-line { width: 25% !important; float: left !important; } #layout-row7664 img { width: 100% !important; height: auto !important; max-width: 320px !important; } #layout-row7671 .break-line { width: 25% !important; float: left !important; } #layout-row7672 img { width: 100% !important; height: auto !important; max-width: 320px !important; } table, tbody, td, .divbody { display: table !important; width: 100% !important; max-width: 100% !important; } .td_rss .rss-item img.iphone_large_image { width: auto !important; } u + .body { display: table !important; width: 100vw !important; min-width: 100vw !important; } u + .body table { display: table !important; width: 100% !important; min-width: 100% !important; } u + .body td { display: block !important; width: 100% !important; min-width: 100% !important; } u + .body img { display: inline-block !important; margin: auto !important; width: auto !important; vertical-align:
+bottom !important; } u + .body center { display: block !important; margin: auto !important; width: 100% !important; min-width: 100% !important; text-align: center !important; } u + .body table._ac_social_table, u + .body table._ac_social_table td, u + .body table._ac_social_table div, u + .body table._ac_social_table a { display: inline-block !important; margin: auto !important; width: auto !important; min-width: auto !important; text-align: center !important; } u + .body table._ac_social_table img { display: inline-block !important; margin: auto !important; width: 32px !important; min-width: 32px !important; max-width: 32px !important; }
+}
+@media only screen and (max-width: 375px) { #layout-row7633 img { width: 100% !important; height: auto !important; max-width: 375px !important; } #layout-row7635 img { width: 100% !important; height: auto !important; max-width: 375px !important; } #layout-row7636 .break-line { width: 25% !important; float: left !important; } #layout-row7639 img { width: 100% !important; height: auto !important; max-width: 375px !important; } #layout-row7640 img { width: 100% !important; height: auto !important; max-width: 375px !important; } #layout-row7647 .break-line { width: 25% !important; float: left !important; } #layout-row7650 img { width: 100% !important; height: auto !important; max-width: 375px !important; } #layout-row7654 .break-line { width: 25% !important; float: left !important; } #layout-row7657 .break-line { width: 25% !important; float: left !important; } #layout-row7658 img { width: 100% !important; height: auto !important; max-width: 375px !important; }
+#layout-row7662 .break-line { width: 25% !important; float: left !important; } #layout-row7664 img { width: 100% !important; height: auto !important; max-width: 375px !important; } #layout-row7671 .break-line { width: 25% !important; float: left !important; } #layout-row7672 img { width: 100% !important; height: auto !important; max-width: 375px !important; } table, tbody, td, .divbody { display: table !important; width: 100% !important; max-width: 100% !important; } .td_rss .rss-item img.iphone_large_image { width: auto !important; } u + .body { display: table !important; width: 100vw !important; min-width: 100vw !important; } u + .body table { display: table !important; width: 100% !important; min-width: 100% !important; } u + .body td { display: block !important; width: 100% !important; min-width: 100% !important; } u + .body img { display: inline-block !important; margin: auto !important; width: auto !important; vertical-align: bottom !important; } u + .body
+center { display: block !important; margin: auto !important; width: 100% !important; min-width: 100% !important; text-align: center !important; } u + .body table._ac_social_table, u + .body table._ac_social_table td, u + .body table._ac_social_table div, u + .body table._ac_social_table a { display: inline-block !important; margin: auto !important; width: auto !important; min-width: auto !important; text-align: center !important; } u + .body table._ac_social_table img { display: inline-block !important; margin: auto !important; width: 32px !important; min-width: 32px !important; max-width: 32px !important; }
+}
+@media only screen and (max-width: 414px) { #layout-row7633 img { width: 100% !important; height: auto !important; max-width: 414px !important; } #layout-row7635 img { width: 100% !important; height: auto !important; max-width: 414px !important; } #layout-row7636 .break-line { width: 25% !important; float: left !important; } #layout-row7639 img { width: 100% !important; height: auto !important; max-width: 414px !important; } #layout-row7640 img { width: 100% !important; height: auto !important; max-width: 414px !important; } #layout-row7647 .break-line { width: 25% !important; float: left !important; } #layout-row7650 img { width: 100% !important; height: auto !important; max-width: 414px !important; } #layout-row7654 .break-line { width: 25% !important; float: left !important; } #layout-row7657 .break-line { width: 25% !important; float: left !important; } #layout-row7658 img { width: 100% !important; height: auto !important; max-width: 414px !important; }
+#layout-row7662 .break-line { width: 25% !important; float: left !important; } #layout-row7664 img { width: 100% !important; height: auto !important; max-width: 414px !important; } #layout-row7671 .break-line { width: 25% !important; float: left !important; } #layout-row7672 img { width: 100% !important; height: auto !important; max-width: 414px !important; } table, tbody, td, .divbody { display: table !important; width: 100% !important; max-width: 100% !important; } .td_rss .rss-item img.iphone_large_image { width: auto !important; } u + .body { display: table !important; width: 100vw !important; min-width: 100vw !important; } u + .body table { display: table !important; width: 100% !important; min-width: 100% !important; } u + .body td { display: block !important; width: 100% !important; min-width: 100% !important; } u + .body img { display: inline-block !important; margin: auto !important; width: auto !important; vertical-align: bottom !important; } u + .body
+center { display: block !important; margin: auto !important; width: 100% !important; min-width: 100% !important; text-align: center !important; } u + .body table._ac_social_table, u + .body table._ac_social_table td, u + .body table._ac_social_table div, u + .body table._ac_social_table a { display: inline-block !important; margin: auto !important; width: auto !important; min-width: auto !important; text-align: center !important; } u + .body table._ac_social_table img { display: inline-block !important; margin: auto !important; width: 32px !important; min-width: 32px !important; max-width: 32px !important; }
+}
+@media only screen and (max-width: 667px) { #layout-row7633 img { width: 100% !important; height: auto !important; max-width: 650px !important; } #layout-row7635 img { width: 100% !important; height: auto !important; max-width: 667px !important; } #layout-row7636 .break-line { width: 25% !important; float: left !important; } #layout-row7639 img { width: 100% !important; height: auto !important; max-width: 667px !important; } #layout-row7640 img { width: 100% !important; height: auto !important; max-width: 650px !important; } #layout-row7647 .break-line { width: 25% !important; float: left !important; } #layout-row7650 img { width: 100% !important; height: auto !important; max-width: 650px !important; } #layout-row7654 .break-line { width: 25% !important; float: left !important; } #layout-row7657 .break-line { width: 25% !important; float: left !important; } #layout-row7658 img { width: 100% !important; height: auto !important; max-width: 650px !important; }
+#layout-row7662 .break-line { width: 25% !important; float: left !important; } #layout-row7664 img { width: 100% !important; height: auto !important; max-width: 650px !important; } #layout-row7671 .break-line { width: 25% !important; float: left !important; } #layout-row7672 img { width: 100% !important; height: auto !important; max-width: 650px !important; } table, tbody, td, .divbody { display: table !important; width: 100% !important; max-width: 100% !important; } .td_rss .rss-item img.iphone_large_image { width: auto !important; } u + .body { display: table !important; width: 100vw !important; min-width: 100vw !important; } u + .body table { display: table !important; width: 100% !important; min-width: 100% !important; } u + .body td { display: block !important; width: 100% !important; min-width: 100% !important; } u + .body img { display: inline-block !important; margin: auto !important; width: auto !important; vertical-align: bottom !important; } u + .body
+center { display: block !important; margin: auto !important; width: 100% !important; min-width: 100% !important; text-align: center !important; } u + .body table._ac_social_table, u + .body table._ac_social_table td, u + .body table._ac_social_table div, u + .body table._ac_social_table a { display: inline-block !important; margin: auto !important; width: auto !important; min-width: auto !important; text-align: center !important; } u + .body table._ac_social_table img { display: inline-block !important; margin: auto !important; width: 32px !important; min-width: 32px !important; max-width: 32px !important; }
+} </style><!--[if !mso]><!-- webfonts --><link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap" rel="stylesheet"><!--<![endif]--><!--[if lt mso 12]> <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap" rel="stylesheet"><![endif]--><!--[if gte mso 9]>
+<xml> <o:OfficeDocumentSettings> <o:AllowPNG/> <o:PixelsPerInch>96</o:PixelsPerInch> </o:OfficeDocumentSettings>
+</xml>
+<![endif]--><div id="ac-designer" class="body" style="font-family: Arial; line-height: 1.1; margin: 0px; background-color: #e0e0e0; width: 100%; text-align: center;">		<div style="display: none !important; padding: 0; height: 1px; font-size: 1px; background-color: inherit !important; opacity: 0; color: transparent; mso-line-height-rule: exactly; line-height:1px; mso-hide:all;">
+			one job at a time
+			<div style="display: none; max-height: 0px; overflow: hidden;">
+				&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌
+			</div>
+
+		</div>
+<img src="https://autodb.lt.acemlna.com/Prod/link-tracker?notrack=1&nl=5&c=161&m=189&s=bad97c655476f96a390a72c05a742011&l=open&account=autodb.activehosted.com&a=650082935" border="0" width="1" height="1" style="display:block;width:1px!important;min-width:1px!important;max-width:1px!important;height:1px!important;border:0;overflow:hidden;" /><div class="divbody" style="margin: 0px; outline: none; padding: 0px; color: #000000; font-family: arial; line-height: 1.1; width: 100%; background-color: #e0e0e0; background: #e0e0e0; text-align: center;"><table class="template-table" border="0" cellpadding="0" cellspacing="0" width="100%" align="left" style="-ms-text-size-adjust: auto; -webkit-text-size-adjust: 100%; border-collapse: collapse; font-size: 14px; min-width: auto; mso-table-lspace: 0pt; mso-table-rspace: 0pt; background-color: #e0e0e0; background: #e0e0e0;"><tr style="mso-line-height-rule: exactly;"><td align="center" valign="top" width="100%"
+style="mso-line-height-rule: exactly;"><table class="template-table" border="0" cellpadding="0" cellspacing="0" width="650" bgcolor="#e0e0e0" style="-ms-text-size-adjust: auto; -webkit-text-size-adjust: 100%; border-collapse: collapse; font-size: 14px; min-width: auto; mso-table-lspace: 0pt; mso-table-rspace: 0pt; max-width: 650px;"><tr style="mso-line-height-rule: exactly;"><td id="layout_table_8b80c63dec62f24e2fbd7a3928834067a583ecbf" valign="top" align="center" width="650" style="mso-line-height-rule: exactly; background-color: #ffffff;"><table cellpadding="0" cellspacing="0" border="0" class="layout layout-table root-table" width="650" style="-ms-text-size-adjust: auto; -webkit-text-size-adjust: 100%; border-collapse: collapse; font-size: 14px; min-width: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; background-color: #ffffff;"><tr style="mso-line-height-rule: exactly; background-color: #ffffff;"><td id="layout-row-margin7630" valign="top"
+style="mso-line-height-rule: exactly; padding: 0; background-color: #ffffff;"><table width="100%" border="0" cellpadding="0" cellspacing="0" style="-ms-text-size-adjust: auto; -webkit-text-size-adjust: 100%; border-collapse: initial !important; font-size: 14px; min-width: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt;"><tr id="layout-row7630" class="layout layout-row widget _widget_text style7630" style="mso-line-height-rule: exactly; margin: 0; padding: 0;"><td id="layout-row-padding7630" valign="top" style="mso-line-height-rule: exactly; padding: 30px;"><table width="100%" border="0" cellpadding="0" cellspacing="0" style="-ms-text-size-adjust: auto; -webkit-text-size-adjust: 100%; border-collapse: collapse; font-size: 14px; min-width: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt;"><tr style="mso-line-height-rule: exactly;"><td id="text_div7327" class="td_text td_block" valign="top" align="left" width="590" style="line-height: 130%; mso-line-height-rule:
+exactly; margin: 0; outline: none; padding: 0; color: inherit; font-size: 12px; font-weight: inherit; line-height: 1.3; text-decoration: inherit; font-family: arial;"> <div style="line-height: 130%; margin: 0; outline: none; padding: 0; color: inherit; font-size: inherit; font-weight: inherit; line-height: 1.3; text-decoration: inherit; text-align: center; mso-line-height-rule: exactly;" data-line-height="1.3"><a href="https://autodb.activehosted.com/p_v.php?l=5&c=161&m=189&s=bad97c655476f96a390a72c05a742011&utm_source=ActiveCampaign&utm_medium=email&utm_content=Happy%20Thanksgiving%21&utm_campaign=MLOps%20-%20Newsletter%20-%202021%20-%2011%20-%2023" style="margin: 0; outline: none; padding: 0; color: #999999; text-decoration: underline;" class="" target="_blank"><span style="color: #999999; font-size: inherit; font-weight: inherit; line-height: inherit; text-decoration: inherit;">View a web copy of this email</span></a><br></div>
+<!--[if (gte mso 12)&(lte mso 15) ]>
+<style data-ac-keep="true" data-ac-inline="false"> #text_div7327, #text_div7327 div { line-height: 130% !important; };
+</style>
+<![endif]--></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr style="mso-line-height-rule: exactly; background-color: #ffffff;"><td id="layout-row-margin7635" valign="top" style="mso-line-height-rule: exactly; padding: 50px 0 50px 0; background-color: #ffffff;"><table width="100%" border="0" cellpadding="0" cellspacing="0" style="-ms-text-size-adjust: auto; -webkit-text-size-adjust: 100%; border-collapse: initial !important; font-size: 14px; min-width: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt;"><tr id="layout-row7635" class="layout layout-row widget _widget_picture style7635" align="center" style="mso-line-height-rule: exactly;"><td id="layout-row-padding7635" valign="top" style="mso-line-height-rule: exactly; padding: 0;"><table width="100%" border="0" cellpadding="0" cellspacing="0" style="-ms-text-size-adjust: auto; -webkit-text-size-adjust: 100%; border-collapse: collapse; font-size: 14px; min-width: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt;"><tr style="mso-line-height-rule: exactly;"><td
+class="image-td" align="center" valign="top" width="650" style="mso-line-height-rule: exactly;"><img src="../autodb.imgus11.com/public/cc08e16b980bf4dc41e89ccbbc533927.png_r=1844901887" alt="" width="155" style="display: block; border: none; outline: none; width: 155px; opacity: 1; max-width: 100%;"></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr style="mso-line-height-rule: exactly; background-color: #ffffff;"><td id="layout-row-margin7629" valign="top" style="mso-line-height-rule: exactly; padding: 0; background-color: #ffffff;"><table width="100%" border="0" cellpadding="0" cellspacing="0" style="-ms-text-size-adjust: auto; -webkit-text-size-adjust: 100%; border-collapse: initial !important; font-size: 14px; min-width: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt;"><tr id="layout-row7629" class="layout layout-row widget _widget_text style7629" style="mso-line-height-rule: exactly; margin: 0; padding: 0;"><td id="layout-row-padding7629" valign="top" style="mso-line-height-rule: exactly; padding: 0px 50px 0px 50px;"><table width="100%" border="0" cellpadding="0" cellspacing="0" style="-ms-text-size-adjust: auto; -webkit-text-size-adjust: 100%; border-collapse: collapse; font-size: 14px; min-width: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt;"><tr style="mso-line-height-rule: exactly;"><td
+id="text_div7326" class="td_text td_block" valign="top" align="left" width="550" style="line-height: 150%; mso-line-height-rule: exactly; margin: 0; outline: none; padding: 0; color: inherit; font-size: 12px; font-weight: inherit; line-height: 1.5; text-decoration: inherit; font-family: arial;"> <div style="line-height: 150%; margin: 0; outline: none; padding: 0; color: #22224a; font-size: inherit; font-weight: inherit; line-height: 1.5; text-decoration: inherit; mso-line-height-rule: exactly;" data-line-height="1.5"> <div style="margin: 0; outline: none; padding: 0; color: #22224a; font-size: inherit; font-weight: inherit; line-height: inherit; text-decoration: inherit;"> <div style="margin: 0; outline: none; padding: 0; color: #22224a; font-size: inherit; font-weight: inherit; line-height: inherit; text-decoration: inherit;"> <div style="margin: 0; outline: none; padding: 0; color: #22224a; font-size: inherit; font-weight: inherit; line-height: inherit;
+text-decoration: inherit;"> <p style="margin: 0; outline: none; padding: 0; color: #22224a; font-size: inherit; font-weight: inherit; line-height: inherit; text-decoration: inherit; text-align: left;"><span style="color: inherit; font-size: 18px; font-weight: inherit; line-height: inherit; text-decoration: inherit;">Happy Thanksgiving to all the 'Mericans in the community. So Much cool stuff happening these days it's hard to keep up. That why we are here with the weekly newsletter to make sure you don't miss a damn thang. <br><br>Brought to you by cheesy stock photos. &#129472;</span></p>
+<p style="margin: 0; outline: none; padding: 0; color: inherit; font-size: 18px; font-weight: inherit; line-height: inherit; text-decoration: inherit;"></p>
+ </div>
+ </div>
+ </div>
+ </div>
+<!--[if (gte mso 12)&(lte mso 15) ]>
+<style data-ac-keep="true" data-ac-inline="false"> #text_div7326, #text_div7326 div { line-height: 150% !important; };
+</style>
+<![endif]--></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr style="mso-line-height-rule: exactly; background-color: #ffffff;"><td id="layout-row-margin7663" valign="top" style="mso-line-height-rule: exactly; padding: 0; background-color: #ffffff;"><table width="100%" border="0" cellpadding="0" cellspacing="0" style="-ms-text-size-adjust: auto; -webkit-text-size-adjust: 100%; border-collapse: initial !important; font-size: 14px; min-width: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt;"><tr id="layout-row7663" class="layout layout-row widget _widget_text style7663" style="mso-line-height-rule: exactly; margin: 0; padding: 0;"><td id="layout-row-padding7663" valign="top" style="mso-line-height-rule: exactly; padding: 29px 50px 0px 50px;"><table width="100%" border="0" cellpadding="0" cellspacing="0" style="-ms-text-size-adjust: auto; -webkit-text-size-adjust: 100%; border-collapse: collapse; font-size: 14px; min-width: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt;"><tr style="mso-line-height-rule: exactly;"><td
+id="text_div7359" class="td_text td_block" valign="top" align="left" width="550" style="line-height: 150%; mso-line-height-rule: exactly; margin: 0; outline: none; padding: 0; color: inherit; font-size: 12px; font-weight: inherit; line-height: 1.5; text-decoration: inherit; font-family: arial;"> <div style="line-height: 150%; margin: 0; outline: none; padding: 0; color: #555555; font-size: 15px; font-weight: inherit; line-height: 1.5; text-decoration: inherit; mso-line-height-rule: exactly;" data-line-height="1.5"> <div style="margin: 0; outline: none; padding: 0; color: #555555; font-size: inherit; font-weight: inherit; line-height: inherit; text-decoration: inherit;"><span style='color: inherit; font-size: inherit; font-weight: 700; line-height: inherit; text-decoration: inherit; font-family: Roboto, "San Francisco", Helvetica, Arial, sans-serif;' class="">Past Meetup</span></div>
+ </div>
+<!--[if (gte mso 12)&(lte mso 15) ]>
+<style data-ac-keep="true" data-ac-inline="false"> #text_div7359, #text_div7359 div { line-height: 150% !important; };
+</style>
+<![endif]--></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr style="mso-line-height-rule: exactly; background-color: #ffffff;"><td id="layout-row-margin7634" valign="top" style="mso-line-height-rule: exactly; padding: 0; background-color: #ffffff;"><table width="100%" border="0" cellpadding="0" cellspacing="0" style="-ms-text-size-adjust: auto; -webkit-text-size-adjust: 100%; border-collapse: initial !important; font-size: 14px; min-width: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt;"><tr id="layout-row7634" class="layout layout-row widget _widget_text style7634" style="mso-line-height-rule: exactly; margin: 0; padding: 0;"><td id="layout-row-padding7634" valign="top" style="mso-line-height-rule: exactly; padding: 10px 50px 10px 50px;"><table width="100%" border="0" cellpadding="0" cellspacing="0" style="-ms-text-size-adjust: auto; -webkit-text-size-adjust: 100%; border-collapse: collapse; font-size: 14px; min-width: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt;"><tr style="mso-line-height-rule: exactly;"><td
+id="text_div7330" class="td_text td_block" valign="top" align="left" width="550" style="line-height: 130%; mso-line-height-rule: exactly; margin: 0; outline: none; padding: 0; color: inherit; font-size: 12px; font-weight: inherit; line-height: 1.3; text-decoration: inherit; font-family: arial;"> <div style="line-height: 130%; margin: 0; outline: none; padding: 0; color: inherit; font-size: inherit; font-weight: inherit; line-height: 1.3; text-decoration: inherit; mso-line-height-rule: exactly;" class="" data-line-height="1.3"> <div style="margin: 0; outline: none; padding: 0; color: inherit; font-size: inherit; font-weight: inherit; line-height: inherit; text-decoration: inherit; text-align: left;" class=""><span class="" style='color: #c92c7f; font-size: 27px; font-weight: 700; line-height: inherit; text-decoration: inherit; font-family: Roboto, "San Francisco", Helvetica, Arial, sans-serif;'>Great Expectations</span></div>
+ </div>
+<!--[if (gte mso 12)&(lte mso 15) ]>
+<style data-ac-keep="true" data-ac-inline="false"> #text_div7330, #text_div7330 div { line-height: 130% !important; };
+</style>
+<![endif]--></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr style="mso-line-height-rule: exactly; background-color: #ffffff;"><td id="layout-row-margin7636" valign="top" style="mso-line-height-rule: exactly; padding: 0; background-color: #ffffff;"><table width="100%" border="0" cellpadding="0" cellspacing="0" style="-ms-text-size-adjust: auto; -webkit-text-size-adjust: 100%; border-collapse: initial !important; font-size: 14px; min-width: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt;"><tr id="layout-row7636" class="layout layout-row widget _widget_break style7636" style="mso-line-height-rule: exactly;"><td id="layout-row-padding7636" valign="top" style="mso-line-height-rule: exactly; line-height: 0; padding: 0 50px 10px 50px;"><table width="100%" border="0" cellpadding="0" cellspacing="0" style="-ms-text-size-adjust: auto; -webkit-text-size-adjust: 100%; border-collapse: collapse; font-size: 14px; min-width: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; line-height: 0; mso-line-height-rule: exactly;"><tr
+style="mso-line-height-rule: exactly;"><td height="5" style="mso-line-height-rule: exactly; line-height: 0;"></td>
+</tr>
+<tr style="mso-line-height-rule: exactly;"><td align="left" height="1" width="550" style="mso-line-height-rule: exactly; line-height: 0;"> <table align="left" border="0" cellpadding="0" cellspacing="0" height="1" width="138" style="-ms-text-size-adjust: auto; -webkit-text-size-adjust: 100%; border-collapse: collapse; font-size: 14px; min-width: auto!important; mso-table-lspace: 0pt; mso-table-rspace: 0pt; line-height: 0; mso-line-height-rule: exactly; width: 25%; max-width: 25%;"><tr style="mso-line-height-rule: exactly;"><td class="break-line" bgcolor="#c92c7f" height="1" width="138" style="mso-line-height-rule: exactly; line-height: 1px; height: 1px; width: 138px; background-color: #c92c7f;"> </td>
+ </tr>
+</table>
+</td>
+ </tr>
+<tr style="mso-line-height-rule: exactly;"><td height="5" style="mso-line-height-rule: exactly; line-height: 0;"></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr style="mso-line-height-rule: exactly; background-color: #ffffff;"><td id="layout-row-margin7640" valign="top" style="mso-line-height-rule: exactly; padding: 0; background-color: #ffffff;"><table width="100%" border="0" cellpadding="0" cellspacing="0" style="-ms-text-size-adjust: auto; -webkit-text-size-adjust: 100%; border-collapse: initial !important; font-size: 14px; min-width: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt;"><tr id="layout-row7640" class="layout layout-row widget _widget_picture style7640" align="center" style="mso-line-height-rule: exactly;"><td id="layout-row-padding7640" valign="top" style="mso-line-height-rule: exactly; padding: 0 0 0 0px;"><table width="100%" border="0" cellpadding="0" cellspacing="0" style="-ms-text-size-adjust: auto; -webkit-text-size-adjust: 100%; border-collapse: collapse; font-size: 14px; min-width: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt;"><tr style="mso-line-height-rule: exactly;"><td
+class="image-td" align="center" valign="top" width="650" style="mso-line-height-rule: exactly;"><a href="https://youtu.be/l6xfFYZAyns?utm_source=ActiveCampaign&utm_medium=email&utm_content=Happy%20Thanksgiving%21&utm_campaign=MLOps%20-%20Newsletter%20-%202021%20-%2011%20-%2023" style="margin: 0; outline: none; padding: 0; color: #3e86cb; display: block; min-width: 100%;" target="_blank"><img src="../content.app-us1.com/8j3Jq/2021/11/22/9ae49c1a-ed04-4b0a-826d-a67371ff515e.jpeg_r=1474784597" alt="" width="650" style="border: none; display: block; outline: none; width: 650px; opacity: 1; max-width: 100%;" target="_blank"></a></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr style="mso-line-height-rule: exactly; background-color: #ffffff;"><td id="layout-row-margin7637" valign="top" style="mso-line-height-rule: exactly; padding: 0px; background-color: #ffffff;"><table width="100%" border="0" cellpadding="0" cellspacing="0" style="-ms-text-size-adjust: auto; -webkit-text-size-adjust: 100%; border-collapse: initial !important; font-size: 14px; min-width: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt;"><tr id="layout-row7637" class="layout layout-row widget _widget_text style7637" style="mso-line-height-rule: exactly; margin: 0; padding: 0;"><td id="layout-row-padding7637" valign="top" style="mso-line-height-rule: exactly; padding: 15px 50px 0px 50px;"><table width="100%" border="0" cellpadding="0" cellspacing="0" style="-ms-text-size-adjust: auto; -webkit-text-size-adjust: 100%; border-collapse: collapse; font-size: 14px; min-width: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt;"><tr style="mso-line-height-rule:
+exactly;"><td id="text_div7333" class="td_text td_block" valign="top" align="left" width="550" style="line-height: 150%; mso-line-height-rule: exactly; margin: 0; outline: none; padding: 0; color: inherit; font-size: 12px; font-weight: inherit; line-height: 1.5; text-decoration: inherit; font-family: arial;"> <div style="line-height: 150%; margin: 0; outline: none; padding: 0; color: inherit; font-size: 16px; font-weight: inherit; line-height: 1.5; text-decoration: inherit; mso-line-height-rule: exactly;" class="" data-line-height="1.5">James Cambell the CTO of Superconductive (Great Expectations) came on the meetup last week to talk about Durable Data Discovery. <br><br>What does it mean to be a Data Asset? It's the sweet spot where there is overlap between the data you have collected and the operational purposes you are running. The way you look at the data may be different depending on the operational purpose you are using it for. Not to mention, data assets
+bring with them inherited assumptions.<br><br>What makes a batch? How can you properly define a batch?<br><br>My favorite moments of the meetup were when James started talking about how attention is what makes a batch. <br><br>Huh? <br><br>A batch of data correlates with when you look at it. ie you run a pipeline and the state of the warehouse at the time you look might be the batch you are looking for as opposed to the monthly batch of data for a dataset.<br><br>There are a few larger ideas that come through in the conversation. We really need to be aware of the need to automate testing of data. More on this topic below in the reading group section.</div>
+<!--[if (gte mso 12)&(lte mso 15) ]>
+<style data-ac-keep="true" data-ac-inline="false"> #text_div7333, #text_div7333 div { line-height: 150% !important; };
+</style>
+<![endif]--></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr style="mso-line-height-rule: exactly; background-color: #ffffff;"><td id="layout-row-margin7648" valign="top" style="mso-line-height-rule: exactly; padding: 0; background-color: #ffffff;"><table width="100%" border="0" cellpadding="0" cellspacing="0" style="-ms-text-size-adjust: auto; -webkit-text-size-adjust: 100%; border-collapse: initial !important; font-size: 14px; min-width: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt;"><tr id="layout-row7648" class="layout layout-row widget _widget_button style7648" style="mso-line-height-rule: exactly;"><td id="layout-row-padding7648" valign="top" style="mso-line-height-rule: exactly; padding: 20px 50px 20px 50px;"><table width="100%" border="0" cellpadding="0" cellspacing="0" style="-ms-text-size-adjust: auto; -webkit-text-size-adjust: 100%; border-collapse: collapse; font-size: 14px; min-width: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt;"><tr style="mso-line-height-rule: exactly;"><td class="td_button
+td_block customizable" valign="top" align="left" width="550" style="mso-line-height-rule: exactly;"> <div class="button-wrapper" style="margin: 0; outline: none; padding: 0; text-align: left;">
+<!--[if mso]> <v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" href="https://autodb.lt.acemlna.com/Prod/link-tracker?notrack=1&redirectUrl=aHR0cHMlM0ElMkYlMkZ3d3cueW91dHViZS5jb20lMkZ3YXRjaCUzRnYlM0RES3RRWlBtaGZNdyUyNnV0bV9zb3VyY2UlM0RBY3RpdmVDYW1wYWlnbiUyNnV0bV9tZWRpdW0lM0RlbWFpbCUyNnV0bV9jb250ZW50JTNESGFwcHklMjUyMFRoYW5rc2dpdmluZyUyNTIxJTI2dXRtX2NhbXBhaWduJTNETUxPcHMlMjUyMC0lMjUyME5ld3NsZXR0ZXIlMjUyMC0lMjUyMDIwMjElMjUyMC0lMjUyMDExJTI1MjAtJTI1MjAyMw==&sig=CVngaexVrCnphjf7SK8PUWpCYBCRUHCty6mGoZBLYC7u&iat=1713904648&a=%7C%7C650082935%7C%7C&account=autodb%2Eactivehosted%2Ecom&email=SKriobaUP9mK6AHnkID922I4BWytJdy2vdO69dl41tpfK9bwxg%3D%3D%3Ar%2BbYad4e13q1ix3GTxoUlOZKlSNDmMgs&s=bad97c655476f96a390a72c05a742011&i=161A189A5A6347" style="v-text-anchor:middle; width:164px; height:64px; " arcsize="6%" strokecolor="#3e86cb" strokeweight="1pt" fillcolor="#3e86cb" o:button="true" o:allowincell="true" o:allowoverlap="false" > <v:textbox inset="2px,2px,2px,2px"> <center style="color:#fff7f7;font-family:Roboto, San Francisco, Helvetica, Arial, sans-serif; font-size:14px; line-height: 1.1;">My Life In Batches</center> </v:textbox> </v:roundrect>
+<![endif]--> <a href="https://www.youtube.com/watch?v=DKtQZPmhfMw&utm_source=ActiveCampaign&utm_medium=email&utm_content=Happy%20Thanksgiving%21&utm_campaign=MLOps%20-%20Newsletter%20-%202021%20-%2011%20-%2023" style="margin: 0; outline: none; padding: 15px; color: #fff7f7; background: #3e86cb; background-color: #3e86cb; border-radius: 3px; font-family: Roboto, San Francisco, Helvetica, Arial, sans-serif; font-size: 14px; display: inline-block; line-height: 1.1; text-align: center; text-decoration: none; mso-hide: all;" target="_blank"> <span style="color:#fff7f7;font-family:Roboto, San Francisco, Helvetica, Arial, sans-serif;font-size:14px;" target="_blank"> My Life In Batches </span> </a> </div>
+
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr style="mso-line-height-rule: exactly; background-color: #ffffff;"><td id="layout-row-margin7641" valign="top" style="mso-line-height-rule: exactly; padding: 0; background-color: #ffffff;"><table width="100%" border="0" cellpadding="0" cellspacing="0" style="-ms-text-size-adjust: auto; -webkit-text-size-adjust: 100%; border-collapse: initial !important; font-size: 14px; min-width: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt;"><tr id="layout-row7641" class="layout layout-row widget _widget_text style7641" style="mso-line-height-rule: exactly; margin: 0; padding: 0;"><td id="layout-row-padding7641" valign="top" style="mso-line-height-rule: exactly; padding: 29px 50px 0px 50px;"><table width="100%" border="0" cellpadding="0" cellspacing="0" style="-ms-text-size-adjust: auto; -webkit-text-size-adjust: 100%; border-collapse: collapse; font-size: 14px; min-width: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt;"><tr style="mso-line-height-rule: exactly;"><td
+id="text_div7337" class="td_text td_block" valign="top" align="left" width="550" style="line-height: 150%; mso-line-height-rule: exactly; margin: 0; outline: none; padding: 0; color: inherit; font-size: 12px; font-weight: inherit; line-height: 1.5; text-decoration: inherit; font-family: arial;"> <div style="line-height: 150%; margin: 0; outline: none; padding: 0; color: #555555; font-size: 15px; font-weight: inherit; line-height: 1.5; text-decoration: inherit; mso-line-height-rule: exactly;" data-line-height="1.5"> <div style="margin: 0; outline: none; padding: 0; color: #555555; font-size: inherit; font-weight: inherit; line-height: inherit; text-decoration: inherit;"><span style='color: inherit; font-size: inherit; font-weight: 700; line-height: inherit; text-decoration: inherit; font-family: Roboto, "San Francisco", Helvetica, Arial, sans-serif;' class="">Coffee Sessions</span></div>
+ </div>
+<!--[if (gte mso 12)&(lte mso 15) ]>
+<style data-ac-keep="true" data-ac-inline="false"> #text_div7337, #text_div7337 div { line-height: 150% !important; };
+</style>
+<![endif]--></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr style="mso-line-height-rule: exactly; background-color: #ffffff;"><td id="layout-row-margin7661" valign="top" style="mso-line-height-rule: exactly; padding: 0; background-color: #ffffff;"><table width="100%" border="0" cellpadding="0" cellspacing="0" style="-ms-text-size-adjust: auto; -webkit-text-size-adjust: 100%; border-collapse: initial !important; font-size: 14px; min-width: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt;"><tr id="layout-row7661" class="layout layout-row widget _widget_text style7661" style="mso-line-height-rule: exactly; margin: 0; padding: 0;"><td id="layout-row-padding7661" valign="top" style="mso-line-height-rule: exactly; padding: 10px 50px 10px 50px;"><table width="100%" border="0" cellpadding="0" cellspacing="0" style="-ms-text-size-adjust: auto; -webkit-text-size-adjust: 100%; border-collapse: collapse; font-size: 14px; min-width: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt;"><tr style="mso-line-height-rule: exactly;"><td
+id="text_div7357" class="td_text td_block" valign="top" align="left" width="550" style="line-height: 130%; mso-line-height-rule: exactly; margin: 0; outline: none; padding: 0; color: inherit; font-size: 12px; font-weight: inherit; line-height: 1.3; text-decoration: inherit; font-family: arial;"> <div style="line-height: 130%; margin: 0; outline: none; padding: 0; color: inherit; font-size: inherit; font-weight: inherit; line-height: 1.3; text-decoration: inherit; mso-line-height-rule: exactly;" class="" data-line-height="1.3"> <div style="margin: 0; outline: none; padding: 0; color: inherit; font-size: inherit; font-weight: inherit; line-height: inherit; text-decoration: inherit; text-align: left;" class=""><span style='color: #c92c7f; font-size: 27px; font-weight: 700; line-height: inherit; text-decoration: inherit; font-family: Roboto, "San Francisco", Helvetica, Arial, sans-serif;'>The (Real) Future of MLE</span></div>
+ </div>
+<!--[if (gte mso 12)&(lte mso 15) ]>
+<style data-ac-keep="true" data-ac-inline="false"> #text_div7357, #text_div7357 div { line-height: 130% !important; };
+</style>
+<![endif]--></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr style="mso-line-height-rule: exactly; background-color: #ffffff;"><td id="layout-row-margin7662" valign="top" style="mso-line-height-rule: exactly; padding: 0; background-color: #ffffff;"><table width="100%" border="0" cellpadding="0" cellspacing="0" style="-ms-text-size-adjust: auto; -webkit-text-size-adjust: 100%; border-collapse: initial !important; font-size: 14px; min-width: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt;"><tr id="layout-row7662" class="layout layout-row widget _widget_break style7662" style="mso-line-height-rule: exactly;"><td id="layout-row-padding7662" valign="top" style="mso-line-height-rule: exactly; line-height: 0; padding: 0 50px 10px 50px;"><table width="100%" border="0" cellpadding="0" cellspacing="0" style="-ms-text-size-adjust: auto; -webkit-text-size-adjust: 100%; border-collapse: collapse; font-size: 14px; min-width: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; line-height: 0; mso-line-height-rule: exactly;"><tr
+style="mso-line-height-rule: exactly;"><td height="5" style="mso-line-height-rule: exactly; line-height: 0;"></td>
+</tr>
+<tr style="mso-line-height-rule: exactly;"><td align="left" height="1" width="550" style="mso-line-height-rule: exactly; line-height: 0;"> <table align="left" border="0" cellpadding="0" cellspacing="0" height="1" width="138" style="-ms-text-size-adjust: auto; -webkit-text-size-adjust: 100%; border-collapse: collapse; font-size: 14px; min-width: auto!important; mso-table-lspace: 0pt; mso-table-rspace: 0pt; line-height: 0; mso-line-height-rule: exactly; width: 25%; max-width: 25%;"><tr style="mso-line-height-rule: exactly;"><td class="break-line" bgcolor="#c92c7f" height="1" width="138" style="mso-line-height-rule: exactly; line-height: 1px; height: 1px; width: 138px; background-color: #c92c7f;"> </td>
+ </tr>
+</table>
+</td>
+ </tr>
+<tr style="mso-line-height-rule: exactly;"><td height="5" style="mso-line-height-rule: exactly; line-height: 0;"></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr style="mso-line-height-rule: exactly; background-color: #ffffff;"><td id="layout-row-margin7664" valign="top" style="mso-line-height-rule: exactly; padding: 0; background-color: #ffffff;"><table width="100%" border="0" cellpadding="0" cellspacing="0" style="-ms-text-size-adjust: auto; -webkit-text-size-adjust: 100%; border-collapse: initial !important; font-size: 14px; min-width: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt;"><tr id="layout-row7664" class="layout layout-row widget _widget_picture style7664" align="left" style="mso-line-height-rule: exactly;"><td id="layout-row-padding7664" valign="top" style="mso-line-height-rule: exactly; padding: 0 0 0 0px;"><table width="100%" border="0" cellpadding="0" cellspacing="0" style="-ms-text-size-adjust: auto; -webkit-text-size-adjust: 100%; border-collapse: collapse; font-size: 14px; min-width: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt;"><tr style="mso-line-height-rule: exactly;"><td class="image-td"
+align="left" valign="top" width="650" style="mso-line-height-rule: exactly;"><a href="https://youtu.be/l6xfFYZAyns?utm_source=ActiveCampaign&utm_medium=email&utm_content=Happy%20Thanksgiving%21&utm_campaign=MLOps%20-%20Newsletter%20-%202021%20-%2011%20-%2023" style="margin: 0; outline: none; padding: 0; color: #3e86cb; display: block; min-width: 100%;" target="_blank"><img src="../content.app-us1.com/8j3Jq/2021/11/22/ced0a5bb-4f6f-45d0-b01d-7c9d7941fac7.jpeg_r=1898619628" alt="" width="650" style="border: none; display: block; outline: none; width: 650px; opacity: 1; max-width: 100%;" target="_blank"></a></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr style="mso-line-height-rule: exactly; background-color: #ffffff;"><td id="layout-row-margin7665" valign="top" style="mso-line-height-rule: exactly; padding: 0px; background-color: #ffffff;"><table width="100%" border="0" cellpadding="0" cellspacing="0" style="-ms-text-size-adjust: auto; -webkit-text-size-adjust: 100%; border-collapse: initial !important; font-size: 14px; min-width: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt;"><tr id="layout-row7665" class="layout layout-row widget _widget_text style7665" style="mso-line-height-rule: exactly; margin: 0; padding: 0;"><td id="layout-row-padding7665" valign="top" style="mso-line-height-rule: exactly; padding: 15px 50px 0px 50px;"><table width="100%" border="0" cellpadding="0" cellspacing="0" style="-ms-text-size-adjust: auto; -webkit-text-size-adjust: 100%; border-collapse: collapse; font-size: 14px; min-width: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt;"><tr style="mso-line-height-rule:
+exactly;"><td id="text_div7361" class="td_text td_block" valign="top" align="left" width="550" style="line-height: 150%; mso-line-height-rule: exactly; margin: 0; outline: none; padding: 0; color: inherit; font-size: 12px; font-weight: inherit; line-height: 1.5; text-decoration: inherit; font-family: arial;"> <div style="line-height: 150%; margin: 0; outline: none; padding: 0; color: inherit; font-size: 16px; font-weight: inherit; line-height: 1.5; text-decoration: inherit; mso-line-height-rule: exactly;" class="" data-line-height="1.5">Another week, another amazing podcast! Slater Victoroff, the CTO and founder of Indico Data, joined us to discuss ETL for unstructured data, multi modal machine learning, and his perspective on how to data programming is real future of ML engineering (and how Indico makes this happen!)<br><br>This was both a theoretical and practical conversation. Slater has been involved with ML since the AlexNet days. He shared his wisdom from
+along the way, especially on how to thinking fundamentally about data and information flows in machine learning. We discussed some of the opportunities and flaws of synthetic data and active learning. Both techniques can make models a lot better, but the architecture of the data systems that enable these techniques is really crucial to realize their potential.<br><br> On the practical side, Slater walked us through how Indico deals with the ETL challenges of representing unstructured data. We jammed on how data engineering is causing more of the challenges in machine learning than modeling. Representing data in a flexible fashion is crucial to Indico's unconventional modeling solutions, which takes modeling out of only the data scientist's hands and puts subject matter experts in a position to make and deploy their own models. Sound fascinating? It really is, and we got into the nitty gritty of how Indico does this with a sample use case.<br><br> Thanks to Slater
+for joining us and being such a thought-provoking guest! Definitely listen to this session to get some knowledge dropped.<br><br> Till next time,<br> Vishnu <br></div>
+<!--[if (gte mso 12)&(lte mso 15) ]>
+<style data-ac-keep="true" data-ac-inline="false"> #text_div7361, #text_div7361 div { line-height: 150% !important; };
+</style>
+<![endif]--></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr style="mso-line-height-rule: exactly; background-color: #ffffff;"><td id="layout-row-margin7666" valign="top" style="mso-line-height-rule: exactly; padding: 0; background-color: #ffffff;"><table width="100%" border="0" cellpadding="0" cellspacing="0" style="-ms-text-size-adjust: auto; -webkit-text-size-adjust: 100%; border-collapse: initial !important; font-size: 14px; min-width: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt;"><tr id="layout-row7666" class="layout layout-row widget _widget_button style7666" style="mso-line-height-rule: exactly;"><td id="layout-row-padding7666" valign="top" style="mso-line-height-rule: exactly; padding: 20px 50px 20px 50px;"><table width="100%" border="0" cellpadding="0" cellspacing="0" style="-ms-text-size-adjust: auto; -webkit-text-size-adjust: 100%; border-collapse: collapse; font-size: 14px; min-width: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt;"><tr style="mso-line-height-rule: exactly;"><td class="td_button
+td_block customizable" valign="top" align="left" width="550" style="mso-line-height-rule: exactly;"> <div class="button-wrapper" style="margin: 0; outline: none; padding: 0; text-align: left;">
+<!--[if mso]> <v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" href="https://autodb.lt.acemlna.com/Prod/link-tracker?notrack=1&redirectUrl=aHR0cHMlM0ElMkYlMkZ5b3V0dS5iZSUyRnc0MFJ5SURZemtBJTNGdXRtX3NvdXJjZSUzREFjdGl2ZUNhbXBhaWduJTI2dXRtX21lZGl1bSUzRGVtYWlsJTI2dXRtX2NvbnRlbnQlM0RIYXBweSUyNTIwVGhhbmtzZ2l2aW5nJTI1MjElMjZ1dG1fY2FtcGFpZ24lM0RNTE9wcyUyNTIwLSUyNTIwTmV3c2xldHRlciUyNTIwLSUyNTIwMjAyMSUyNTIwLSUyNTIwMTElMjUyMC0lMjUyMDIz&sig=37JzU6hhwXHCvVqTnHbrDukdESud6YbxvHoKCjKoEt1w&iat=1713904648&a=%7C%7C650082935%7C%7C&account=autodb%2Eactivehosted%2Ecom&email=SKriobaUP9mK6AHnkID922I4BWytJdy2vdO69dl41tpfK9bwxg%3D%3D%3Ar%2BbYad4e13q1ix3GTxoUlOZKlSNDmMgs&s=bad97c655476f96a390a72c05a742011&i=161A189A5A6358" style="v-text-anchor:middle; width:155px; height:64px; " arcsize="6%" strokecolor="#3e86cb" strokeweight="1pt" fillcolor="#3e86cb" o:button="true" o:allowincell="true" o:allowoverlap="false" > <v:textbox inset="2px,2px,2px,2px"> <center style="color:#fff7f7;font-family:Roboto, San Francisco, Helvetica, Arial, sans-serif; font-size:14px; line-height: 1.1;">Saved by the Bell</center> </v:textbox> </v:roundrect>
+<![endif]--> <a href="https://youtu.be/w40RyIDYzkA?utm_source=ActiveCampaign&utm_medium=email&utm_content=Happy%20Thanksgiving%21&utm_campaign=MLOps%20-%20Newsletter%20-%202021%20-%2011%20-%2023" style="margin: 0; outline: none; padding: 15px; color: #fff7f7; background: #3e86cb; background-color: #3e86cb; border-radius: 3px; font-family: Roboto, San Francisco, Helvetica, Arial, sans-serif; font-size: 14px; display: inline-block; line-height: 1.1; text-align: center; text-decoration: none; mso-hide: all;" target="_blank"> <span style="color:#fff7f7;font-family:Roboto, San Francisco, Helvetica, Arial, sans-serif;font-size:14px;" target="_blank"> Saved by the Bell </span> </a> </div>
+
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr style="mso-line-height-rule: exactly; background-color: #ffffff;"><td id="layout-row-margin7652" valign="top" style="mso-line-height-rule: exactly; padding: 0; background-color: #ffffff;"><table width="100%" border="0" cellpadding="0" cellspacing="0" style="-ms-text-size-adjust: auto; -webkit-text-size-adjust: 100%; border-collapse: initial !important; font-size: 14px; min-width: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt;"><tr id="layout-row7652" class="layout layout-row widget _widget_text style7652" style="mso-line-height-rule: exactly; margin: 0; padding: 0;"><td id="layout-row-padding7652" valign="top" style="mso-line-height-rule: exactly; padding: 29px 50px 0px 50px;"><table width="100%" border="0" cellpadding="0" cellspacing="0" style="-ms-text-size-adjust: auto; -webkit-text-size-adjust: 100%; border-collapse: collapse; font-size: 14px; min-width: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt;"><tr style="mso-line-height-rule: exactly;"><td
+id="text_div7348" class="td_text td_block" valign="top" align="left" width="550" style="line-height: 150%; mso-line-height-rule: exactly; margin: 0; outline: none; padding: 0; color: inherit; font-size: 12px; font-weight: inherit; line-height: 1.5; text-decoration: inherit; font-family: arial;"> <div style="line-height: 150%; margin: 0; outline: none; padding: 0; color: #555555; font-size: 15px; font-weight: inherit; line-height: 1.5; text-decoration: inherit; mso-line-height-rule: exactly;" data-line-height="1.5"> <div style="margin: 0; outline: none; padding: 0; color: #555555; font-size: inherit; font-weight: inherit; line-height: inherit; text-decoration: inherit;"><span style='color: inherit; font-size: inherit; font-weight: 700; line-height: inherit; text-decoration: inherit; font-family: Roboto, "San Francisco", Helvetica, Arial, sans-serif;' class="">Guest Wisdom</span></div>
+ </div>
+<!--[if (gte mso 12)&(lte mso 15) ]>
+<style data-ac-keep="true" data-ac-inline="false"> #text_div7348, #text_div7348 div { line-height: 150% !important; };
+</style>
+<![endif]--></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr style="mso-line-height-rule: exactly; background-color: #ffffff;"><td id="layout-row-margin7653" valign="top" style="mso-line-height-rule: exactly; padding: 0; background-color: #ffffff;"><table width="100%" border="0" cellpadding="0" cellspacing="0" style="-ms-text-size-adjust: auto; -webkit-text-size-adjust: 100%; border-collapse: initial !important; font-size: 14px; min-width: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt;"><tr id="layout-row7653" class="layout layout-row widget _widget_text style7653" style="mso-line-height-rule: exactly; margin: 0; padding: 0;"><td id="layout-row-padding7653" valign="top" style="mso-line-height-rule: exactly; padding: 10px 50px 10px 50px;"><table width="100%" border="0" cellpadding="0" cellspacing="0" style="-ms-text-size-adjust: auto; -webkit-text-size-adjust: 100%; border-collapse: collapse; font-size: 14px; min-width: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt;"><tr style="mso-line-height-rule: exactly;"><td
+id="text_div7349" class="td_text td_block" valign="top" align="left" width="550" style="mso-line-height-rule: exactly; margin: 0; outline: none; padding: 0; color: inherit; font-size: 12px; font-weight: inherit; line-height: 1; text-decoration: inherit; font-family: arial;"> <div style="margin: 0; outline: none; padding: 0; color: #c92c7f; font-size: 27px; font-weight: inherit; line-height: inherit; text-decoration: inherit;"><span style="color: inherit; font-size: inherit; font-weight: 700; line-height: inherit; text-decoration: inherit;" class="">mlctl</span></div>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr style="mso-line-height-rule: exactly; background-color: #ffffff;"><td id="layout-row-margin7654" valign="top" style="mso-line-height-rule: exactly; padding: 0; background-color: #ffffff;"><table width="100%" border="0" cellpadding="0" cellspacing="0" style="-ms-text-size-adjust: auto; -webkit-text-size-adjust: 100%; border-collapse: initial !important; font-size: 14px; min-width: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt;"><tr id="layout-row7654" class="layout layout-row widget _widget_break style7654" style="mso-line-height-rule: exactly;"><td id="layout-row-padding7654" valign="top" style="mso-line-height-rule: exactly; line-height: 0; padding: 0 50px 10px 50px;"><table width="100%" border="0" cellpadding="0" cellspacing="0" style="-ms-text-size-adjust: auto; -webkit-text-size-adjust: 100%; border-collapse: collapse; font-size: 14px; min-width: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; line-height: 0; mso-line-height-rule: exactly;"><tr
+style="mso-line-height-rule: exactly;"><td height="5" style="mso-line-height-rule: exactly; line-height: 0;"></td>
+</tr>
+<tr style="mso-line-height-rule: exactly;"><td align="left" height="1" width="550" style="mso-line-height-rule: exactly; line-height: 0;"> <table align="left" border="0" cellpadding="0" cellspacing="0" height="1" width="138" style="-ms-text-size-adjust: auto; -webkit-text-size-adjust: 100%; border-collapse: collapse; font-size: 14px; min-width: auto!important; mso-table-lspace: 0pt; mso-table-rspace: 0pt; line-height: 0; mso-line-height-rule: exactly; width: 25%; max-width: 25%;"><tr style="mso-line-height-rule: exactly;"><td class="break-line" bgcolor="#c92c7f" height="1" width="138" style="mso-line-height-rule: exactly; line-height: 1px; height: 1px; width: 138px; background-color: #c92c7f;"> </td>
+ </tr>
+</table>
+</td>
+ </tr>
+<tr style="mso-line-height-rule: exactly;"><td height="5" style="mso-line-height-rule: exactly; line-height: 0;"></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr style="mso-line-height-rule: exactly; background-color: #ffffff;"><td id="layout-row-margin7639" valign="top" style="mso-line-height-rule: exactly; padding: 0; background-color: #ffffff;"><table width="100%" border="0" cellpadding="0" cellspacing="0" style="-ms-text-size-adjust: auto; -webkit-text-size-adjust: 100%; border-collapse: initial !important; font-size: 14px; min-width: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt;"><tr id="layout-row7639" class="layout layout-row widget _widget_picture style7639" align="left" style="mso-line-height-rule: exactly;"><td id="layout-row-padding7639" valign="top" style="mso-line-height-rule: exactly; padding: 0 0 0 0px;"><table width="100%" border="0" cellpadding="0" cellspacing="0" style="-ms-text-size-adjust: auto; -webkit-text-size-adjust: 100%; border-collapse: collapse; font-size: 14px; min-width: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt;"><tr style="mso-line-height-rule: exactly;"><td class="image-td"
+align="left" valign="top" width="650" style="mso-line-height-rule: exactly;"><a href="https://www.youtube.com/watch?v=mesTMiFQcTU&utm_source=ActiveCampaign&utm_medium=email&utm_content=Happy%20Thanksgiving%21&utm_campaign=MLOps%20-%20Newsletter%20-%202021%20-%2011%20-%2023" style="margin: 0; outline: none; padding: 0; color: #3e86cb; display: block; min-width: 100%;" target="_blank"><img src="../content.app-us1.com/8j3Jq/2021/11/23/75679a95-b525-49f8-8932-841ceb42de3f.png_r=1177428017" alt="" width="650" style="border: none; display: block; outline: none; width: 650px; opacity: 1; max-width: 100%;" target="_blank"></a></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr style="mso-line-height-rule: exactly; background-color: #ffffff;"><td id="layout-row-margin7655" valign="top" style="mso-line-height-rule: exactly; padding: 0px; background-color: #ffffff;"><table width="100%" border="0" cellpadding="0" cellspacing="0" style="-ms-text-size-adjust: auto; -webkit-text-size-adjust: 100%; border-collapse: initial !important; font-size: 14px; min-width: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt;"><tr id="layout-row7655" class="layout layout-row widget _widget_text style7655" style="mso-line-height-rule: exactly; margin: 0; padding: 0;"><td id="layout-row-padding7655" valign="top" style="mso-line-height-rule: exactly; padding: 15px 50px 0px 50px;"><table width="100%" border="0" cellpadding="0" cellspacing="0" style="-ms-text-size-adjust: auto; -webkit-text-size-adjust: 100%; border-collapse: collapse; font-size: 14px; min-width: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt;"><tr style="mso-line-height-rule:
+exactly;"><td id="text_div7351" class="td_text td_block" valign="top" align="left" width="550" style="line-height: 150%; mso-line-height-rule: exactly; margin: 0; outline: none; padding: 0; color: inherit; font-size: 12px; font-weight: inherit; line-height: 1.5; text-decoration: inherit; font-family: arial;"> <div style="line-height: 150%; margin: 0; outline: none; padding: 0; color: inherit; font-size: 16px; font-weight: inherit; line-height: 1.5; text-decoration: inherit; mso-line-height-rule: exactly;" data-line-height="1.5"> <div style="margin: 0; outline: none; padding: 0; color: inherit; font-size: inherit; font-weight: inherit; line-height: inherit; text-decoration: inherit;" class=""> <div class="" style="margin: 0; outline: none; padding: 0; color: inherit; font-size: inherit; font-weight: inherit; line-height: inherit; text-decoration: inherit;"><span style='color: #22224a; font-size: 16px; font-weight: inherit; line-height: inherit; text-decoration:
+inherit; font-family: Roboto, "San Francisco", Helvetica, Arial, sans-serif; margin: 0;' class="">'mlctl' is our take on how to approach this tooling sprawl and provide a common interface to data scientists and other ML practitioners." - Srivathsan Canchi<br><br>With the explosion in tools and opinionated frameworks for machine learning, it's very hard to define standards and best practices for MLOps and ML platforms. <br><br>Based on their building AWS SageMaker and Intuit's ML Platform respectively, Alex Chung and Srivathsan Canchi spoke with @Demetrios and @Vishnu in August about their experience navigating "tooling sprawl". They discussed their efforts to solve this problem organizationally with Social Good Technologies and technically with MLctl, the control plane for MLOps.<br style='color: #22224a; font-family: Roboto, "San Francisco", Helvetica, Arial, sans-serif; font-size: 16px; font-style: normal; font-weight: 400;'><br></span></div>
+ </div>
+ </div>
+<!--[if (gte mso 12)&(lte mso 15) ]>
+<style data-ac-keep="true" data-ac-inline="false"> #text_div7351, #text_div7351 div { line-height: 150% !important; };
+</style>
+<![endif]--></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr style="mso-line-height-rule: exactly; background-color: #ffffff;"><td id="layout-row-margin7638" valign="top" style="mso-line-height-rule: exactly; padding: 0; background-color: #ffffff;"><table width="100%" border="0" cellpadding="0" cellspacing="0" style="-ms-text-size-adjust: auto; -webkit-text-size-adjust: 100%; border-collapse: initial !important; font-size: 14px; min-width: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt;"><tr id="layout-row7638" class="layout layout-row widget _widget_button style7638" style="mso-line-height-rule: exactly;"><td id="layout-row-padding7638" valign="top" style="mso-line-height-rule: exactly; padding: 31px 50px 20px 50px;"><table width="100%" border="0" cellpadding="0" cellspacing="0" style="-ms-text-size-adjust: auto; -webkit-text-size-adjust: 100%; border-collapse: collapse; font-size: 14px; min-width: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt;"><tr style="mso-line-height-rule: exactly;"><td class="td_button
+td_block customizable" valign="top" align="left" width="550" style="mso-line-height-rule: exactly;"> <div class="button-wrapper" style="margin: 0; outline: none; padding: 0; text-align: left;">
+<!--[if mso]> <v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" href="https://autodb.lt.acemlna.com/Prod/link-tracker?notrack=1&redirectUrl=aHR0cHMlM0ElMkYlMkZtbG9wcy5jb21tdW5pdHklMkZ3YXRjaCUyRmNyZWF0aW5nLW1sb3BzLXN0YW5kYXJkc185cHNVUzV6R0VCTmZBbSUyRiUzRnV0bV9zb3VyY2UlM0RBY3RpdmVDYW1wYWlnbiUyNnV0bV9tZWRpdW0lM0RlbWFpbCUyNnV0bV9jb250ZW50JTNESGFwcHklMjUyMFRoYW5rc2dpdmluZyUyNTIxJTI2dXRtX2NhbXBhaWduJTNETUxPcHMlMjUyMC0lMjUyME5ld3NsZXR0ZXIlMjUyMC0lMjUyMDIwMjElMjUyMC0lMjUyMDExJTI1MjAtJTI1MjAyMw==&sig=AMdwDNZJDG2cAC4eNZXakaKQ2NFdnQgg68YPzzwLUeMe&iat=1713904648&a=%7C%7C650082935%7C%7C&account=autodb%2Eactivehosted%2Ecom&email=SKriobaUP9mK6AHnkID922I4BWytJdy2vdO69dl41tpfK9bwxg%3D%3D%3Ar%2BbYad4e13q1ix3GTxoUlOZKlSNDmMgs&s=bad97c655476f96a390a72c05a742011&i=161A189A5A6372" style="v-text-anchor:middle; width:148px; height:64px; " arcsize="6%" strokecolor="#3e86cb" strokeweight="1pt" fillcolor="#3e86cb" o:button="true" o:allowincell="true" o:allowoverlap="false" > <v:textbox inset="2px,2px,2px,2px"> <center style="color:#fff7f7;font-family:Roboto, San Francisco, Helvetica, Arial, sans-serif; font-size:14px; line-height: 1.1;">Standardization<br></center> </v:textbox> </v:roundrect>
+<![endif]--> <a href="https://mlops.community/watch/creating-mlops-standards_9psUS5zGEBNfAm/?utm_source=ActiveCampaign&utm_medium=email&utm_content=Happy%20Thanksgiving%21&utm_campaign=MLOps%20-%20Newsletter%20-%202021%20-%2011%20-%2023" style="margin: 0; outline: none; padding: 15px; color: #fff7f7; background: #3e86cb; background-color: #3e86cb; border-radius: 3px; font-family: Roboto, San Francisco, Helvetica, Arial, sans-serif; font-size: 14px; display: inline-block; line-height: 1.1; text-align: center; text-decoration: none; mso-hide: all;" target="_blank"> <span style="color:#fff7f7;font-family:Roboto, San Francisco, Helvetica, Arial, sans-serif;font-size:14px;" target="_blank"> Standardization<br></span> </a> </div>
+
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr style="mso-line-height-rule: exactly; background-color: #ffffff;"><td id="layout-row-margin7646" valign="top" style="mso-line-height-rule: exactly; padding: 0; background-color: #ffffff;"><table width="100%" border="0" cellpadding="0" cellspacing="0" style="-ms-text-size-adjust: auto; -webkit-text-size-adjust: 100%; border-collapse: initial !important; font-size: 14px; min-width: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt;"><tr id="layout-row7646" class="layout layout-row widget _widget_text style7646" style="mso-line-height-rule: exactly; margin: 0; padding: 0;"><td id="layout-row-padding7646" valign="top" style="mso-line-height-rule: exactly; padding: 29px 50px 0px 50px;"><table width="100%" border="0" cellpadding="0" cellspacing="0" style="-ms-text-size-adjust: auto; -webkit-text-size-adjust: 100%; border-collapse: collapse; font-size: 14px; min-width: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt;"><tr style="mso-line-height-rule: exactly;"><td
+id="text_div7342" class="td_text td_block" valign="top" align="left" width="550" style="line-height: 150%; mso-line-height-rule: exactly; margin: 0; outline: none; padding: 0; color: inherit; font-size: 12px; font-weight: inherit; line-height: 1.5; text-decoration: inherit; font-family: arial;"> <div style="line-height: 150%; margin: 0; outline: none; padding: 0; color: #555555; font-size: 15px; font-weight: inherit; line-height: 1.5; text-decoration: inherit; mso-line-height-rule: exactly;" data-line-height="1.5"> <div style="margin: 0; outline: none; padding: 0; color: #555555; font-size: inherit; font-weight: inherit; line-height: inherit; text-decoration: inherit;"><span style='color: inherit; font-size: inherit; font-weight: 700; line-height: inherit; text-decoration: inherit; font-family: Roboto, "San Francisco", Helvetica, Arial, sans-serif;' class="">Current Meetup</span></div>
+ </div>
+<!--[if (gte mso 12)&(lte mso 15) ]>
+<style data-ac-keep="true" data-ac-inline="false"> #text_div7342, #text_div7342 div { line-height: 150% !important; };
+</style>
+<![endif]--></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr style="mso-line-height-rule: exactly; background-color: #ffffff;"><td id="layout-row-margin7645" valign="top" style="mso-line-height-rule: exactly; padding: 0; background-color: #ffffff;"><table width="100%" border="0" cellpadding="0" cellspacing="0" style="-ms-text-size-adjust: auto; -webkit-text-size-adjust: 100%; border-collapse: initial !important; font-size: 14px; min-width: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt;"><tr id="layout-row7645" class="layout layout-row widget _widget_text style7645" style="mso-line-height-rule: exactly; margin: 0; padding: 0;"><td id="layout-row-padding7645" valign="top" style="mso-line-height-rule: exactly; padding: 10px 50px 10px 50px;"><table width="100%" border="0" cellpadding="0" cellspacing="0" style="-ms-text-size-adjust: auto; -webkit-text-size-adjust: 100%; border-collapse: collapse; font-size: 14px; min-width: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt;"><tr style="mso-line-height-rule: exactly;"><td
+id="text_div7341" class="td_text td_block" valign="top" align="left" width="550" style="line-height: 130%; mso-line-height-rule: exactly; margin: 0; outline: none; padding: 0; color: inherit; font-size: 12px; font-weight: inherit; line-height: 1.3; text-decoration: inherit; font-family: arial;"> <div style="line-height: 130%; margin: 0; outline: none; padding: 0; color: inherit; font-size: inherit; font-weight: inherit; line-height: 1.3; text-decoration: inherit; mso-line-height-rule: exactly;" data-line-height="1.3"> <div style="margin: 0; outline: none; padding: 0; color: inherit; font-size: inherit; font-weight: inherit; line-height: inherit; text-decoration: inherit; text-align: left;"><span style='color: #c92c7f; font-size: 27px; font-weight: bold; line-height: inherit; text-decoration: inherit; font-family: Roboto, "San Francisco", Helvetica, Arial, sans-serif;' class=""> <span style='color: #c92c7f; font-size: 27px; font-weight: inherit; line-height: inherit;
+text-decoration: inherit; font-family: Roboto, "San Francisco", Helvetica, Arial, sans-serif; font-style: normal;'>Monitoring! </span></span></div>
+ </div>
+<!--[if (gte mso 12)&(lte mso 15) ]>
+<style data-ac-keep="true" data-ac-inline="false"> #text_div7341, #text_div7341 div { line-height: 130% !important; };
+</style>
+<![endif]--></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr style="mso-line-height-rule: exactly; background-color: #ffffff;"><td id="layout-row-margin7647" valign="top" style="mso-line-height-rule: exactly; padding: 0; background-color: #ffffff;"><table width="100%" border="0" cellpadding="0" cellspacing="0" style="-ms-text-size-adjust: auto; -webkit-text-size-adjust: 100%; border-collapse: initial !important; font-size: 14px; min-width: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt;"><tr id="layout-row7647" class="layout layout-row widget _widget_break style7647" style="mso-line-height-rule: exactly;"><td id="layout-row-padding7647" valign="top" style="mso-line-height-rule: exactly; line-height: 0; padding: 0 50px 10px 50px;"><table width="100%" border="0" cellpadding="0" cellspacing="0" style="-ms-text-size-adjust: auto; -webkit-text-size-adjust: 100%; border-collapse: collapse; font-size: 14px; min-width: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; line-height: 0; mso-line-height-rule: exactly;"><tr
+style="mso-line-height-rule: exactly;"><td height="5" style="mso-line-height-rule: exactly; line-height: 0;"></td>
+</tr>
+<tr style="mso-line-height-rule: exactly;"><td align="left" height="1" width="550" style="mso-line-height-rule: exactly; line-height: 0;"> <table align="left" border="0" cellpadding="0" cellspacing="0" height="1" width="138" style="-ms-text-size-adjust: auto; -webkit-text-size-adjust: 100%; border-collapse: collapse; font-size: 14px; min-width: auto!important; mso-table-lspace: 0pt; mso-table-rspace: 0pt; line-height: 0; mso-line-height-rule: exactly; width: 25%; max-width: 25%;"><tr style="mso-line-height-rule: exactly;"><td class="break-line" bgcolor="#c92c7f" height="1" width="138" style="mso-line-height-rule: exactly; line-height: 1px; height: 1px; width: 138px; background-color: #c92c7f;"> </td>
+ </tr>
+</table>
+</td>
+ </tr>
+<tr style="mso-line-height-rule: exactly;"><td height="5" style="mso-line-height-rule: exactly; line-height: 0;"></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr style="mso-line-height-rule: exactly; background-color: #ffffff;"><td id="layout-row-margin7650" valign="top" style="mso-line-height-rule: exactly; padding: 0; background-color: #ffffff;"><table width="100%" border="0" cellpadding="0" cellspacing="0" style="-ms-text-size-adjust: auto; -webkit-text-size-adjust: 100%; border-collapse: initial !important; font-size: 14px; min-width: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt;"><tr id="layout-row7650" class="layout layout-row widget _widget_picture style7650" align="center" style="mso-line-height-rule: exactly;"><td id="layout-row-padding7650" valign="top" style="mso-line-height-rule: exactly; padding: 0px 0px 8px 0px;"><table width="100%" border="0" cellpadding="0" cellspacing="0" style="-ms-text-size-adjust: auto; -webkit-text-size-adjust: 100%; border-collapse: collapse; font-size: 14px; min-width: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt;"><tr style="mso-line-height-rule: exactly;"><td
+class="image-td" align="center" valign="top" width="650" style="mso-line-height-rule: exactly;"><img src="../content.app-us1.com/8j3Jq/2021/11/22/8390c46d-3831-4d29-a9b4-509bba549551.jpeg_r=122966757" alt="" width="650" style="display: block; border: none; outline: none; width: 650px; opacity: 1; max-width: 100%;"></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr style="mso-line-height-rule: exactly; background-color: #ffffff;"><td id="layout-row-margin7649" valign="top" style="mso-line-height-rule: exactly; padding: 0px; background-color: #ffffff;"><table width="100%" border="0" cellpadding="0" cellspacing="0" style="-ms-text-size-adjust: auto; -webkit-text-size-adjust: 100%; border-collapse: initial !important; font-size: 14px; min-width: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt;"><tr id="layout-row7649" class="layout layout-row widget _widget_text style7649" style="mso-line-height-rule: exactly; margin: 0; padding: 0;"><td id="layout-row-padding7649" valign="top" style="mso-line-height-rule: exactly; padding: 15px 50px 15px 50px;"><table width="100%" border="0" cellpadding="0" cellspacing="0" style="-ms-text-size-adjust: auto; -webkit-text-size-adjust: 100%; border-collapse: collapse; font-size: 14px; min-width: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt;"><tr style="mso-line-height-rule:
+exactly;"><td id="text_div7345" class="td_text td_block" valign="top" align="left" width="550" style="line-height: 150%; mso-line-height-rule: exactly; margin: 0; outline: none; padding: 0; color: inherit; font-size: 12px; font-weight: inherit; line-height: 1.5; text-decoration: inherit; font-family: arial;"> <div style="line-height: 150%; margin: 0; outline: none; padding: 0; color: inherit; font-size: 16px; font-weight: inherit; line-height: 1.5; text-decoration: inherit; mso-line-height-rule: exactly;" data-line-height="1.5"> <div style="margin: 0; outline: none; padding: 0; color: inherit; font-size: inherit; font-weight: inherit; line-height: inherit; text-decoration: inherit;" class=""><span style='color: #22224a; font-size: inherit; font-weight: inherit; line-height: inherit; text-decoration: inherit; font-family: Roboto, "San Francisco", Helvetica, Arial, sans-serif;' class=""><br><span class="" style="color: inherit; font-size: 20px; font-weight: bold;
+line-height: inherit; text-decoration: inherit;"> Model Monitoring: The Million Dollar Problem</span><br>If you have listened to the podcast or meetup more than once you have probably heard Demetrios talk about Monitoring and the infamous story from one of our first meetup presenters Flavio Clesio. The story goes something like this, Flavios team was getting all the right signals from their monitoring platform so they thought things were all Honky Dory. <br><br>Turn out they were wrong. For 18 days their recsys was showing the same recomendation to every single person that visited the webpage. 18 days. Hundreds of thousands of estimated losses. <br><br>We don't want that to be you. hence the talk from James last week, and the next two sessions are going to be about monitoring. Let's finish the year off strong and make sure these war stories are less and less frequesnt.<br><br><span style='color: #22224a; font-size: 16px; font-weight: 400; line-height: inherit;
+text-decoration: inherit; font-family: Roboto, "San Francisco", Helvetica, Arial, sans-serif; font-style: normal;'>In this Meetup, four of Loka’s MLOps experts will provide a thorough overview of model monitoring, the benefits for your business, and reference architectures to get you started. <br><br>The crew will also provide an introduction to several managed and open source solutions including SageMaker Model Monitor and Great Expectations. Bonus material includes access to a hands-on exercise for learning SageMaker Model Monitor.</span><span style='color: #22224a; font-size: 16px; font-weight: 400; line-height: inherit; text-decoration: inherit; font-family: Roboto, "San Francisco", Helvetica, Arial, sans-serif; font-style: normal;'> <br><br>As we know, m</span><span style='color: #22224a; font-size: 16px; font-weight: 400; line-height: inherit; text-decoration: inherit; font-family: Roboto, "San Francisco", Helvetica, Arial, sans-serif; font-style:
+normal;'>odel and data monitoring is a crucial part of a production ML system — a lot can go wrong: model drift, data anomalies, upstream data, or processing failures. And mistakes can be costly if ML drives mission-critical systems like recommendation systems, credit approval, or fraud detection, easily meaning millions of dollars lost for large organizations. <br><br>So, why do so few companies have ML monitoring fully implemented? Don't be that company.</span><br><br><span style='color: #22224a; font-size: 16px; font-weight: 400; line-height: inherit; text-decoration: inherit; font-style: normal; font-family: Roboto, "San Francisco", Helvetica, Arial, sans-serif;'>Sub to our </span><a
+href="https://autodb.lt.acemlna.com/Prod/link-tracker?notrack=1&redirectUrl=aHR0cHMlM0ElMkYlMkZnby5tbG9wcy5jb21tdW5pdHklMkZjYWxlbmRhciUyRnN1YnNjcmliZSUzRnV0bV9zb3VyY2UlM0RBY3RpdmVDYW1wYWlnbiUyNnV0bV9tZWRpdW0lM0RlbWFpbCUyNnV0bV9jb250ZW50JTNEWW91JTJCdmUlMkJiZWVuJTJCS1NlcnZlJTI2dXRtX2NhbXBhaWduJTNETUxPcHMlMkItJTJCTmV3c2xldHRlciUyQi0lMkIyMDIxJTJCLSUyQjExJTJCLSUyQjAy&sig=7DtsutNTGXMyt9dyQhLXxYgYzKW3bm9Lq8yhswwTydya&iat=1635879703&a=%7C%7C650082935%7C%7C&account=autodb%2Eactivehosted%2Ecom&email=VM2dpEm9g2v11YJpQnEkwGk6nPBLx1O%2F6iX2VgJJELM%3D&s=30a202ca5addb3aecc7727a23287b37f&i=157A180A5A5963&utm_source=ActiveCampaign&utm_medium=email&utm_content=Happy%20Thanksgiving%21&utm_campaign=MLOps%20-%20Newsletter%20-%202021%20-%2011%20-%2023" target="_blank" data-saferedirecturl="https://www.google.com/url?q=https://autodb.lt.acemlna.com/Prod/link-tracker?notrack=1&redirectUrl%3DaHR0cHMlM0ElMkYlMkZnby5tbG9wcy5jb21tdW5pdHklMkZjYWxlbmRhciUyRnN1YnNjcmliZSUzRnV0bV9zb3VyY2UlM0RBY3RpdmVDYW1wYWlnbiUyNnV0bV9tZWRpdW0lM0RlbWFpbCUyNnV0bV9jb250ZW50JTNEWW91JTJCdmUlMkJiZWVuJTJCS1NlcnZlJTI2dXRtX2NhbXBhaWduJTNETUxPcHMlMkItJTJCTmV3c2xldHRlciUyQi0lMkIyMDIxJTJCLSUyQjExJTJCLSUyQjAy%26sig%3D7DtsutNTGXMyt9dyQhLXxYgYzKW3bm9Lq8yhswwTydya%26iat%3D1635879703%26a%3D%257C%257C650082935%257C%257C%26account%3Dautodb%252Eactivehosted%252Ecom%26email%3DVM2dpEm9g2v11YJpQnEkwGk6nPBLx1O%252F6iX2VgJJELM%253D%26s%3D30a202ca5addb3aecc7727a23287b37f%26i%3D157A180A5A5963&source=gmail&ust=1636510494143000&usg=AFQjCNEWK_9j2BJg3tDWjYh5NykklsFRnA" style='margin: 0; outline: none; padding: 0; color: #3e86cb; text-decoration: underline; font-style: normal; font-family: Roboto, "San Francisco", Helvetica, Arial, sans-serif; font-size: 16px;
+font-weight: 400;' data-ac-default-color="1"><span style="color: ; font-size: inherit; font-weight: inherit; line-height: inherit; text-decoration: inherit;">public calendar</span></a><span style='color: #22224a; font-size: 16px; font-weight: 400; line-height: inherit; text-decoration: inherit; font-style: normal; font-family: Roboto, "San Francisco", Helvetica, Arial, sans-serif;'> or click the button below to jump into the meetup on Wednesday at 10am PST/5pm BST</span></span></div>
+ </div>
+<!--[if (gte mso 12)&(lte mso 15) ]>
+<style data-ac-keep="true" data-ac-inline="false"> #text_div7345, #text_div7345 div { line-height: 150% !important; };
+</style>
+<![endif]--></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr style="mso-line-height-rule: exactly; background-color: #ffffff;"><td id="layout-row-margin7651" valign="top" style="mso-line-height-rule: exactly; padding: 0; background-color: #ffffff;"><table width="100%" border="0" cellpadding="0" cellspacing="0" style="-ms-text-size-adjust: auto; -webkit-text-size-adjust: 100%; border-collapse: initial !important; font-size: 14px; min-width: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt;"><tr id="layout-row7651" class="layout layout-row widget _widget_button style7651" style="mso-line-height-rule: exactly;"><td id="layout-row-padding7651" valign="top" style="mso-line-height-rule: exactly; padding: 20px 50px 40px 50px;"><table width="100%" border="0" cellpadding="0" cellspacing="0" style="-ms-text-size-adjust: auto; -webkit-text-size-adjust: 100%; border-collapse: collapse; font-size: 14px; min-width: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt;"><tr style="mso-line-height-rule: exactly;"><td class="td_button
+td_block customizable" valign="top" align="left" width="550" style="mso-line-height-rule: exactly;"> <div class="button-wrapper" style="margin: 0; outline: none; padding: 0; text-align: left;">
+<!--[if mso]> <v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" href="https://autodb.lt.acemlna.com/Prod/link-tracker?notrack=1&redirectUrl=aHR0cHMlM0ElMkYlMkZnby5tbG9wcy5jb21tdW5pdHklMkZtZWV0dXAlM0Z1dG1fc291cmNlJTNEQWN0aXZlQ2FtcGFpZ24lMjZ1dG1fbWVkaXVtJTNEZW1haWwlMjZ1dG1fY29udGVudCUzREhhcHB5JTI1MjBUaGFua3NnaXZpbmclMjUyMSUyNnV0bV9jYW1wYWlnbiUzRE1MT3BzJTI1MjAtJTI1MjBOZXdzbGV0dGVyJTI1MjAtJTI1MjAyMDIxJTI1MjAtJTI1MjAxMSUyNTIwLSUyNTIwMjM=&sig=FaNumoMK9BCa7UnMr9YPWNcV5VawaTmtCX7qVGiNqgHS&iat=1713904648&a=%7C%7C650082935%7C%7C&account=autodb%2Eactivehosted%2Ecom&email=SKriobaUP9mK6AHnkID922I4BWytJdy2vdO69dl41tpfK9bwxg%3D%3D%3Ar%2BbYad4e13q1ix3GTxoUlOZKlSNDmMgs&s=bad97c655476f96a390a72c05a742011&i=161A189A5A6322" style="v-text-anchor:middle; width:100px; height:64px; " arcsize="6%" strokecolor="#3e86cb" strokeweight="1pt" fillcolor="#3e86cb" o:button="true" o:allowincell="true" o:allowoverlap="false" > <v:textbox inset="2px,2px,2px,2px"> <center style="color:#fff7f7;font-family:Roboto, San Francisco, Helvetica, Arial, sans-serif; font-size:14px; line-height: 1.1;">Jump in</center> </v:textbox> </v:roundrect>
+<![endif]--> <a href="https://go.mlops.community/meetup?utm_source=ActiveCampaign&utm_medium=email&utm_content=Happy%20Thanksgiving%21&utm_campaign=MLOps%20-%20Newsletter%20-%202021%20-%2011%20-%2023" style="margin: 0; outline: none; padding: 15px; color: #fff7f7; background: #3e86cb; background-color: #3e86cb; border-radius: 3px; font-family: Roboto, San Francisco, Helvetica, Arial, sans-serif; font-size: 14px; display: inline-block; line-height: 1.1; text-align: center; text-decoration: none; mso-hide: all;" target="_blank"> <span style="color:#fff7f7;font-family:Roboto, San Francisco, Helvetica, Arial, sans-serif;font-size:14px;" target="_blank"> Jump in </span> </a> </div>
+
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr style="mso-line-height-rule: exactly; background-color: #ffffff;"><td id="layout-row-margin7669" valign="top" style="mso-line-height-rule: exactly; padding: 0; background-color: #ffffff;"><table width="100%" border="0" cellpadding="0" cellspacing="0" style="-ms-text-size-adjust: auto; -webkit-text-size-adjust: 100%; border-collapse: initial !important; font-size: 14px; min-width: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt;"><tr id="layout-row7669" class="layout layout-row widget _widget_text style7669" style="mso-line-height-rule: exactly; margin: 0; padding: 0;"><td id="layout-row-padding7669" valign="top" style="mso-line-height-rule: exactly; padding: 29px 50px 0px 50px;"><table width="100%" border="0" cellpadding="0" cellspacing="0" style="-ms-text-size-adjust: auto; -webkit-text-size-adjust: 100%; border-collapse: collapse; font-size: 14px; min-width: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt;"><tr style="mso-line-height-rule: exactly;"><td
+id="text_div7365" class="td_text td_block" valign="top" align="left" width="550" style="line-height: 150%; mso-line-height-rule: exactly; margin: 0; outline: none; padding: 0; color: inherit; font-size: 12px; font-weight: inherit; line-height: 1.5; text-decoration: inherit; font-family: arial;"> <div style="line-height: 150%; margin: 0; outline: none; padding: 0; color: #555555; font-size: 15px; font-weight: inherit; line-height: 1.5; text-decoration: inherit; mso-line-height-rule: exactly;" data-line-height="1.5"> <div style="margin: 0; outline: none; padding: 0; color: #555555; font-size: inherit; font-weight: inherit; line-height: inherit; text-decoration: inherit;"><span style='color: inherit; font-size: inherit; font-weight: 700; line-height: inherit; text-decoration: inherit; font-family: Roboto, "San Francisco", Helvetica, Arial, sans-serif;' class="">Reading Group</span></div>
+ </div>
+<!--[if (gte mso 12)&(lte mso 15) ]>
+<style data-ac-keep="true" data-ac-inline="false"> #text_div7365, #text_div7365 div { line-height: 150% !important; };
+</style>
+<![endif]--></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr style="mso-line-height-rule: exactly; background-color: #ffffff;"><td id="layout-row-margin7667" valign="top" style="mso-line-height-rule: exactly; padding: 0; background-color: #ffffff;"><table width="100%" border="0" cellpadding="0" cellspacing="0" style="-ms-text-size-adjust: auto; -webkit-text-size-adjust: 100%; border-collapse: initial !important; font-size: 14px; min-width: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt;"><tr id="layout-row7667" class="layout layout-row widget _widget_text style7667" style="mso-line-height-rule: exactly; margin: 0; padding: 0;"><td id="layout-row-padding7667" valign="top" style="mso-line-height-rule: exactly; padding: 10px 50px 10px 50px;"><table width="100%" border="0" cellpadding="0" cellspacing="0" style="-ms-text-size-adjust: auto; -webkit-text-size-adjust: 100%; border-collapse: collapse; font-size: 14px; min-width: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt;"><tr style="mso-line-height-rule: exactly;"><td
+id="text_div7363" class="td_text td_block" valign="top" align="left" width="550" style="line-height: 130%; mso-line-height-rule: exactly; margin: 0; outline: none; padding: 0; color: inherit; font-size: 12px; font-weight: inherit; line-height: 1.3; text-decoration: inherit; font-family: arial;"> <div style="line-height: 130%; margin: 0; outline: none; padding: 0; color: inherit; font-size: inherit; font-weight: inherit; line-height: 1.3; text-decoration: inherit; mso-line-height-rule: exactly;" data-line-height="1.3"> <div style="margin: 0; outline: none; padding: 0; color: inherit; font-size: inherit; font-weight: inherit; line-height: inherit; text-decoration: inherit; text-align: left;"><span style='color: #c92c7f; font-size: 27px; font-weight: 700; line-height: inherit; text-decoration: inherit; font-family: Roboto, "San Francisco", Helvetica, Arial, sans-serif;' class="">Object Design Style</span></div>
+ </div>
+<!--[if (gte mso 12)&(lte mso 15) ]>
+<style data-ac-keep="true" data-ac-inline="false"> #text_div7363, #text_div7363 div { line-height: 130% !important; };
+</style>
+<![endif]--></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr style="mso-line-height-rule: exactly; background-color: #ffffff;"><td id="layout-row-margin7657" valign="top" style="mso-line-height-rule: exactly; padding: 0; background-color: #ffffff;"><table width="100%" border="0" cellpadding="0" cellspacing="0" style="-ms-text-size-adjust: auto; -webkit-text-size-adjust: 100%; border-collapse: initial !important; font-size: 14px; min-width: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt;"><tr id="layout-row7657" class="layout layout-row widget _widget_break style7657" style="mso-line-height-rule: exactly;"><td id="layout-row-padding7657" valign="top" style="mso-line-height-rule: exactly; line-height: 0; padding: 0 50px 10px 50px;"><table width="100%" border="0" cellpadding="0" cellspacing="0" style="-ms-text-size-adjust: auto; -webkit-text-size-adjust: 100%; border-collapse: collapse; font-size: 14px; min-width: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; line-height: 0; mso-line-height-rule: exactly;"><tr
+style="mso-line-height-rule: exactly;"><td height="5" style="mso-line-height-rule: exactly; line-height: 0;"></td>
+</tr>
+<tr style="mso-line-height-rule: exactly;"><td align="left" height="1" width="550" style="mso-line-height-rule: exactly; line-height: 0;"> <table align="left" border="0" cellpadding="0" cellspacing="0" height="1" width="138" style="-ms-text-size-adjust: auto; -webkit-text-size-adjust: 100%; border-collapse: collapse; font-size: 14px; min-width: auto!important; mso-table-lspace: 0pt; mso-table-rspace: 0pt; line-height: 0; mso-line-height-rule: exactly; width: 25%; max-width: 25%;"><tr style="mso-line-height-rule: exactly;"><td class="break-line" bgcolor="#c92c7f" height="1" width="138" style="mso-line-height-rule: exactly; line-height: 1px; height: 1px; width: 138px; background-color: #c92c7f;"> </td>
+ </tr>
+</table>
+</td>
+ </tr>
+<tr style="mso-line-height-rule: exactly;"><td height="5" style="mso-line-height-rule: exactly; line-height: 0;"></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr style="mso-line-height-rule: exactly; background-color: #ffffff;"><td id="layout-row-margin7672" valign="top" style="mso-line-height-rule: exactly; padding: 0; background-color: #ffffff;"><table width="100%" border="0" cellpadding="0" cellspacing="0" style="-ms-text-size-adjust: auto; -webkit-text-size-adjust: 100%; border-collapse: initial !important; font-size: 14px; min-width: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt;"><tr id="layout-row7672" class="layout layout-row widget _widget_picture style7672" align="center" style="mso-line-height-rule: exactly;"><td id="layout-row-padding7672" valign="top" style="mso-line-height-rule: exactly; padding: 0px 0px 8px 0px;"><table width="100%" border="0" cellpadding="0" cellspacing="0" style="-ms-text-size-adjust: auto; -webkit-text-size-adjust: 100%; border-collapse: collapse; font-size: 14px; min-width: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt;"><tr style="mso-line-height-rule: exactly;"><td
+class="image-td" align="center" valign="top" width="650" style="mso-line-height-rule: exactly;"><img src="../content.app-us1.com/8j3Jq/2021/11/22/447f9f18-172f-4f5d-94ad-fb00ddc05345.jpeg_r=759650632" alt="" width="650" style="display: block; border: none; outline: none; width: 650px; opacity: 1; max-width: 100%;"></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr style="mso-line-height-rule: exactly; background-color: #ffffff;"><td id="layout-row-margin7659" valign="top" style="mso-line-height-rule: exactly; padding: 0px; background-color: #ffffff;"><table width="100%" border="0" cellpadding="0" cellspacing="0" style="-ms-text-size-adjust: auto; -webkit-text-size-adjust: 100%; border-collapse: initial !important; font-size: 14px; min-width: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt;"><tr id="layout-row7659" class="layout layout-row widget _widget_text style7659" style="mso-line-height-rule: exactly; margin: 0; padding: 0;"><td id="layout-row-padding7659" valign="top" style="mso-line-height-rule: exactly; padding: 15px 50px 15px 50px;"><table width="100%" border="0" cellpadding="0" cellspacing="0" style="-ms-text-size-adjust: auto; -webkit-text-size-adjust: 100%; border-collapse: collapse; font-size: 14px; min-width: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt;"><tr style="mso-line-height-rule:
+exactly;"><td id="text_div7355" class="td_text td_block" valign="top" align="left" width="550" style="line-height: 150%; mso-line-height-rule: exactly; margin: 0; outline: none; padding: 0; color: inherit; font-size: 12px; font-weight: inherit; line-height: 1.5; text-decoration: inherit; font-family: arial;"> <div style="line-height: 150%; margin: 0; outline: none; padding: 0; color: inherit; font-size: 16px; font-weight: inherit; line-height: 1.5; text-decoration: inherit; mso-line-height-rule: exactly;" data-line-height="1.5"> <div style="margin: 0; outline: none; padding: 0; color: inherit; font-size: inherit; font-weight: inherit; line-height: inherit; text-decoration: inherit;" class=""><span style='color: #22224a; font-size: inherit; font-weight: inherit; line-height: inherit; text-decoration: inherit; font-family: Roboto, "San Francisco", Helvetica, Arial, sans-serif;' class=""> <span style='color: #22224a; font-size: 16px; font-weight: 400; line-height:
+inherit; text-decoration: inherit; font-family: Roboto, "San Francisco", Helvetica, Arial, sans-serif; font-style: normal; text-align: left;'>On the last reading group session, Tim Blazina and Laszlo Sragner joined us to discuss the impact of SWE in ML projects. This session helped us to go in further detail about many ideas. For example:<br><br><b data-stringify-type="bold" style="margin: 0; outline: none; padding: 0;">Why do we actually need tests? How can we employ it to ML?</b><br style="">Being in control of your code is a very good place to be. Otherwise you won't feel safe. <a target="_blank"
+data-stringify-link="https://www.businessinsider.com/jeff-bezos-on-type-1-and-type-2-decisions-2016-4?utm_source=ActiveCampaign&utm_medium=email&utm_content=Happy%20Thanksgiving%21&utm_campaign=MLOps%20-%20Newsletter%20-%202021%20-%2011%20-%2023" delay="150" data-sk="tooltip_parent" href="https://autodb.lt.acemlna.com/Prod/link-tracker?notrack=1&redirectUrl=aHR0cHMlM0ElMkYlMkZ3d3cuYnVzaW5lc3NpbnNpZGVyLmNvbSUyRmplZmYtYmV6b3Mtb24tdHlwZS0xLWFuZC10eXBlLTItZGVjaXNpb25zLTIwMTYtNCUzRnV0bV9zb3VyY2UlM0RBY3RpdmVDYW1wYWlnbiUyNnV0bV9tZWRpdW0lM0RlbWFpbCUyNnV0bV9jb250ZW50JTNESGFwcHklMjUyMFRoYW5rc2dpdmluZyUyNTIxJTI2dXRtX2NhbXBhaWduJTNETUxPcHMlMjUyMC0lMjUyME5ld3NsZXR0ZXIlMjUyMC0lMjUyMDIwMjElMjUyMC0lMjUyMDExJTI1MjAtJTI1MjAyMw==&sig=GhGB952jMRXr9bhk8JmJdrdEjWJMQ6n6ADSLhg79nNSo&iat=1713904648&a=%7C%7C650082935%7C%7C&account=autodb%2Eactivehosted%2Ecom&email=SKriobaUP9mK6AHnkID922I4BWytJdy2vdO69dl41tpfK9bwxg%3D%3D%3Ar%2BbYad4e13q1ix3GTxoUlOZKlSNDmMgs&s=bad97c655476f96a390a72c05a742011&i=161A189A5A6349" rel="noopener noreferrer" tabindex="-1"
+data-remove-tab-index="true" style="margin: 0; outline: none; padding: 0; color: #3e86cb; text-decoration: underline;" data-ac-default-color="1"><span style="color: ; font-size: inherit; font-weight: inherit; line-height: inherit; text-decoration: inherit;">Jeff Bezos has a concept of type 1 and type 2 decision</span></a>: type 1 are the ones you cannot come back from, and type 2 you can. By testing and having version control you can convert type 1 decision into type 2 since you can undo your solutions while having guarantees if you did something wrong or not. Regarding ML, have a small set of data to test the correctness of your code (e.g. pre-process, feature engineering), always have an anti-pipeline for this. This can be useful for an early-on structure.<br><br><b data-stringify-type="bold" style="margin: 0; outline: none; padding: 0;">What about data? How do we manage data?</b><br style="">Regarding pre-processing and feature engineering: apply <a target="_blank" data-stringify-link="https://greatexpectations.io/?utm_source=ActiveCampaign&utm_medium=email&utm_content=Happy%20Thanksgiving%21&utm_campaign=MLOps%20-%20Newsletter%20-%202021%20-%2011%20-%2023" delay="150" data-sk="tooltip_parent" href="https://autodb.lt.acemlna.com/Prod/link-tracker?notrack=1&redirectUrl=aHR0cHMlM0ElMkYlMkZncmVhdGV4cGVjdGF0aW9ucy5pbyUyRiUzRnV0bV9zb3VyY2UlM0RBY3RpdmVDYW1wYWlnbiUyNnV0bV9tZWRpdW0lM0RlbWFpbCUyNnV0bV9jb250ZW50JTNESGFwcHklMjUyMFRoYW5rc2dpdmluZyUyNTIxJTI2dXRtX2NhbXBhaWduJTNETUxPcHMlMjUyMC0lMjUyME5ld3NsZXR0ZXIlMjUyMC0lMjUyMDIwMjElMjUyMC0lMjUyMDExJTI1MjAtJTI1MjAyMw==&sig=H2shCZ1opCb7h9g8vpY4GSx9QLRaGjmro2SjnvKFdAwk&iat=1713904648&a=%7C%7C650082935%7C%7C&account=autodb%2Eactivehosted%2Ecom&email=SKriobaUP9mK6AHnkID922I4BWytJdy2vdO69dl41tpfK9bwxg%3D%3D%3Ar%2BbYad4e13q1ix3GTxoUlOZKlSNDmMgs&s=bad97c655476f96a390a72c05a742011&i=161A189A5A6350" rel="noopener noreferrer" tabindex="-1" data-remove-tab-index="true" style="margin: 0; outline: none; padding: 0; color: #3e86cb;
+text-decoration: underline;" data-ac-default-color="1"><span style="color: ; font-size: inherit; font-weight: inherit; line-height: inherit; text-decoration: inherit;">great expectations</span></a>, <a target="_blank" data-stringify-link="https://docs.getdbt.com/docs/building-a-dbt-project/tests?utm_source=ActiveCampaign&utm_medium=email&utm_content=Happy%20Thanksgiving%21&utm_campaign=MLOps%20-%20Newsletter%20-%202021%20-%2011%20-%2023" delay="150" data-sk="tooltip_parent"
+href="https://autodb.lt.acemlna.com/Prod/link-tracker?notrack=1&redirectUrl=aHR0cHMlM0ElMkYlMkZkb2NzLmdldGRidC5jb20lMkZkb2NzJTJGYnVpbGRpbmctYS1kYnQtcHJvamVjdCUyRnRlc3RzJTNGdXRtX3NvdXJjZSUzREFjdGl2ZUNhbXBhaWduJTI2dXRtX21lZGl1bSUzRGVtYWlsJTI2dXRtX2NvbnRlbnQlM0RIYXBweSUyNTIwVGhhbmtzZ2l2aW5nJTI1MjElMjZ1dG1fY2FtcGFpZ24lM0RNTE9wcyUyNTIwLSUyNTIwTmV3c2xldHRlciUyNTIwLSUyNTIwMjAyMSUyNTIwLSUyNTIwMTElMjUyMC0lMjUyMDIz&sig=69FHo5pUhWgy4aw7zovzxjqzVWNbM96zRVzf5jQAykaX&iat=1713904648&a=%7C%7C650082935%7C%7C&account=autodb%2Eactivehosted%2Ecom&email=SKriobaUP9mK6AHnkID922I4BWytJdy2vdO69dl41tpfK9bwxg%3D%3D%3Ar%2BbYad4e13q1ix3GTxoUlOZKlSNDmMgs&s=bad97c655476f96a390a72c05a742011&i=161A189A5A6351" rel="noopener noreferrer" tabindex="-1" data-remove-tab-index="true" style="margin: 0; outline: none; padding: 0; color: #3e86cb; text-decoration: underline;" data-ac-default-color="1"><span style="color: ; font-size: inherit; font-weight: inherit; line-height: inherit; text-decoration: inherit;">dbt</span></a>, be notified immediately with assertions you can still control like db schema changes, sanity checks, missing value handling.<br style="">Regarding production: monitoring. For example, monitor mean, std, moving averages, moving stds, missing values of
+your features. Be aware of feature drifts. Pay close attention to the data distribution changes. Also, when you model performance decreases in time - that's when traditional SWE testing breaks. That is a Data Science/Analysis problem. You can try to put automated tests on it, but this is something that requires an analysis from a DS.<br><br><b data-stringify-type="bold" style="margin: 0; outline: none; padding: 0;">Main takeaways from Object Design Style Guide?</b></span><ul data-stringify-type="unordered-list" data-indent="0" data-border="false" data-border-radius-top-cap="false" data-border-radius-bottom-cap="false" style='margin: 0; padding: 0; color: #22224a; font-family: Roboto, "San Francisco", Helvetica, Arial, sans-serif; font-size: 16px; font-style: normal; font-weight: 400; text-align: left;'><li data-stringify-indent="0" data-stringify-border="0" style="display: list-item; line-height: inherit; list-style-type: disc; margin: 0 0 0 28px;">using
+abstractions when you are dealing with external services and use dependency inversion for it to increase robustness</li><li data-stringify-indent="0" data-stringify-border="0" style="display: list-item; line-height: inherit; list-style-type: disc; margin: 0 0 0 28px;">distinction between service objects (to perform a task, or retrieve info) from existent entities</li><li data-stringify-indent="0" data-stringify-border="0" style="display: list-item; line-height: inherit; list-style-type: disc; margin: 0 0 0 28px;">distinction between private methods and public methods that can implement an interface and be used by external classes</li></ul></span></div>
+ </div>
+<!--[if (gte mso 12)&(lte mso 15) ]>
+<style data-ac-keep="true" data-ac-inline="false"> #text_div7355, #text_div7355 div { line-height: 150% !important; };
+</style>
+<![endif]--></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr style="mso-line-height-rule: exactly; background-color: #ffffff;"><td id="layout-row-margin7674" valign="top" style="mso-line-height-rule: exactly; padding: 0; background-color: #ffffff;"><table width="100%" border="0" cellpadding="0" cellspacing="0" style="-ms-text-size-adjust: auto; -webkit-text-size-adjust: 100%; border-collapse: initial !important; font-size: 14px; min-width: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt;"><tr id="layout-row7674" class="layout layout-row widget _widget_button style7674" style="mso-line-height-rule: exactly;"><td id="layout-row-padding7674" valign="top" style="mso-line-height-rule: exactly; padding: 20px 50px 40px 50px;"><table width="100%" border="0" cellpadding="0" cellspacing="0" style="-ms-text-size-adjust: auto; -webkit-text-size-adjust: 100%; border-collapse: collapse; font-size: 14px; min-width: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt;"><tr style="mso-line-height-rule: exactly;"><td class="td_button
+td_block customizable" valign="top" align="left" width="550" style="mso-line-height-rule: exactly;"> <div class="button-wrapper" style="margin: 0; outline: none; padding: 0; text-align: left;">
+<!--[if mso]> <v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" href="https://autodb.lt.acemlna.com/Prod/link-tracker?notrack=1&redirectUrl=aHR0cHMlM0ElMkYlMkZ3d3cubm90aW9uLnNvJTJGTUxPcHMtQ29tbXVuaXR5LVJlYWRpbmctR3JvdXAtMjc2NGEwMjM1MjczNDIxM2IyNWFmMDdlNWY4MzVkNDUlM0Z1dG1fc291cmNlJTNEQWN0aXZlQ2FtcGFpZ24lMjZ1dG1fbWVkaXVtJTNEZW1haWwlMjZ1dG1fY29udGVudCUzREhhcHB5JTI1MjBUaGFua3NnaXZpbmclMjUyMSUyNnV0bV9jYW1wYWlnbiUzRE1MT3BzJTI1MjAtJTI1MjBOZXdzbGV0dGVyJTI1MjAtJTI1MjAyMDIxJTI1MjAtJTI1MjAxMSUyNTIwLSUyNTIwMjM=&sig=29fEE1zdCAoEo2TPP56zbt69qpWZvWMz7HNKisbPXUeX&iat=1713904648&a=%7C%7C650082935%7C%7C&account=autodb%2Eactivehosted%2Ecom&email=SKriobaUP9mK6AHnkID922I4BWytJdy2vdO69dl41tpfK9bwxg%3D%3D%3Ar%2BbYad4e13q1ix3GTxoUlOZKlSNDmMgs&s=bad97c655476f96a390a72c05a742011&i=161A189A5A6325" style="v-text-anchor:middle; width:95px; height:64px; " arcsize="6%" strokecolor="#3e86cb" strokeweight="1pt" fillcolor="#3e86cb" o:button="true" o:allowincell="true" o:allowoverlap="false" > <v:textbox inset="2px,2px,2px,2px"> <center style="color:#fff7f7;font-family:Roboto, San Francisco, Helvetica, Arial, sans-serif; font-size:14px; line-height: 1.1;">Join us</center> </v:textbox> </v:roundrect>
+<![endif]--> <a href="https://www.notion.so/MLOps-Community-Reading-Group-2764a02352734213b25af07e5f835d45?utm_source=ActiveCampaign&utm_medium=email&utm_content=Happy%20Thanksgiving%21&utm_campaign=MLOps%20-%20Newsletter%20-%202021%20-%2011%20-%2023" style="margin: 0; outline: none; padding: 15px; color: #fff7f7; background: #3e86cb; background-color: #3e86cb; border-radius: 3px; font-family: Roboto, San Francisco, Helvetica, Arial, sans-serif; font-size: 14px; display: inline-block; line-height: 1.1; text-align: center; text-decoration: none; mso-hide: all;" target="_blank"> <span style="color:#fff7f7;font-family:Roboto, San Francisco, Helvetica, Arial, sans-serif;font-size:14px;" target="_blank"> Join us </span> </a> </div>
+
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr style="mso-line-height-rule: exactly; background-color: #ffffff;"><td id="layout-row-margin7668" valign="top" style="mso-line-height-rule: exactly; padding: 0; background-color: #ffffff;"><table width="100%" border="0" cellpadding="0" cellspacing="0" style="-ms-text-size-adjust: auto; -webkit-text-size-adjust: 100%; border-collapse: initial !important; font-size: 14px; min-width: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt;"><tr id="layout-row7668" class="layout layout-row widget _widget_text style7668" style="mso-line-height-rule: exactly; margin: 0; padding: 0;"><td id="layout-row-padding7668" valign="top" style="mso-line-height-rule: exactly; padding: 29px 50px 0px 50px;"><table width="100%" border="0" cellpadding="0" cellspacing="0" style="-ms-text-size-adjust: auto; -webkit-text-size-adjust: 100%; border-collapse: collapse; font-size: 14px; min-width: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt;"><tr style="mso-line-height-rule: exactly;"><td
+id="text_div7364" class="td_text td_block" valign="top" align="left" width="550" style="line-height: 150%; mso-line-height-rule: exactly; margin: 0; outline: none; padding: 0; color: inherit; font-size: 12px; font-weight: inherit; line-height: 1.5; text-decoration: inherit; font-family: arial;"> <div style="line-height: 150%; margin: 0; outline: none; padding: 0; color: #555555; font-size: 15px; font-weight: inherit; line-height: 1.5; text-decoration: inherit; mso-line-height-rule: exactly;" data-line-height="1.5"> <div style="margin: 0; outline: none; padding: 0; color: #555555; font-size: inherit; font-weight: inherit; line-height: inherit; text-decoration: inherit;"><span style='color: inherit; font-size: inherit; font-weight: 700; line-height: inherit; text-decoration: inherit; font-family: Roboto, "San Francisco", Helvetica, Arial, sans-serif;' class="">Extras</span></div>
+ </div>
+<!--[if (gte mso 12)&(lte mso 15) ]>
+<style data-ac-keep="true" data-ac-inline="false"> #text_div7364, #text_div7364 div { line-height: 150% !important; };
+</style>
+<![endif]--></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr style="mso-line-height-rule: exactly; background-color: #ffffff;"><td id="layout-row-margin7670" valign="top" style="mso-line-height-rule: exactly; padding: 0; background-color: #ffffff;"><table width="100%" border="0" cellpadding="0" cellspacing="0" style="-ms-text-size-adjust: auto; -webkit-text-size-adjust: 100%; border-collapse: initial !important; font-size: 14px; min-width: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt;"><tr id="layout-row7670" class="layout layout-row widget _widget_text style7670" style="mso-line-height-rule: exactly; margin: 0; padding: 0;"><td id="layout-row-padding7670" valign="top" style="mso-line-height-rule: exactly; padding: 10px 50px 10px 50px;"><table width="100%" border="0" cellpadding="0" cellspacing="0" style="-ms-text-size-adjust: auto; -webkit-text-size-adjust: 100%; border-collapse: collapse; font-size: 14px; min-width: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt;"><tr style="mso-line-height-rule: exactly;"><td
+id="text_div7366" class="td_text td_block" valign="top" align="left" width="550" style="line-height: 130%; mso-line-height-rule: exactly; margin: 0; outline: none; padding: 0; color: inherit; font-size: 12px; font-weight: inherit; line-height: 1.3; text-decoration: inherit; font-family: arial;"> <div style="line-height: 130%; margin: 0; outline: none; padding: 0; color: inherit; font-size: inherit; font-weight: inherit; line-height: 1.3; text-decoration: inherit; mso-line-height-rule: exactly;" data-line-height="1.3"> <div style="margin: 0; outline: none; padding: 0; color: inherit; font-size: inherit; font-weight: inherit; line-height: inherit; text-decoration: inherit; text-align: left;"><span style='color: #c92c7f; font-size: 27px; font-weight: 700; line-height: inherit; text-decoration: inherit; font-family: Roboto, "San Francisco", Helvetica, Arial, sans-serif;'>The Community Got Me A Job</span></div>
+ </div>
+<!--[if (gte mso 12)&(lte mso 15) ]>
+<style data-ac-keep="true" data-ac-inline="false"> #text_div7366, #text_div7366 div { line-height: 130% !important; };
+</style>
+<![endif]--></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr style="mso-line-height-rule: exactly; background-color: #ffffff;"><td id="layout-row-margin7671" valign="top" style="mso-line-height-rule: exactly; padding: 0; background-color: #ffffff;"><table width="100%" border="0" cellpadding="0" cellspacing="0" style="-ms-text-size-adjust: auto; -webkit-text-size-adjust: 100%; border-collapse: initial !important; font-size: 14px; min-width: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt;"><tr id="layout-row7671" class="layout layout-row widget _widget_break style7671" style="mso-line-height-rule: exactly;"><td id="layout-row-padding7671" valign="top" style="mso-line-height-rule: exactly; line-height: 0; padding: 0 50px 10px 50px;"><table width="100%" border="0" cellpadding="0" cellspacing="0" style="-ms-text-size-adjust: auto; -webkit-text-size-adjust: 100%; border-collapse: collapse; font-size: 14px; min-width: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; line-height: 0; mso-line-height-rule: exactly;"><tr
+style="mso-line-height-rule: exactly;"><td height="5" style="mso-line-height-rule: exactly; line-height: 0;"></td>
+</tr>
+<tr style="mso-line-height-rule: exactly;"><td align="left" height="1" width="550" style="mso-line-height-rule: exactly; line-height: 0;"> <table align="left" border="0" cellpadding="0" cellspacing="0" height="1" width="138" style="-ms-text-size-adjust: auto; -webkit-text-size-adjust: 100%; border-collapse: collapse; font-size: 14px; min-width: auto!important; mso-table-lspace: 0pt; mso-table-rspace: 0pt; line-height: 0; mso-line-height-rule: exactly; width: 25%; max-width: 25%;"><tr style="mso-line-height-rule: exactly;"><td class="break-line" bgcolor="#c92c7f" height="1" width="138" style="mso-line-height-rule: exactly; line-height: 1px; height: 1px; width: 138px; background-color: #c92c7f;"> </td>
+ </tr>
+</table>
+</td>
+ </tr>
+<tr style="mso-line-height-rule: exactly;"><td height="5" style="mso-line-height-rule: exactly; line-height: 0;"></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr style="mso-line-height-rule: exactly; background-color: #ffffff;"><td id="layout-row-margin7658" valign="top" style="mso-line-height-rule: exactly; padding: 0; background-color: #ffffff;"><table width="100%" border="0" cellpadding="0" cellspacing="0" style="-ms-text-size-adjust: auto; -webkit-text-size-adjust: 100%; border-collapse: initial !important; font-size: 14px; min-width: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt;"><tr id="layout-row7658" class="layout layout-row widget _widget_picture style7658" align="center" style="mso-line-height-rule: exactly;"><td id="layout-row-padding7658" valign="top" style="mso-line-height-rule: exactly; padding: 0px 0px 8px 0px;"><table width="100%" border="0" cellpadding="0" cellspacing="0" style="-ms-text-size-adjust: auto; -webkit-text-size-adjust: 100%; border-collapse: collapse; font-size: 14px; min-width: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt;"><tr style="mso-line-height-rule: exactly;"><td
+class="image-td" align="center" valign="top" width="650" style="mso-line-height-rule: exactly;"><img src="../content.app-us1.com/8j3Jq/2021/11/22/4911fc18-40d2-45bb-898a-3c8dae682306.jpeg_r=902040646" alt="" width="650" style="display: block; border: none; outline: none; width: 650px; opacity: 1; max-width: 100%;"></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr style="mso-line-height-rule: exactly; background-color: #ffffff;"><td id="layout-row-margin7673" valign="top" style="mso-line-height-rule: exactly; padding: 0px; background-color: #ffffff;"><table width="100%" border="0" cellpadding="0" cellspacing="0" style="-ms-text-size-adjust: auto; -webkit-text-size-adjust: 100%; border-collapse: initial !important; font-size: 14px; min-width: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt;"><tr id="layout-row7673" class="layout layout-row widget _widget_text style7673" style="mso-line-height-rule: exactly; margin: 0; padding: 0;"><td id="layout-row-padding7673" valign="top" style="mso-line-height-rule: exactly; padding: 15px 50px 15px 50px;"><table width="100%" border="0" cellpadding="0" cellspacing="0" style="-ms-text-size-adjust: auto; -webkit-text-size-adjust: 100%; border-collapse: collapse; font-size: 14px; min-width: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt;"><tr style="mso-line-height-rule:
+exactly;"><td id="text_div7369" class="td_text td_block" valign="top" align="left" width="550" style="line-height: 150%; mso-line-height-rule: exactly; margin: 0; outline: none; padding: 0; color: inherit; font-size: 12px; font-weight: inherit; line-height: 1.5; text-decoration: inherit; font-family: arial;"> <div style="line-height: 150%; margin: 0; outline: none; padding: 0; color: inherit; font-size: 16px; font-weight: inherit; line-height: 1.5; text-decoration: inherit; mso-line-height-rule: exactly;" data-line-height="1.5"> <div style="margin: 0; outline: none; padding: 0; color: inherit; font-size: inherit; font-weight: inherit; line-height: inherit; text-decoration: inherit;" class=""><span style='color: #22224a; font-size: inherit; font-weight: inherit; line-height: inherit; text-decoration: inherit; font-family: Roboto, "San Francisco", Helvetica, Arial, sans-serif;' class=""><span style='color: #22224a; font-size: 16px; font-weight: 400; line-height:
+inherit; text-decoration: inherit; font-family: Roboto, "San Francisco", Helvetica, Arial, sans-serif; font-style: normal;'>When Adria </span><a target="_blank" data-stringify-link="https://youtu.be/B7_xPTQtZIE?utm_source=ActiveCampaign&utm_medium=email&utm_content=Happy%20Thanksgiving%21&utm_campaign=MLOps%20-%20Newsletter%20-%202021%20-%2011%20-%2023" delay="150" data-sk="tooltip_parent"
+href="https://autodb.lt.acemlna.com/Prod/link-tracker?notrack=1&redirectUrl=aHR0cHMlM0ElMkYlMkZ5b3V0dS5iZSUyRkI3X3hQVFF0WklFJTNGdXRtX3NvdXJjZSUzREFjdGl2ZUNhbXBhaWduJTI2dXRtX21lZGl1bSUzRGVtYWlsJTI2dXRtX2NvbnRlbnQlM0RIYXBweSUyNTIwVGhhbmtzZ2l2aW5nJTI1MjElMjZ1dG1fY2FtcGFpZ24lM0RNTE9wcyUyNTIwLSUyNTIwTmV3c2xldHRlciUyNTIwLSUyNTIwMjAyMSUyNTIwLSUyNTIwMTElMjUyMC0lMjUyMDIz&sig=6MGxSratGMe89stje3FmJ26efkV3nMHcjvSQkZH7bUVM&iat=1713904648&a=%7C%7C650082935%7C%7C&account=autodb%2Eactivehosted%2Ecom&email=SKriobaUP9mK6AHnkID922I4BWytJdy2vdO69dl41tpfK9bwxg%3D%3D%3Ar%2BbYad4e13q1ix3GTxoUlOZKlSNDmMgs&s=bad97c655476f96a390a72c05a742011&i=161A189A5A6352" rel="noopener noreferrer" tabindex="-1" data-remove-tab-index="true" style='margin: 0; outline: none; padding: 0; color: #3e86cb; text-decoration: underline; font-family: Roboto, "San Francisco", Helvetica, Arial, sans-serif; font-size: 16px; font-style: normal; font-weight: 400;' data-ac-default-color="1"><span style="color: ; font-size: inherit; font-weight: inherit; line-height: inherit; text-decoration: inherit;">presented his project ProdutizeML</span></a><span style='color: #22224a; font-size: 16px; font-weight: 400; line-height: inherit; text-decoration: inherit; font-family:
+Roboto, "San Francisco", Helvetica, Arial, sans-serif; font-style: normal;'> at the MLOps community alongside Demetrios earlier this year, he started interacting with a lot of other community members, discussing various collaboration opportunities. <br><br>Among these members was </span><a data-member-id="U01RZ9N9P32" data-member-label="@Mateo Rojas-Carulla" data-stringify-type="mention" data-stringify-id="U01RZ9N9P32" data-stringify-label="@Mateo Rojas-Carulla" tabindex="-1" aria-hidden="false" aria-haspopup="menu" aria-expanded="false" href="https://mlops-community.slack.com/team/U01RZ9N9P32?utm_source=ActiveCampaign&utm_medium=email&utm_content=Happy%20Thanksgiving%21&utm_campaign=MLOps%20-%20Newsletter%20-%202021%20-%2011%20-%2023" rel="noopener noreferrer"
+data-remove-tab-index="true" data-tab-index-to-restore="0" style='margin: 0; outline: none; padding: 0; color: #22224a; text-decoration: underline; font-family: Roboto, "San Francisco", Helvetica, Arial, sans-serif; font-size: 16px; font-style: normal; font-weight: 400; background: rgba(var(--sk_highlight_accent,29,155,209),0.1);' data-ac-default-color="1" target="_blank"><span style="color: ; font-size: inherit; font-weight: inherit; line-height: inherit; text-decoration: inherit;" target="_blank">@Mateo Rojas-Carulla</span></a><span style='color: #22224a; font-size: 16px; font-weight: 400; line-height: inherit; text-decoration: inherit; font-family: Roboto, "San Francisco", Helvetica, Arial, sans-serif; font-style: normal;'>, CTO and founder of </span><a target="_blank"
+data-stringify-link="https://www.lakera.ai/?utm_source=ActiveCampaign&utm_medium=email&utm_content=Happy%20Thanksgiving%21&utm_campaign=MLOps%20-%20Newsletter%20-%202021%20-%2011%20-%2023" delay="150" data-sk="tooltip_parent" href="https://autodb.lt.acemlna.com/Prod/link-tracker?notrack=1&redirectUrl=aHR0cHMlM0ElMkYlMkZ3d3cubGFrZXJhLmFpJTJGJTNGdXRtX3NvdXJjZSUzREFjdGl2ZUNhbXBhaWduJTI2dXRtX21lZGl1bSUzRGVtYWlsJTI2dXRtX2NvbnRlbnQlM0RIYXBweSUyNTIwVGhhbmtzZ2l2aW5nJTI1MjElMjZ1dG1fY2FtcGFpZ24lM0RNTE9wcyUyNTIwLSUyNTIwTmV3c2xldHRlciUyNTIwLSUyNTIwMjAyMSUyNTIwLSUyNTIwMTElMjUyMC0lMjUyMDIz&sig=6c637psFyWdoFpfUSUK8J3PNfJKUAeWyEFuqdUU6is2c&iat=1713904648&a=%7C%7C650082935%7C%7C&account=autodb%2Eactivehosted%2Ecom&email=SKriobaUP9mK6AHnkID922I4BWytJdy2vdO69dl41tpfK9bwxg%3D%3D%3Ar%2BbYad4e13q1ix3GTxoUlOZKlSNDmMgs&s=bad97c655476f96a390a72c05a742011&i=161A189A5A6354" rel="noopener noreferrer" tabindex="-1" data-remove-tab-index="true" style='margin: 0; outline: none; padding: 0; color: #3e86cb; text-decoration: underline; font-family:
+Roboto, "San Francisco", Helvetica, Arial, sans-serif; font-size: 16px; font-style: normal; font-weight: 400;' data-ac-default-color="1"><span style="color: ; font-size: inherit; font-weight: inherit; line-height: inherit; text-decoration: inherit;">Lakera AI</span></a><span style='color: #22224a; font-size: 16px; font-weight: 400; line-height: inherit; text-decoration: inherit; font-family: Roboto, "San Francisco", Helvetica, Arial, sans-serif; font-style: normal;'>, a startup in Zurich that redefines how we develop, test, and operate safety-critical AI systems. <br><br>Adria was one of Lakera’s first product testers, giving valuable feedback to the team–initially all through the MLOps community workspace. After iterating through various product versions together, both Adria and Lakera decided to join forces! <br><br>Adria became Lakera’s first software engineering hire: check out </span><a target="_blank"
+data-stringify-link="https://www.linkedin.com/feed/update/urn:li:activity:6851128803100524544?utm_source=ActiveCampaign&utm_medium=email&utm_content=Happy%20Thanksgiving%21&utm_campaign=MLOps%20-%20Newsletter%20-%202021%20-%2011%20-%2023" delay="150" data-sk="tooltip_parent" href="https://autodb.lt.acemlna.com/Prod/link-tracker?notrack=1&redirectUrl=aHR0cHMlM0ElMkYlMkZ3d3cubGlua2VkaW4uY29tJTJGZmVlZCUyRnVwZGF0ZSUyRnVybiUzQWxpJTNBYWN0aXZpdHklM0E2ODUxMTI4ODAzMTAwNTI0NTQ0JTNGdXRtX3NvdXJjZSUzREFjdGl2ZUNhbXBhaWduJTI2dXRtX21lZGl1bSUzRGVtYWlsJTI2dXRtX2NvbnRlbnQlM0RIYXBweSUyNTIwVGhhbmtzZ2l2aW5nJTI1MjElMjZ1dG1fY2FtcGFpZ24lM0RNTE9wcyUyNTIwLSUyNTIwTmV3c2xldHRlciUyNTIwLSUyNTIwMjAyMSUyNTIwLSUyNTIwMTElMjUyMC0lMjUyMDIz&sig=Cc6ZbLtHegGVuvmz8kGbQ3qrgGeKjoNDCDFY7gzk5f5d&iat=1713904648&a=%7C%7C650082935%7C%7C&account=autodb%2Eactivehosted%2Ecom&email=SKriobaUP9mK6AHnkID922I4BWytJdy2vdO69dl41tpfK9bwxg%3D%3D%3Ar%2BbYad4e13q1ix3GTxoUlOZKlSNDmMgs&s=bad97c655476f96a390a72c05a742011&i=161A189A5A6355" rel="noopener noreferrer" tabindex="-1" data-remove-tab-index="true"
+style='margin: 0; outline: none; padding: 0; color: #3e86cb; text-decoration: underline; font-family: Roboto, "San Francisco", Helvetica, Arial, sans-serif; font-size: 16px; font-style: normal; font-weight: 400;' data-ac-default-color="1"><span style="color: ; font-size: inherit; font-weight: inherit; line-height: inherit; text-decoration: inherit;">this post</span></a><span style='color: #22224a; font-size: 16px; font-weight: 400; line-height: inherit; text-decoration: inherit; font-family: Roboto, "San Francisco", Helvetica, Arial, sans-serif; font-style: normal;'> for proof! </span><span style='color: #22224a; font-size: 16px; font-weight: 400; line-height: inherit; text-decoration: inherit; font-family: Roboto, "San Francisco", Helvetica, Arial, sans-serif; font-style: normal;'>Looking back, Adria believes that the MLOps community provides great value through its members, their combined knowledge, and chances to find lasting professional and personal
+relationships. He’s still a daily community visitor and contributor.<br><br></span><span style='color: #22224a; font-size: 16px; font-weight: 400; line-height: inherit; text-decoration: inherit; font-family: Roboto, "San Francisco", Helvetica, Arial, sans-serif; font-style: normal;'>If you want to learn more about Lakera AI, feel free to reach out to </span><a data-member-id="U01ERDMGP7X" data-member-label="@Adria Romero" data-stringify-type="mention" data-stringify-id="U01ERDMGP7X" data-stringify-label="@Adria Romero" tabindex="-1" aria-hidden="false" aria-haspopup="menu" aria-expanded="false"
+href="https://mlops-community.slack.com/team/U01ERDMGP7X?utm_source=ActiveCampaign&utm_medium=email&utm_content=Happy%20Thanksgiving%21&utm_campaign=MLOps%20-%20Newsletter%20-%202021%20-%2011%20-%2023" rel="noopener noreferrer" data-remove-tab-index="true" data-tab-index-to-restore="0" style='margin: 0; outline: none; padding: 0; color: #22224a; text-decoration: underline; font-family: Roboto, "San Francisco", Helvetica, Arial, sans-serif; font-size: 16px; font-style: normal; font-weight: 400; background: rgba(var(--sk_highlight_accent,29,155,209),0.1);' data-ac-default-color="1" target="_blank"><span style="color: ; font-size: inherit; font-weight: inherit; line-height: inherit; text-decoration: inherit;" target="_blank">@Adria Romero</span></a><span style='color: #22224a; font-size: 16px;
+font-weight: 400; line-height: inherit; text-decoration: inherit; font-family: Roboto, "San Francisco", Helvetica, Arial, sans-serif; font-style: normal;'> directly. They’re also </span><a target="_blank" data-stringify-link="https://lakera.ai/careers?utm_source=ActiveCampaign&utm_medium=email&utm_content=Happy%20Thanksgiving%21&utm_campaign=MLOps%20-%20Newsletter%20-%202021%20-%2011%20-%2023" delay="150" data-sk="tooltip_parent"
+href="https://autodb.lt.acemlna.com/Prod/link-tracker?notrack=1&redirectUrl=aHR0cHMlM0ElMkYlMkZsYWtlcmEuYWklMkZjYXJlZXJzJTNGdXRtX3NvdXJjZSUzREFjdGl2ZUNhbXBhaWduJTI2dXRtX21lZGl1bSUzRGVtYWlsJTI2dXRtX2NvbnRlbnQlM0RIYXBweSUyNTIwVGhhbmtzZ2l2aW5nJTI1MjElMjZ1dG1fY2FtcGFpZ24lM0RNTE9wcyUyNTIwLSUyNTIwTmV3c2xldHRlciUyNTIwLSUyNTIwMjAyMSUyNTIwLSUyNTIwMTElMjUyMC0lMjUyMDIz&sig=2QDmHuk7U4UuB2cM4T7V2VUx3g2fCKLs1jz1e1M7TNax&iat=1713904648&a=%7C%7C650082935%7C%7C&account=autodb%2Eactivehosted%2Ecom&email=SKriobaUP9mK6AHnkID922I4BWytJdy2vdO69dl41tpfK9bwxg%3D%3D%3Ar%2BbYad4e13q1ix3GTxoUlOZKlSNDmMgs&s=bad97c655476f96a390a72c05a742011&i=161A189A5A6357" rel="noopener noreferrer" tabindex="-1" data-remove-tab-index="true" style='margin: 0; outline: none; padding: 0; color: #3e86cb; text-decoration: underline; font-family: Roboto, "San Francisco", Helvetica, Arial, sans-serif; font-size: 16px; font-style: normal; font-weight: 400;' data-ac-default-color="1"><span style="color: ; font-size: inherit; font-weight: inherit; line-height: inherit; text-decoration: inherit;">hiring</span></a><span style='color: #22224a; font-size: 16px; font-weight: 400; line-height: inherit; text-decoration: inherit; font-family: Roboto, "San Francisco", Helvetica,
+Arial, sans-serif; font-style: normal;'>, so maybe there is another success story in the making? </span></span></div>
+ </div>
+<!--[if (gte mso 12)&(lte mso 15) ]>
+<style data-ac-keep="true" data-ac-inline="false"> #text_div7369, #text_div7369 div { line-height: 150% !important; };
+</style>
+<![endif]--></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr style="mso-line-height-rule: exactly; background-color: #ffffff;"><td id="layout-row-margin7643" valign="top" style="mso-line-height-rule: exactly; padding: 0; background-color: #ffffff;"><table width="100%" border="0" cellpadding="0" cellspacing="0" style="-ms-text-size-adjust: auto; -webkit-text-size-adjust: 100%; border-collapse: initial !important; font-size: 14px; min-width: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt;"><tr id="layout-row7643" class="layout layout-row widget _widget_text style7643" style="mso-line-height-rule: exactly; margin: 0; padding: 0; background-color: #3e86cb;"><td id="layout-row-padding7643" valign="top" style="mso-line-height-rule: exactly; background-color: #3e86cb; padding: 40px 50px 10px 50px;"><table width="100%" border="0" cellpadding="0" cellspacing="0" style="-ms-text-size-adjust: auto; -webkit-text-size-adjust: 100%; border-collapse: collapse; font-size: 14px; min-width: 100%; mso-table-lspace: 0pt;
+mso-table-rspace: 0pt;"><tr style="mso-line-height-rule: exactly;"><td id="text_div7339" class="td_text td_block" valign="top" align="left" width="550" style="line-height: 130%; mso-line-height-rule: exactly; margin: 0; outline: none; padding: 0; color: inherit; font-size: 12px; font-weight: inherit; line-height: 1.3; text-decoration: inherit; font-family: arial;"> <div style="line-height: 130%; margin: 0; outline: none; padding: 0; color: #ffffff; font-size: inherit; font-weight: inherit; line-height: 1.3; text-decoration: inherit; mso-line-height-rule: exactly;" data-line-height="1.3"> <div style="margin: 0; outline: none; padding: 0; color: #ffffff; font-size: inherit; font-weight: inherit; line-height: inherit; text-decoration: inherit;"> <div style="margin: 0; outline: none; padding: 0; color: #ffffff; font-size: inherit; font-weight: inherit; line-height: inherit; text-decoration: inherit; text-align: left;"><span style='color: #ffffff; font-size: 27px;
+font-weight: bold; line-height: inherit; text-decoration: inherit; text-align: inherit; font-style: normal; font-family: Roboto, "San Francisco", Helvetica, Arial, sans-serif;' class="">Best of Slack</span></div>
+ </div>
+ </div>
+<!--[if (gte mso 12)&(lte mso 15) ]>
+<style data-ac-keep="true" data-ac-inline="false"> #text_div7339, #text_div7339 div { line-height: 130% !important; };
+</style>
+<![endif]--></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr style="mso-line-height-rule: exactly; background-color: #ffffff;"><td id="layout-row-margin7656" valign="top" style="mso-line-height-rule: exactly; padding: 0; background-color: #ffffff;"><table width="100%" border="0" cellpadding="0" cellspacing="0" style="-ms-text-size-adjust: auto; -webkit-text-size-adjust: 100%; border-collapse: initial !important; font-size: 14px; min-width: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt;"><tr id="layout-row7656" class="layout layout-row widget _widget_text style7656" style="mso-line-height-rule: exactly; margin: 0; padding: 0; background-color: #3e86cb;"><td id="layout-row-padding7656" valign="top" style="mso-line-height-rule: exactly; background-color: #3e86cb; padding: 5px 50px 30px 50px;"><table width="100%" border="0" cellpadding="0" cellspacing="0" style="-ms-text-size-adjust: auto; -webkit-text-size-adjust: 100%; border-collapse: collapse; font-size: 14px; min-width: 100%; mso-table-lspace: 0pt; mso-table-rspace:
+0pt;"><tr style="mso-line-height-rule: exactly;"><td id="text_div7352" class="td_text td_block" valign="top" align="left" width="550" style="line-height: 130%; mso-line-height-rule: exactly; margin: 0; outline: none; padding: 0; color: inherit; font-size: 12px; font-weight: inherit; line-height: 1.3; text-decoration: inherit; font-family: arial;"> <div style="line-height: 130%; margin: 0; outline: none; padding: 0; color: #ffffff; font-size: inherit; font-weight: inherit; line-height: 1.3; text-decoration: inherit; mso-line-height-rule: exactly;" class="" data-line-height="1.3"> <div style="margin: 0; outline: none; padding: 0; color: #ffffff; font-size: inherit; font-weight: inherit; line-height: inherit; text-decoration: inherit;" class=""> <div class="" style="margin: 0; outline: none; padding: 0; color: #ffffff; font-size: 16px; font-weight: inherit; line-height: inherit; text-decoration: inherit;"> <div style="margin: 0; outline: none; padding: 0; color:
+#ffffff; font-size: inherit; font-weight: inherit; line-height: inherit; text-decoration: inherit;" class=""> <div style="margin: 0; outline: none; padding: 0; color: #ffffff; font-size: inherit; font-weight: inherit; line-height: inherit; text-decoration: inherit;" class=""><div class="" style="margin: 0; outline: none; padding: 0; color: inherit; font-size: inherit; font-weight: inherit; line-height: inherit; text-decoration: inherit;"><ul style="margin: 0 0px 0 40px; padding: 0; --tw-shadow: 0 0 transparent; --tw-ring-inset: var(--tw-empty, ); --tw-ring-offset-width: 0px; --tw-ring-offset-color: #fff; --tw-ring-color: rgba(59,130,246,0.5); --tw-ring-offset-shadow: 0 0 transparent; --tw-ring-shadow: 0 0 transparent; color: #000000; font-family: arial; font-size: 12px; font-style: normal; font-weight: 400; text-align: left;"><li style="display: list-item; line-height: inherit; list-style-type: disc; margin: 0 0px 0 3px !important; --tw-shadow: 0 0 transparent;
+--tw-ring-inset: var(--tw-empty, ); --tw-ring-offset-width: 0px; --tw-ring-offset-color: #fff; --tw-ring-color: rgba(59,130,246,0.5); --tw-ring-offset-shadow: 0 0 transparent; --tw-ring-shadow: 0 0 transparent; color: #ffffff; font-size: 16px;"><a href="https://mlops-community.slack.com/archives/C015J2Y9RLM/p1637300175437300?utm_source=ActiveCampaign&utm_medium=email&utm_content=Happy%20Thanksgiving%21&utm_campaign=MLOps%20-%20Newsletter%20-%202021%20-%2011%20-%2023" style="margin: 0; outline: none; padding: 0; color: #ffffff; text-decoration: underline;" target="_blank"><span style="color: #ffffff; font-size: inherit; font-weight: inherit; line-height: inherit; text-decoration: inherit;" target="_blank">Applying MLOps to your current process</span></a></li><li style="display: list-item;
+line-height: inherit; list-style-type: disc; margin: 0 0px 0 3px !important; --tw-shadow: 0 0 transparent; --tw-ring-inset: var(--tw-empty, ); --tw-ring-offset-width: 0px; --tw-ring-offset-color: #fff; --tw-ring-color: rgba(59,130,246,0.5); --tw-ring-offset-shadow: 0 0 transparent; --tw-ring-shadow: 0 0 transparent; color: #ffffff; font-size: 16px;"><a href="https://mlops-community.slack.com/archives/C015J2Y9RLM/p1637494899022900?utm_source=ActiveCampaign&utm_medium=email&utm_content=Happy%20Thanksgiving%21&utm_campaign=MLOps%20-%20Newsletter%20-%202021%20-%2011%20-%2023" style="margin: 0; outline: none; padding: 0; color: #ffffff; text-decoration: underline;" target="_blank"><span style="color: #ffffff; font-size: inherit; font-weight: inherit; line-height: inherit;
+text-decoration: inherit;" target="_blank">Wrapping a model with Kafka</span></a></li><li style="display: list-item; line-height: inherit; list-style-type: disc; margin: 0 0px 0 3px !important; --tw-shadow: 0 0 transparent; --tw-ring-inset: var(--tw-empty, ); --tw-ring-offset-width: 0px; --tw-ring-offset-color: #fff; --tw-ring-color: rgba(59,130,246,0.5); --tw-ring-offset-shadow: 0 0 transparent; --tw-ring-shadow: 0 0 transparent; color: #ffffff; font-size: 16px;"><a href="https://mlops-community.slack.com/archives/C015J2Y9RLM/p1637591865059800?utm_source=ActiveCampaign&utm_medium=email&utm_content=Happy%20Thanksgiving%21&utm_campaign=MLOps%20-%20Newsletter%20-%202021%20-%2011%20-%2023" style="margin: 0; outline: none; padding: 0; color: #ffffff; text-decoration: underline;" target="_blank"><span
+style="color: #ffffff; font-size: inherit; font-weight: inherit; line-height: inherit; text-decoration: inherit;" target="_blank">Infrastructure for remote DS collaboration</span></a></li><li style="display: list-item; line-height: inherit; list-style-type: disc; margin: 0 0px 0 3px !important; --tw-shadow: 0 0 transparent; --tw-ring-inset: var(--tw-empty, ); --tw-ring-offset-width: 0px; --tw-ring-offset-color: #fff; --tw-ring-color: rgba(59,130,246,0.5); --tw-ring-offset-shadow: 0 0 transparent; --tw-ring-shadow: 0 0 transparent; color: #ffffff; font-size: 16px;"><a
+href="https://mlops-community.slack.com/archives/C7DR1E5NC/p1637255841375000?utm_source=ActiveCampaign&utm_medium=email&utm_content=Happy%20Thanksgiving%21&utm_campaign=MLOps%20-%20Newsletter%20-%202021%20-%2011%20-%2023" style="margin: 0; outline: none; padding: 0; color: #ffffff; text-decoration: underline; font-family: arial; font-weight: 400;" target="_blank"><span style="color: #ffffff; font-size: inherit; font-weight: inherit; line-height: inherit; text-decoration: inherit;" target="_blank">Poll: what's the meaning of the job title ML Engineer?</span></a><br></li><li style="display: list-item; line-height: inherit; list-style-type: disc; margin: 0 0px 0 3px !important; --tw-shadow: 0 0 transparent; --tw-ring-inset: var(--tw-empty, ); --tw-ring-offset-width: 0px; --tw-ring-offset-color:
+#fff; --tw-ring-color: rgba(59,130,246,0.5); --tw-ring-offset-shadow: 0 0 transparent; --tw-ring-shadow: 0 0 transparent; color: #ffffff; font-size: 16px;"><a href="https://mlops-community.slack.com/archives/C7DR1E5NC/p1637580429431000?utm_source=ActiveCampaign&utm_medium=email&utm_content=Happy%20Thanksgiving%21&utm_campaign=MLOps%20-%20Newsletter%20-%202021%20-%2011%20-%2023" style="margin: 0; outline: none; padding: 0; color: #ffffff; text-decoration: underline;" class="" target="_blank"><span style="color: #ffffff; font-size: inherit; font-weight: inherit; line-height: inherit; text-decoration: inherit;" target="_blank">Data is wicked</span></a></li></ul></div>
+</div>
+ </div>
+ </div>
+ </div>
+ </div>
+<!--[if (gte mso 12)&(lte mso 15) ]>
+<style data-ac-keep="true" data-ac-inline="false"> #text_div7352, #text_div7352 div { line-height: 130% !important; };
+</style>
+<![endif]--></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr style="mso-line-height-rule: exactly; background-color: #ffffff;"><td id="layout-row-margin7642" valign="top" style="mso-line-height-rule: exactly; padding: 0; background-color: #ffffff;"><table width="100%" border="0" cellpadding="0" cellspacing="0" style="-ms-text-size-adjust: auto; -webkit-text-size-adjust: 100%; border-collapse: initial !important; font-size: 14px; min-width: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt;"><tr id="layout-row7642" class="layout layout-row widget _widget_text style7642" style="mso-line-height-rule: exactly; margin: 0; padding: 0; background-color: #3e86cb;"><td id="layout-row-padding7642" valign="top" style="mso-line-height-rule: exactly; background-color: #3e86cb; padding: 15px 50px 2px 50px;"><table width="100%" border="0" cellpadding="0" cellspacing="0" style="-ms-text-size-adjust: auto; -webkit-text-size-adjust: 100%; border-collapse: collapse; font-size: 14px; min-width: 100%; mso-table-lspace: 0pt; mso-table-rspace:
+0pt;"><tr style="mso-line-height-rule: exactly;"><td id="text_div7338" class="td_text td_block" valign="top" align="left" width="550" style="line-height: 130%; mso-line-height-rule: exactly; margin: 0; outline: none; padding: 0; color: inherit; font-size: 12px; font-weight: inherit; line-height: 1.3; text-decoration: inherit; font-family: arial;"> <div style="line-height: 130%; margin: 0; outline: none; padding: 0; color: #ffffff; font-size: inherit; font-weight: inherit; line-height: 1.3; text-decoration: inherit; mso-line-height-rule: exactly;" data-line-height="1.3"> <div style="margin: 0; outline: none; padding: 0; color: #ffffff; font-size: inherit; font-weight: inherit; line-height: inherit; text-decoration: inherit;"> <div style="margin: 0; outline: none; padding: 0; color: #ffffff; font-size: inherit; font-weight: inherit; line-height: inherit; text-decoration: inherit; text-align: left;"><span style='color: #ffffff; font-size: 27px; font-weight: bold;
+line-height: inherit; text-decoration: inherit; text-align: inherit; font-style: normal; font-family: Roboto, "San Francisco", Helvetica, Arial, sans-serif;' class="">Jobs</span></div>
+ </div>
+ </div>
+<!--[if (gte mso 12)&(lte mso 15) ]>
+<style data-ac-keep="true" data-ac-inline="false"> #text_div7338, #text_div7338 div { line-height: 130% !important; };
+</style>
+<![endif]--></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr style="mso-line-height-rule: exactly; background-color: #ffffff;"><td id="layout-row-margin7644" valign="top" style="mso-line-height-rule: exactly; padding: 0; background-color: #ffffff;"><table width="100%" border="0" cellpadding="0" cellspacing="0" style="-ms-text-size-adjust: auto; -webkit-text-size-adjust: 100%; border-collapse: initial !important; font-size: 14px; min-width: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt;"><tr id="layout-row7644" class="layout layout-row widget _widget_text style7644" style="mso-line-height-rule: exactly; margin: 0; padding: 0; background-color: #3e86cb;"><td id="layout-row-padding7644" valign="top" style="mso-line-height-rule: exactly; background-color: #3e86cb; padding: 5px 50px 30px 50px;"><table width="100%" border="0" cellpadding="0" cellspacing="0" style="-ms-text-size-adjust: auto; -webkit-text-size-adjust: 100%; border-collapse: collapse; font-size: 14px; min-width: 100%; mso-table-lspace: 0pt; mso-table-rspace:
+0pt;"><tr style="mso-line-height-rule: exactly;"><td id="text_div7340" class="td_text td_block" valign="top" align="left" width="550" style="line-height: 130%; mso-line-height-rule: exactly; margin: 0; outline: none; padding: 0; color: inherit; font-size: 12px; font-weight: inherit; line-height: 1.3; text-decoration: inherit; font-family: arial;"> <div style="line-height: 130%; margin: 0; outline: none; padding: 0; color: #ffffff; font-size: inherit; font-weight: inherit; line-height: 1.3; text-decoration: inherit; mso-line-height-rule: exactly;" data-line-height="1.3"> <div style="margin: 0; outline: none; padding: 0; color: #ffffff; font-size: inherit; font-weight: inherit; line-height: inherit; text-decoration: inherit;" class=""> <div style="margin: 0; outline: none; padding: 0; color: #ffffff; font-size: inherit; font-weight: inherit; line-height: inherit; text-decoration: inherit;" class=""> <div class="" style="margin: 0; outline: none; padding: 0; color:
+#ffffff; font-size: 16px; font-weight: inherit; line-height: inherit; text-decoration: inherit;"> <div style="margin: 0; outline: none; padding: 0; color: #ffffff; font-size: inherit; font-weight: inherit; line-height: inherit; text-decoration: inherit;" class=""> <div style="margin: 0; outline: none; padding: 0; color: #ffffff; font-size: inherit; font-weight: inherit; line-height: inherit; text-decoration: inherit;" class=""><div class="" style="margin: 0; outline: none; padding: 0; color: #ffffff; font-size: inherit; font-weight: inherit; line-height: inherit; text-decoration: inherit;"><ul style="margin: 0 0px 0 40px; padding: 0; --tw-shadow: 0 0 transparent; --tw-ring-inset: var(--tw-empty, ); --tw-ring-offset-width: 0px; --tw-ring-offset-color: #fff; --tw-ring-color: rgba(59,130,246,0.5); --tw-ring-offset-shadow: 0 0 transparent; --tw-ring-shadow: 0 0 transparent; color: #ffffff; font-family: arial; font-size: 12px; font-style: normal; font-weight: 400;
+text-align: left;"><li style="display: list-item; line-height: inherit; list-style-type: disc; margin: 0 0px 0 3px !important; --tw-shadow: 0 0 transparent; --tw-ring-inset: var(--tw-empty, ); --tw-ring-offset-width: 0px; --tw-ring-offset-color: #fff; --tw-ring-color: rgba(59,130,246,0.5); --tw-ring-offset-shadow: 0 0 transparent; --tw-ring-shadow: 0 0 transparent; color: #ffffff; font-size: 16px;">Recycleye is hiring an <a href="https://apply.workable.com/recycleye/j/8FD76B61A6/?utm_source=ActiveCampaign&utm_medium=email&utm_content=Happy%20Thanksgiving%21&utm_campaign=MLOps%20-%20Newsletter%20-%202021%20-%2011%20-%2023" style="margin: 0; outline: none; padding: 0; color: #ffffff; text-decoration: underline;" target="_blank"><span style="color: #ffffff; font-size: inherit;
+font-weight: inherit; line-height: inherit; text-decoration: inherit;" target="_blank">MLOps Engineer</span></a></li><li style="display: list-item; line-height: inherit; list-style-type: disc; margin: 0 0px 0 3px !important; --tw-shadow: 0 0 transparent; --tw-ring-inset: var(--tw-empty, ); --tw-ring-offset-width: 0px; --tw-ring-offset-color: #fff; --tw-ring-color: rgba(59,130,246,0.5); --tw-ring-offset-shadow: 0 0 transparent; --tw-ring-shadow: 0 0 transparent; color: #ffffff; font-size: 16px;">RecursionPharma is hiring a<a href="https://boards.greenhouse.io/recursionpharmaceuticals/jobs/3656365?utm_source=ActiveCampaign&utm_medium=email&utm_content=Happy%20Thanksgiving%21&utm_campaign=MLOps%20-%20Newsletter%20-%202021%20-%2011%20-%2023" style="margin: 0; outline: none; padding:
+0; color: #ffffff; text-decoration: underline;" target="_blank"><span style="color: #ffffff; font-size: inherit; font-weight: inherit; line-height: inherit; text-decoration: inherit;" target="_blank"> ML Engineering Manager</span></a></li><li style="display: list-item; line-height: inherit; list-style-type: disc; margin: 0 0px 0 3px !important; --tw-shadow: 0 0 transparent; --tw-ring-inset: var(--tw-empty, ); --tw-ring-offset-width: 0px; --tw-ring-offset-color: #fff; --tw-ring-color: rgba(59,130,246,0.5); --tw-ring-offset-shadow: 0 0 transparent; --tw-ring-shadow: 0 0 transparent; color: #ffffff; font-size: 16px;">Bitstrapped is hirign a <a
+href="https://www.linkedin.com/jobs/view/2789169408/?utm_source=ActiveCampaign&utm_medium=email&utm_content=Happy%20Thanksgiving%21&utm_campaign=MLOps%20-%20Newsletter%20-%202021%20-%2011%20-%2023" style="margin: 0; outline: none; padding: 0; color: #ffffff; text-decoration: underline;" target="_blank"><span style="color: #ffffff; font-size: inherit; font-weight: inherit; line-height: inherit; text-decoration: inherit;" target="_blank">Sr. Data Engineer</span></a></li><li style="display: list-item; line-height: inherit; list-style-type: disc; margin: 0 0px 0 3px !important; --tw-shadow: 0 0 transparent; --tw-ring-inset: var(--tw-empty, ); --tw-ring-offset-width: 0px; --tw-ring-offset-color: #fff; --tw-ring-color: rgba(59,130,246,0.5); --tw-ring-offset-shadow: 0 0 transparent; --tw-ring-shadow: 0
+0 transparent; color: #ffffff; font-size: 16px;">Tecton is hiring for <a href="https://www.tecton.ai/careers/?utm_source=ActiveCampaign&utm_medium=email&utm_content=Happy%20Thanksgiving%21&utm_campaign=MLOps%20-%20Newsletter%20-%202021%20-%2011%20-%2023" target="_blank" style="margin: 0; outline: none; padding: 0; color: #ffffff; text-decoration: underline; font-family: arial; font-weight: 400;"><span style="color: #ffffff; font-size: inherit; font-weight: inherit; line-height: inherit; text-decoration: inherit;">several roles</span></a></li><li style="display: list-item; line-height: inherit; list-style-type: disc; margin: 0 0px 0 3px !important; --tw-shadow: 0 0 transparent; --tw-ring-inset: var(--tw-empty, ); --tw-ring-offset-width: 0px; --tw-ring-offset-color:
+#fff; --tw-ring-color: rgba(59,130,246,0.5); --tw-ring-offset-shadow: 0 0 transparent; --tw-ring-shadow: 0 0 transparent; color: #ffffff; font-size: 16px;">Genomics England is hiring an <a href="https://jobs.smartrecruiters.com/GenomicsEngland/743999775236758-applied-machine-learning-researcher-engineer?utm_source=ActiveCampaign&utm_medium=email&utm_content=Happy%20Thanksgiving%21&utm_campaign=MLOps%20-%20Newsletter%20-%202021%20-%2011%20-%2023" style="margin: 0; outline: none; padding: 0; color: #ffffff; text-decoration: underline;" target="_blank"><span style="color: #ffffff; font-size: inherit; font-weight: inherit; line-height: inherit; text-decoration: inherit;"> Applied ML Engineer</span></a></li><li style="display: list-item; line-height: inherit;
+list-style-type: disc; margin: 0 0px 0 3px !important; --tw-shadow: 0 0 transparent; --tw-ring-inset: var(--tw-empty, ); --tw-ring-offset-width: 0px; --tw-ring-offset-color: #fff; --tw-ring-color: rgba(59,130,246,0.5); --tw-ring-offset-shadow: 0 0 transparent; --tw-ring-shadow: 0 0 transparent; color: #ffffff; font-size: 16px;">One Logic is hiring for <a href="https://onelogic.de/en/join-the-team/?utm_source=ActiveCampaign&utm_medium=email&utm_content=Happy%20Thanksgiving%21&utm_campaign=MLOps%20-%20Newsletter%20-%202021%20-%2011%20-%2023" style="margin: 0; outline: none; padding: 0; color: #ffffff; text-decoration: underline;" target="_blank"><span style="color: #ffffff; font-size: inherit; font-weight: inherit; line-height: inherit; text-decoration:
+inherit;">several roles</span></a></li><li style="display: list-item; line-height: inherit; list-style-type: disc; margin: 0 0px 0 3px !important; --tw-shadow: 0 0 transparent; --tw-ring-inset: var(--tw-empty, ); --tw-ring-offset-width: 0px; --tw-ring-offset-color: #fff; --tw-ring-color: rgba(59,130,246,0.5); --tw-ring-offset-shadow: 0 0 transparent; --tw-ring-shadow: 0 0 transparent; color: #ffffff; font-size: 16px;">Salesloft is hiring for<a href="https://salesloft.com/careers/?utm_source=ActiveCampaign&utm_medium=email&utm_content=Happy%20Thanksgiving%21&utm_campaign=MLOps%20-%20Newsletter%20-%202021%20-%2011%20-%2023" style="margin: 0; outline: none; padding: 0; color: #ffffff; text-decoration: underline;" target="_blank"><span style="color: #ffffff; font-size:
+inherit; font-weight: inherit; line-height: inherit; text-decoration: inherit;"> several roles<br></span></a></li></ul></div>
+</div>
+ </div>
+ </div>
+ </div>
+ </div>
+ </div>
+<!--[if (gte mso 12)&(lte mso 15) ]>
+<style data-ac-keep="true" data-ac-inline="false"> #text_div7340, #text_div7340 div { line-height: 130% !important; };
+</style>
+<![endif]--></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr style="mso-line-height-rule: exactly; background-color: #ffffff;"><td id="layout-row-margin7632" valign="top" style="mso-line-height-rule: exactly; padding: 5px; background-color: #ffffff;"><table width="100%" border="0" cellpadding="0" cellspacing="0" style="-ms-text-size-adjust: auto; -webkit-text-size-adjust: 100%; border-collapse: initial !important; font-size: 14px; min-width: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt;"><tr id="layout-row7632" class="layout layout-row widget _widget_text style7632" style="mso-line-height-rule: exactly; margin: 0; padding: 0;"><td id="layout-row-padding7632" valign="top" style="mso-line-height-rule: exactly; padding: 20px 50px 0px 50px;"><table width="100%" border="0" cellpadding="0" cellspacing="0" style="-ms-text-size-adjust: auto; -webkit-text-size-adjust: 100%; border-collapse: collapse; font-size: 14px; min-width: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt;"><tr style="mso-line-height-rule:
+exactly;"><td id="text_div7328" class="td_text td_block" valign="top" align="left" width="540" style="line-height: 150%; mso-line-height-rule: exactly; margin: 0; outline: none; padding: 0; color: inherit; font-size: 12px; font-weight: inherit; line-height: 1.5; text-decoration: inherit; font-family: arial;"> <div style="line-height: 150%; margin: 0; outline: none; padding: 0; color: inherit; font-size: 16px; font-weight: inherit; line-height: 1.5; text-decoration: inherit; mso-line-height-rule: exactly;" data-line-height="1.5"> <div style="margin: 0; outline: none; padding: 0; color: inherit; font-size: inherit; font-weight: inherit; line-height: inherit; text-decoration: inherit;"><b style="margin: 0; outline: none; padding: 0;"><b style="margin: 0; outline: none; padding: 0; font-style: normal; font-weight: normal;"><b style='margin: 0; outline: none; padding: 0; font-family: Roboto, "San Francisco", Helvetica, Arial, sans-serif; font-weight: normal;'><b
+style='margin: 0; outline: none; padding: 0; color: #22224a; font-size: 16px; font-weight: normal; font-style: normal; font-family: Roboto, "San Francisco", Helvetica, Arial, sans-serif;'><b style='margin: 0; outline: none; padding: 0; font-family: Roboto, "San Francisco", Helvetica, Arial, sans-serif; font-weight: normal; color: #22224a; font-style: italic;'><span style='color: #22224a; font-size: inherit; font-weight: 400; line-height: inherit; text-decoration: inherit; font-family: Roboto, "San Francisco", Helvetica, Arial, sans-serif; font-style: normal;'>See you in <a href="https://go.mlops.community/slack?utm_source=ActiveCampaign&utm_medium=email&utm_content=Happy%20Thanksgiving%21&utm_campaign=MLOps%20-%20Newsletter%20-%202021%20-%2011%20-%2023"
+data-ac-default-color="1" target="_blank" style="margin: 0; outline: none; padding: 0; color: #3e86cb; text-decoration: underline;"><span style="color: ; font-size: inherit; font-weight: inherit; line-height: inherit; text-decoration: inherit;">slack</span></a>, <a href="https://www.youtube.com/channel/UCG6qpjVnBTTT8wLGBygANOQ?view_as=subscriber&utm_source=ActiveCampaign&utm_medium=email&utm_content=Happy%20Thanksgiving%21&utm_campaign=MLOps%20-%20Newsletter%20-%202021%20-%2011%20-%2023" data-ac-default-color="1" target="_blank" style="margin: 0; outline: none; padding: 0; color: #3e86cb; text-decoration: underline;"><span style="color: ; font-size: inherit; font-weight: inherit; line-height: inherit; text-decoration: inherit;">youtube</span></a>, and <a
+href="https://anchor.fm/mlops?utm_source=ActiveCampaign&utm_medium=email&utm_content=Happy%20Thanksgiving%21&utm_campaign=MLOps%20-%20Newsletter%20-%202021%20-%2011%20-%2023" data-ac-default-color="1" target="_blank" style="margin: 0; outline: none; padding: 0; color: #3e86cb; text-decoration: underline;"><span style="color: ; font-size: inherit; font-weight: inherit; line-height: inherit; text-decoration: inherit;">podcast</span></a> land. Oh yeah, and we are also on <a
+href="https://twitter.com/mlopscommunity?utm_source=ActiveCampaign&utm_medium=email&utm_content=Happy%20Thanksgiving%21&utm_campaign=MLOps%20-%20Newsletter%20-%202021%20-%2011%20-%2023" data-ac-default-color="1" target="_blank" style="margin: 0; outline: none; padding: 0; color: #3e86cb; text-decoration: underline;"><span style="color: ; font-size: inherit; font-weight: inherit; line-height: inherit; text-decoration: inherit;">Twitter</span></a> if you like chirping birds.<br></span></b></b></b><br style="font-size: 16px; font-family: arial; color: #000000; font-weight: 400; font-style: normal;"></b></b></div>
+ </div>
+<!--[if (gte mso 12)&(lte mso 15) ]>
+<style data-ac-keep="true" data-ac-inline="false"> #text_div7328, #text_div7328 div { line-height: 150% !important; };
+</style>
+<![endif]--></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr style="mso-line-height-rule: exactly; background-color: #ffffff;"><td id="layout-row-margin7633" valign="top" style="mso-line-height-rule: exactly; padding: 0 50px 50px 50px; background-color: #ffffff;"><table width="100%" border="0" cellpadding="0" cellspacing="0" style="-ms-text-size-adjust: auto; -webkit-text-size-adjust: 100%; border-collapse: initial !important; font-size: 14px; min-width: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt;"><tr id="layout-row7633" class="layout layout-row widget _widget_picture style7633" align="left" style="mso-line-height-rule: exactly;"><td id="layout-row-padding7633" valign="top" style="mso-line-height-rule: exactly; padding: 0;"><table width="100%" border="0" cellpadding="0" cellspacing="0" style="-ms-text-size-adjust: auto; -webkit-text-size-adjust: 100%; border-collapse: collapse; font-size: 14px; min-width: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt;"><tr style="mso-line-height-rule: exactly;"><td
+class="image-td" align="left" valign="top" width="550" style="mso-line-height-rule: exactly;"><img src="../autodb.imgus11.com/public/a0390221ff5c66b8ce25ae8e7f772a6b.png_r=422583008" alt="" width="225" style="display: block; border: none; outline: none; width: 225px; opacity: 1; max-width: 100%;"></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</div>
+<br /><div id="ac-footer" style="clear:both;background-color:inherit;background:inherit;min-width:100%;mso-table-lspace:0pt;mso-table-rspace:0pt;padding:20px;color:#000000;font-size:11px;font-family:arial,helvetica,sans-serif;line-height:140%;line-height:1.4;text-align:center;box-sizing:border-box;"><center>Sent to: <span style="font-size:11px;font-family:arial,helvetica,sans-serif;font-weight:normal;text-decoration:none;outline:none;">_t.e.s.t_@example.com</span><br><br><a href="unsubscribe/5.html" target="_blank"><span style="font-weight:bold;text-decoration:underline;" target="_blank">Unsubscribe</span></a><br><br>MLOps Community, Am sonnenberg 49 watzelhain , 65321 Heidenrod, Germany, Germany</center></div>
+<br clear="all" /></div>
+
+
+</div>
+
+
+
+
+
+  <div style="color:#acacac; padding:14px; background:#F0F0F0; font-size:11px; font-family:Arial,Helvetica,sans-serif;" align="center">
+	<a href="https://www.activecampaign.com/" style="text-decoration:none; color:#acacac;" title="email marketing">Email Marketing</a> by ActiveCampaign
+  </div>
+
+
+
+<script src="https://connect.facebook.net/locale_fbconnect/sdk.js#version=v2.9&xfbml=1&appId=118506481555093" id="facebook-jssdk"></script>
+<script src="admin/jsc/ac.js_v=v102362371287095"></script>
+<script src="js/social.js_v=v102362371287095"></script>
+
+</body>
+</html>
