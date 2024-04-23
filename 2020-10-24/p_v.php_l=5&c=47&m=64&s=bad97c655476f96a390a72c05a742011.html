@@ -1,0 +1,603 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="Content-Language" content="en-us" />
+<meta name="robots" content="noindex, nofollow" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-migrate/3.4.1/jquery-migrate.min.js" integrity="sha512-KgffulL3mxrOsDicgQWA11O6q6oKeWcV00VxgfJw4TcM8XRQT8Df9EsrYxDf7tpVpfl3qcYD96BpyPvA4d1FDQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script><script src="admin/js/jq/csrf_protection.js"></script>
+
+
+<meta property="og:url" content="https://autodb.activehosted.com/index.php?action=social&chash=67c6a1e7ce56d3d6fa748ab6d9af3fd7.64" />
+<meta property="og:type" content="website" />
+<meta property="og:title" content="You Just Got KF Served" />
+<meta property="og:description" content="Weekly round up of..." />
+<meta property="og:image" content="https://autodb.img-us3.com/_screenshot_/2c214c3313ce7b88710035898c961635e6299bb0.png" />
+
+<script src='ac_global/scriptaculous/prototype.js_v=v1023621555148363'></script>
+<script src='ac_global/scriptaculous/scriptaculous.js_v=v1023621555148363'></script>
+<script src="ac_global/js/ac.js.php%3Finc=ajax,dom,b64,str,array,liveedit,utf,ui,paginator,star,loader,tooltip,date,editor,form,class.Table,ihook&amp;v=v1023621555148363"></script>
+<script src="admin/js/functions.js_v=v1023621555148363"></script>
+<script src="mainjs.php_v=v1023621555148363"></script>
+
+<link rel="stylesheet" href="dist/ac_global/fontello/css/ac-icons.min.css_v=v1023621555148363.css" />
+<script src="admin/js/jq/bootstrap.js_v=v1023621555148363"></script>
+
+
+<script>
+
+var $J = jQuery.noConflict();
+
+</script>
+<script>
+var campaign_url = "https://autodb.activehosted.com/index.php?action=social&chash=67c6a1e7ce56d3d6fa748ab6d9af3fd7.64";
+var message_screenshot = "https://autodb.img-us3.com/_screenshot_/2c214c3313ce7b88710035898c961635e6299bb0.png";
+var message_subject = "You Just Got KF Served";
+var message_id = 64;
+var campaign_id = 47;
+var facebook_app_id = "118506481555093";
+var facebook_api_version = 2.9;
+var subscriber_hash = "";
+</script>
+
+
+<style media="screen">
+/* Bar */
+.archive_title{position:absolute;top:0!important;left:0!important;background:#f8f8f8;padding:10px 20px;font-family:HelveticaNeue-Medium,sans-serif;margin:0!important;width:100%;-webkit-box-shadow:0 2px 3px 1px rgba(98,98,98,0.5);-moz-box-shadow:0 2px 3px 1px rgba(98,98,98,0.5);box-shadow:0 2px 3px 1px rgba(98,98,98,0.5);-moz-transition: opacity 0.2s;-o-transition: opacity 0.2s;-webkit-transition: opacity 0.2s;transition: opacity 0.2s;-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing:border-box;}
+
+/* Layout */
+html,body { position: relative;}
+.fixed {position:fixed; z-index:1;}
+.socialwrap {position:relative; float:right; max-width:500px; height:100%; }
+.social_share {position:relative; display:block;height:30px; overflow:visible; }
+.social_share ul {float:right; margin:0; padding:0; zoom:1; }
+.social_share ul li {position:relative;display: inline-block;height:100%; margin:0 0 0 5px; padding:0; list-style:none;}
+.social_share ul li img {position:relative; border:0!important; z-index:100;}
+
+/* Bar buttons */
+.subs_btn,.social_share_btn{padding:12px 18px;border:#b7b7b7 2px solid;color:#818181;-webkit-border-radius:4px;-moz-border-radius:4px;border-radius:4px;display:inline-block;font-size:15px;cursor:pointer;text-align:center;min-width:80px;}
+.subs_btn:hover { border-color: #999999;}
+.socialbtns{padding:14px 20px;color:#fff !important;-webkit-border-radius:4px;-moz-border-radius:4px;border-radius:4px;-webkit-border-radius:4px;-moz-border-radius:4px;border-radius:4px;display:inline-block;text-decoration:none !important;font-size:15px;font-weight:normal;}
+.socialbtns.twitter, .modalbtn.twitter{background:#57cae6;}
+.socialbtns.twitter:hover, .modalbtn.twitter:hover{background:#4cbad5;}
+.socialbtns.facebook, .modalbtn.facebook{background:#4b709b;}
+.socialbtns.facebook:hover, .modalbtn.facebook:hover{background:#3c608a;}
+.socialbtns.linkedin, .modalbtn.linkedin{background:#0077b5;}
+.socialbtns.linkedin:hover, .modalbtn.linkedin:hover{background:#056597;}
+.socialbtns.gplus, .modalbtn.gplus{background:#4e4e4e;}
+.socialbtns.gplus:hover, .modalbtn.gplus:hover{background:#3d3d3d;}
+.social_share_btn{display:none;float:right;}
+
+/* Social share modal */
+.mobile-backdrop{background:#000;opacity:0;top:0;left:0;position:fixed;width:100%;height:100vh;z-index:100;}
+.mobile-modal_share{max-width:280px;display:none;background:#fff;position:fixed; top: 0; bottom: initial!important; right: 0; left: 0; margin: 40px auto auto;-webkit-border-radius:4px;-moz-border-radius:4px;border-radius:4px;z-index:101;min-height:200px;box-sizing:border-box;padding:10px;/*box-shadow*/-webkit-box-shadow:0 2px 10px 8px rgba(0,0,0,0.3);-moz-box-shadow:0 2px 10px 8px rgba(0,0,0,0.3);box-shadow:0 2px 10px 8px rgba(0,0,0,0.3);}
+.mobile-modal_share ul{margin:0;padding:0;}
+.mobile-modal_share li{display:block;margin-bottom:10px;}
+.mobile-modal_share li:last-child{margin:0;}
+.mobile-modal_share li .modalbtn{position:relative;text-align:center;display:block;padding:20px;color:#fff !important;-webkit-border-radius:4px;-moz-border-radius:4px;border-radius:4px;text-decoration:none !important;font-size:20px;font-weight:normal;}
+.mobile-modal_close{position: fixed; top: initial; right: 0; bottom: 40px!important; left: 0!important; margin: auto; opacity:0;display:none; width: 48px; height: 48px; font-size:48px;color:#fff;z-index:101;}
+
+.modal-open {overflow: hidden;}
+.modal-backdrop {position: fixed;top: 0; right: 0; bottom: 0; left: 0; z-index: 1030; background-color: #000000;}
+.modal-backdrop.fade {opacity: 0; filter: alpha(opacity=0);}
+.modal-backdrop.in {opacity: 0.5; filter: alpha(opacity=50);}
+.modal {position: fixed; top: 0; right: 0; bottom: 0; left: 0; z-index: 1040; overflow: auto; overflow-y: scroll;}
+.modal-dialog {right: auto; left: 50%; width: 600px; padding-top: 30px; padding-bottom: 30px; z-index: 1050; padding: 10px; margin-right: auto; margin-left: auto; margin-top: 50px;}
+.modal-header {margin: 0!important; background: #272727; background-color: #272727; overflow: visible!important; -webkit-border-radius: 5px 6px 0 0; -moz-border-radius: 5px 6px 0 0; border-radius: 5px 6px 0 0; min-height: 16px; padding: 14px 15px; border-bottom: 1px solid #e5e5e5;}
+.modal-header h3 {font-family: "IBM Plex Sans", Helvetica, sans-serif; font-size: 19px; font-weight: normal; line-height: 22px; color: #fff;}
+.modal-header .close {position: absolute; display: block; top: -13px; right: -15px; width: 30px; height: 30px; background: url('admin/images/modal_header_close.png') no-repeat; text-indent: 100%; white-space: nowrap; overflow: hidden; margin-top: -2px; cursor: pointer;}
+.modal-header .close:hover {background-position: 0 -30px; cursor: pointer;}
+.modal-content {position: relative; background-color: #ffffff; border: 1px solid #999999; border: 1px solid rgba(0, 0, 0, 0.2); border-radius: 6px; outline: none; -webkit-box-shadow: 0 3px 9px rgba(0, 0, 0, 0.5); box-shadow: 0 3px 9px rgba(0, 0, 0, 0.5); background-clip: padding-box;}
+.modal-body {position: relative; padding: 20px;}
+.modal-footer {position: relative; padding: 14px 15px; margin-bottom: 0; background-color: #f5f5f5; border-top: 1px solid #ddd; text-align: right; -webkit-border-radius: 0 0 6px 6px; -moz-border-radius: 0 0 6px 6px; border-radius: 0 0 6px 6px; -webkit-box-shadow: inset 0 1px 0 #ffffff; -moz-box-shadow: inset 0 1px 0 #ffffff; box-shadow: inset 0 1px 0 #ffffff;}
+.button:active, .button:visited, .button {font-family: "IBM Plex Sans", Helvetica, sans-serif; font-weight: 400; padding: 7px 11px; font-size: 14px; text-decoration: none !important; background-color: #f5f5f5; -moz-border-radius: 4px; -webkit-border-radius: 4px; border-radius: 4px; display: inline-block; color: #555; cursor: pointer!important; zoom: 1; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box;}
+.greybtn:active, .greybtn:visited, .greybtn {color: #5d5d5d!important; background: #fff!important; border: 1px solid #c0c0c0!important;}
+
+/* Icons */
+.ac-icon-share-left{position:absolute;top:17px;left:17px;}
+
+
+</style>
+<style>
+@media screen and (max-width:450px) {
+  .socialwrap { display: none}
+  .social_share_btn { display: inline-block}
+}
+</style>
+
+
+<link rel="icon" href="https://d3rxaij56vjege.cloudfront.net/media/favicon.ico" />
+<title>You Just Got KF Served</title>
+</head>
+<body marginheight="0" marginwidth="0" topmargin="0" leftmargin="0" style="margin:0; padding:0;">
+
+	  <div class="mobile-modal_share">
+    <ul>
+      <li><a href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fautodb.activehosted.com%2Findex.php%3Faction%3Dsocial%26chash%3D67c6a1e7ce56d3d6fa748ab6d9af3fd7.64%26ref%3Dfacebook&t=You%20Just%20Got%20KF%20Served" onclick="facebook_post();return false;" class="modalbtn facebook"><span class="ac-icon-share-left ac-icon-facebook"></span>Share</a></li>
+      <li><a href="https://twitter.com/intent/tweet?url=https%3A%2F%2Fautodb.activehosted.com%2Findex.php%3Faction%3Dsocial%26chash%3D67c6a1e7ce56d3d6fa748ab6d9af3fd7.64%26ref%3Dtwitter&text=Check%20out%20this%20email%20campaign%21&lang=en&counturl=https%3A%2F%2Fautodb.activehosted.com%2Findex.php%3Faction%3Dsocial%26chash%3D67c6a1e7ce56d3d6fa748ab6d9af3fd7.64%26ref%3Dtwitter" target="_blank" class="modalbtn twitter"><span class="ac-icon-share-left ac-icon-twitter"></span>Tweet</a></li>
+			<li><a href="http://www.linkedin.com/cws/share?url=https%3A%2F%2Fautodb.activehosted.com%2Findex.php%3Faction%3Dsocial%26chash%3D67c6a1e7ce56d3d6fa748ab6d9af3fd7.64%26ref%3Dlinkedin" target="_blank" class="modalbtn linkedin"><span
+						class="ac-icon-share-left ac-icon-linkedin"></span>Share</a></li>
+    </ul>
+  </div>
+  <div class="mobile-modal_close"><span class="ac-icon-cancel-circled-outline"></span></div>
+  <div id="fb-root"></div>
+	
+	<div class="archive_title fixed">
+  	<div class="social_share_btn">
+    <span class="ac-icon-export ac-icon-left">Share</span>
+  </div>
+	<div class="socialwrap">
+		<div class="social_share">
+			<ul>
+        <li><a href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fautodb.activehosted.com%2Findex.php%3Faction%3Dsocial%26chash%3D67c6a1e7ce56d3d6fa748ab6d9af3fd7.64%26ref%3Dfacebook&t=You%20Just%20Got%20KF%20Served" target="_blank" onclick="facebook_post();return false;" class="socialbtns facebook"><span class="ac-icon-facebook"></span></a></li>
+        <li><a href="https://twitter.com/intent/tweet?url=https%3A%2F%2Fautodb.activehosted.com%2Findex.php%3Faction%3Dsocial%26chash%3D67c6a1e7ce56d3d6fa748ab6d9af3fd7.64%26ref%3Dtwitter&text=Check%20out%20this%20email%20campaign%21&lang=en&counturl=https%3A%2F%2Fautodb.activehosted.com%2Findex.php%3Faction%3Dsocial%26chash%3D67c6a1e7ce56d3d6fa748ab6d9af3fd7.64%26ref%3Dtwitter" target="_blank" class="socialbtns twitter"><span class="ac-icon-twitter"></span></a></li>
+				<li><a href="http://www.linkedin.com/cws/share?url=https%3A%2F%2Fautodb.activehosted.com%2Findex.php%3Faction%3Dsocial%26chash%3D67c6a1e7ce56d3d6fa748ab6d9af3fd7.64%26ref%3Dlinkedin" target="_blank" class="socialbtns linkedin"><span
+							class="ac-icon-linkedin"></span></a></li>
+			</ul>
+		</div>
+	</div>
+</div>
+	
+<div class="message-body-container" style="margin-top:60px; padding:30px; padding-top:20px; padding-bottom:20px; zoom:1; z-index:2; background-color:#e0e0e0;">
+  
+<!--[if !mso]><!--<![endif]--><title>Preview</title><style data-ac-keep="true"> .ExternalClass { width: 100%; background: inherit; background-color: inherit; } .ExternalClass p, .ExternalClass ul, .ExternalClass ol { Margin: 0; } .undoreset div p, .undoreset p { margin-bottom: 20px; } div[class^="aolmail_divbody"] { overflow: auto; } [owa] #ac-footer { padding: 20px 0px !important; background: inherit; background-color: inherit; } </style><style data-ac-keep="true">
+@media only screen and (max-width: 600px) { /*-------------------------------------------------------------------------*\ Abandoned Cart widget \*------------------------------------------------------------------------*/ .td_abandoned-cart img {display: block;padding-right: 0 !important;padding-bottom: 0 !important;width: 100% !important;max-width: 100% !important;height: auto !important;} body { padding: 0!important; font-size:1em!important; } * { -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; } *[class].divbody {-webkit-text-size-adjust:none !important; width:auto !important;} *[class].td_picture img {width:auto !important;} *[class].td_text { line-height: 110%; } *[class].td_button { width: auto; } /* Collapse all block elements */ :not(.body) table { display: block!important; float:none!important; border-collapse:collapse !important; width:100% !important; min-width:100% !important; clear:both!important; } :not(.body) thead,
+:not(.body) tbody, :not(.body) tr { display:block!important; float:none!important; width:100% !important; } :not(.body) th, :not(.body) td, :not(.body) p { display:block!important; float:none!important; width:100% !important; clear:both!important; } /* Remove browser default styling for elements */ ul, ol { margin-left: 20px; margin-bottom: 10px; margin-top: 10px; -webkit-margin-before: 0; -webkit-margin-after: 0; -webkit-padding-start: 0; } /* Set default height for spacer once collapse */ *[class].spacer { height: auto!important; } a[href^=date]{ color:inherit !important; text-decoration:none !important;} a[href^=telephone]{ color:inherit !important; text-decoration:none !important;} a[href^=address]{ color:inherit !important; text-decoration:none !important;} a[href^=email]{ color:inherit !important; text-decoration:none !important;} /* Default table cell height */ td[height="14"]{height:14px!important;font-size:14px!important;line-height:14px!important;}
+/*-------------------------------------------------------------------------*\ Product Widget \*-------------------------------------------------------------------------*/ .td_product > div { float: none !important; width: 100% !important; margin-bottom: 20px !important; } .td_product > div img { width: 75% !important; } /* Default social icons */ *[class].ac-social-icon-16 {width:16px !important; height:16px !important;} *[class].ac-social-icon-24 {width:24px !important; height:24px !important;} *[class].ac-social-icon-28 {width:28px !important; height:28px !important;} *[class].__ac_social_icons { margin-right: 0px !important; } }
+</style><style data-ac-keep="true"> @media only screen and (max-width: 320px) { #layout-row881 img { width: 100% !important; height: auto !important; max-width: 320px !important; } #layout-row883 .break-line { width: 25% !important; float: left !important; } #layout-row886 .break-line { width: 25% !important; float: left !important; } #layout-row888 img { width: 100% !important; height: auto !important; max-width: 320px !important; } #layout-row892 .break-line { width: 25% !important; float: left !important; } #layout-row895 .break-line { width: 25% !important; float: left !important; } #layout-row900 img { width: 100% !important; height: auto !important; max-width: 320px !important; } #layout-row924 img { width: 100% !important; height: auto !important; max-width: 320px !important; } #layout-row925 img { width: 100% !important; height: auto !important; max-width: 320px !important; } #layout-row926 img { width: 100% !important; height: auto !important; max-width:
+320px !important; } #layout-row927 img { width: 100% !important; height: auto !important; max-width: 320px !important; } .td_rss .rss-item img.iphone_large_image { width: auto !important; } u + .body { display: table !important; width: 100vw !important; min-width: 100vw !important; } u + .body table { display: table !important; width: 100% !important; min-width: 100% !important; } u + .body td { display: block !important; width: 100% !important; min-width: 100% !important; } u + .body img { display: inline-block !important; margin: auto !important; width: auto !important; vertical-align: bottom !important; } u + .body center { display: block !important; margin: auto !important; width: 100% !important; min-width: 100% !important; text-align: center !important; } u + .body table._ac_social_table, u + .body table._ac_social_table td, u + .body table._ac_social_table div, u + .body table._ac_social_table a { display: inline-block !important; margin: auto !important;
+width: auto !important; min-width: auto !important; text-align: center !important; } u + .body table._ac_social_table img { display: inline-block !important; margin: auto !important; width: 32px !important; min-width: 32px !important; max-width: 32px !important; }
+}
+@media only screen and (max-width: 375px) { #layout-row881 img { width: 100% !important; height: auto !important; max-width: 375px !important; } #layout-row883 .break-line { width: 25% !important; float: left !important; } #layout-row886 .break-line { width: 25% !important; float: left !important; } #layout-row888 img { width: 100% !important; height: auto !important; max-width: 375px !important; } #layout-row892 .break-line { width: 25% !important; float: left !important; } #layout-row895 .break-line { width: 25% !important; float: left !important; } #layout-row900 img { width: 100% !important; height: auto !important; max-width: 375px !important; } #layout-row924 img { width: 100% !important; height: auto !important; max-width: 375px !important; } #layout-row925 img { width: 100% !important; height: auto !important; max-width: 375px !important; } #layout-row926 img { width: 100% !important; height: auto !important; max-width: 375px !important; } #layout-row927 img
+{ width: 100% !important; height: auto !important; max-width: 375px !important; } .td_rss .rss-item img.iphone_large_image { width: auto !important; } u + .body { display: table !important; width: 100vw !important; min-width: 100vw !important; } u + .body table { display: table !important; width: 100% !important; min-width: 100% !important; } u + .body td { display: block !important; width: 100% !important; min-width: 100% !important; } u + .body img { display: inline-block !important; margin: auto !important; width: auto !important; vertical-align: bottom !important; } u + .body center { display: block !important; margin: auto !important; width: 100% !important; min-width: 100% !important; text-align: center !important; } u + .body table._ac_social_table, u + .body table._ac_social_table td, u + .body table._ac_social_table div, u + .body table._ac_social_table a { display: inline-block !important; margin: auto !important; width: auto !important; min-width: auto
+!important; text-align: center !important; } u + .body table._ac_social_table img { display: inline-block !important; margin: auto !important; width: 32px !important; min-width: 32px !important; max-width: 32px !important; }
+}
+@media only screen and (max-width: 414px) { #layout-row881 img { width: 100% !important; height: auto !important; max-width: 414px !important; } #layout-row883 .break-line { width: 25% !important; float: left !important; } #layout-row886 .break-line { width: 25% !important; float: left !important; } #layout-row888 img { width: 100% !important; height: auto !important; max-width: 414px !important; } #layout-row892 .break-line { width: 25% !important; float: left !important; } #layout-row895 .break-line { width: 25% !important; float: left !important; } #layout-row900 img { width: 100% !important; height: auto !important; max-width: 414px !important; } #layout-row924 img { width: 100% !important; height: auto !important; max-width: 414px !important; } #layout-row925 img { width: 100% !important; height: auto !important; max-width: 414px !important; } #layout-row926 img { width: 100% !important; height: auto !important; max-width: 414px !important; } #layout-row927 img
+{ width: 100% !important; height: auto !important; max-width: 414px !important; } .td_rss .rss-item img.iphone_large_image { width: auto !important; } u + .body { display: table !important; width: 100vw !important; min-width: 100vw !important; } u + .body table { display: table !important; width: 100% !important; min-width: 100% !important; } u + .body td { display: block !important; width: 100% !important; min-width: 100% !important; } u + .body img { display: inline-block !important; margin: auto !important; width: auto !important; vertical-align: bottom !important; } u + .body center { display: block !important; margin: auto !important; width: 100% !important; min-width: 100% !important; text-align: center !important; } u + .body table._ac_social_table, u + .body table._ac_social_table td, u + .body table._ac_social_table div, u + .body table._ac_social_table a { display: inline-block !important; margin: auto !important; width: auto !important; min-width: auto
+!important; text-align: center !important; } u + .body table._ac_social_table img { display: inline-block !important; margin: auto !important; width: 32px !important; min-width: 32px !important; max-width: 32px !important; }
+}
+@media only screen and (max-width: 667px) { #layout-row881 img { width: 100% !important; height: auto !important; max-width: 650px !important; } #layout-row883 .break-line { width: 25% !important; float: left !important; } #layout-row886 .break-line { width: 25% !important; float: left !important; } #layout-row888 img { width: 100% !important; height: auto !important; max-width: 667px !important; } #layout-row892 .break-line { width: 25% !important; float: left !important; } #layout-row895 .break-line { width: 25% !important; float: left !important; } #layout-row900 img { width: 100% !important; height: auto !important; max-width: 650px !important; } #layout-row924 img { width: 100% !important; height: auto !important; max-width: 667px !important; } #layout-row925 img { width: 100% !important; height: auto !important; max-width: 667px !important; } #layout-row926 img { width: 100% !important; height: auto !important; max-width: 667px !important; } #layout-row927 img
+{ width: 100% !important; height: auto !important; max-width: 667px !important; } .td_rss .rss-item img.iphone_large_image { width: auto !important; } u + .body { display: table !important; width: 100vw !important; min-width: 100vw !important; } u + .body table { display: table !important; width: 100% !important; min-width: 100% !important; } u + .body td { display: block !important; width: 100% !important; min-width: 100% !important; } u + .body img { display: inline-block !important; margin: auto !important; width: auto !important; vertical-align: bottom !important; } u + .body center { display: block !important; margin: auto !important; width: 100% !important; min-width: 100% !important; text-align: center !important; } u + .body table._ac_social_table, u + .body table._ac_social_table td, u + .body table._ac_social_table div, u + .body table._ac_social_table a { display: inline-block !important; margin: auto !important; width: auto !important; min-width: auto
+!important; text-align: center !important; } u + .body table._ac_social_table img { display: inline-block !important; margin: auto !important; width: 32px !important; min-width: 32px !important; max-width: 32px !important; }
+} </style><!--[if !mso]><!-- webfonts --><link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet"><!--<![endif]--><!--[if lt mso 12]> <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet"><![endif]--><div id="ac-designer" class="body" style="font-family: Arial; line-height: 1.1; margin: 0px; background-color: #e0e0e0; width: 100%; text-align: center;">		<div style="display: none !important; padding: 0; height: 1px; font-size: 1px; background-color: inherit !important; opacity: 0; color: transparent; mso-line-height-rule: exactly; line-height:1px; mso-hide:all;">
+			Weekly round up of everything happening in the MLOpshere
+			<div style="display: none; max-height: 0px; overflow: hidden;">
+				&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌
+			</div>
+
+		</div>
+<div class="divbody" style="margin: 0px; outline: none; padding: 0px; color: #000000; font-family: arial; line-height: 1.1; width: 100%; background-color: #e0e0e0; background: #e0e0e0; text-align: center;"><table class="template-table" border="0" cellpadding="0" cellspacing="0" width="100%" align="left" style="font-size: 14px; min-width: auto; mso-table-lspace: 0pt; mso-table-rspace: 0pt; background-color: #e0e0e0; background: #e0e0e0;"><tr><td align="center" valign="top" width="100%"><table class="template-table" border="0" cellpadding="0" cellspacing="0" width="650" bgcolor="#e0e0e0" style="font-size: 14px; min-width: auto; mso-table-lspace: 0pt; mso-table-rspace: 0pt; max-width: 650px;"><tr><td id="layout_table_ae2f35b006e5bef0d804a10737bf7aee97819484" valign="top" align="center" width="650" style="background-color: #ffffff;"><table cellpadding="0" cellspacing="0" border="0" class="layout layout-table root-table" width="650" style="font-size: 14px; min-width:
+100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; background-color: #ffffff;"><tr style="background-color: #ffffff;"><td id="layout-row-margin875" valign="top" style="padding: 0; background-color: #ffffff;"><table width="100%" border="0" cellpadding="0" cellspacing="0" style="font-size: 14px; min-width: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; border-collapse: initial !important;"><tr id="layout-row875" class="layout layout-row widget _widget_text style875" style="margin: 0; padding: 0;"><td id="layout-row-padding875" valign="top" style="padding: 30px;"><table width="100%" border="0" cellpadding="0" cellspacing="0" style="font-size: 14px; min-width: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt;"><tr><td id="text_div804" class="td_text td_block" valign="top" align="left" width="590" style="line-height: 130%; margin: 0; outline: none; padding: 0; color: inherit; font-size: 12px; font-weight: inherit; line-height: 1.3; text-decoration: inherit;
+font-family: Arial; mso-line-height-rule: exactly;"> <div style="line-height: 130%; margin: 0; outline: none; padding: 0; text-align: center; line-height: 1.3; mso-line-height-rule: exactly;" data-line-height="1.3"><a href="p_v.php%3Fl=5&amp;c=47&amp;m=64&amp;s=bad97c655476f96a390a72c05a742011.html" style="margin: 0; outline: none; padding: 0; color: #999999; text-decoration: underline;" class="" target="_blank"><span style="color: #999999; font-size: inherit; font-weight: inherit; line-height: inherit; text-decoration: inherit;">View a web copy of this email</span></a><br></div>
+<!--[if (gte mso 12)&(lte mso 15) ]>
+<style data-ac-keep="true" data-ac-inline="false"> #text_div804, #text_div804 div { line-height: 130% !important; };
+</style>
+<![endif]--></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr style="background-color: #ffffff;"><td id="layout-row-margin888" valign="top" style="padding: 50px 0 50px 0; background-color: #ffffff;"><table width="100%" border="0" cellpadding="0" cellspacing="0" style="font-size: 14px; min-width: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; border-collapse: initial !important;"><tr id="layout-row888" class="layout layout-row widget _widget_picture style888" align="center" style=""><td id="layout-row-padding888" valign="top" style="padding: 0;"><table width="100%" border="0" cellpadding="0" cellspacing="0" style="font-size: 14px; min-width: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt;"><tr><td class="image-td" align="center" valign="top" width="650"><img src="../autodb.imgus11.com/public/cc08e16b980bf4dc41e89ccbbc533927.png_r=1843517027" alt="" width="155" style="display: block; border: none; outline: none; width: 155px; opacity: 1; max-width: 100%;"></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr style="background-color: #ffffff;"><td id="layout-row-margin874" valign="top" style="padding: 0; background-color: #ffffff;"><table width="100%" border="0" cellpadding="0" cellspacing="0" style="font-size: 14px; min-width: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; border-collapse: initial !important;"><tr id="layout-row874" class="layout layout-row widget _widget_text style874" style="margin: 0; padding: 0;"><td id="layout-row-padding874" valign="top" style="padding: 0px 50px 0px 50px;"><table width="100%" border="0" cellpadding="0" cellspacing="0" style="font-size: 14px; min-width: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt;"><tr><td id="text_div803" class="td_text td_block" valign="top" align="left" width="550" style="line-height: 150%; margin: 0; outline: none; padding: 0; color: inherit; font-size: 12px; font-weight: inherit; line-height: 1.5; text-decoration: inherit; font-family: Arial; mso-line-height-rule: exactly;"> <div
+style="line-height: 150%; margin: 0; outline: none; padding: 0; color: #22224a; font-size: 18px; line-height: 1.5; mso-line-height-rule: exactly;" data-line-height="1.5"> <div style="margin: 0; outline: none; padding: 0; color: #22224a;"> <div style="margin: 0; outline: none; padding: 0; color: #22224a;"> <div style="margin: 0; outline: none; padding: 0; color: #22224a;"> <p style="margin: 0; outline: none; padding: 0; color: #22224a; font-size: inherit; font-weight: inherit; line-height: inherit; text-decoration: inherit; text-align: left;"><span style="color: inherit; font-size: inherit; font-weight: inherit; line-height: inherit; text-decoration: inherit; font-style: italic;" class="">IMPORTANT ANNOUNCEMENT: Due to daylight savings in Europe (but not the US) the meetup is at 10am PST until the US decides to catch up to the rest of the world.</span> <br><br>Also, I may have accidentally Rick Rolled you last week on the <a
+href="https://autodb.lt.acemlna.com/Prod/link-tracker?notrack=1&redirectUrl=aHR0cHMlM0ElMkYlMkZtYWRld2l0aG1sLmNvbSUyRmNvdXJzZXMlMkZwdXR0aW5nLW1sLWluLXByb2R1Y3Rpb24lMkYlM0Z1dG1fc291cmNlJTNEQWN0aXZlQ2FtcGFpZ24lMjZ1dG1fbWVkaXVtJTNEZW1haWwlMjZ1dG1fY29udGVudCUzRFlvdSUyNTIwSnVzdCUyNTIwR290JTI1MjBLRiUyNTIwU2VydmVkJTI2dXRtX2NhbXBhaWduJTNETUxPcHMlMjUyMC0lMjUyME5ld3NsZXR0ZXIlMjUyMC0lMjUyMDIwMjAlMjUyMC0lMjUyMDEwJTI1MjAtJTI1MjAyNA==&sig=aU2QZZm66v95gx7sg7dk4FEmPnyiCYgrKWeU2vhtpsX&iat=1713901868&a=%7C%7C650082935%7C%7C&account=autodb%2Eactivehosted%2Ecom&email=1FOpI894dA3McZ8GfU3fJeVR%2FzdrvJTtadraXrozN3yU0UGAlw%3D%3D%3A%2FMpHRnUA8VFx%2B6v9nWGx%2BvX4csIHme6p&s=bad97c655476f96a390a72c05a742011&i=47A64A5A822" data-ac-default-color="1" target="_blank" style="margin: 0; outline: none; padding: 0; color: #3e86cb; text-decoration: underline;"><span style="color: ; font-size: inherit; font-weight: inherit; line-height: inherit; text-decoration: inherit;">how to put ML into Prod link</span></a>. Complete accident but now that so many ppl enjoyed it I may have to start doing it on purpose, consider yourself warned.</p>
+<p style="margin: 0; outline: none; padding: 0; color: inherit; font-size: inherit; font-weight: inherit; line-height: inherit; text-decoration: inherit;"></p>
+ </div>
+ </div>
+ </div>
+ </div>
+<!--[if (gte mso 12)&(lte mso 15) ]>
+<style data-ac-keep="true" data-ac-inline="false"> #text_div803, #text_div803 div { line-height: 150% !important; };
+</style>
+<![endif]--></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr style="background-color: #ffffff;"><td id="layout-row-margin882" valign="top" style="padding: 0; background-color: #ffffff;"><table width="100%" border="0" cellpadding="0" cellspacing="0" style="font-size: 14px; min-width: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; border-collapse: initial !important;"><tr id="layout-row882" class="layout layout-row widget _widget_text style882" style="margin: 0; padding: 0;"><td id="layout-row-padding882" valign="top" style="padding: 50px 50px 10px 50px;"><table width="100%" border="0" cellpadding="0" cellspacing="0" style="font-size: 14px; min-width: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt;"><tr><td id="text_div810" class="td_text td_block" valign="top" align="left" width="550" style="line-height: 130%; margin: 0; outline: none; padding: 0; color: inherit; font-size: 12px; font-weight: inherit; line-height: 1.3; text-decoration: inherit; font-family: Arial; mso-line-height-rule: exactly;"> <div
+style="line-height: 130%; margin: 0; outline: none; padding: 0; line-height: 1.3; mso-line-height-rule: exactly;" data-line-height="1.3"> <div style="margin: 0; outline: none; padding: 0; text-align: left;"><span style='color: #c92c7f; font-size: 27px; font-weight: 700; line-height: inherit; text-decoration: inherit; font-family: Roboto, "San Francisco", Helvetica, Arial, sans-serif;' class="">Our Medium </span></div>
+ </div>
+<!--[if (gte mso 12)&(lte mso 15) ]>
+<style data-ac-keep="true" data-ac-inline="false"> #text_div810, #text_div810 div { line-height: 130% !important; };
+</style>
+<![endif]--></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr style="background-color: #ffffff;"><td id="layout-row-margin883" valign="top" style="padding: 0; background-color: #ffffff;"><table width="100%" border="0" cellpadding="0" cellspacing="0" style="font-size: 14px; min-width: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; border-collapse: initial !important;"><tr id="layout-row883" class="layout layout-row widget _widget_break style883" style=""><td id="layout-row-padding883" valign="top" style="line-height: 0; mso-line-height-rule: exactly; padding: 0 50px 10px 50px;"><table width="100%" border="0" cellpadding="0" cellspacing="0" style="font-size: 14px; min-width: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; border-collapse: collapse; line-height: 0; mso-line-height-rule: exactly;"><tr><td height="5" style="line-height: 0; mso-line-height-rule: exactly;"></td>
+</tr>
+<tr><td align="left" height="1" width="550" style="line-height: 0; mso-line-height-rule: exactly;"> <table align="left" border="0" cellpadding="0" cellspacing="0" height="1" width="138" style="font-size: 14px; min-width: auto!important; mso-table-lspace: 0pt; mso-table-rspace: 0pt; border-collapse: collapse; line-height: 0; mso-line-height-rule: exactly; width: 25%; max-width: 25%;"><tr><td class="break-line" bgcolor="#c92c7f" height="1" width="138" style="line-height: 1px; mso-line-height-rule: exactly; height: 1px; width: 138px; background-color: #c92c7f;"> </td>
+ </tr>
+</table>
+</td>
+ </tr>
+<tr><td height="5" style="line-height: 0; mso-line-height-rule: exactly;"></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr style="background-color: #ffffff;"><td id="layout-row-margin927" valign="top" style="background-color: #ffffff;"><table width="100%" border="0" cellpadding="0" cellspacing="0" style="font-size: 14px; min-width: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt;"><tr id="layout-row927" class="layout layout-row widget _widget_picture " align="left"><td id="layout-row-padding927" valign="top"><table width="100%" border="0" cellpadding="0" cellspacing="0" style="font-size: 14px; min-width: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt;"><tr><td class="image-td" align="left" valign="top" width="650"><img src="../autodb.imgus11.com/public/44899f89864d52dd824871fa89ba1238.jpeg_r=1342518233" alt="" width="650" style="display: block; border: none; outline: none; width: 650px; opacity: 1; max-width: 100%;"></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr style="background-color: #ffffff;"><td id="layout-row-margin884" valign="top" style="padding: 0px; background-color: #ffffff;"><table width="100%" border="0" cellpadding="0" cellspacing="0" style="font-size: 14px; min-width: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; border-collapse: initial !important;"><tr id="layout-row884" class="layout layout-row widget _widget_text style884" style="margin: 0; padding: 0;"><td id="layout-row-padding884" valign="top" style="padding: 15px 50px 0px 50px;"><table width="100%" border="0" cellpadding="0" cellspacing="0" style="font-size: 14px; min-width: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt;"><tr><td id="text_div812" class="td_text td_block" valign="top" align="left" width="550" style="line-height: 150%; margin: 0; outline: none; padding: 0; color: inherit; font-size: 12px; font-weight: inherit; line-height: 1.5; text-decoration: inherit; font-family: Arial; mso-line-height-rule: exactly;"> <div
+style="line-height: 150%; margin: 0; outline: none; padding: 0; font-size: 16px; line-height: 1.5; mso-line-height-rule: exactly;" class="" data-line-height="1.5"> <div class="" style="margin: 0; outline: none; padding: 0;"><span style='color: #22224a; font-size: inherit; font-weight: inherit; line-height: inherit; text-decoration: inherit; font-family: Roboto, "San Francisco", Helvetica, Arial, sans-serif;'>Speaking of getting models into production.....Part 2 of our series on putting models into production with SageMaker is now out! Community member <a href="https://autodb.lt.acemlna.com/Prod/link-tracker?notrack=1&redirectUrl=aHR0cHMlM0ElMkYlMkZ3d3cubGlua2VkaW4uY29tJTJGaW4lMkZuZXlsc29uY3JlcGFsZGUlMkYlM0Z1dG1fc291cmNlJTNEQWN0aXZlQ2FtcGFpZ24lMjZ1dG1fbWVkaXVtJTNEZW1haWwlMjZ1dG1fY29udGVudCUzRFlvdSUyNTIwSnVzdCUyNTIwR290JTI1MjBLRiUyNTIwU2VydmVkJTI2dXRtX2NhbXBhaWduJTNETUxPcHMlMjUyMC0lMjUyME5ld3NsZXR0ZXIlMjUyMC0lMjUyMDIwMjAlMjUyMC0lMjUyMDEwJTI1MjAtJTI1MjAyNA==&sig=4eivpNEeWLi1Fk1F3ESdgC4dzigcJkBDFx8zbuj88mDc&iat=1713901868&a=%7C%7C650082935%7C%7C&account=autodb%2Eactivehosted%2Ecom&email=1FOpI894dA3McZ8GfU3fJeVR%2FzdrvJTtadraXrozN3yU0UGAlw%3D%3D%3A%2FMpHRnUA8VFx%2B6v9nWGx%2BvX4csIHme6p&s=bad97c655476f96a390a72c05a742011&i=47A64A5A823"
+data-ac-default-color="1" target="_blank" style="margin: 0; outline: none; padding: 0; color: #3e86cb; text-decoration: underline;"><span style="color: ; font-size: inherit; font-weight: inherit; line-height: inherit; text-decoration: inherit;">Neylson Crepalde</span></a> creator of the open source framework <a href="https://autodb.lt.acemlna.com/Prod/link-tracker?notrack=1&redirectUrl=aHR0cCUzQSUyRiUyRnd3dy5naXRodWIuY29tJTJGYTNkYXRhJTJGaGVybWlvbmUlM0Z1dG1fc291cmNlJTNEQWN0aXZlQ2FtcGFpZ24lMjZ1dG1fbWVkaXVtJTNEZW1haWwlMjZ1dG1fY29udGVudCUzRFlvdSUyNTIwSnVzdCUyNTIwR290JTI1MjBLRiUyNTIwU2VydmVkJTI2dXRtX2NhbXBhaWduJTNETUxPcHMlMjUyMC0lMjUyME5ld3NsZXR0ZXIlMjUyMC0lMjUyMDIwMjAlMjUyMC0lMjUyMDEwJTI1MjAtJTI1MjAyNA==&sig=8PmeyNxTx1agCFkkmbXfv462rKSRwR8vPFnDP433Yvxo&iat=1713901868&a=%7C%7C650082935%7C%7C&account=autodb%2Eactivehosted%2Ecom&email=1FOpI894dA3McZ8GfU3fJeVR%2FzdrvJTtadraXrozN3yU0UGAlw%3D%3D%3A%2FMpHRnUA8VFx%2B6v9nWGx%2BvX4csIHme6p&s=bad97c655476f96a390a72c05a742011&i=47A64A5A824" data-ac-default-color="1" target="_blank" style="margin: 0; outline: none; padding: 0; color: #3e86cb; text-decoration: underline;"><span style="color: ; font-size: inherit; font-weight: inherit; line-height: inherit; text-decoration: inherit;">Hermione</span></a>
+and long time SageMaker Guru makes sure to break it down real slow and give us some helpful tips around Scalable SageMaker Endpoints and Batch Transform Jobs. <br><br><span style="color: inherit; font-size: inherit; font-weight: inherit; line-height: inherit; text-decoration: inherit; font-style: italic;" class="">Side note, do you feel like writing for us? Write me back and let me know what you had in mind! </span></span></div>
+ </div>
+<!--[if (gte mso 12)&(lte mso 15) ]>
+<style data-ac-keep="true" data-ac-inline="false"> #text_div812, #text_div812 div { line-height: 150% !important; };
+</style>
+<![endif]--></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr style="background-color: #ffffff;"><td id="layout-row-margin890" valign="top" style="padding: 0; background-color: #ffffff;"><table width="100%" border="0" cellpadding="0" cellspacing="0" style="font-size: 14px; min-width: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; border-collapse: initial !important;"><tr id="layout-row890" class="layout layout-row widget _widget_button style890" style=""><td id="layout-row-padding890" valign="top" style="padding: 20px 50px 20px 50px;"><table width="100%" border="0" cellpadding="0" cellspacing="0" style="font-size: 14px; min-width: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt;"><tr><td class="td_button td_block customizable" valign="top" align="left" width="550"> <div class="button-wrapper" style="margin: 0; outline: none; padding: 0; text-align: left;">
+<!--[if mso]> <v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" href="https://autodb.lt.acemlna.com/Prod/link-tracker?notrack=1&redirectUrl=aHR0cHMlM0ElMkYlMkZtZWRpdW0uY29tJTJGbWxvcHMtY29tbXVuaXR5JTJGbWwtaW4tcHJvZHVjdGlvbi13aXRoLXNhZ2VtYWtlci1wYXJ0LTItYTg2ZmU2ZmNlNWNhJTNGc291cmNlJTNEZnJpZW5kc19saW5rJTI2c2slM0Q2MjM5ODE5ZjNiMmY4NjYyNmViYzUxYTcxN2JjN2FjOSUyNnV0bV9zb3VyY2UlM0RBY3RpdmVDYW1wYWlnbiUyNnV0bV9tZWRpdW0lM0RlbWFpbCUyNnV0bV9jb250ZW50JTNEWW91JTI1MjBKdXN0JTI1MjBHb3QlMjUyMEtGJTI1MjBTZXJ2ZWQlMjZ1dG1fY2FtcGFpZ24lM0RNTE9wcyUyNTIwLSUyNTIwTmV3c2xldHRlciUyNTIwLSUyNTIwMjAyMCUyNTIwLSUyNTIwMTAlMjUyMC0lMjUyMDI0&sig=H39HnQQvtuLKq9ZPX1Se1sRq7mPmrSGxi186PUv53zDv&iat=1713901868&a=%7C%7C650082935%7C%7C&account=autodb%2Eactivehosted%2Ecom&email=1FOpI894dA3McZ8GfU3fJeVR%2FzdrvJTtadraXrozN3yU0UGAlw%3D%3D%3A%2FMpHRnUA8VFx%2B6v9nWGx%2BvX4csIHme6p&s=bad97c655476f96a390a72c05a742011&i=47A64A5A825" style="v-text-anchor:middle; width:161px; height:64px; " arcsize="10%" strokecolor="#B5B5B5" strokeweight="0pt" fillcolor="#3e86cb" o:button="true" o:allowincell="true" o:allowoverlap="false" > <v:textbox inset="2px,2px,2px,2px"> <center style="color:#fff7f7;font-family:Roboto, San Francisco, Helvetica, Arial, sans-serif; font-size:14px; line-height:
+1.1;">SageMaker Part 2</center> </v:textbox> </v:roundrect>
+<![endif]--> <a href="https://autodb.lt.acemlna.com/Prod/link-tracker?notrack=1&redirectUrl=aHR0cHMlM0ElMkYlMkZtZWRpdW0uY29tJTJGbWxvcHMtY29tbXVuaXR5JTJGbWwtaW4tcHJvZHVjdGlvbi13aXRoLXNhZ2VtYWtlci1wYXJ0LTItYTg2ZmU2ZmNlNWNhJTNGc291cmNlJTNEZnJpZW5kc19saW5rJTI2c2slM0Q2MjM5ODE5ZjNiMmY4NjYyNmViYzUxYTcxN2JjN2FjOSUyNnV0bV9zb3VyY2UlM0RBY3RpdmVDYW1wYWlnbiUyNnV0bV9tZWRpdW0lM0RlbWFpbCUyNnV0bV9jb250ZW50JTNEWW91JTI1MjBKdXN0JTI1MjBHb3QlMjUyMEtGJTI1MjBTZXJ2ZWQlMjZ1dG1fY2FtcGFpZ24lM0RNTE9wcyUyNTIwLSUyNTIwTmV3c2xldHRlciUyNTIwLSUyNTIwMjAyMCUyNTIwLSUyNTIwMTAlMjUyMC0lMjUyMDI0&sig=H39HnQQvtuLKq9ZPX1Se1sRq7mPmrSGxi186PUv53zDv&iat=1713901868&a=%7C%7C650082935%7C%7C&account=autodb%2Eactivehosted%2Ecom&email=1FOpI894dA3McZ8GfU3fJeVR%2FzdrvJTtadraXrozN3yU0UGAlw%3D%3D%3A%2FMpHRnUA8VFx%2B6v9nWGx%2BvX4csIHme6p&s=bad97c655476f96a390a72c05a742011&i=47A64A5A825" style="margin: 0; outline: none; padding: 15px; color: #fff7f7; background-color: #3e86cb; border: 0px solid #B5B5B5; border-radius: 3px; font-family: Roboto, San Francisco, Helvetica, Arial, sans-serif; font-size: 14px; display: inline-block; line-height: 1.1; text-align: center; text-decoration: none; mso-hide: all;" target="_blank"> <span style="color:#fff7f7;font-family:Roboto, San Francisco, Helvetica, Arial, sans-serif;font-size:14px;" target="_blank"> SageMaker Part 2 </span>
+</a> </div>
+
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr style="background-color: #ffffff;"><td id="layout-row-margin885" valign="top" style="padding: 0; background-color: #ffffff;"><table width="100%" border="0" cellpadding="0" cellspacing="0" style="font-size: 14px; min-width: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; border-collapse: initial !important;"><tr id="layout-row885" class="layout layout-row widget _widget_text style885" style="margin: 0; padding: 0;"><td id="layout-row-padding885" valign="top" style="padding: 25px 50px 10px 50px;"><table width="100%" border="0" cellpadding="0" cellspacing="0" style="font-size: 14px; min-width: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt;"><tr><td id="text_div813" class="td_text td_block" valign="top" align="left" width="550" style="line-height: 130%; margin: 0; outline: none; padding: 0; color: inherit; font-size: 12px; font-weight: inherit; line-height: 1.3; text-decoration: inherit; font-family: Arial; mso-line-height-rule: exactly;"> <div
+style="line-height: 130%; margin: 0; outline: none; padding: 0; line-height: 1.3; mso-line-height-rule: exactly;" class="" data-line-height="1.3"> <div style="margin: 0; outline: none; padding: 0; text-align: left;" class=""><span style='color: #c92c7f; font-size: 27px; font-weight: 700; line-height: inherit; text-decoration: inherit; font-family: Roboto, "San Francisco", Helvetica, Arial, sans-serif;' class="">Mindful of Data Flow</span></div>
+ </div>
+<!--[if (gte mso 12)&(lte mso 15) ]>
+<style data-ac-keep="true" data-ac-inline="false"> #text_div813, #text_div813 div { line-height: 130% !important; };
+</style>
+<![endif]--></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr style="background-color: #ffffff;"><td id="layout-row-margin886" valign="top" style="padding: 0; background-color: #ffffff;"><table width="100%" border="0" cellpadding="0" cellspacing="0" style="font-size: 14px; min-width: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; border-collapse: initial !important;"><tr id="layout-row886" class="layout layout-row widget _widget_break style886" style=""><td id="layout-row-padding886" valign="top" style="line-height: 0; mso-line-height-rule: exactly; padding: 0 50px 10px 50px;"><table width="100%" border="0" cellpadding="0" cellspacing="0" style="font-size: 14px; min-width: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; border-collapse: collapse; line-height: 0; mso-line-height-rule: exactly;"><tr><td height="7" style="line-height: 0; mso-line-height-rule: exactly;"></td>
+</tr>
+<tr><td align="left" height="1" width="550" style="line-height: 0; mso-line-height-rule: exactly;"> <table align="left" border="0" cellpadding="0" cellspacing="0" height="1" width="138" style="font-size: 14px; min-width: auto!important; mso-table-lspace: 0pt; mso-table-rspace: 0pt; border-collapse: collapse; line-height: 0; mso-line-height-rule: exactly; width: 25%; max-width: 25%;"><tr><td class="break-line" bgcolor="#c92c7f" height="1" width="138" style="line-height: 1px; mso-line-height-rule: exactly; height: 1px; width: 138px; background-color: #c92c7f;"> </td>
+ </tr>
+</table>
+</td>
+ </tr>
+<tr><td height="7" style="line-height: 0; mso-line-height-rule: exactly;"></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr style="background-color: #ffffff;"><td id="layout-row-margin926" valign="top" style="background-color: #ffffff;"><table width="100%" border="0" cellpadding="0" cellspacing="0" style="font-size: 14px; min-width: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt;"><tr id="layout-row926" class="layout layout-row widget _widget_picture " align="left"><td id="layout-row-padding926" valign="top"><table width="100%" border="0" cellpadding="0" cellspacing="0" style="font-size: 14px; min-width: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt;"><tr><td class="image-td" align="left" valign="top" width="650"><img src="../autodb.imgus11.com/public/5521e90d97287258ca0bbafc7fcf23ed.jpg_r=1148541918" alt="" width="650" style="display: block; border: none; outline: none; width: 650px; opacity: 1; max-width: 100%;"></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr style="background-color: #ffffff;"><td id="layout-row-margin887" valign="top" style="padding: 0px; background-color: #ffffff;"><table width="100%" border="0" cellpadding="0" cellspacing="0" style="font-size: 14px; min-width: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; border-collapse: initial !important;"><tr id="layout-row887" class="layout layout-row widget _widget_text style887" style="margin: 0; padding: 0;"><td id="layout-row-padding887" valign="top" style="padding: 15px 50px 0px 50px;"><table width="100%" border="0" cellpadding="0" cellspacing="0" style="font-size: 14px; min-width: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt;"><tr><td id="text_div815" class="td_text td_block" valign="top" align="left" width="550" style="line-height: 150%; margin: 0; outline: none; padding: 0; color: inherit; font-size: 12px; font-weight: inherit; line-height: 1.5; text-decoration: inherit; font-family: Arial; mso-line-height-rule: exactly;"> <div
+style="line-height: 150%; margin: 0; outline: none; padding: 0; font-size: 16px; line-height: 1.5; mso-line-height-rule: exactly;" class="" data-line-height="1.5"> <div class="" style="margin: 0; outline: none; padding: 0;"><span style='color: #22224a; font-size: inherit; font-weight: inherit; line-height: inherit; text-decoration: inherit; font-family: Roboto, "San Francisco", Helvetica, Arial, sans-serif;'>For our most recent Coffee Sessions, David and I sat down with <span style='color: #22224a; font-size: 16px; font-weight: inherit; line-height: inherit; text-decoration: inherit; font-family: Roboto, "San Francisco", Helvetica, Arial, sans-serif; margin: 0;'><a
+href="https://autodb.lt.acemlna.com/Prod/link-tracker?notrack=1&redirectUrl=aHR0cHMlM0ElMkYlMkZ3d3cubGlua2VkaW4uY29tJTJGaW4lMkZzY2d1cHRhJTJGJTNGdXRtX3NvdXJjZSUzREFjdGl2ZUNhbXBhaWduJTI2dXRtX21lZGl1bSUzRGVtYWlsJTI2dXRtX2NvbnRlbnQlM0RZb3UlMjUyMEp1c3QlMjUyMEdvdCUyNTIwS0YlMjUyMFNlcnZlZCUyNnV0bV9jYW1wYWlnbiUzRE1MT3BzJTI1MjAtJTI1MjBOZXdzbGV0dGVyJTI1MjAtJTI1MjAyMDIwJTI1MjAtJTI1MjAxMCUyNTIwLSUyNTIwMjQ=&sig=HATnntSV2QZHzaHxQnaD255K9nwHvmdVnmSys4Dq6EKJ&iat=1713901868&a=%7C%7C650082935%7C%7C&account=autodb%2Eactivehosted%2Ecom&email=1FOpI894dA3McZ8GfU3fJeVR%2FzdrvJTtadraXrozN3yU0UGAlw%3D%3D%3A%2FMpHRnUA8VFx%2B6v9nWGx%2BvX4csIHme6p&s=bad97c655476f96a390a72c05a742011&i=47A64A5A840" data-ac-default-color="1" target="_blank" style="margin: 0; outline: none; padding: 0; color: #3e86cb; text-decoration: underline;"><span style="color: ; font-size: inherit; font-weight: inherit; line-height: inherit; text-decoration: inherit;">Satish Chandra Gupta</span></a> </span><span style='color: #22224a; font-size: 16px; font-weight: inherit; line-height: inherit; text-decoration: inherit; font-family: Roboto, "San Francisco", Helvetica, Arial, sans-serif; margin: 0;'>Co-founder of <a
+href="https://autodb.lt.acemlna.com/Prod/link-tracker?notrack=1&redirectUrl=aHR0cHMlM0ElMkYlMkZ3d3cuc2xhbmdsYWJzLmluJTJGJTNGdXRtX3NvdXJjZSUzREFjdGl2ZUNhbXBhaWduJTI2dXRtX21lZGl1bSUzRGVtYWlsJTI2dXRtX2NvbnRlbnQlM0RZb3UlMjUyMEp1c3QlMjUyMEdvdCUyNTIwS0YlMjUyMFNlcnZlZCUyNnV0bV9jYW1wYWlnbiUzRE1MT3BzJTI1MjAtJTI1MjBOZXdzbGV0dGVyJTI1MjAtJTI1MjAyMDIwJTI1MjAtJTI1MjAxMCUyNTIwLSUyNTIwMjQ=&sig=2bcHY4VFxAGTFKz28WPhu9SXh6gVqXYqisS5qHkXvQ1r&iat=1713901868&a=%7C%7C650082935%7C%7C&account=autodb%2Eactivehosted%2Ecom&email=1FOpI894dA3McZ8GfU3fJeVR%2FzdrvJTtadraXrozN3yU0UGAlw%3D%3D%3A%2FMpHRnUA8VFx%2B6v9nWGx%2BvX4csIHme6p&s=bad97c655476f96a390a72c05a742011&i=47A64A5A841" data-ac-default-color="1" target="_blank" style="margin: 0; outline: none; padding: 0; color: #3e86cb; text-decoration: underline;"><span style="color: ; font-size: inherit; font-weight: inherit; line-height: inherit; text-decoration: inherit;">Slanglabs</span></a> to talk about Data Engineering + ML + Software Engineering. He had an amazing <a
+href="https://autodb.lt.acemlna.com/Prod/link-tracker?notrack=1&redirectUrl=aHR0cHMlM0ElMkYlMkZ0b3dhcmRzZGF0YXNjaWVuY2UuY29tJTJGc2NhbGFibGUtZWZmaWNpZW50LWJpZy1kYXRhLWFuYWx5dGljcy1tYWNoaW5lLWxlYXJuaW5nLXBpcGVsaW5lLWFyY2hpdGVjdHVyZS1vbi1jbG91ZC00ZDU5ZWZjMDkyYjUlM0Z1dG1fc291cmNlJTNEQWN0aXZlQ2FtcGFpZ24lMjZ1dG1fbWVkaXVtJTNEZW1haWwlMjZ1dG1fY29udGVudCUzRFlvdSUyNTIwSnVzdCUyNTIwR290JTI1MjBLRiUyNTIwU2VydmVkJTI2dXRtX2NhbXBhaWduJTNETUxPcHMlMjUyMC0lMjUyME5ld3NsZXR0ZXIlMjUyMC0lMjUyMDIwMjAlMjUyMC0lMjUyMDEwJTI1MjAtJTI1MjAyNA==&sig=93y1fqFAH1sk6XcxzRZAkANYoKfFcioRtboFZJo1j1Rx&iat=1713901868&a=%7C%7C650082935%7C%7C&account=autodb%2Eactivehosted%2Ecom&email=1FOpI894dA3McZ8GfU3fJeVR%2FzdrvJTtadraXrozN3yU0UGAlw%3D%3D%3A%2FMpHRnUA8VFx%2B6v9nWGx%2BvX4csIHme6p&s=bad97c655476f96a390a72c05a742011&i=47A64A5A842" data-ac-default-color="1" target="_blank" style="margin: 0; outline: none; padding: 0; color: #3e86cb; text-decoration: underline;"><span style="color: ; font-size: inherit; font-weight: inherit; line-height: inherit; text-decoration: inherit;">blog post</span></a> that I loved and we referenced many times in the chat around scalable and efficient big data analytics ML pipelines. <br><br>As you can see from the photo above he has much wisdom to impart on us all! i came up with like 3
+different quotes from our chat that I will be putting out on <a href="https://autodb.lt.acemlna.com/Prod/link-tracker?notrack=1&redirectUrl=aHR0cHMlM0ElMkYlMkZ0d2l0dGVyLmNvbSUyRm1sb3BzY29tbXVuaXR5JTNGdXRtX3NvdXJjZSUzREFjdGl2ZUNhbXBhaWduJTI2dXRtX21lZGl1bSUzRGVtYWlsJTI2dXRtX2NvbnRlbnQlM0RZb3UlMjUyMEp1c3QlMjUyMEdvdCUyNTIwS0YlMjUyMFNlcnZlZCUyNnV0bV9jYW1wYWlnbiUzRE1MT3BzJTI1MjAtJTI1MjBOZXdzbGV0dGVyJTI1MjAtJTI1MjAyMDIwJTI1MjAtJTI1MjAxMCUyNTIwLSUyNTIwMjQ=&sig=HW8C38zG2wpvCbhBwazM4cQdczkWzBPm4Fhh6DcMXPZ7&iat=1713901868&a=%7C%7C650082935%7C%7C&account=autodb%2Eactivehosted%2Ecom&email=1FOpI894dA3McZ8GfU3fJeVR%2FzdrvJTtadraXrozN3yU0UGAlw%3D%3D%3A%2FMpHRnUA8VFx%2B6v9nWGx%2BvX4csIHme6p&s=bad97c655476f96a390a72c05a742011&i=47A64A5A843" data-ac-default-color="1" target="_blank" style="margin: 0; outline: none; padding: 0; color: #3e86cb; text-decoration: underline;"><span style="color: ; font-size: inherit; font-weight: inherit; line-height: inherit; text-decoration: inherit;">our Twitter page</span></a> over the next week! Check out the whole conversation in <a
+href="https://autodb.lt.acemlna.com/Prod/link-tracker?notrack=1&redirectUrl=aHR0cHMlM0ElMkYlMkZ5b3V0dS5iZSUyRklVaHZPOFFqV2Q4JTNGdXRtX3NvdXJjZSUzREFjdGl2ZUNhbXBhaWduJTI2dXRtX21lZGl1bSUzRGVtYWlsJTI2dXRtX2NvbnRlbnQlM0RZb3UlMjUyMEp1c3QlMjUyMEdvdCUyNTIwS0YlMjUyMFNlcnZlZCUyNnV0bV9jYW1wYWlnbiUzRE1MT3BzJTI1MjAtJTI1MjBOZXdzbGV0dGVyJTI1MjAtJTI1MjAyMDIwJTI1MjAtJTI1MjAxMCUyNTIwLSUyNTIwMjQ=&sig=Cwxw39X3SmP3LMnSVPo2MzmWv7K6DUD4F6tEmDrnaWeE&iat=1713901868&a=%7C%7C650082935%7C%7C&account=autodb%2Eactivehosted%2Ecom&email=1FOpI894dA3McZ8GfU3fJeVR%2FzdrvJTtadraXrozN3yU0UGAlw%3D%3D%3A%2FMpHRnUA8VFx%2B6v9nWGx%2BvX4csIHme6p&s=bad97c655476f96a390a72c05a742011&i=47A64A5A844" data-ac-default-color="1" target="_blank" style="margin: 0; outline: none; padding: 0; color: #3e86cb; text-decoration: underline;"><span style="color: ; font-size: inherit; font-weight: inherit; line-height: inherit; text-decoration: inherit;">video</span></a> or <a
+href="https://autodb.lt.acemlna.com/Prod/link-tracker?notrack=1&redirectUrl=aHR0cHMlM0ElMkYlMkZhbmNob3IuZm0lMkZtbG9wcyUyRmVwaXNvZGVzJTJGTWFjaGluZS1pbi1Qcm9kdWN0aW9uLS1EYXRhLUVuZ2luZWVyaW5nLS1NTC0tU29mdHdhcmUtRW5naW5lZXJpbmctLVNhdGlzaC1DaGFuZHJhLUd1cHRhLS1NTE9wcy1Db2ZmZWUtU2Vzc2lvbnMtMTYtZWxpaWNjJTNGdXRtX3NvdXJjZSUzREFjdGl2ZUNhbXBhaWduJTI2dXRtX21lZGl1bSUzRGVtYWlsJTI2dXRtX2NvbnRlbnQlM0RZb3UlMjUyMEp1c3QlMjUyMEdvdCUyNTIwS0YlMjUyMFNlcnZlZCUyNnV0bV9jYW1wYWlnbiUzRE1MT3BzJTI1MjAtJTI1MjBOZXdzbGV0dGVyJTI1MjAtJTI1MjAyMDIwJTI1MjAtJTI1MjAxMCUyNTIwLSUyNTIwMjQ=&sig=5Y2GED2PnKjB6McvL5Z9buUN4se87Cap1TTTp4Jz95aR&iat=1713901868&a=%7C%7C650082935%7C%7C&account=autodb%2Eactivehosted%2Ecom&email=1FOpI894dA3McZ8GfU3fJeVR%2FzdrvJTtadraXrozN3yU0UGAlw%3D%3D%3A%2FMpHRnUA8VFx%2B6v9nWGx%2BvX4csIHme6p&s=bad97c655476f96a390a72c05a742011&i=47A64A5A845" data-ac-default-color="1" target="_blank" style="margin: 0; outline: none; padding: 0; color: #3e86cb; text-decoration: underline;"><span style="color: ; font-size: inherit; font-weight: inherit; line-height: inherit; text-decoration: inherit;">podcast</span></a> form.</span><br style="margin-right: 0px; margin-left: 0px; font-size: 16px;margin-right: 0px; margin-left: 0px;margin-right: 0px; margin-left: 0px;"></span></div>
+ </div>
+<!--[if (gte mso 12)&(lte mso 15) ]>
+<style data-ac-keep="true" data-ac-inline="false"> #text_div815, #text_div815 div { line-height: 150% !important; };
+</style>
+<![endif]--></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr style="background-color: #ffffff;"><td id="layout-row-margin877" valign="top" style="padding: 0; background-color: #ffffff;"><table width="100%" border="0" cellpadding="0" cellspacing="0" style="font-size: 14px; min-width: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; border-collapse: initial !important;"><tr id="layout-row877" class="layout layout-row widget _widget_button style877" style=""><td id="layout-row-padding877" valign="top" style="padding: 20px 50px 20px 50px;"><table width="100%" border="0" cellpadding="0" cellspacing="0" style="font-size: 14px; min-width: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt;"><tr><td class="td_button td_block customizable" valign="top" align="left" width="550"> <div class="button-wrapper" style="margin: 0; outline: none; padding: 0; text-align: left;">
+<!--[if mso]> <v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" href="https://autodb.lt.acemlna.com/Prod/link-tracker?notrack=1&redirectUrl=aHR0cHMlM0ElMkYlMkZ5b3V0dS5iZSUyRklVaHZPOFFqV2Q4JTNGdXRtX3NvdXJjZSUzREFjdGl2ZUNhbXBhaWduJTI2dXRtX21lZGl1bSUzRGVtYWlsJTI2dXRtX2NvbnRlbnQlM0RZb3UlMjUyMEp1c3QlMjUyMEdvdCUyNTIwS0YlMjUyMFNlcnZlZCUyNnV0bV9jYW1wYWlnbiUzRE1MT3BzJTI1MjAtJTI1MjBOZXdzbGV0dGVyJTI1MjAtJTI1MjAyMDIwJTI1MjAtJTI1MjAxMCUyNTIwLSUyNTIwMjQ=&sig=Cwxw39X3SmP3LMnSVPo2MzmWv7K6DUD4F6tEmDrnaWeE&iat=1713901868&a=%7C%7C650082935%7C%7C&account=autodb%2Eactivehosted%2Ecom&email=1FOpI894dA3McZ8GfU3fJeVR%2FzdrvJTtadraXrozN3yU0UGAlw%3D%3D%3A%2FMpHRnUA8VFx%2B6v9nWGx%2BvX4csIHme6p&s=bad97c655476f96a390a72c05a742011&i=47A64A5A844" style="v-text-anchor:middle; width:89px; height:64px; " arcsize="10%" strokecolor="#B5B5B5" strokeweight="0pt" fillcolor="#3e86cb" o:button="true" o:allowincell="true" o:allowoverlap="false" > <v:textbox inset="2px,2px,2px,2px"> <center style="color:#fff7f7;font-family:Roboto, San Francisco, Helvetica, Arial, sans-serif; font-size:14px; line-height: 1.1;">Video!</center> </v:textbox> </v:roundrect>
+<![endif]--> <a href="https://autodb.lt.acemlna.com/Prod/link-tracker?notrack=1&redirectUrl=aHR0cHMlM0ElMkYlMkZ5b3V0dS5iZSUyRklVaHZPOFFqV2Q4JTNGdXRtX3NvdXJjZSUzREFjdGl2ZUNhbXBhaWduJTI2dXRtX21lZGl1bSUzRGVtYWlsJTI2dXRtX2NvbnRlbnQlM0RZb3UlMjUyMEp1c3QlMjUyMEdvdCUyNTIwS0YlMjUyMFNlcnZlZCUyNnV0bV9jYW1wYWlnbiUzRE1MT3BzJTI1MjAtJTI1MjBOZXdzbGV0dGVyJTI1MjAtJTI1MjAyMDIwJTI1MjAtJTI1MjAxMCUyNTIwLSUyNTIwMjQ=&sig=Cwxw39X3SmP3LMnSVPo2MzmWv7K6DUD4F6tEmDrnaWeE&iat=1713901868&a=%7C%7C650082935%7C%7C&account=autodb%2Eactivehosted%2Ecom&email=1FOpI894dA3McZ8GfU3fJeVR%2FzdrvJTtadraXrozN3yU0UGAlw%3D%3D%3A%2FMpHRnUA8VFx%2B6v9nWGx%2BvX4csIHme6p&s=bad97c655476f96a390a72c05a742011&i=47A64A5A844" style="margin: 0; outline: none; padding: 15px; color: #fff7f7; background-color: #3e86cb; border: 0px solid #B5B5B5; border-radius: 3px; font-family: Roboto, San Francisco, Helvetica, Arial, sans-serif; font-size: 14px; display: inline-block; line-height: 1.1; text-align: center; text-decoration: none; mso-hide: all;" target="_blank"> <span style="color:#fff7f7;font-family:Roboto, San Francisco, Helvetica, Arial, sans-serif;font-size:14px;" target="_blank"> Video! </span> </a> </div>
+
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr style="background-color: #ffffff;"><td id="layout-row-margin891" valign="top" style="padding: 0; background-color: #ffffff;"><table width="100%" border="0" cellpadding="0" cellspacing="0" style="font-size: 14px; min-width: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; border-collapse: initial !important;"><tr id="layout-row891" class="layout layout-row widget _widget_text style891" style="margin: 0; padding: 0;"><td id="layout-row-padding891" valign="top" style="padding: 25px 50px 10px 50px;"><table width="100%" border="0" cellpadding="0" cellspacing="0" style="font-size: 14px; min-width: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt;"><tr><td id="text_div819" class="td_text td_block" valign="top" align="left" width="550" style="line-height: 130%; margin: 0; outline: none; padding: 0; color: inherit; font-size: 12px; font-weight: inherit; line-height: 1.3; text-decoration: inherit; font-family: Arial; mso-line-height-rule: exactly;"> <div
+style="line-height: 130%; margin: 0; outline: none; padding: 0; line-height: 1.3; mso-line-height-rule: exactly; font-size: 27px; color: #c92c7f; font-family: arial;" data-line-height="1.3"><span style="color: #c92c7f; font-size: 27px; font-weight: 700; line-height: inherit; text-decoration: inherit; font-family: arial; font-style: normal;">Operationalazione</span><br></div>
+<!--[if (gte mso 12)&(lte mso 15) ]>
+<style data-ac-keep="true" data-ac-inline="false"> #text_div819, #text_div819 div { line-height: 130% !important; };
+</style>
+<![endif]--></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr style="background-color: #ffffff;"><td id="layout-row-margin892" valign="top" style="padding: 0; background-color: #ffffff;"><table width="100%" border="0" cellpadding="0" cellspacing="0" style="font-size: 14px; min-width: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; border-collapse: initial !important;"><tr id="layout-row892" class="layout layout-row widget _widget_break style892" style=""><td id="layout-row-padding892" valign="top" style="line-height: 0; mso-line-height-rule: exactly; padding: 0 50px 10px 50px;"><table width="100%" border="0" cellpadding="0" cellspacing="0" style="font-size: 14px; min-width: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; border-collapse: collapse; line-height: 0; mso-line-height-rule: exactly;"><tr><td height="5" style="line-height: 0; mso-line-height-rule: exactly;"></td>
+</tr>
+<tr><td align="left" height="1" width="550" style="line-height: 0; mso-line-height-rule: exactly;"> <table align="left" border="0" cellpadding="0" cellspacing="0" height="1" width="138" style="font-size: 14px; min-width: auto!important; mso-table-lspace: 0pt; mso-table-rspace: 0pt; border-collapse: collapse; line-height: 0; mso-line-height-rule: exactly; width: 25%; max-width: 25%;"><tr><td class="break-line" bgcolor="#c92c7f" height="1" width="138" style="line-height: 1px; mso-line-height-rule: exactly; height: 1px; width: 138px; background-color: #c92c7f;"> </td>
+ </tr>
+</table>
+</td>
+ </tr>
+<tr><td height="5" style="line-height: 0; mso-line-height-rule: exactly;"></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr style="background-color: #ffffff;"><td id="layout-row-margin925" valign="top" style="background-color: #ffffff;"><table width="100%" border="0" cellpadding="0" cellspacing="0" style="font-size: 14px; min-width: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt;"><tr id="layout-row925" class="layout layout-row widget _widget_picture " align="left"><td id="layout-row-padding925" valign="top"><table width="100%" border="0" cellpadding="0" cellspacing="0" style="font-size: 14px; min-width: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt;"><tr><td class="image-td" align="left" valign="top" width="650"><img src="../autodb.imgus11.com/public/68b33bf2f6d34f9b156c24b06aa0eb88.jpg_r=328036389" alt="" width="650" style="display: block; border: none; outline: none; width: 650px; opacity: 1; max-width: 100%;"></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr style="background-color: #ffffff;"><td id="layout-row-margin893" valign="top" style="padding: 0px; background-color: #ffffff;"><table width="100%" border="0" cellpadding="0" cellspacing="0" style="font-size: 14px; min-width: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; border-collapse: initial !important;"><tr id="layout-row893" class="layout layout-row widget _widget_text style893" style="margin: 0; padding: 0;"><td id="layout-row-padding893" valign="top" style="padding: 15px 50px 0px 50px;"><table width="100%" border="0" cellpadding="0" cellspacing="0" style="font-size: 14px; min-width: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt;"><tr><td id="text_div821" class="td_text td_block" valign="top" align="left" width="550" style="line-height: 150%; margin: 0; outline: none; padding: 0; color: inherit; font-size: 12px; font-weight: inherit; line-height: 1.5; text-decoration: inherit; font-family: Arial; mso-line-height-rule: exactly;"> <div
+style="line-height: 150%; margin: 0; outline: none; padding: 0; font-size: 16px; line-height: 1.5; mso-line-height-rule: exactly;" class="" data-line-height="1.5"> <div class="" style="margin: 0; outline: none; padding: 0;"><span style='color: #22224a; font-size: inherit; font-weight: inherit; line-height: inherit; text-decoration: inherit; font-family: Roboto, "San Francisco", Helvetica, Arial, sans-serif;' class=""><span style='color: #22224a; font-size: 16px; font-weight: 400; line-height: inherit; text-decoration: inherit; font-family: Roboto, "San Francisco", Helvetica, Arial, sans-serif; font-style: normal;'>@Ilnardo92 aka</span> <a
+href="https://autodb.lt.acemlna.com/Prod/link-tracker?notrack=1&redirectUrl=aHR0cHMlM0ElMkYlMkZ3d3cubGlua2VkaW4uY29tJTJGaW4lMkZpdmFuLW5hcmRpbmklMkYlM0Z1dG1fc291cmNlJTNEQWN0aXZlQ2FtcGFpZ24lMjZ1dG1fbWVkaXVtJTNEZW1haWwlMjZ1dG1fY29udGVudCUzRFlvdSUyNTIwSnVzdCUyNTIwR290JTI1MjBLRiUyNTIwU2VydmVkJTI2dXRtX2NhbXBhaWduJTNETUxPcHMlMjUyMC0lMjUyME5ld3NsZXR0ZXIlMjUyMC0lMjUyMDIwMjAlMjUyMC0lMjUyMDEwJTI1MjAtJTI1MjAyNA==&sig=8bQ7yB58K3Ctos8fqSSBryVm9gcNmMfPyknwELV7i9jb&iat=1713901868&a=%7C%7C650082935%7C%7C&account=autodb%2Eactivehosted%2Ecom&email=1FOpI894dA3McZ8GfU3fJeVR%2FzdrvJTtadraXrozN3yU0UGAlw%3D%3D%3A%2FMpHRnUA8VFx%2B6v9nWGx%2BvX4csIHme6p&s=bad97c655476f96a390a72c05a742011&i=47A64A5A808" data-ac-default-color="1" target="_blank" class="" style="margin: 0; outline: none; padding: 0; color: #3e86cb; text-decoration: underline;"><span style="color: ; font-size: inherit; font-weight: inherit; line-height: inherit; text-decoration: inherit;" class="">Ivan Nardini</span></a> joined us last week to talk about Operationalizing Open Source Models with SAS Open Model Manager. I loved hearing him breakdown what so many of us already know about the different stakeholders in the ML process. Also he just wrote an amazing article on this subject for our medium page
+which you can check out <a href="https://autodb.lt.acemlna.com/Prod/link-tracker?notrack=1&redirectUrl=aHR0cHMlM0ElMkYlMkZtZWRpdW0uY29tJTJGbWxvcHMtY29tbXVuaXR5JTJGbWxvcHMtbGFiLTMtY29udGludW91cy1kZWxpdmVyeS1hLXRlbnNvcmZsb3ctbW9kZWwtb24tcmVkLWhhdC1vcGVuc2hpZnQtb2tkLXdpdGgtc2FzLW1vZGVsLTk0NTkxZTBkMGZiYSUzRnNvdXJjZSUzRGZyaWVuZHNfbGluayUyNnNrJTNEZmIyZThiN2NmYjc0ODFjYWY3MDQwYWVjZjQyMjgxMTYlMjZ1dG1fc291cmNlJTNEQWN0aXZlQ2FtcGFpZ24lMjZ1dG1fbWVkaXVtJTNEZW1haWwlMjZ1dG1fY29udGVudCUzRFlvdSUyNTIwSnVzdCUyNTIwR290JTI1MjBLRiUyNTIwU2VydmVkJTI2dXRtX2NhbXBhaWduJTNETUxPcHMlMjUyMC0lMjUyME5ld3NsZXR0ZXIlMjUyMC0lMjUyMDIwMjAlMjUyMC0lMjUyMDEwJTI1MjAtJTI1MjAyNA==&sig=GdnvZjec1eXg7WTmGrZyEWypwqkYbX6p4ZNuZE9nE7RM&iat=1713901868&a=%7C%7C650082935%7C%7C&account=autodb%2Eactivehosted%2Ecom&email=1FOpI894dA3McZ8GfU3fJeVR%2FzdrvJTtadraXrozN3yU0UGAlw%3D%3D%3A%2FMpHRnUA8VFx%2B6v9nWGx%2BvX4csIHme6p&s=bad97c655476f96a390a72c05a742011&i=47A64A5A865" data-ac-default-color="1" style="margin: 0; outline: none; padding: 0; color: #3e86cb; text-decoration: underline;" target="_blank"><span style="color: ; font-size: inherit; font-weight: inherit; line-height: inherit; text-decoration: inherit;" target="_blank">here</span></a>.<br class=""><br class="">In case you missed it the <span style='color: #22224a; font-size: 16px; font-weight: 400; line-height: inherit;
+text-decoration: inherit; font-family: Roboto, "San Francisco", Helvetica, Arial, sans-serif; font-style: normal;' class="">SAS Open Model Manager is a containerized modelops tool that accelerates deployment processes and, once in production, allows monitoring your models (SAS and Open Source). It was cool to see the demo and also talking with Ivan is always a pleasure! </span></span></div>
+ </div>
+<!--[if (gte mso 12)&(lte mso 15) ]>
+<style data-ac-keep="true" data-ac-inline="false"> #text_div821, #text_div821 div { line-height: 150% !important; };
+</style>
+<![endif]--></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr style="background-color: #ffffff;"><td id="layout-row-margin894" valign="top" style="padding: 0; background-color: #ffffff;"><table width="100%" border="0" cellpadding="0" cellspacing="0" style="font-size: 14px; min-width: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; border-collapse: initial !important;"><tr id="layout-row894" class="layout layout-row widget _widget_button style894" style=""><td id="layout-row-padding894" valign="top" style="padding: 20px 50px 20px 50px;"><table width="100%" border="0" cellpadding="0" cellspacing="0" style="font-size: 14px; min-width: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt;"><tr><td class="td_button td_block customizable" valign="top" align="left" width="550"> <div class="button-wrapper" style="margin: 0; outline: none; padding: 0; text-align: left;">
+<!--[if mso]> <v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" href="https://autodb.lt.acemlna.com/Prod/link-tracker?notrack=1&redirectUrl=aHR0cHMlM0ElMkYlMkZ5b3V0dS5iZSUyRlNOUnNUWW1iMTlVJTNGdXRtX3NvdXJjZSUzREFjdGl2ZUNhbXBhaWduJTI2dXRtX21lZGl1bSUzRGVtYWlsJTI2dXRtX2NvbnRlbnQlM0RZb3UlMjUyMEp1c3QlMjUyMEdvdCUyNTIwS0YlMjUyMFNlcnZlZCUyNnV0bV9jYW1wYWlnbiUzRE1MT3BzJTI1MjAtJTI1MjBOZXdzbGV0dGVyJTI1MjAtJTI1MjAyMDIwJTI1MjAtJTI1MjAxMCUyNTIwLSUyNTIwMjQ=&sig=8jzzrQmU2kGGi69dkeiKrttrDXScTywaKTNLRjw5zMg1&iat=1713901868&a=%7C%7C650082935%7C%7C&account=autodb%2Eactivehosted%2Ecom&email=1FOpI894dA3McZ8GfU3fJeVR%2FzdrvJTtadraXrozN3yU0UGAlw%3D%3D%3A%2FMpHRnUA8VFx%2B6v9nWGx%2BvX4csIHme6p&s=bad97c655476f96a390a72c05a742011&i=47A64A5A846" style="v-text-anchor:middle; width:159px; height:64px; " arcsize="10%" strokecolor="#B5B5B5" strokeweight="0pt" fillcolor="#3e86cb" o:button="true" o:allowincell="true" o:allowoverlap="false" > <v:textbox inset="2px,2px,2px,2px"> <center style="color:#fff7f7;font-family:Roboto, San Francisco, Helvetica, Arial, sans-serif; font-size:14px; line-height: 1.1;">Watch The Video!</center> </v:textbox> </v:roundrect>
+<![endif]--> <a href="https://autodb.lt.acemlna.com/Prod/link-tracker?notrack=1&redirectUrl=aHR0cHMlM0ElMkYlMkZ5b3V0dS5iZSUyRlNOUnNUWW1iMTlVJTNGdXRtX3NvdXJjZSUzREFjdGl2ZUNhbXBhaWduJTI2dXRtX21lZGl1bSUzRGVtYWlsJTI2dXRtX2NvbnRlbnQlM0RZb3UlMjUyMEp1c3QlMjUyMEdvdCUyNTIwS0YlMjUyMFNlcnZlZCUyNnV0bV9jYW1wYWlnbiUzRE1MT3BzJTI1MjAtJTI1MjBOZXdzbGV0dGVyJTI1MjAtJTI1MjAyMDIwJTI1MjAtJTI1MjAxMCUyNTIwLSUyNTIwMjQ=&sig=8jzzrQmU2kGGi69dkeiKrttrDXScTywaKTNLRjw5zMg1&iat=1713901868&a=%7C%7C650082935%7C%7C&account=autodb%2Eactivehosted%2Ecom&email=1FOpI894dA3McZ8GfU3fJeVR%2FzdrvJTtadraXrozN3yU0UGAlw%3D%3D%3A%2FMpHRnUA8VFx%2B6v9nWGx%2BvX4csIHme6p&s=bad97c655476f96a390a72c05a742011&i=47A64A5A846" style="margin: 0; outline: none; padding: 15px; color: #fff7f7; background-color: #3e86cb; border: 0px solid #B5B5B5; border-radius: 3px; font-family: Roboto, San Francisco, Helvetica, Arial, sans-serif; font-size: 14px; display: inline-block; line-height: 1.1; text-align: center; text-decoration: none; mso-hide: all;" target="_blank"> <span style="color:#fff7f7;font-family:Roboto, San Francisco, Helvetica, Arial, sans-serif;font-size:14px;" target="_blank"> Watch The Video! </span> </a> </div>
+
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr style="background-color: #ffffff;"><td id="layout-row-margin901" valign="top" style="padding: 0; background-color: #ffffff;"><table width="100%" border="0" cellpadding="0" cellspacing="0" style="font-size: 14px; min-width: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; border-collapse: initial !important;"><tr id="layout-row901" class="layout layout-row widget _widget_text style901" style="margin: 0; padding: 0;"><td id="layout-row-padding901" valign="top" style="padding: 50px 50px 10px 50px;"><table width="100%" border="0" cellpadding="0" cellspacing="0" style="font-size: 14px; min-width: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt;"><tr><td id="text_div829" class="td_text td_block" valign="top" align="left" width="550" style="line-height: 130%; margin: 0; outline: none; padding: 0; color: inherit; font-size: 12px; font-weight: inherit; line-height: 1.3; text-decoration: inherit; font-family: Arial; mso-line-height-rule: exactly;"> <div
+style="line-height: 130%; margin: 0; outline: none; padding: 0; line-height: 1.3; mso-line-height-rule: exactly;" data-line-height="1.3"> <div style="margin: 0; outline: none; padding: 0; text-align: left;"><span style='color: #c92c7f; font-size: 27px; font-weight: 700; line-height: inherit; text-decoration: inherit; font-family: Roboto, "San Francisco", Helvetica, Arial, sans-serif;'>Serve It Up Fresh</span></div>
+ </div>
+<!--[if (gte mso 12)&(lte mso 15) ]>
+<style data-ac-keep="true" data-ac-inline="false"> #text_div829, #text_div829 div { line-height: 130% !important; };
+</style>
+<![endif]--></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr style="background-color: #ffffff;"><td id="layout-row-margin895" valign="top" style="padding: 0; background-color: #ffffff;"><table width="100%" border="0" cellpadding="0" cellspacing="0" style="font-size: 14px; min-width: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; border-collapse: initial !important;"><tr id="layout-row895" class="layout layout-row widget _widget_break style895" style=""><td id="layout-row-padding895" valign="top" style="line-height: 0; mso-line-height-rule: exactly; padding: 0 50px 10px 50px;"><table width="100%" border="0" cellpadding="0" cellspacing="0" style="font-size: 14px; min-width: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; border-collapse: collapse; line-height: 0; mso-line-height-rule: exactly;"><tr><td height="5" style="line-height: 0; mso-line-height-rule: exactly;"></td>
+</tr>
+<tr><td align="left" height="1" width="550" style="line-height: 0; mso-line-height-rule: exactly;"> <table align="left" border="0" cellpadding="0" cellspacing="0" height="1" width="138" style="font-size: 14px; min-width: auto!important; mso-table-lspace: 0pt; mso-table-rspace: 0pt; border-collapse: collapse; line-height: 0; mso-line-height-rule: exactly; width: 25%; max-width: 25%;"><tr><td class="break-line" bgcolor="#c92c7f" height="1" width="138" style="line-height: 1px; mso-line-height-rule: exactly; height: 1px; width: 138px; background-color: #c92c7f;"> </td>
+ </tr>
+</table>
+</td>
+ </tr>
+<tr><td height="5" style="line-height: 0; mso-line-height-rule: exactly;"></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr style="background-color: #ffffff;"><td id="layout-row-margin924" valign="top" style="background-color: #ffffff;"><table width="100%" border="0" cellpadding="0" cellspacing="0" style="font-size: 14px; min-width: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt;"><tr id="layout-row924" class="layout layout-row widget _widget_picture " align="left"><td id="layout-row-padding924" valign="top"><table width="100%" border="0" cellpadding="0" cellspacing="0" style="font-size: 14px; min-width: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt;"><tr><td class="image-td" align="left" valign="top" width="650"><img src="../autodb.imgus11.com/public/2f4bbbc3850c8182b289a95cc2c3d02f.jpg_r=2077011544" alt="" width="650" style="display: block; border: none; outline: none; width: 650px; opacity: 1; max-width: 100%;"></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr style="background-color: #ffffff;"><td id="layout-row-margin899" valign="top" style="padding: 0px; background-color: #ffffff;"><table width="100%" border="0" cellpadding="0" cellspacing="0" style="font-size: 14px; min-width: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; border-collapse: initial !important;"><tr id="layout-row899" class="layout layout-row widget _widget_text style899" style="margin: 0; padding: 0;"><td id="layout-row-padding899" valign="top" style="padding: 15px 50px 0px 50px;"><table width="100%" border="0" cellpadding="0" cellspacing="0" style="font-size: 14px; min-width: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt;"><tr><td id="text_div827" class="td_text td_block" valign="top" align="left" width="550" style="line-height: 150%; margin: 0; outline: none; padding: 0; color: inherit; font-size: 12px; font-weight: inherit; line-height: 1.5; text-decoration: inherit; font-family: Arial; mso-line-height-rule: exactly;"> <div
+style="line-height: 150%; margin: 0; outline: none; padding: 0; font-size: 16px; line-height: 1.5; mso-line-height-rule: exactly;" class="" data-line-height="1.5"> <div class="" style="margin: 0; outline: none; padding: 0;"><span style='color: #22224a; font-size: inherit; font-weight: inherit; line-height: inherit; text-decoration: inherit; font-family: Roboto, "San Francisco", Helvetica, Arial, sans-serif;' class="">KF serving is one of the most talked-about topics in the community so it only makes sense we get on someone who is overly excited about this stuff to do a deep dive workshop with us. <a
+href="https://autodb.lt.acemlna.com/Prod/link-tracker?notrack=1&redirectUrl=aHR0cHMlM0ElMkYlMkZsaW5rZWRpbi5jb20lMkZpbiUyRnRoZW9mcGElM0Z1dG1fc291cmNlJTNEQWN0aXZlQ2FtcGFpZ24lMjZ1dG1fbWVkaXVtJTNEZW1haWwlMjZ1dG1fY29udGVudCUzRFlvdSUyNTIwSnVzdCUyNTIwR290JTI1MjBLRiUyNTIwU2VydmVkJTI2dXRtX2NhbXBhaWduJTNETUxPcHMlMjUyMC0lMjUyME5ld3NsZXR0ZXIlMjUyMC0lMjUyMDIwMjAlMjUyMC0lMjUyMDEwJTI1MjAtJTI1MjAyNA==&sig=3nJTsZ6PqpPfAQYytnYDYyfWZ1AnVWREJrVZijzp8LxE&iat=1713901868&a=%7C%7C650082935%7C%7C&account=autodb%2Eactivehosted%2Ecom&email=1FOpI894dA3McZ8GfU3fJeVR%2FzdrvJTtadraXrozN3yU0UGAlw%3D%3D%3A%2FMpHRnUA8VFx%2B6v9nWGx%2BvX4csIHme6p&s=bad97c655476f96a390a72c05a742011&i=47A64A5A861" data-ac-default-color="1" style="margin: 0; outline: none; padding: 0; color: #3e86cb; text-decoration: underline;" target="_blank"><span style="color: ; font-size: inherit; font-weight: inherit; line-height: inherit; text-decoration: inherit;" target="_blank">Theofilos Papapanagiotou</span></a> Data Science Architect at Prosus plans to give us a thorough walkthrough of kubeflows capabilities. <br><br>We will look inside some popular model formats like the SavedModel of Tensorflow, the Model Archiver of PyTorch, pickle&ONNX, to understand how the weights of the NN are saved there, the graph and the signature
+concepts. <br><br>We will discuss the relevant resources of the deployment stack of Istio (the Ingress gateway, the sidecar and the virtual service) and Knative (the service and revisions), as well as Kubeflow and KFServing. Then we'll get into the design details of KFServing, its custom resources, the controller and webhooks, the logging and configuration. <br><br>Then we are going to spend a large part in the monitoring stack, the metrics of the servable (memory footprint, latency, number of requests), as well as the model metrics like the graph, init/restore latencies, the optimizations, and the runtime metrics which end up to Prometheus. We will look at the inference payload and prediction logging to observe drifts and trigger the retraining of the pipeline. <br><br><span style="color: inherit; font-size: inherit; font-weight: inherit; line-height: inherit; text-decoration: inherit; font-style: italic;" class="">*Remember this week the timing is different if you
+are in the Americas 10 am PST</span></span></div>
+ </div>
+<!--[if (gte mso 12)&(lte mso 15) ]>
+<style data-ac-keep="true" data-ac-inline="false"> #text_div827, #text_div827 div { line-height: 150% !important; };
+</style>
+<![endif]--></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr style="background-color: #ffffff;"><td id="layout-row-margin897" valign="top" style="padding: 0; background-color: #ffffff;"><table width="100%" border="0" cellpadding="0" cellspacing="0" style="font-size: 14px; min-width: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; border-collapse: initial !important;"><tr id="layout-row897" class="layout layout-row widget _widget_button style897" style=""><td id="layout-row-padding897" valign="top" style="padding: 20px 50px 20px 50px;"><table width="100%" border="0" cellpadding="0" cellspacing="0" style="font-size: 14px; min-width: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt;"><tr><td class="td_button td_block customizable" valign="top" align="left" width="550"> <div class="button-wrapper" style="margin: 0; outline: none; padding: 0; text-align: left;">
+<!--[if mso]> <v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" href="https://autodb.lt.acemlna.com/Prod/link-tracker?notrack=1&redirectUrl=aHR0cHMlM0ElMkYlMkZnby5tbG9wcy5jb21tdW5pdHklMkZtZWV0dXAlM0Z1dG1fc291cmNlJTNEQWN0aXZlQ2FtcGFpZ24lMjZ1dG1fbWVkaXVtJTNEZW1haWwlMjZ1dG1fY29udGVudCUzRFlvdSUyNTIwSnVzdCUyNTIwR290JTI1MjBLRiUyNTIwU2VydmVkJTI2dXRtX2NhbXBhaWduJTNETUxPcHMlMjUyMC0lMjUyME5ld3NsZXR0ZXIlMjUyMC0lMjUyMDIwMjAlMjUyMC0lMjUyMDEwJTI1MjAtJTI1MjAyNA==&sig=97hTyRWyc1LRTqmaXvbYeAc1WXkxJHyLYT9HDQub7e5g&iat=1713901868&a=%7C%7C650082935%7C%7C&account=autodb%2Eactivehosted%2Ecom&email=1FOpI894dA3McZ8GfU3fJeVR%2FzdrvJTtadraXrozN3yU0UGAlw%3D%3D%3A%2FMpHRnUA8VFx%2B6v9nWGx%2BvX4csIHme6p&s=bad97c655476f96a390a72c05a742011&i=47A64A5A809" style="v-text-anchor:middle; width:128px; height:64px; " arcsize="10%" strokecolor="#B5B5B5" strokeweight="0pt" fillcolor="#3e86cb" o:button="true" o:allowincell="true" o:allowoverlap="false" > <v:textbox inset="2px,2px,2px,2px"> <center style="color:#fff7f7;font-family:Roboto, San Francisco, Helvetica, Arial, sans-serif; font-size:14px; line-height: 1.1;">Get Stuck In!</center> </v:textbox> </v:roundrect>
+<![endif]--> <a href="https://autodb.lt.acemlna.com/Prod/link-tracker?notrack=1&redirectUrl=aHR0cHMlM0ElMkYlMkZnby5tbG9wcy5jb21tdW5pdHklMkZtZWV0dXAlM0Z1dG1fc291cmNlJTNEQWN0aXZlQ2FtcGFpZ24lMjZ1dG1fbWVkaXVtJTNEZW1haWwlMjZ1dG1fY29udGVudCUzRFlvdSUyNTIwSnVzdCUyNTIwR290JTI1MjBLRiUyNTIwU2VydmVkJTI2dXRtX2NhbXBhaWduJTNETUxPcHMlMjUyMC0lMjUyME5ld3NsZXR0ZXIlMjUyMC0lMjUyMDIwMjAlMjUyMC0lMjUyMDEwJTI1MjAtJTI1MjAyNA==&sig=97hTyRWyc1LRTqmaXvbYeAc1WXkxJHyLYT9HDQub7e5g&iat=1713901868&a=%7C%7C650082935%7C%7C&account=autodb%2Eactivehosted%2Ecom&email=1FOpI894dA3McZ8GfU3fJeVR%2FzdrvJTtadraXrozN3yU0UGAlw%3D%3D%3A%2FMpHRnUA8VFx%2B6v9nWGx%2BvX4csIHme6p&s=bad97c655476f96a390a72c05a742011&i=47A64A5A809" style="margin: 0; outline: none; padding: 15px; color: #fff7f7; background-color: #3e86cb; border: 0px solid #B5B5B5; border-radius: 3px; font-family: Roboto, San Francisco, Helvetica, Arial, sans-serif; font-size: 14px; display: inline-block; line-height: 1.1; text-align: center; text-decoration: none; mso-hide: all;" target="_blank"> <span style="color:#fff7f7;font-family:Roboto, San Francisco, Helvetica, Arial, sans-serif;font-size:14px;" target="_blank"> Get Stuck In! </span> </a> </div>
+
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr style="background-color: #ffffff;"><td id="layout-row-margin889" valign="top" style="background-color: #ffffff;"><table width="100%" border="0" cellpadding="0" cellspacing="0" style="font-size: 14px; min-width: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt;"><tr id="layout-row889" class="layout layout-row widget _widget_spacer "><td id="layout-row-padding889" valign="top"><table width="100%" border="0" cellpadding="0" cellspacing="0" style="font-size: 14px; min-width: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt;"><tr><td valign="top" height="30"><div class="spacer" style="margin: 0; outline: none; padding: 0; height: 30px;"><table cellpadding="0" cellspacing="0" border="0" width="100%" style="font-size: 14px; min-width: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt;"><tr><td class="spacer-body" valign="top" height="30" width="650"> </td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr style="background-color: #ffffff;"><td id="layout-row-margin878" valign="top" style="padding: 0; background-color: #ffffff;"><table width="100%" border="0" cellpadding="0" cellspacing="0" style="font-size: 14px; min-width: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; border-collapse: initial !important;"><tr id="layout-row878" class="layout layout-row widget _widget_text style878" style="margin: 0; padding: 0; background-color: #3e86cb;"><td id="layout-row-padding878" valign="top" style="background-color: #3e86cb; padding: 40px 50px 10px 50px;"><table width="100%" border="0" cellpadding="0" cellspacing="0" style="font-size: 14px; min-width: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt;"><tr><td id="text_div806" class="td_text td_block" valign="top" align="left" width="550" style="line-height: 130%; margin: 0; outline: none; padding: 0; color: inherit; font-size: 12px; font-weight: inherit; line-height: 1.3; text-decoration: inherit; font-family:
+Arial; mso-line-height-rule: exactly;"> <div style="line-height: 130%; margin: 0; outline: none; padding: 0; color: #ffffff; line-height: 1.3; mso-line-height-rule: exactly;" data-line-height="1.3"> <div style="margin: 0; outline: none; padding: 0; color: #ffffff;"> <div style="margin: 0; outline: none; padding: 0; text-align: left; color: #ffffff;"><span style='color: #ffffff; font-size: 27px; font-weight: bold; line-height: inherit; text-decoration: inherit; text-align: inherit; font-style: normal; font-family: Roboto, "San Francisco", Helvetica, Arial, sans-serif;' class="">Best of Slack</span></div>
+ </div>
+ </div>
+<!--[if (gte mso 12)&(lte mso 15) ]>
+<style data-ac-keep="true" data-ac-inline="false"> #text_div806, #text_div806 div { line-height: 130% !important; };
+</style>
+<![endif]--></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr style="background-color: #ffffff;"><td id="layout-row-margin879" valign="top" style="padding: 0; background-color: #ffffff;"><table width="100%" border="0" cellpadding="0" cellspacing="0" style="font-size: 14px; min-width: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; border-collapse: initial !important;"><tr id="layout-row879" class="layout layout-row widget _widget_text style879" style="margin: 0; padding: 0; background-color: #3e86cb;"><td id="layout-row-padding879" valign="top" style="background-color: #3e86cb; padding: 5px 50px 50px 50px;"><table width="100%" border="0" cellpadding="0" cellspacing="0" style="font-size: 14px; min-width: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt;"><tr><td id="text_div807" class="td_text td_block" valign="top" align="left" width="550" style="line-height: 130%; margin: 0; outline: none; padding: 0; color: inherit; font-size: 12px; font-weight: inherit; line-height: 1.3; text-decoration: inherit; font-family:
+Arial; mso-line-height-rule: exactly;"> <div style="line-height: 130%; margin: 0; outline: none; padding: 0; color: #ffffff; line-height: 1.3; mso-line-height-rule: exactly;" data-line-height="1.3"> <div class="" style="margin: 0; outline: none; padding: 0; font-size: 16px; color: #ffffff;"> <div style="margin: 0; outline: none; padding: 0; color: #ffffff;" class=""> <div style="margin: 0; outline: none; padding: 0; color: #ffffff;" class=""><ul style="margin: 0 0 0 40px; padding: 0; color: #ffffff;"><li style="display: list-item; line-height: inherit; list-style-type: disc; margin: 0 0 0 3px; color: #ffffff;"><a
+href="https://autodb.lt.acemlna.com/Prod/link-tracker?notrack=1&redirectUrl=aHR0cHMlM0ElMkYlMkZ3d3cudGVjdG9uLmFpJTJGYmxvZyUyRndoYXQtaXMtYS1mZWF0dXJlLXN0b3JlJTJGJTNGdXRtX3NvdXJjZSUzREFjdGl2ZUNhbXBhaWduJTI2dXRtX21lZGl1bSUzRGVtYWlsJTI2dXRtX2NvbnRlbnQlM0RZb3UlMjUyMEp1c3QlMjUyMEdvdCUyNTIwS0YlMjUyMFNlcnZlZCUyNnV0bV9jYW1wYWlnbiUzRE1MT3BzJTI1MjAtJTI1MjBOZXdzbGV0dGVyJTI1MjAtJTI1MjAyMDIwJTI1MjAtJTI1MjAxMCUyNTIwLSUyNTIwMjQ=&sig=9BY7vu64vVYBKWCGg8gFtxuLNDmWvzYPV5ANVyVroGNh&iat=1713901868&a=%7C%7C650082935%7C%7C&account=autodb%2Eactivehosted%2Ecom&email=1FOpI894dA3McZ8GfU3fJeVR%2FzdrvJTtadraXrozN3yU0UGAlw%3D%3D%3A%2FMpHRnUA8VFx%2B6v9nWGx%2BvX4csIHme6p&s=bad97c655476f96a390a72c05a742011&i=47A64A5A860" style="margin: 0; outline: none; padding: 0; color: #ffffff; text-decoration: underline;" class="" target="_blank"><span style="color: #ffffff; font-size: inherit; font-weight: inherit; line-height: inherit; text-decoration: inherit;" target="_blank">What Is A Feature Store?</span></a></li><li style="display: list-item; line-height: inherit; list-style-type: disc; margin: 0 0 0 3px; color: #ffffff;"><a
+href="https://autodb.lt.acemlna.com/Prod/link-tracker?notrack=1&redirectUrl=aHR0cCUzQSUyRiUyRm5sYXRoaWEuZ2l0aHViLmlvJTJGMjAyMCUyRjEwJTJGTW9uem8tTUwuaHRtbCUzRnV0bV9zb3VyY2UlM0RBY3RpdmVDYW1wYWlnbiUyNnV0bV9tZWRpdW0lM0RlbWFpbCUyNnV0bV9jb250ZW50JTNEWW91JTI1MjBKdXN0JTI1MjBHb3QlMjUyMEtGJTI1MjBTZXJ2ZWQlMjZ1dG1fY2FtcGFpZ24lM0RNTE9wcyUyNTIwLSUyNTIwTmV3c2xldHRlciUyNTIwLSUyNTIwMjAyMCUyNTIwLSUyNTIwMTAlMjUyMC0lMjUyMDI0&sig=G5XyTW5Ynq1r7oa2cxBZbKbD3GN97NsUn7imqSkbNJtw&iat=1713901868&a=%7C%7C650082935%7C%7C&account=autodb%2Eactivehosted%2Ecom&email=1FOpI894dA3McZ8GfU3fJeVR%2FzdrvJTtadraXrozN3yU0UGAlw%3D%3D%3A%2FMpHRnUA8VFx%2B6v9nWGx%2BvX4csIHme6p&s=bad97c655476f96a390a72c05a742011&i=47A64A5A862" style="margin: 0; outline: none; padding: 0; color: #ffffff; text-decoration: underline;" target="_blank"><span style="color: #ffffff; font-size: inherit; font-weight: inherit; line-height: inherit; text-decoration: inherit;" target="_blank">Machine Learning in Monzo in 2020</span></a><br></li><li style="display: list-item; line-height: inherit; list-style-type: disc; margin: 0 0 0 3px; color: #ffffff;"><a
+href="https://autodb.lt.acemlna.com/Prod/link-tracker?notrack=1&redirectUrl=aHR0cHMlM0ElMkYlMkZ0b3dhcmRzZGF0YXNjaWVuY2UuY29tJTJGdXNpbmctc3RhdGlzdGljYWwtZGlzdGFuY2UtbWV0cmljcy1mb3ItbWFjaGluZS1sZWFybmluZy1vYnNlcnZhYmlsaXR5LTRjODc0Y2RlZDc4JTNGc291cmNlJTNEZnJpZW5kc19saW5rJTI2c2slM0RjNmYzMzkwYWE2ODU0YjU3MDdiZTkyNDdkZjYxY2E5NiUyNnV0bV9zb3VyY2UlM0RBY3RpdmVDYW1wYWlnbiUyNnV0bV9tZWRpdW0lM0RlbWFpbCUyNnV0bV9jb250ZW50JTNEWW91JTI1MjBKdXN0JTI1MjBHb3QlMjUyMEtGJTI1MjBTZXJ2ZWQlMjZ1dG1fY2FtcGFpZ24lM0RNTE9wcyUyNTIwLSUyNTIwTmV3c2xldHRlciUyNTIwLSUyNTIwMjAyMCUyNTIwLSUyNTIwMTAlMjUyMC0lMjUyMDI0&sig=EUYDHtU32LmnCkMEoLLe7cXzc8YL8qefh4KsQWb4pfeC&iat=1713901868&a=%7C%7C650082935%7C%7C&account=autodb%2Eactivehosted%2Ecom&email=1FOpI894dA3McZ8GfU3fJeVR%2FzdrvJTtadraXrozN3yU0UGAlw%3D%3D%3A%2FMpHRnUA8VFx%2B6v9nWGx%2BvX4csIHme6p&s=bad97c655476f96a390a72c05a742011&i=47A64A5A859" style="margin: 0; outline: none; padding: 0; color: #ffffff; text-decoration: underline;" class="" target="_blank"><span style="color: #ffffff; font-size: inherit; font-weight: inherit; line-height: inherit; text-decoration: inherit;" target="_blank">Using Statistical Distances for ML Observability</span></a><br></li><li style="display: list-item; line-height: inherit; list-style-type: disc; margin: 0 0 0 3px; color: #ffffff;"><a
+href="https://autodb.lt.acemlna.com/Prod/link-tracker?notrack=1&redirectUrl=aHR0cHMlM0ElMkYlMkZ3d3cud2lyZWQuY29tJTJGc3RvcnklMkZjb21wYW5pZXMtcnVzaGluZy11c2UtYWktZmV3LXNlZS1wYXlvZmYlMkYlM0Z1dG1fc291cmNlJTNEQWN0aXZlQ2FtcGFpZ24lMjZ1dG1fbWVkaXVtJTNEZW1haWwlMjZ1dG1fY29udGVudCUzRFlvdSUyNTIwSnVzdCUyNTIwR290JTI1MjBLRiUyNTIwU2VydmVkJTI2dXRtX2NhbXBhaWduJTNETUxPcHMlMjUyMC0lMjUyME5ld3NsZXR0ZXIlMjUyMC0lMjUyMDIwMjAlMjUyMC0lMjUyMDEwJTI1MjAtJTI1MjAyNA==&sig=EHP5hHmRQQWQvJzg5CqU8g6FWKVZ174DLyGXz3hNtene&iat=1713901868&a=%7C%7C650082935%7C%7C&account=autodb%2Eactivehosted%2Ecom&email=1FOpI894dA3McZ8GfU3fJeVR%2FzdrvJTtadraXrozN3yU0UGAlw%3D%3D%3A%2FMpHRnUA8VFx%2B6v9nWGx%2BvX4csIHme6p&s=bad97c655476f96a390a72c05a742011&i=47A64A5A863" style="margin: 0; outline: none; padding: 0; color: #ffffff; text-decoration: underline;" class="" target="_blank"><span style="color: #ffffff; font-size: inherit; font-weight: inherit; line-height: inherit; text-decoration: inherit;" target="_blank">Just 11 percent of companies that in<span style="color: #ffffff; font-size: inherit; font-weight: inherit; line-height: inherit; text-decoration: inherit;" class="" target="_blank">vested in AI see a significant ROI</span></span></a><br></li><li style="display: list-item; line-height: inherit; list-style-type: disc; margin: 0 0 0 3px; color:
+#ffffff;"><a href="https://autodb.lt.acemlna.com/Prod/link-tracker?notrack=1&redirectUrl=aHR0cHMlM0ElMkYlMkZ3d3cueW91dHViZS5jb20lMkZ3YXRjaCUzRnYlM0RKbTZoRFdCWlhjNCUyNnV0bV9zb3VyY2UlM0RBY3RpdmVDYW1wYWlnbiUyNnV0bV9tZWRpdW0lM0RlbWFpbCUyNnV0bV9jb250ZW50JTNEWW91JTI1MjBKdXN0JTI1MjBHb3QlMjUyMEtGJTI1MjBTZXJ2ZWQlMjZ1dG1fY2FtcGFpZ24lM0RNTE9wcyUyNTIwLSUyNTIwTmV3c2xldHRlciUyNTIwLSUyNTIwMjAyMCUyNTIwLSUyNTIwMTAlMjUyMC0lMjUyMDI0&sig=2LNHoocWcYX7va2Xn5vVCHdprtmy12RzPy2Yc9KritbB&iat=1713901868&a=%7C%7C650082935%7C%7C&account=autodb%2Eactivehosted%2Ecom&email=1FOpI894dA3McZ8GfU3fJeVR%2FzdrvJTtadraXrozN3yU0UGAlw%3D%3D%3A%2FMpHRnUA8VFx%2B6v9nWGx%2BvX4csIHme6p&s=bad97c655476f96a390a72c05a742011&i=47A64A5A864" style="margin: 0; outline: none; padding: 0; color: #ffffff; text-decoration: underline;" target="_blank"><span style="color: #ffffff; font-size: inherit; font-weight: inherit; line-height: inherit; text-decoration: inherit;" target="_blank">This Song</span></a></li></ul></div>
+ </div>
+ </div>
+ </div>
+<!--[if (gte mso 12)&(lte mso 15) ]>
+<style data-ac-keep="true" data-ac-inline="false"> #text_div807, #text_div807 div { line-height: 130% !important; };
+</style>
+<![endif]--></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr style="background-color: #ffffff;"><td id="layout-row-margin900" valign="top" style="background-color: #ffffff;"><table width="100%" border="0" cellpadding="0" cellspacing="0" style="font-size: 14px; min-width: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt;"><tr id="layout-row900" class="layout layout-row widget _widget_picture " align="left"><td id="layout-row-padding900" valign="top"><table width="100%" border="0" cellpadding="0" cellspacing="0" style="font-size: 14px; min-width: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt;"><tr><td class="image-td" align="left" valign="top" width="650"><img src="../autodb.imgus11.com/public/e4c14fa7103111c7ba9244c3b10d6af5.jpg_r=883965724" alt="" width="650" style="display: block; border: none; outline: none; width: 650px; opacity: 1; max-width: 100%;"></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr style="background-color: #ffffff;"><td id="layout-row-margin896" valign="top" style="padding: 0px; background-color: #ffffff;"><table width="100%" border="0" cellpadding="0" cellspacing="0" style="font-size: 14px; min-width: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; border-collapse: initial !important;"><tr id="layout-row896" class="layout layout-row widget _widget_text style896" style="margin: 0; padding: 0;"><td id="layout-row-padding896" valign="top" style="padding: 18px 50px 0px 50px;"><table width="100%" border="0" cellpadding="0" cellspacing="0" style="font-size: 14px; min-width: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt;"><tr><td id="text_div824" class="td_text td_block" valign="top" align="left" width="550" style="line-height: 150%; margin: 0; outline: none; padding: 0; color: inherit; font-size: 12px; font-weight: inherit; line-height: 1.5; text-decoration: inherit; font-family: Arial; mso-line-height-rule: exactly;"> <div
+style="line-height: 150%; margin: 0; outline: none; padding: 0; font-size: 16px; line-height: 1.5; mso-line-height-rule: exactly;" class="" data-line-height="1.5"> <div class="" style="margin: 0; outline: none; padding: 0;"><span style='color: #22224a; font-size: inherit; font-weight: inherit; line-height: inherit; text-decoration: inherit; font-family: Roboto, "San Francisco", Helvetica, Arial, sans-serif;'>Because you are doing great work and don't let anyone tell you any differently, unless you're working for facebook.</span></div>
+ </div>
+<!--[if (gte mso 12)&(lte mso 15) ]>
+<style data-ac-keep="true" data-ac-inline="false"> #text_div824, #text_div824 div { line-height: 150% !important; };
+</style>
+<![endif]--></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr style="background-color: #ffffff;"><td id="layout-row-margin880" valign="top" style="padding: 5px; background-color: #ffffff;"><table width="100%" border="0" cellpadding="0" cellspacing="0" style="font-size: 14px; min-width: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; border-collapse: initial !important;"><tr id="layout-row880" class="layout layout-row widget _widget_text style880" style="margin: 0; padding: 0;"><td id="layout-row-padding880" valign="top" style="padding: 20px 50px 0px 50px;"><table width="100%" border="0" cellpadding="0" cellspacing="0" style="font-size: 14px; min-width: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt;"><tr><td id="text_div808" class="td_text td_block" valign="top" align="left" width="540" style="line-height: 150%; margin: 0; outline: none; padding: 0; color: inherit; font-size: 12px; font-weight: inherit; line-height: 1.5; text-decoration: inherit; font-family: Arial; mso-line-height-rule: exactly;"> <div
+style="line-height: 150%; margin: 0; outline: none; padding: 0; font-size: 16px; line-height: 1.5; mso-line-height-rule: exactly;" data-line-height="1.5"> <div style="margin: 0; outline: none; padding: 0;"><b style="margin: 0; outline: none; padding: 0;"><b style="margin: 0; outline: none; padding: 0; font-style: normal; font-weight: normal;"><b style='margin: 0; outline: none; padding: 0; font-family: Roboto, "San Francisco", Helvetica, Arial, sans-serif; font-weight: normal;'><b style='margin: 0; outline: none; padding: 0; color: #22224a; font-size: 16px; font-weight: normal; font-style: normal; font-family: Roboto, "San Francisco", Helvetica, Arial, sans-serif;'><b style='margin: 0; outline: none; padding: 0; font-family: Roboto, "San Francisco", Helvetica, Arial, sans-serif; font-weight: normal; color: #22224a; font-style: italic;'><span style='color: #22224a; font-size: inherit; font-weight: 400; line-height: inherit; text-decoration: inherit; font-family:
+Roboto, "San Francisco", Helvetica, Arial, sans-serif; font-style: normal;'>Have a great week! Check out our <a href="https://autodb.lt.acemlna.com/Prod/link-tracker?notrack=1&redirectUrl=aHR0cHMlM0ElMkYlMkZnby5tbG9wcy5jb21tdW5pdHklMkZzbGFjayUzRnV0bV9zb3VyY2UlM0RBY3RpdmVDYW1wYWlnbiUyNnV0bV9tZWRpdW0lM0RlbWFpbCUyNnV0bV9jb250ZW50JTNEWW91JTI1MjBKdXN0JTI1MjBHb3QlMjUyMEtGJTI1MjBTZXJ2ZWQlMjZ1dG1fY2FtcGFpZ24lM0RNTE9wcyUyNTIwLSUyNTIwTmV3c2xldHRlciUyNTIwLSUyNTIwMjAyMCUyNTIwLSUyNTIwMTAlMjUyMC0lMjUyMDI0&sig=FzFHEJEaNf2TM6gZt6dg5htHhKXK3zKG3jNW2pxg4Zob&iat=1713901868&a=%7C%7C650082935%7C%7C&account=autodb%2Eactivehosted%2Ecom&email=1FOpI894dA3McZ8GfU3fJeVR%2FzdrvJTtadraXrozN3yU0UGAlw%3D%3D%3A%2FMpHRnUA8VFx%2B6v9nWGx%2BvX4csIHme6p&s=bad97c655476f96a390a72c05a742011&i=47A64A5A816" data-ac-default-color="1" target="_blank" style="margin: 0; outline: none; padding: 0; color: #3e86cb; text-decoration: underline;"><span style="color: ; font-size: inherit; font-weight: inherit; line-height: inherit; text-decoration: inherit;">slack</span></a>, <a
+href="https://autodb.lt.acemlna.com/Prod/link-tracker?notrack=1&redirectUrl=aHR0cHMlM0ElMkYlMkZ3d3cueW91dHViZS5jb20lMkZjaGFubmVsJTJGVUNHNnFwalZuQlRUVDh3TEdCeWdBTk9RJTNGdmlld19hcyUzRHN1YnNjcmliZXIlMjZ1dG1fc291cmNlJTNEQWN0aXZlQ2FtcGFpZ24lMjZ1dG1fbWVkaXVtJTNEZW1haWwlMjZ1dG1fY29udGVudCUzRFlvdSUyNTIwSnVzdCUyNTIwR290JTI1MjBLRiUyNTIwU2VydmVkJTI2dXRtX2NhbXBhaWduJTNETUxPcHMlMjUyMC0lMjUyME5ld3NsZXR0ZXIlMjUyMC0lMjUyMDIwMjAlMjUyMC0lMjUyMDEwJTI1MjAtJTI1MjAyNA==&sig=4SfLqZBt37uUcE3vK89BriEEZrHYMfyKQnoLeZ6QB1Xe&iat=1713901868&a=%7C%7C650082935%7C%7C&account=autodb%2Eactivehosted%2Ecom&email=1FOpI894dA3McZ8GfU3fJeVR%2FzdrvJTtadraXrozN3yU0UGAlw%3D%3D%3A%2FMpHRnUA8VFx%2B6v9nWGx%2BvX4csIHme6p&s=bad97c655476f96a390a72c05a742011&i=47A64A5A817" data-ac-default-color="1" target="_blank" style="margin: 0; outline: none; padding: 0; color: #3e86cb; text-decoration: underline;"><span style="color: ; font-size: inherit; font-weight: inherit; line-height: inherit; text-decoration: inherit;">youtube</span></a>, and <a
+href="https://autodb.lt.acemlna.com/Prod/link-tracker?notrack=1&redirectUrl=aHR0cHMlM0ElMkYlMkZhbmNob3IuZm0lMkZtbG9wcyUzRnV0bV9zb3VyY2UlM0RBY3RpdmVDYW1wYWlnbiUyNnV0bV9tZWRpdW0lM0RlbWFpbCUyNnV0bV9jb250ZW50JTNEWW91JTI1MjBKdXN0JTI1MjBHb3QlMjUyMEtGJTI1MjBTZXJ2ZWQlMjZ1dG1fY2FtcGFpZ24lM0RNTE9wcyUyNTIwLSUyNTIwTmV3c2xldHRlciUyNTIwLSUyNTIwMjAyMCUyNTIwLSUyNTIwMTAlMjUyMC0lMjUyMDI0&sig=HwjTym4PtRuBP89MxtvgFk9HBzadAmfknHhSh7KFrhou&iat=1713901868&a=%7C%7C650082935%7C%7C&account=autodb%2Eactivehosted%2Ecom&email=1FOpI894dA3McZ8GfU3fJeVR%2FzdrvJTtadraXrozN3yU0UGAlw%3D%3D%3A%2FMpHRnUA8VFx%2B6v9nWGx%2BvX4csIHme6p&s=bad97c655476f96a390a72c05a742011&i=47A64A5A818" data-ac-default-color="1" target="_blank" style="margin: 0; outline: none; padding: 0; color: #3e86cb; text-decoration: underline;"><span style="color: ; font-size: inherit; font-weight: inherit; line-height: inherit; text-decoration: inherit;">podcasts</span></a> if you haven't already. Also, it would mean a lot to me if you filled out <a
+href="https://autodb.lt.acemlna.com/Prod/link-tracker?notrack=1&redirectUrl=aHR0cHMlM0ElMkYlMkZmb3Jtcy5nbGUlMkZYY2lpZDh3V1dwUzRGMkRMQSUzRnV0bV9zb3VyY2UlM0RBY3RpdmVDYW1wYWlnbiUyNnV0bV9tZWRpdW0lM0RlbWFpbCUyNnV0bV9jb250ZW50JTNEWW91JTI1MjBKdXN0JTI1MjBHb3QlMjUyMEtGJTI1MjBTZXJ2ZWQlMjZ1dG1fY2FtcGFpZ24lM0RNTE9wcyUyNTIwLSUyNTIwTmV3c2xldHRlciUyNTIwLSUyNTIwMjAyMCUyNTIwLSUyNTIwMTAlMjUyMC0lMjUyMDI0&sig=8nqQBHrBpj6wGbFNdyp6qvFxDdtp9XSCzbjytmy9tSZg&iat=1713901868&a=%7C%7C650082935%7C%7C&account=autodb%2Eactivehosted%2Ecom&email=1FOpI894dA3McZ8GfU3fJeVR%2FzdrvJTtadraXrozN3yU0UGAlw%3D%3D%3A%2FMpHRnUA8VFx%2B6v9nWGx%2BvX4csIHme6p&s=bad97c655476f96a390a72c05a742011&i=47A64A5A819" data-ac-default-color="1" target="_blank" style="margin: 0; outline: none; padding: 0; color: #3e86cb; text-decoration: underline;"><span style="color: ; font-size: inherit; font-weight: inherit; line-height: inherit; text-decoration: inherit;">this form</span></a> so I can learn more about the community.<br></span></b></b></b><br style="font-size: 16px; font-family: arial; color: #000000; font-weight: 400; font-style: normal;"></b></b></div>
+ </div>
+<!--[if (gte mso 12)&(lte mso 15) ]>
+<style data-ac-keep="true" data-ac-inline="false"> #text_div808, #text_div808 div { line-height: 150% !important; };
+</style>
+<![endif]--></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr style="background-color: #ffffff;"><td id="layout-row-margin881" valign="top" style="padding: 0 50px 50px 50px; background-color: #ffffff;"><table width="100%" border="0" cellpadding="0" cellspacing="0" style="font-size: 14px; min-width: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; border-collapse: initial !important;"><tr id="layout-row881" class="layout layout-row widget _widget_picture style881" align="left" style=""><td id="layout-row-padding881" valign="top" style="padding: 0;"><table width="100%" border="0" cellpadding="0" cellspacing="0" style="font-size: 14px; min-width: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt;"><tr><td class="image-td" align="left" valign="top" width="550"><img src="../autodb.imgus11.com/public/a0390221ff5c66b8ce25ae8e7f772a6b.png_r=1388188180" alt="" width="225" style="display: block; border: none; outline: none; width: 225px; opacity: 1; max-width: 100%;"></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</div>
+<img src="https://autodb.lt.acemlna.com/Prod/link-tracker?notrack=1&nl=5&c=47&m=64&s=bad97c655476f96a390a72c05a742011&l=open&account=autodb.activehosted.com&a=650082935" border="0" width="1" height="1" style="display:block;width:1px!important;min-width:1px!important;max-width:1px!important;height:1px!important;border:0;overflow:hidden;" /><br /><div id="ac-footer" style="clear:both;background-color:inherit;background:inherit;min-width:100%;mso-table-lspace:0pt;mso-table-rspace:0pt;padding:20px;color:#000000;font-size:11px;font-family:arial,helvetica,sans-serif;line-height:140%;line-height:1.4;text-align:center;box-sizing:border-box;"><center>Sent to: <span style="font-size:11px;font-family:arial,helvetica,sans-serif;font-weight:normal;text-decoration:none;outline:none;">_t.e.s.t_@example.com</span><br><br><a href="unsubscribe/5.html" target="_blank"><span style="font-weight:bold;text-decoration:underline;" target="_blank">Unsubscribe</span></a><br><br>MLOps Community, Am sonnenberg 49 watzelhain , 65321 Heidenrod, Germany, Germany</center></div>
+<br clear="all" /></div>
+
+
+</div>
+
+
+
+
+
+  <div style="color:#acacac; padding:14px; background:#F0F0F0; font-size:11px; font-family:Arial,Helvetica,sans-serif;" align="center">
+	<a href="https://www.activecampaign.com/" style="text-decoration:none; color:#acacac;" title="email marketing">Email Marketing</a> by ActiveCampaign
+  </div>
+
+
+
+<script src="https://connect.facebook.net/locale_fbconnect/sdk.js#version=v2.9&xfbml=1&appId=118506481555093" id="facebook-jssdk"></script>
+<script src="admin/jsc/ac.js_v=v1023621555148363"></script>
+<script src="js/social.js_v=v1023621555148363"></script>
+
+</body>
+</html>
